@@ -3,9 +3,15 @@ import assets from '../dummy.json'
 
 export const Home = () => {
     return (
-     <div>
-         
-     </div>
+        <Col>
+            {assets.map((asset) => {
+                return (
+                    <img src ={asset.image} />
+
+                )
+            }
+            )}
+        </Col>
     )
 
 }
