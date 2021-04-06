@@ -1,0 +1,33 @@
+{
+    "assets": [
+        {
+            "name": "Ardash",
+            "image": "/images/Ardash.png"
+        }, 
+        {
+            "name": "Carlin",
+            "image": "/images/Carlin.png"
+        }, 
+        {
+            "name": "Cornelia",
+            "image": "/images/Cornelia.png"
+        }, 
+        {
+            "name": "Dr Egg",
+            "image": "/images/DrEgg.png"
+        }, 
+        {
+            "name": "Dr Egg Logo",
+            "image": "/images/DrEggLogo.png"
+        }, 
+        {
+            "name": "Dr Egg Logo on Paper",
+            "image": "/images/DrEggLogoOnPaper.png"
+        }, 
+        {
+            "name": "World Concept Image",
+            "image": "/images/WorldConcept.png"
+        }
+
+    ]
+}
