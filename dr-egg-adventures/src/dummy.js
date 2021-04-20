@@ -1,5 +1,5 @@
-{
-    "characters": [
+
+    const characters = [
         {
             "id": 1,
             "name": "Ardash",
@@ -42,24 +42,24 @@
             "name": "Vivi",
             "image": "/images/Vivi.png"
         }
-
-    ],
-
-    "assets": [
-        {
-            "id": 1,
-            "name": "Dr Egg Logo",
-            "image": "/images/DrEggLogo.png"
-        }, 
-        {
-            "id": 2,
-            "name": "Dr Egg Logo on Paper",
-            "image": "/images/DrEggLogoOnPaper.jpg"
-        }, 
-        {
-            "id": 3,
-            "name": "World Concept Image",
-            "image": "/images/WorldConcept.png"
-        }    
     ]
-}
+
+    // ],
+
+    // const assets = [
+    //     {
+    //         "id": 1,
+    //         "name": "Dr Egg Logo",
+    //         "image": "/images/DrEggLogo.png"
+    //     }, 
+    //     {
+    //         "id": 2,
+    //         "name": "Dr Egg Logo on Paper",
+    //         "image": "/images/DrEggLogoOnPaper.jpg"
+    //     }, 
+    //     {
+    //         "id": 3,
+    //         "name": "World Concept Image",
+    //         "image": "/images/WorldConcept.png"
+    //     }    
+    // ]

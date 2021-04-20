@@ -7,3 +7,5 @@ export const Lab = () => {
         </div>
     )
 }
+export default Lab
+
