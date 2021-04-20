@@ -7,3 +7,4 @@ export const FarmWorld = () => {
         </div>
     )
 }
+export default FarmWorld

@@ -7,3 +7,5 @@ export const OnlineStore = () => {
         </div>
     )
 }
+export default OnlineStore
+

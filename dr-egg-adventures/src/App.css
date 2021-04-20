@@ -1,6 +1,27 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
+
+.background-img {
+  background-image: url("./images/DrEggLogoOnPaper.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.background-img2 {
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +57,221 @@
     transform: rotate(360deg);
   }
 }
+
+.homeImage {
+  width: 100%;
+  height: auto;
+  /* background-size: cover; */
+  /* background-image: url("./images/DrEggLogoOnPaper.jpg"); */
+}
+
+.enter {
+  position: absolute;
+  bottom: 10%;
+  left: 44%;
+  width: 200px;
+  height: 90px;
+  max-height: auto;
+  max-width:200px;
+
+}
+
+/* @media only screen and (max-width: 600px) {
+  .homeImage {
+    width: 100%
+    }
+} */
+
+.characters:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+/* .imageHolder {
+  background-image: url(../public/images/Lab.png);
+
+} */
+
+.containerWraper{
+  position: relative;
+  width: 100%;
+}
+
+.Lab {
+  width: 100%;
+  height: auto;
+}
+
+.bench {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: auto;
+}
+
+.carlin {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  max-width: 8%;
+  max-height: auto;
+}
+
+.rifraf {
+  position: absolute;
+  bottom: 6%;
+  left: 40%;
+  max-width: 18%;
+  max-height: auto;
+}
+
+.pigeon {
+  position: absolute;
+  bottom: 4%;
+  left: 67%;
+  max-width: 12%;
+  max-height: auto;
+}
+
+.ardash {
+  position: absolute;
+  bottom: 4%;
+  left: 35%;
+  max-width: 30%;
+  max-height: auto;
+}
+
+.cornelia {
+  position: absolute;
+  bottom: 5%;
+  left: 66%;
+  max-width: 28%;
+  max-height: auto;
+}
+
+.DrEgg {
+  position: absolute;
+  bottom: 0%;
+  max-width: 35%;
+  max-height: auto;
+
+}
+
+.DrMoon {
+  position: absolute;
+  bottom: 0%;
+  left: 46%;
+  max-width: 35%;
+  max-height: auto;
+}
+
+.Vivi {
+  position: absolute;
+  left: 20%;
+  bottom: 4%;
+  max-width: 28%;
+  max-height: auto;
+}
+
+.EggDrone {
+  position: absolute;
+  bottom: 10%;
+  left: 85%;
+  max-width: 12%;
+  max-height: auto;
+}
+
+.back {
+  position: fixed;
+  top: 0%;
+  left: 85%;
+  max-width: 12%;
+  max-height: auto;
+}
+
+
+.snake {
+  position: absolute;
+  bottom:0%;
+  left: 88%;
+  max-width: 12%;
+  max-height: auto;
+  
+}
+
+.mapContainer {
+  background-image: url("./images/Map.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.DrEggMap {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  max-width: 15%;
+  max-height: auto;
+
+}
+
+.resources {
+  position: absolute;
+  left: 35%;
+  bottom: 15%;
+  background-color: blue;
+  color: white;
+  border-color: blue;
+  width: 100px;
+  height: 50px;
+}
+
+.worlds {
+  position: absolute;
+  left: 75%;
+  bottom: 32%;
+  background-color: blue;
+  color: white;
+  border-color: blue;
+  width: 25%;
+  height: 42%;
+}
+
+.brightness img:hover {
+  opacity: .5;
+  color: yellow;
+}
+
+.TeacherButton {
+  position: absolute;
+  top: 5;
+  top: 50%;
+}
+.StudentButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+
+/* .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 1554px;
+  width: 100%;
+
+  background-image: url("./images/DrEggLogoOnPaper.jpg");
+  background-size: cover;
+
+} */

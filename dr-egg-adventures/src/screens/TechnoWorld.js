@@ -7,3 +7,5 @@ export const TechnoWorld = () => {
         </div>
     )
 }
+export default TechnoWorld
+
