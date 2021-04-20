@@ -7,3 +7,5 @@ export const SlumWorld = () => {
         </div>
     )
 }
+export default SlumWorld
+

@@ -1,14 +1,100 @@
 import './App.css';
+import './external.css'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Home from './screens/Home.js'
+import Map from './screens/Map.js'
+import Game from './screens/Game.js'
+import Contact from './screens/Contact.js'
+import Characters from './screens/Characters.js'
+import FarmWorld from './screens/FarmWorld.js'
+import SlumWorld from './screens/SlumWorld.js'
+import TechnoWorld from './screens/TechnoWorld.js'
+import Lab from './screens/Lab.js'
+import OnlineStore from './screens/OnlineStore.js'
+import Trailer from './screens/Trailer.js'
+import Resources from './screens/Resources.js'
+import IndividualCharacters from './screens/IndividualCharacters.js'
+import Worlds from './screens/Worlds.js'
+
+
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
 
-        <h3> Dr Egg Adventures</h3>
-       
-      </header>
-    </div>
+  
+  return (
+    <Router>
+      <Switch>
+
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+        <Route  path="/map">
+          <Map />
+        </Route>
+
+        <Route path="/game">
+          <Game />
+        </Route>
+
+        <Route path="/contact">
+          <Contact />
+        </Route>
+
+        <Route path="/All">
+          <Characters />
+        </Route>
+
+        <Route path="/characters">
+          <IndividualCharacters />
+        </Route>
+
+        
+        <Route path="/worlds">
+          <Worlds />
+        </Route>
+
+        <Route path="/FarmWorld">
+          <FarmWorld />
+        </Route>
+
+        <Route path="/SlumWorld">
+          <SlumWorld />
+        </Route>
+
+        <Route path="/TechnoWorld">
+          <TechnoWorld />
+        </Route>
+
+        <Route path="/lab">
+          <Lab />
+        </Route>
+
+        <Route path="/OnlineStore">
+          <OnlineStore />
+        </Route>
+
+        <Route path="/trailer">
+          <Trailer />
+        </Route>
+
+        <Route path="/resources">
+          <Resources />
+        </Route>
+
+        
+        {/* <Route path="/chatbot">
+          <Chatbot />
+        </Route> */}
+
+
+      
+      </Switch>
+    </Router>
 
     
   );
