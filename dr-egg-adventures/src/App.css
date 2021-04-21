@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .background-img {
@@ -20,6 +21,7 @@
   width: 100%;
   height: 100vh;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -70,7 +72,8 @@
   width: 200px;
   height: 90px;
   max-height: auto;
-  max-width: 200px;
+  max-width:200px;
+
 }
 
 /* @media only screen and (max-width: 600px) {
@@ -82,7 +85,7 @@
 .characters:hover {
   -ms-transform: scale(1.2); /* IE 9 */
   -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2);
+  transform: scale(1.2); 
 }
 
 /* .imageHolder {
@@ -90,7 +93,7 @@
 
 } */
 
-.containerWraper {
+.containerWraper{
   position: relative;
   width: 100%;
 }
@@ -152,6 +155,7 @@
   bottom: 0%;
   max-width: 35%;
   max-height: auto;
+
 }
 
 .DrMoon {
@@ -186,12 +190,14 @@
   max-height: auto;
 }
 
+
 .snake {
   position: absolute;
-  bottom: 0%;
+  bottom:0%;
   left: 88%;
   max-width: 12%;
   max-height: auto;
+  
 }
 
 .mapContainer {
@@ -207,6 +213,7 @@
   left: 10%;
   max-width: 15%;
   max-height: auto;
+
 }
 
 .resources {
@@ -232,7 +239,7 @@
 }
 
 .brightness img:hover {
-  opacity: 0.5;
+  opacity: .5;
   color: yellow;
 }
 
@@ -247,149 +254,6 @@
   left: 50%;
 }
 
-/* Worlds Screen Styles */
-
-.world-image {
-  background-image: url("./images/background-texture.jpg");
-  background-size: cover;
-  background-position: top;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  position: relative;
-  align-self: center;
-  display: flex;
-}
-
-.technoworld {
-  max-width: 21%;
-  max-height: auto;
-}
-
-.farmworld {
-  max-width: 21%;
-  max-height: auto;
-}
-
-.slumworld {
-  max-width: 21.35%;
-  max-height: auto;
-}
-
-.home-button {
-  max-width: 100%;
-  max-height: auto;
-}
-
-.hb-container {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  padding: 20px;
-}
-
-.techno-text-container {
-  position: absolute;
-  left: 41%;
-}
-
-.farm-text-container {
-  position: absolute;
-  left: 61%;
-}
-
-.slum-text-container {
-  position: absolute;
-  left: 35%;
-}
-
-.world-text {
-  max-width: 50%;
-  max-height: auto;
-}
-
-.back-icon {
-  max-width: 70%;
-  max-height: auto;
-}
-
-.world-text-farm {
-  max-width: 60%;
-  max-height: auto;
-}
-
-.techno-exit {
-  width: 3%;
-  position: absolute;
-  left: 45%;
-  bottom: 93%;
-}
-
-.farm-exit {
-  width: 3.5%;
-  position: absolute;
-  left: 54%;
-  bottom: 93%;
-}
-
-.slum-exit {
-  width: 3%;
-  position: absolute;
-  left: 3%;
-  bottom: 93%;
-}
-
-.lab-container {
-  position: absolute;
-  height: auto;
-  width: 100%;
-  display: flex;
-}
-
-.lab-button {
-  position: absolute;
-  width: 35%;
-  height: auto;
-  top: 88%;
-  left: 33%;
-}
-
-.techno-text {
-  position: absolute;
-  bottom: 3%;
-  left: 7%;
-  width: 290px;
-  height: 480px;
-  text-align: center;
-}
-
-.farm-text {
-  position: absolute;
-  bottom: 3%;
-  left: 8%;
-  width: 290px;
-  height: 480px;
-  text-align: center;
-}
-
-.slum-text {
-  position: absolute;
-  bottom: 3%;
-  left: 2%;
-  width: 290px;
-  height: 480px;
-  text-align: center;
-}
-
-.world-title {
-  font-size: 30px;
-}
-
-/* Lab Screen Styles */
 
 /* .container {
   text-align: center;
