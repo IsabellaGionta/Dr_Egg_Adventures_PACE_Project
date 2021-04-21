@@ -19,15 +19,6 @@ import Back from '../images/btn-Back.png';
 import Snake from '../images/Snake.png';
 
 
-
-
-
-
-
-
-
-
-
 // import items from '../server/dummy.json';
 
 const Characters = () => {
@@ -44,7 +35,7 @@ const Characters = () => {
       let history = useHistory();
 
       const CharcaterEventHandler = () => {
-        history.push('/characters')
+        history.push('/each-character')
         console.log("page has been redirected to individual 'Character' pages") // unit test
       }
 
@@ -63,8 +54,9 @@ const Characters = () => {
                  {items.image}
             })} */}
           <div className="background-img2"> 
-          <img className="DrEgg characters" src={DrEgg} onClick={CharcaterEventHandler} alt="DrEgg"/>
           <img className="ardash characters" src={Ardash} onClick={CharcaterEventHandler} alt="Ardash"/>
+          <img className="DrEgg characters" src={DrEgg} onClick={CharcaterEventHandler} alt="DrEgg"/>
+
           <img className="DrMoon characters" src={DrMoon} onClick={CharcaterEventHandler} alt="DrMoon"/>
           <img className="Vivi characters" src={Vivi} onClick={CharcaterEventHandler} alt="Vivi"/>
           <img className="cornelia characters" src={Cornelia} onClick={CharcaterEventHandler} alt="Cornelia"/>
@@ -77,10 +69,9 @@ const Characters = () => {
           <img className="EggDrone characters" src={EggDrone} onClick={CharcaterEventHandler} alt="EggDrone"/>
 
           <img className="back characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-          <img className="snake" src={Snake} alt="Snake"/>
-
-
-
+          <a href="/chatbot">
+           <img className="snake" src={Snake} alt="Snake"/>  
+           </a>
 
           </div>
 
