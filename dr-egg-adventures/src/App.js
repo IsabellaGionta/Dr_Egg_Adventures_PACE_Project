@@ -16,11 +16,7 @@ import Trailer from './screens/Trailer.js'
 import Resources from './screens/Resources.js'
 import IndividualCharacters from './screens/IndividualCharacters.js'
 import Worlds from './screens/Worlds.js'
-
-
-
-
-
+import ChatBotScreen from './screens/ChatbotScreen.js'
 
 function App() {
 
@@ -45,11 +41,11 @@ function App() {
           <Contact />
         </Route>
 
-        <Route path="/All">
+        <Route path="/characters">
           <Characters />
         </Route>
 
-        <Route path="/characters">
+        <Route path="/each-character">
           <IndividualCharacters />
         </Route>
 
@@ -58,15 +54,15 @@ function App() {
           <Worlds />
         </Route>
 
-        <Route path="/FarmWorld">
+        <Route path="/farmWorld">
           <FarmWorld />
         </Route>
 
-        <Route path="/SlumWorld">
+        <Route path="/slumWorld">
           <SlumWorld />
         </Route>
 
-        <Route path="/TechnoWorld">
+        <Route path="/technoWorld">
           <TechnoWorld />
         </Route>
 
@@ -74,7 +70,7 @@ function App() {
           <Lab />
         </Route>
 
-        <Route path="/OnlineStore">
+        <Route path="/online-store">
           <OnlineStore />
         </Route>
 
@@ -87,9 +83,9 @@ function App() {
         </Route>
 
         
-        {/* <Route path="/chatbot">
-          <Chatbot />
-        </Route> */}
+        <Route path="/chatbot">
+          <ChatBotScreen />
+        </Route>
 
 
       

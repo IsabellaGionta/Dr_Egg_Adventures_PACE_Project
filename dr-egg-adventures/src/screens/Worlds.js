@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
+import WorldsImage from '../images/worlds-image.png';
+ 
 
 export const Worlds = () => {
     return (
-        <div>
-            <h1> Worlds page </h1>            
-        </div>
+        <h1> Worlds Page </h1>
     )
 }
 export default Worlds

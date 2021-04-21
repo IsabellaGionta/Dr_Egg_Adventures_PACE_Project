@@ -18,7 +18,10 @@ export const Home = () => {
   }
     return (
             <div className="background-img"> 
-              <Button onClick={EnterWebPortalHandler} variant="primary" className="enter"> ENTER </Button>            
+              <Button onClick={EnterWebPortalHandler} variant="primary" className="Enter-Button"> ENTER </Button>    
+              <img src="./images/Map.png" alt="map" />        
+            
+            
               </div> 
     )
 
