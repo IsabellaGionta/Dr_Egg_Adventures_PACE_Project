@@ -19,14 +19,16 @@ export const Resources = () => {
       }
 
     return (
-        <div>
+        <div className="background-container">
+          <div className="buttons">
             <img className="TeacherButton" src={TeacherDownloadButton} onClick={() => { alert('Downloading Teacher resources!')}} alt="TeacherDownloadButton"/>
             <img className="StudentButton" src={StudentDownloadButton} onClick={() => { alert('Downloading Student resources!')}} alt="StudentDownloadButton"/>
-
+          </div>
             <img className="back characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-          <img className="snake" src={Snake} alt="Snake"/>
-
-        </div>
+            <a href="/chatbot">
+           <img className="snake" src={Snake} alt="Snake"/>  
+           </a>        
+           </div>
     )
 }
 export default Resources

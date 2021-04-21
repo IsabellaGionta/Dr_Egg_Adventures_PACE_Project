@@ -1,22 +1,36 @@
-@font-face {
-  font-family: "polaris";
-  src: url("./fonts/Polaris.woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "museo sans";
-  src: url("./fonts/MuseoSansCyrl-500.woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
+
+@font-face{
+  font-family: Polaris;
+  src: url(./fonts/Polaris.ttf);
+}
+
+@font-face{
+  font-family: Museo-sans;
+  src: url(./fonts/museosans-500.ttf);
+}
+
+
+h1.Title {
+  font-family: Polaris;
+  font-size: 4vh;
+}
+
+h2 {
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+/* h1 {
+  font-family: Polaris;
+  font-size: 4vh;
+
+} */
 
 .background-img {
   background-image: url("./images/DrEggLogoOnPaper.jpg");
@@ -33,6 +47,57 @@
   background-position: center;
   width: 100%;
   height: 100vh;
+}
+
+.background-container {
+  background-image: url("./images/PaperBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  align-items: center;
+}
+
+.TeacherButton {
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.StudentButton {
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1007px) {
+  .TeacherButton {
+    position: absolute;
+    left: 900px;;
+  }
+
+
+  
+}
+
+
+@media screen and (max-width: 1007px) {
+  .TeacherButton {
+    max-width: 100%;
+
+  }
+  .StudentButton {
+    max-width: 100%;
+  }
 }
 
 .App-logo {
@@ -77,14 +142,31 @@
   /* background-image: url("./images/DrEggLogoOnPaper.jpg"); */
 }
 
-.enter {
-  position: absolute;
+.Enter-Button {
+  /* position: absolute;
   bottom: 10%;
   left: 44%;
   width: 200px;
   height: 90px;
   max-height: auto;
-  max-width: 200px;
+  max-width:200px; */
+
+  width: 100%;
+  max-width: 30vh;
+  max-height: auto;
+  padding: 1vh;
+  margin: 1vh auto;
+  display: block;
+  border-radius: 3vh;
+  border-width: 1vh;
+  border-color: #83CFB1;
+  font-family: Polaris;
+  font-size: 4vh;
+  color: #367771;
+  position: absolute;
+  bottom: 0%;
+  left: 85vh;
+
 }
 
 /* @media only screen and (max-width: 600px) {
@@ -94,9 +176,9 @@
 } */
 
 .characters:hover {
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
 
 /* .imageHolder {
@@ -104,7 +186,7 @@
 
 } */
 
-.containerWraper {
+.containerWraper{
   position: relative;
   width: 100%;
 }
@@ -147,15 +229,15 @@
 
 .ardash {
   position: absolute;
-  bottom: 4%;
+  bottom: 0%;
   left: 35%;
-  max-width: 30%;
+  max-width: 28%;
   max-height: auto;
 }
 
 .cornelia {
   position: absolute;
-  bottom: 5%;
+  bottom: 0%;
   left: 66%;
   max-width: 28%;
   max-height: auto;
@@ -164,22 +246,23 @@
 .DrEgg {
   position: absolute;
   bottom: 0%;
-  max-width: 35%;
+  max-width: 28%;
   max-height: auto;
+
 }
 
 .DrMoon {
   position: absolute;
   bottom: 0%;
-  left: 46%;
-  max-width: 35%;
+  left: 50%;
+  max-width: 28%;
   max-height: auto;
 }
 
 .Vivi {
   position: absolute;
-  left: 20%;
-  bottom: 4%;
+  left: 17%;
+  bottom: 1%;
   max-width: 28%;
   max-height: auto;
 }
@@ -200,19 +283,30 @@
   max-height: auto;
 }
 
+
 .snake {
   position: absolute;
-  bottom: 0%;
+  bottom:0%;
   left: 88%;
   max-width: 12%;
   max-height: auto;
+  
 }
 
-.mapContainer {
-  background-image: url("./images/Map.png");
+.MapSnake {
+  position: absolute;
+  bottom:4%;
+  left: 77%;
+  max-width: 12%;
+  max-height: auto;
+  
+}
+
+.Container {
+  background-image: url("./images/PaperBackground.jpg");
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .DrEggMap {
@@ -221,6 +315,116 @@
   left: 10%;
   max-width: 15%;
   max-height: auto;
+
+}
+
+.CharactersLink {
+  border-color: blue;
+
+}
+
+.MapImage {
+  width: 100%;
+  height: 100vh;
+}
+
+.Contact-Background-Container {
+  background-image: url("./images/PaperBackground.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.Characters-Background-Container {
+  background-image: url("./images/PaperBackground.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.Character-Styling {
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  max-width: 28%;
+  max-height: auto;
+}
+
+
+
+
+.GamesHeading {
+  position: absolute;
+  top: 44%;
+  left: 46%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.ResourcesHeading {
+  position: absolute;
+  top: 83%;
+  left: 16%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+
+}
+
+.CharactersHeading {
+  position: absolute;
+  top: 70%;
+  left: 6%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.ContactHeading {
+  position: absolute;
+  top: 88%;
+  left: 89%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.LabHeading {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    font-weight: bold;
+    font-family: Polaris;
+    font-size: 3vh;
+}
+
+.WorldsHeading {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    font-weight: bold;
+    font-family: Polaris;
+    font-size: 3vh;
+}
+
+.TrailerHeading {
+    position: absolute;
+    top: 80%;
+    left: 38%;
+    font-weight: bold;
+    font-family: Polaris;
+    font-size: 3vh;
+}
+
+
+.OnlineStoreHeading {
+  position: absolute;
+  top: 74%;
+  left: 46%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
 }
 
 .resources {
@@ -246,11 +450,67 @@
 }
 
 .brightness img:hover {
-  opacity: 0.5;
+  opacity: .5;
   color: yellow;
 }
 
-.TeacherButton {
+.messageBox {
+  width: 100%;
+  height: 20vh;
+}
+
+
+.form {
+  width: 100%;
+  max-width: 100vh;
+  padding: 100px 15px;
+  margin: auto;
+  height: 100%;
+
+}
+.FormGroup {
+  padding: 15px;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.label {
+  margin: 8px 0;
+  font-family: Museo-sans;
+  font-size: 2vh;
+}
+
+.ContactButton {
+  width: 100%;
+  max-width: 24vh;
+  max-height: auto;
+  padding: 1vh;
+  margin: 1vh auto;
+  display: block;
+  border-radius: 3vh;
+  border-width: 1vh;
+  border-color: #83CFB1;
+  font-family: Polaris;
+  font-size: 4vh;
+  color: #367771;
+
+}
+
+.text {
+  max-width: 30%;
+  max-height: auto;
+  font-weight: 9vh;
+  text-align: center;
+
+}
+/* .TeacherButton {
   position: absolute;
   top: 5;
   top: 50%;
@@ -259,251 +519,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-}
+} */
 
-/* Worlds Screen Styles */
-
-.world-image {
-  background-image: url("./images/background-texture.jpg");
-  background-size: cover;
-  background-position: top;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  position: relative;
-  align-self: center;
-  display: flex;
-}
-
-.technoworld {
-  max-width: 21%;
-  max-height: auto;
-}
-
-.farmworld {
-  max-width: 21%;
-  max-height: auto;
-}
-
-.slumworld {
-  max-width: 21.35%;
-  max-height: auto;
-}
-
-.home-button {
-  max-width: 100%;
-  max-height: auto;
-}
-
-.hb-container {
-  position: absolute;
-  top: 0px;
-  right: 30px;
-  padding: 20px;
-}
-
-.techno-text-container {
-  position: absolute;
-  left: 41%;
-}
-
-.farm-text-container {
-  position: absolute;
-  left: 61%;
-}
-
-.slum-text-container {
-  position: absolute;
-  left: 35%;
-}
-
-.world-text {
-  max-width: 50%;
-  max-height: auto;
-}
-
-.back-icon {
-  max-width: 70%;
-  max-height: auto;
-}
-
-.world-text-farm {
-  max-width: 60%;
-  max-height: auto;
-}
-
-.techno-exit {
-  width: 3%;
-  position: absolute;
-  left: 45%;
-  bottom: 93%;
-}
-
-.farm-exit {
-  width: 3.5%;
-  position: absolute;
-  left: 54%;
-  bottom: 93%;
-}
-
-.slum-exit {
-  width: 3%;
-  position: absolute;
-  left: 3%;
-  bottom: 93%;
-}
-
-.lab-container {
-  position: absolute;
-  height: auto;
-  width: 100%;
-  display: flex;
-}
-
-.lab-button {
-  position: absolute;
-  width: 35%;
-  height: auto;
-  top: 88%;
-  left: 33%;
-}
-
-.techno-text {
-  position: absolute;
-  bottom: 3%;
-  left: 7%;
-  width: 290px;
-  height: 480px;
-  text-align: center;
-}
-
-.farm-text {
-  position: absolute;
-  bottom: 3%;
-  left: 8%;
-  width: 290px;
-  height: 480px;
-  text-align: center;
-}
-
-.slum-text {
-  position: absolute;
-  bottom: 3%;
-  left: 2%;
-  width: 290px;
-  height: 480px;
-  text-align: center;
-}
-
-.world-title {
-  font-size: 30px;
-  font-family: "polaris";
-  font-weight: normal;
-}
-
-.info-text {
-  font-family: "museo sans";
-  font-weight: normal;
-  text-align: left;
-}
-
-.snake-container {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  padding: 20px;
-}
-
-.chatbot {
-  max-width: 100%;
-  max-height: auto;
-}
-
-.snake-container img:hover {
-  opacity: 0.5;
-  color: yellow;
-}
-
-/* Lab Screen Styles */
-
-.bench {
-  max-width: 100%;
-  max-height: auto;
-}
-
-.dregg {
-  max-width: 50%;
-  max-height: auto;
-}
-
-.drmoon {
-  max-width: 50%;
-  max-height: auto;
-}
-
-.button-container {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  right: 78%;
-  bottom: 42%;
-}
-
-.lab-buttons {
-  max-width: 70%;
-  max-height: auto;
-  padding: 7px;
-}
-
-.bb-container {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.bench-button {
-  max-width: 35%;
-  max-height: auto;
-  padding: 10px;
-}
-
-.tool-container {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  bottom: 10%;
-}
-
-.tools {
-  max-width: 15%;
-  max-height: auto;
-  padding: 40px;
-}
-
-.tools:hover {
-  transform: scale(1.5);
-}
-
-.back-container {
-  position: absolute;
-  width: 100%;
-  padding: 20px;
-}
-
-.back {
-  max-width: 100%;
-  max-height: auto;
-  top: 5%;
-  right: 3%;
-}
 
 /* .container {
   text-align: center;
@@ -525,3 +542,30 @@
   background-size: cover;
 
 } */
+
+.OnlineStore-Background-Container {
+  background-image: url("./images/PaperBackground.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.OnlineStore-Button {
+  width: 100%;
+  max-width: 50vh;
+  max-height: auto;
+  padding: 1vh;
+  margin: 1vh auto;
+  display: block;
+  border-radius: 3vh;
+  border-width: 1vh;
+  border-color: #83CFB1;
+  font-family: Polaris;
+  font-size: 4vh;
+  color: #367771;
+  position: absolute;
+  top: 45vh;
+  left: 35vh;
+}
