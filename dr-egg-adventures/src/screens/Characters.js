@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import getAll from '../services/characters.js';
 import { useHistory } from "react-router-dom";
 import IndividualCharacters from './IndividualCharacters.js';
+import MetaTags from 'react-meta-tags';
 import '../App.css';
 import Carlin from '../images/Carlin.png';
 import Lab from '../images/Lab.png';

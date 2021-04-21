@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from 'react-bootstrap';
 import { useHistory } from "react-router-dom";
 import '../App.css';
+import MetaTags from 'react-meta-tags';
 import logo from '../images/DrEggLogoOnPaper.jpg';
 
 
