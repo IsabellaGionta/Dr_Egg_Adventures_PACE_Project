@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "polaris";
+  src: url("./fonts/Polaris.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "museo sans";
+  src: url("./fonts/MuseoSansCyrl-500.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -287,8 +301,8 @@
 
 .hb-container {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  top: 0px;
+  right: 30px;
   padding: 20px;
 }
 
@@ -387,9 +401,109 @@
 
 .world-title {
   font-size: 30px;
+  font-family: "polaris";
+  font-weight: normal;
+}
+
+.info-text {
+  font-family: "museo sans";
+  font-weight: normal;
+  text-align: left;
+}
+
+.snake-container {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 20px;
+}
+
+.chatbot {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.snake-container img:hover {
+  opacity: 0.5;
+  color: yellow;
 }
 
 /* Lab Screen Styles */
+
+.bench {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.dregg {
+  max-width: 50%;
+  max-height: auto;
+}
+
+.drmoon {
+  max-width: 50%;
+  max-height: auto;
+}
+
+.button-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  right: 78%;
+  bottom: 42%;
+}
+
+.lab-buttons {
+  max-width: 70%;
+  max-height: auto;
+  padding: 7px;
+}
+
+.bb-container {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.bench-button {
+  max-width: 35%;
+  max-height: auto;
+  padding: 10px;
+}
+
+.tool-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  bottom: 10%;
+}
+
+.tools {
+  max-width: 15%;
+  max-height: auto;
+  padding: 40px;
+}
+
+.tools:hover {
+  transform: scale(1.5);
+}
+
+.back-container {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+}
+
+.back {
+  max-width: 100%;
+  max-height: auto;
+  top: 5%;
+  right: 3%;
+}
 
 /* .container {
   text-align: center;
