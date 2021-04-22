@@ -28,11 +28,10 @@ export const Lab = () => {
     }
 
     return (
-        <div className = "background-img2">
+        <div className = "Lab-Background-Container">
             <div className = "bb-container">
                 <img className="bench-button" src={benchbutton} alt = "bench button"/>
             </div>
-            <img className = "bench" src = {bench} alt = "lab bench"/> 
             <img className="drmoon" src={DrMoon} alt = "dr moon"/>
             <img className="dregg" src={DrEgg} alt = "dr egg"/>
             <div className = "button-container">
@@ -41,17 +40,22 @@ export const Lab = () => {
                 <img className="lab-buttons" src={fanfic} alt = "fanfiction button"/>
                 <img className="lab-buttons" src={inv} alt = "inventory button"/>
                 <img className="lab-buttons" src={biogoo} alt = "biogoo button"/>
+                
             </div>
+            <img className = "bench" src = {bench} alt = "lab bench"/> 
+
+
             <div className = "tool-container">
                 <img className="tools" src={goggles} alt = "goggles"/>
                 <img className="tools" src={hoverboard} alt = "hoverboard"/>
                 <img className="tools" src={teletube} alt = "teletube"/>
             </div>  
+
             <div className = "snake-container">
                 <img className = "chatbot" src = {snake} alt = "chatbot" /> 
             </div>
             <div className = "back-container"> 
-                <img className = "back" src = {button} alt = "home button" onClick = {homeNav}/>  
+                <img className = "Back-Button" src = {button} alt = "home button" onClick = {homeNav}/>  
             </div>
         </div>
     )

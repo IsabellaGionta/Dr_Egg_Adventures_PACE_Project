@@ -21,9 +21,9 @@ export const OnlineStore = () => {
           <div className="OnlineStore-Container">
             <Button className="OnlineStore-Button" onClick={() => { alert('Redirecting to Dr Egg Adventures Online Store Page!')}} >ENTER OUR ONLINE STORE </Button>
           
-            <img className="back characters" src={Back} onClick={BackEventHandler} alt="Back"/>
+            <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
             <a href="/chatbot">
-                <img className="snake" src={Snake} alt="Snake"/>  
+                <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
            </a>
         </div>
             
