@@ -24,9 +24,9 @@ export const Resources = () => {
             <img className="TeacherButton" src={TeacherDownloadButton} onClick={() => { alert('Downloading Teacher resources!')}} alt="TeacherDownloadButton"/>
             <img className="StudentButton" src={StudentDownloadButton} onClick={() => { alert('Downloading Student resources!')}} alt="StudentDownloadButton"/>
           </div>
-            <img className="back characters" src={Back} onClick={BackEventHandler} alt="Back"/>
+            <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
             <a href="/chatbot">
-           <img className="snake" src={Snake} alt="Snake"/>  
+           <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
            </a>        
            </div>
     )
