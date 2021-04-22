@@ -14,16 +14,14 @@ export const Home = () => {
 
   const EnterWebPortalHandler = () => {
     history.push('/map')
-    console.log("page has been redirected to 'Character' page") // unit test
+    console.log("page has been redirected to 'Character' page")
   }
     return (
-            <div className="background-img"> 
-              <Button onClick={EnterWebPortalHandler} variant="primary" className="Enter-Button"> ENTER </Button>    
+            <div className="Home-Background-Container"> 
+              <Button onClick={EnterWebPortalHandler} variant="primary" className="Home-Enter-Button"> ENTER </Button>    
               <img src="./images/Map.png" alt="map" />        
-            
-            
-              </div> 
-    )
+            </div> 
+          )
 
 }
 export default Home

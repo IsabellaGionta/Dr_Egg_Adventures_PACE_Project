@@ -16,11 +16,6 @@
 }
 
 
-h1.Title {
-  font-family: Polaris;
-  font-size: 4vh;
-}
-
 h2 {
   font-family: Polaris;
   font-size: 3vh;
@@ -32,7 +27,9 @@ h2 {
 
 } */
 
-.background-img {
+/* Home Screen Styling */
+
+.Home-Background-Container {
   background-image: url("./images/DrEggLogoOnPaper.jpg");
   background-size: cover;
   background-position: center;
@@ -41,7 +38,85 @@ h2 {
   position: relative;
 }
 
-.background-img2 {
+.Home-Enter-Button {
+  width: 100%;
+  max-width: 30vh;
+  max-height: auto;
+  padding: 1vh;
+  margin: 1vh auto;
+  display: block;
+  border-radius: 3vh;
+  border-width: 1vh;
+  border-color: #83CFB1;
+  font-family: Polaris;
+  font-size: 4vh;
+  color: #367771;
+  position: absolute;
+  bottom: 0%;
+  left: 85vh;
+}
+
+/* Individual Character Screen Styling */
+
+.Individual-Character-Styling {
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  max-width: 28%;
+  max-height: auto;
+}
+
+.Paper-Textbox {
+  width: 100%;
+  max-width: 25%;
+  transform: scaleX(-1);
+  position: absolute;
+  left: 44%;
+  top: 15%;
+}
+
+.Individual-Character-Name {
+  position: absolute;
+  left: 54%;
+  top: 20%;
+}
+
+.Indivdual-Character-Text1 {
+  width: 100%;
+  max-width: 20%;
+  max-height: auto;
+  position: absolute;
+  left: 48%;
+  top: 27%;
+  font-family: Museo-sans;
+  font-size: 2vh;
+  text-align: left;
+}
+
+.Indivdual-Character-Text2 {
+  width: 100%;
+  max-width: 20%;
+  max-height: auto;
+  position: absolute;
+  left: 48%;
+  top: 40%;
+  font-family: Museo-sans;
+  font-size: 2vh;
+  text-align: left;
+}
+
+.Individual-Character-Table {
+  position: absolute;
+  left: 48%;
+  top: 60%;
+  width: 100%;
+  max-width: 20%;
+  max-height: auto;
+}
+
+
+
+.Character-Background-Container {
   background-image: url("./images/Lab.png");
   background-size: cover;
   background-position: center;
@@ -142,33 +217,6 @@ h2 {
   /* background-image: url("./images/DrEggLogoOnPaper.jpg"); */
 }
 
-.Enter-Button {
-  /* position: absolute;
-  bottom: 10%;
-  left: 44%;
-  width: 200px;
-  height: 90px;
-  max-height: auto;
-  max-width:200px; */
-
-  width: 100%;
-  max-width: 30vh;
-  max-height: auto;
-  padding: 1vh;
-  margin: 1vh auto;
-  display: block;
-  border-radius: 3vh;
-  border-width: 1vh;
-  border-color: #83CFB1;
-  font-family: Polaris;
-  font-size: 4vh;
-  color: #367771;
-  position: absolute;
-  bottom: 0%;
-  left: 85vh;
-
-}
-
 /* @media only screen and (max-width: 600px) {
   .homeImage {
     width: 100%
@@ -196,14 +244,14 @@ h2 {
   height: auto;
 }
 
-.bench {
+.Character-Bench {
   position: absolute;
   bottom: 0%;
   width: 100%;
   height: auto;
 }
 
-.carlin {
+.Carlin {
   position: absolute;
   bottom: 10%;
   left: 20%;
@@ -211,7 +259,7 @@ h2 {
   max-height: auto;
 }
 
-.rifraf {
+.Rifraf {
   position: absolute;
   bottom: 6%;
   left: 40%;
@@ -219,7 +267,7 @@ h2 {
   max-height: auto;
 }
 
-.pigeon {
+.Pigeon {
   position: absolute;
   bottom: 4%;
   left: 67%;
@@ -227,7 +275,7 @@ h2 {
   max-height: auto;
 }
 
-.ardash {
+.Ardash {
   position: absolute;
   bottom: 0%;
   left: 35%;
@@ -235,7 +283,7 @@ h2 {
   max-height: auto;
 }
 
-.cornelia {
+.Cornelia {
   position: absolute;
   bottom: 0%;
   left: 66%;
@@ -275,7 +323,7 @@ h2 {
   max-height: auto;
 }
 
-.back {
+.Back-Button {
   position: fixed;
   top: 0%;
   left: 85%;
@@ -284,22 +332,27 @@ h2 {
 }
 
 
-.snake {
+.Chatbot-Snake {
   position: absolute;
   bottom:0%;
   left: 88%;
   max-width: 12%;
   max-height: auto;
-  
 }
 
-.MapSnake {
+.Map-Snake {
   position: absolute;
   bottom:4%;
   left: 77%;
   max-width: 12%;
   max-height: auto;
-  
+}
+
+.Map-Container:hover {
+  outline-color: red;
+  border: 1px dolid;
+
+
 }
 
 .Container {
@@ -328,13 +381,6 @@ h2 {
   height: 100vh;
 }
 
-.Contact-Background-Container {
-  background-image: url("./images/PaperBackground.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-}
-
 .Characters-Background-Container {
   background-image: url("./images/PaperBackground.jpg");
   background-size: cover;
@@ -342,16 +388,10 @@ h2 {
   height: 100vh;
 }
 
-.Character-Styling {
-  position: absolute;
-  top: 0%;
-  left: 20%;
-  max-width: 28%;
-  max-height: auto;
+table, th, td{
+  border: solid;
+
 }
-
-
-
 
 .GamesHeading {
   position: absolute;
@@ -372,19 +412,19 @@ h2 {
 
 }
 
-.CharactersHeading {
+.ContactHeading {
   position: absolute;
-  top: 70%;
-  left: 6%;
+  top: 88%;
+  left: 89%;
   font-weight: bold;
   font-family: Polaris;
   font-size: 3vh;
 }
 
-.ContactHeading {
+.CharactersHeading {
   position: absolute;
-  top: 88%;
-  left: 89%;
+  top: 70%;
+  left: 6%;
   font-weight: bold;
   font-family: Polaris;
   font-size: 3vh;
@@ -454,13 +494,28 @@ h2 {
   color: yellow;
 }
 
-.messageBox {
+/* Contact Screen Styling  */
+
+.Contact-Background-Container {
+  background-image: url("./images/PaperBackground.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+h1.Contact-Title {
+  font-family: Polaris;
+  font-size: 4vh;
+}
+
+
+.Contact-MessageBox {
   width: 100%;
   height: 20vh;
 }
 
 
-.form {
+.Contact-Form {
   width: 100%;
   max-width: 100vh;
   padding: 100px 15px;
@@ -468,7 +523,7 @@ h2 {
   height: 100%;
 
 }
-.FormGroup {
+.Contact-FormGroup {
   padding: 15px;
 }
 input {
@@ -481,13 +536,13 @@ input {
   box-sizing: border-box;
 }
 
-.label {
+.Contact-Label {
   margin: 8px 0;
   font-family: Museo-sans;
   font-size: 2vh;
 }
 
-.ContactButton {
+.Contact-Button {
   width: 100%;
   max-width: 24vh;
   max-height: auto;
@@ -508,8 +563,8 @@ input {
   max-height: auto;
   font-weight: 9vh;
   text-align: center;
-
 }
+
 /* .TeacherButton {
   position: absolute;
   top: 5;
