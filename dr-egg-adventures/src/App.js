@@ -17,6 +17,8 @@ import Resources from './screens/Resources.js'
 import IndividualCharacters from './screens/IndividualCharacters.js'
 import Worlds from './screens/Worlds.js'
 import ChatBotScreen from './screens/ChatbotScreen.js'
+import Loading from './screens/LoadingScreen.js'
+
 
 function App() {
 
@@ -85,6 +87,10 @@ function App() {
         
         <Route path="/chatbot">
           <ChatBotScreen />
+        </Route>
+
+        <Route path="/loading">
+          <Loading />
         </Route>
 
 
