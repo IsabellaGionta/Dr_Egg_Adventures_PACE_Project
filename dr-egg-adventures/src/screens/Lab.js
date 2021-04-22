@@ -18,9 +18,6 @@ import benchbutton from '../images/bench-button.png';
 import goggles from '../images/Goggle.png';
 import hoverboard from '../images/HoverBoard.png';
 import teletube from '../images/Teletube.png';
-import petri from '../images/PetriDish.png';
-import toolbelt from '../images/Toolbelt.png';
-import wrist from '../images/WristGadget.png';
 
 export const Lab = () => {
 
