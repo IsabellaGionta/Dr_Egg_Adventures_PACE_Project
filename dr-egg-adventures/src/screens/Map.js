@@ -25,12 +25,11 @@ export const Map = () => {
 
   const ChatbotEventHandler = () => {
     <ChatbotScreen />
-
   }
 
     return (
-        <div className="Container">
-          <img className="MapImage" src={map} alt="Map" usemap="#Map" />
+        <div className="Map-Container">
+          <img className="MapImage" src={map} alt="Map" useMap="#Map" />
           <div className="GamesHeading"> GAMES</div>
           <div className="ResourcesHeading"> RESOURCES</div>
           <div className="CharactersHeading"> CHARACTERS </div>
@@ -39,8 +38,6 @@ export const Map = () => {
           <div className="WorldsHeading"> WORLDS </div>
           <div className="TrailerHeading"> TRAILER </div>
           <div className="OnlineStoreHeading"> ONLINE STORE </div>
-
-
 
           <map name="Map" id="Map">
             <area shape="poly" coords="901, 300, 1081, 530, 1085, 600, 665, 574, 901, 300 " href="/game" alt="Game" />
@@ -51,27 +48,11 @@ export const Map = () => {
             <area  shape="poly" coords="1570, 650, 1400, 825, 1100, 825, 1100, 500, 1410, 510 " href="/worlds" alt="World" />
             <area  shape="poly" coords="1450, 250, 1400, 505, 1100, 500, 1150, 200, 1410, 110 " href="/lab" alt="Lab" />
             <area  shape="circle" coords="1000, 730, 65 " href="/online-store" alt="Online Store" />
-
-
-
-
-
-
-
-
           </map>
-          {/* <img className="DrEggMap characters" src={DrEgg} onClick={CharactersEventHandler} alt="DrEgg"/> */}
-          {/* <Button onClick={ResourcesEventHandler} variant="primary" className="resources"> RESOURCES </Button> */}
-          {/* <Button onClick={WorldsEventHandler} variant="primary" className="worlds"> WORLDS </Button>       
-          <div className="brightness">
-            <img className="worlds" src={Worlds} onClick={WorldsEventHandler} alt="Worlds"/>
-            </div>
-           */}
+ 
            <a href="/chatbot">
-           <img className="MapSnake" src={Snake} alt="Snake"/>  
+           <img className="Map-Snake" src={Snake} alt="Snake"/>  
            </a>
-           
-            
             
         </div>
     )

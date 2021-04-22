@@ -2,10 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import getAll from '../services/characters.js';
 import { useHistory } from "react-router-dom";
-import IndividualCharacters from './IndividualCharacters.js';
 import '../App.css';
 import Carlin from '../images/Carlin.png';
-import Lab from '../images/Lab.png';
 import LabBench from '../images/labbench.png';
 import RifRaf from '../images/RifRaf.png';
 import Pigeon from '../images/Pigeon.png';
@@ -24,11 +22,10 @@ import Snake from '../images/Snake.png';
 const Characters = () => {
 
     useEffect(() => {
-        console.log("effect is being run") // unit test
+        console.log("effect is being run") 
         getAll()
         .then (res => {
           console.log(res.data)
-    
         })
       })
 
@@ -36,7 +33,7 @@ const Characters = () => {
 
       const CharcaterEventHandler = () => {
         history.push('/each-character')
-        console.log("page has been redirected to individual 'Character' pages") // unit test
+        console.log("page has been redirected to individual 'Character' pages") 
       }
 
       const BackEventHandler = () => {
@@ -45,48 +42,28 @@ const Characters = () => {
 
 
     return (
-        <div className="ContainerWrapper">
-          {/* <MetaTags>
-            <meta name="viewport" content="width=device-width, initial-scale=1"> 
-            </meta>
-          </MetaTags> */}
-            {/* {items.map( item =>{
-                 {items.image}
-            })} */}
-          <div className="background-img2"> 
-          <img className="ardash characters" src={Ardash} onClick={CharcaterEventHandler} alt="Ardash"/>
-          <img className="DrEgg characters" src={DrEgg} onClick={CharcaterEventHandler} alt="DrEgg"/>
+        <div className="Character-Container">
+          <div className="Character-Background-Container"> 
+            <img className="Ardash characters" src={Ardash} onClick={CharcaterEventHandler} alt="Ardash"/>
+            <img className="DrEgg characters" src={DrEgg} onClick={CharcaterEventHandler} alt="DrEgg"/>
 
-          <img className="DrMoon characters" src={DrMoon} onClick={CharcaterEventHandler} alt="DrMoon"/>
-          <img className="Vivi characters" src={Vivi} onClick={CharcaterEventHandler} alt="Vivi"/>
-          <img className="cornelia characters" src={Cornelia} onClick={CharcaterEventHandler} alt="Cornelia"/>
+            <img className="DrMoon characters" src={DrMoon} onClick={CharcaterEventHandler} alt="DrMoon"/>
+            <img className="Vivi characters" src={Vivi} onClick={CharcaterEventHandler} alt="Vivi"/>
+            <img className="Cornelia characters" src={Cornelia} onClick={CharcaterEventHandler} alt="Cornelia"/>
 
-          <img className="bench" src={LabBench} alt="LabBench"/>
+            <img className="Character-Bench" src={LabBench} alt="LabBench"/>
 
-          <img className="carlin characters" src={Carlin} onClick={CharcaterEventHandler} alt="Carlin"/>
-          <img className="rifraf characters" src={RifRaf} onClick={CharcaterEventHandler} alt="RifRaf"/>
-          <img className="pigeon characters" src={Pigeon} onClick={CharcaterEventHandler} alt="Pigeon"/>
-          <img className="EggDrone characters" src={EggDrone} onClick={CharcaterEventHandler} alt="EggDrone"/>
+            <img className="Carlin characters" src={Carlin} onClick={CharcaterEventHandler} alt="Carlin"/>
+            <img className="Rifraf characters" src={RifRaf} onClick={CharcaterEventHandler} alt="RifRaf"/>
+            <img className="Pigeon characters" src={Pigeon} onClick={CharcaterEventHandler} alt="Pigeon"/>
+            <img className="EggDrone characters" src={EggDrone} onClick={CharcaterEventHandler} alt="EggDrone"/>
 
-          <img className="back characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-          <a href="/chatbot">
-           <img className="snake" src={Snake} alt="Snake"/>  
-           </a>
-
+            <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
+            <a href="/chatbot">
+              <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
+            </a>
           </div>
-
-
-        {/* <img className="characters" src="/images/Ardash.png" onClick={CharcaterEventHandler} alt="Ardash"/>
-        <img className="characters" src="/images/Carlin.png" onClick={CharcaterEventHandler} alt="Carlin"/>
-        <img className="characters" src="/images/Cornelia.png" onClick={CharcaterEventHandler} alt="Cornelia"/>
-        <img className="characters" src="/images/DrEgg.png" onClick={CharcaterEventHandler} alt="DrEgg"/>
-        <img className="characters" src="/images/EggDrone.png" onClick={CharcaterEventHandler} alt="Egg Drone"/>
-        <img className="characters" src="/images/Pigeon.png" onClick={CharcaterEventHandler} alt="Pigeon"/>
-        <img className="characters" src="/images/RifRaf.png" onClick={CharcaterEventHandler} alt="RifRaf"/>
-        <img className="characters" src="/images/Vivi.png" onClick={CharcaterEventHandler} alt="Vivi"/> */}
-
         </div>
-
     )
 }
 
