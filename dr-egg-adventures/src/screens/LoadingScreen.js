@@ -3,7 +3,7 @@
 
 
 import React from 'react';
-import LoadingGif from '../images/Loading2.gif';
+import LoadingGif from '../images/Loading.gif';
 import LoadingScreen from 'react-loading-screen';
 
 export const Loading = () => {

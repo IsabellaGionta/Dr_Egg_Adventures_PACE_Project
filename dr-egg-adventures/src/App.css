@@ -21,6 +21,8 @@
 h2 {
   font-family: Polaris;
   font-size: 3vh;
+  color: white;
+
 }
 
 /* h1 {
@@ -40,7 +42,7 @@ h2 {
 }
 
 .Loading-Background-Container {
-  background-image: url("./images/PaperBackground.jpg");
+  background-image: url("./images/background-texture.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -87,37 +89,53 @@ h2 {
 
 .Individual-Character-Styling {
   position: absolute;
-  top: 0%;
-  left: 20%;
-  max-width: 28%;
+  bottom: 0%;
+  left: 9%;
+  max-width: 25%;
   max-height: auto;
 }
 
-.Paper-Textbox {
+.Blackboard {
   width: 100%;
-  max-width: 25%;
-  transform: scaleX(-1);
-  position: absolute;
-  left: 44%;
-  top: 15%;
+  max-width: 100%;
+  max-height: 100vh;
+  /* transform: scaleX(-1); */
 }
 
-.Individual-Character-Name {
-  position: absolute;
-  left: 54%;
-  top: 20%;
-}
-
-.Indivdual-Character-Text1 {
+.Character-Tool {
+  width: 100%;
   width: 100%;
   max-width: 20%;
   max-height: auto;
   position: absolute;
-  left: 48%;
+  top: 17%;
+  left: 18%;
+}
+
+.Character-Tool:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.Individual-Character-Name {
+  position: absolute;
+  left: 44%;
+  top: 20%;
+}
+
+.Character-Description {
+  width: 100%;
+  max-width: 40%;
+  max-height: auto;
+  position: absolute;
+  left: 42%;
   top: 27%;
   font-family: Museo-sans;
   font-size: 2vh;
   text-align: left;
+  line-height: 30px;
+  color: white;
 }
 
 .Indivdual-Character-Text2 {
@@ -151,8 +169,8 @@ h2 {
   height: 100vh;
 }
 
-.background-container {
-  background-image: url("./images/PaperBackground.jpg");
+.Resource-Background-Container {
+  background-image: url("./images/Lab.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -162,11 +180,12 @@ h2 {
 .buttons {
   position: absolute;
   top: 50%;
+  left: 12%;
   align-items: center;
 }
 
 .TeacherButton {
-  max-width: 100%;
+  max-width: 80%;
   max-height: auto;
   display: block;
   margin-left: auto;
@@ -174,7 +193,7 @@ h2 {
 }
 
 .StudentButton {
-  max-width: 100%;
+  max-width: 80%;
   max-height: auto;
   display: block;
   margin-left: auto;
@@ -391,7 +410,7 @@ h2 {
 }
 
 .Container {
-  background-image: url("./images/PaperBackground.jpg");
+  background-image: url("./images/background-texture.jpg");
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -407,7 +426,6 @@ h2 {
 
 .CharactersLink {
   border-color: blue;
-
 }
 
 .MapImage {
@@ -416,7 +434,7 @@ h2 {
 }
 
 .Characters-Background-Container {
-  background-image: url("./images/PaperBackground.jpg");
+  background-image: url("./images/Lab.png");
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -531,7 +549,7 @@ table, th, td{
 /* Contact Screen Styling  */
 
 .Contact-Background-Container {
-  background-image: url("./images/PaperBackground.jpg");
+  background-image: url("./images/Lab.png");
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -540,6 +558,9 @@ table, th, td{
 h1.Contact-Title {
   font-family: Polaris;
   font-size: 4vh;
+  position: absolute;
+  left: 45%;
+  top: 10%;
 }
 
 
@@ -551,11 +572,27 @@ h1.Contact-Title {
 
 .Contact-Form {
   width: 100%;
-  max-width: 100vh;
+  max-width: 50vh;
   padding: 100px 15px;
   margin: auto;
   height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 25%;
+}
 
+.Contact-Info {
+  font-family: museo sans;
+  position: absolute; 
+  top: 30%;
+  left: 55%;
+  color: white;
+  line-height: 40px;
+  font-size: 2vh;
+}
+
+.indent {
+  text-indent: 19%;
 }
 .Contact-FormGroup {
   padding: 15px;
@@ -579,7 +616,7 @@ input {
 .Contact-Button {
   width: 100%;
   max-width: 24vh;
-  max-height: auto;
+  height: auto;
   padding: 1vh;
   margin: 1vh auto;
   display: block;
@@ -874,7 +911,7 @@ input {
 } */
 
 .OnlineStore-Background-Container {
-  background-image: url("./images/PaperBackground.jpg");
+  background-image: url("./images/Lab.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -897,5 +934,5 @@ input {
   color: #367771;
   position: absolute;
   top: 45vh;
-  left: 35vh;
+  left: 70vh;
 }
