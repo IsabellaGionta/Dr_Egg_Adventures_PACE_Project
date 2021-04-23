@@ -4,7 +4,6 @@ import DrEgg from '../images/DrEgg.png';
 import { useHistory } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 import Worlds from '../images/Worlds.PNG';
-import MapImage from '../images/PaperBackground.jpg';
 import ChatbotScreen from './ChatbotScreen.js'
 
  

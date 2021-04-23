@@ -2,10 +2,12 @@ import React from 'react'
 // import getAll from '../services/characters.js';
 // import { useEffect } from 'react';
 // import characters from '/dummy.js';
-import Ardash from '../images/Ardash.png';
+import Ardash from '../images/Ardash-Cropped.png';
 import Snake from '../images/Snake.png';
 import Back from '../images/btn-Back.png';
-import PaperText from '../images/PaperText.png';
+import Blackboard from '../images/Blackboard.png';
+import HoverBoard from '../images/HoverBoard.png';
+
 import { useHistory } from "react-router-dom";
 
 export const IndividualCharacters = ({item}) => {
@@ -28,48 +30,51 @@ export const IndividualCharacters = ({item}) => {
 
     return (
       <div className="Characters-Background-Container">
-        <div className="Individual-Character-Container">
           <img className="Individual-Character-Styling"src={Ardash} />
-        </div> 
+          <img className="Character-Tool"src={HoverBoard} />
+
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-        <img className="Paper-Textbox" src={PaperText} alt="Paper" />
+        <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
-        <h2 className="Individual-Character-Name"> ARDASH </h2>
+        <h2 className="Individual-Character-Name"> ARDASH: THE PLUGGED IN PERFECTIONIST </h2>
 
-        <p className="Indivdual-Character-Text1"> 
-          Lorem ipsum dolor sit amet consectetur adipiscing elit at ante facilisi consequat 
-          porttitor hac, penatibus sociosqu lacinia class vulputate curae urna in sollicitudin 
-          leo mi. Ut habitant vitae bibendum 
-        </p>
-        <p className="Indivdual-Character-Text2">
-          sociosqu faucibus in, nascetur tempus mauris ornare 
-          molestie, netus arcu scelerisque proin et. Placerat egestas aliquam morbi imperdiet quis 
-          lacinia proin hendrerit, congue ultricies conubia tellus mus mollis turpis orci pharetra, 
-          curae sem interdum aptent odio phasellus augue.
-        </p>
+        <div className="Character-Description">
+             <p> 
+              CHARACTERISTICS: Ardash is a boy with no belly button and 
+              he is literally perfect. He hails from Techno-world and has
+              been genetically modified so he can’t catch any diseases. He’s
+              a super plugged in and clever kid, and knows heaps about 
+              technology. He’s able to work out scientific and mathematical
+              problems super-fast, making him a great helper in Dr Egg’s
+              experiments. He can also travel at super speeds! Ardash likes
+              to investigate and discover new diseases and is searching for
+              one he could catch. 
+            </p>
+            
+            <p> 
+              VIRTUES: Fast. Speedy. Can do anything with numbers and data.
+            </p>
+            <p>
+              TOOLS: Hover-tube with a built-in compass. Wearable wrist
+              gadget and camera.
+            </p>
+            <p>
+              POWERS: Genetically modified so he can’t catch any diseases.
+              Super eyesight. Super fast. Knows everything about numbers and data!
+            </p>
+            <p>
+              WORLD: Techno-towers
+            </p>
 
-        <table className="Individual-Character-Table">
-          <thead>
-            <tr>
-              <th>World</th>
-              <td> Techno-world </td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th>Virtues</th>
-              <td> Fast. Speedy</td>
-            </tr> 
-            <tr> 
-              <th>Tools</th>
-              <td> Hover-tube </td>
-            </tr>
-            <tr> 
-              <th>Special Powers</th>
-              <td> Genetically modified so he can't catch any diseases. </td>
-            </tr>
-          </tbody>
-        </table>
+            <p>
+              sociosqu faucibus in, nascetur tempus mauris ornare 
+              molestie, netus arcu scelerisque proin et. Placerat egestas aliquam morbi imperdiet quis 
+              lacinia proin hendrerit, congue ultricies conubia tellus mus mollis turpis orci pharetra, 
+              curae sem interdum aptent odio phasellus augue.
+            </p>
+        </div>
+
+        
           
         <a href="/chatbot">
            <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
