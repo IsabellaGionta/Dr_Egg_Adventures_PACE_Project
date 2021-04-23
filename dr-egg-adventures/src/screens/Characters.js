@@ -4,6 +4,10 @@ import getAll from '../services/characters.js';
 import { useHistory } from "react-router-dom";
 import IndividualCharacters from './IndividualCharacters.js';
 import '../App.css';
+
+import assets from '../dummy.json';
+
+
 import Carlin from '../images/Carlin.png';
 import LabBench from '../images/labbench.png';
 import RifRaf from '../images/RifRaf.png';
@@ -45,6 +49,9 @@ const Characters = () => {
     return (
         <div className="Character-Container">
           <div className="Character-Background-Container"> 
+            {/* {assets.map((character) => (
+              <span> {character.image} </span>
+            ))}           */}
             <img className="Ardash characters" src={Ardash} onClick={CharcaterEventHandler} alt="Ardash"/>
             <img className="DrEgg characters" src={DrEgg} onClick={CharcaterEventHandler} alt="DrEgg"/>
 

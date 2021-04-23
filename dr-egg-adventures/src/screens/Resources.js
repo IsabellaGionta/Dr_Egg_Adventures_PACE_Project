@@ -3,6 +3,7 @@ import TeacherDownloadButton from '../images/TeacherDownloadButton.png';
 import StudentDownloadButton from '../images/StudentDownloadButton.png';
 import Back from '../images/btn-Back.png';
 import Snake from '../images/Snake.png';
+import Blackboard from '../images/Blackboard.png'
 import { useHistory } from "react-router-dom";
 
 
@@ -19,7 +20,8 @@ export const Resources = () => {
       }
 
     return (
-        <div className="background-container">
+        <div className="Resource-Background-Container">
+          <img className="Blackboard" src={Blackboard} />
           <div className="buttons">
             <img className="TeacherButton" src={TeacherDownloadButton} onClick={() => { alert('Downloading Teacher resources!')}} alt="TeacherDownloadButton"/>
             <img className="StudentButton" src={StudentDownloadButton} onClick={() => { alert('Downloading Student resources!')}} alt="StudentDownloadButton"/>
