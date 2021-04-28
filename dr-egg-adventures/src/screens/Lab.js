@@ -4,6 +4,7 @@ import button from '../images/btn-Back.png';
 import snake from '../images/Snake.png';
 import DrEgg from '../images/DrEgg-cut.png';
 import DrMoon from '../images/DrMoon-cut.png';
+import blackboard from '../images/Blackboard.png';
 import { useHistory } from "react-router-dom";
 
 //Buttons
@@ -32,14 +33,20 @@ export const Lab = () => {
             <div className = "bb-container">
                 <img className="bench-button" src={benchbutton} alt = "bench button"/>
             </div>
+            <img class="lab-blackboard" src={blackboard} />
             <img className="drmoon" src={DrMoon} alt = "dr moon"/>
             <img className="dregg" src={DrEgg} alt = "dr egg"/>
             <div className = "button-container">
-                <img className="lab-buttons" src={weird} alt = "weird creations button"/>
-                <img className="lab-buttons" src={facts} alt = "crazy facts button"/>
+                {/* <img className="lab-buttons" src={weird} alt = "weird creations button"/> */}
+                {/* <img className="lab-buttons" src={facts} alt = "crazy facts button"/>
                 <img className="lab-buttons" src={fanfic} alt = "fanfiction button"/>
                 <img className="lab-buttons" src={inv} alt = "inventory button"/>
-                <img className="lab-buttons" src={biogoo} alt = "biogoo button"/>
+                <img className="lab-buttons" src={biogoo} alt = "biogoo button"/> */}
+                <h3 className = "chalkboard"> Weird Creations</h3>
+                <h3 className = "chalkboard"> Crazy Science Facts</h3>
+                <h3 className = "chalkboard"> Fanfiction</h3>
+                <h3 className = "chalkboard"> Inventory</h3>
+                <h3 className = "chalkboard"> Biogoo</h3>
                 
             </div>
             <img className = "bench" src = {bench} alt = "lab bench"/> 
