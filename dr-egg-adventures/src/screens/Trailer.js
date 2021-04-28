@@ -1,6 +1,7 @@
 import React from 'react'
 import button from '../images/btn-Back.png';
 import snake from '../images/Snake.png';
+import blackboard from '../images/Blackboard.png';
 import { useHistory } from "react-router-dom";
 
 export const Trailer = () => {

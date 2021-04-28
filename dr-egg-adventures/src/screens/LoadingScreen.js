@@ -4,15 +4,15 @@
 
 import React from 'react';
 import LoadingGif from '../images/Loading.gif';
-import LoadingScreen from 'react-loading-screen';
+// import LoadingScreen from 'react-loading-screen';
 
 export const Loading = () => {
     return (
 
 
-<div className="Loading-Background-Container"> 
-            <img className="Loading-gif" src={LoadingGif} alt="Loading Gif" />
-        </div>
+{/* <div className="Loading-Background-Container">  */}
+            // <img className="Loading-gif" src={LoadingGif} alt="Loading Gif" />
+        // </div>
 )
 }
 export default Loading
