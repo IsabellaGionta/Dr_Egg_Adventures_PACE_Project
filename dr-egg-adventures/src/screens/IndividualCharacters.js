@@ -8,9 +8,13 @@ import Back from '../images/btn-Back.png';
 import Blackboard from '../images/Blackboard.png';
 import HoverBoard from '../images/HoverBoard.png';
 
+import characters from '../images/characters.js'
+
 import { useHistory } from "react-router-dom";
 
-export const IndividualCharacters = ({item}) => {
+export const IndividualCharacters = ({match}) => {
+
+  const character = characters.find(c => c._id === match.params.id)
 
   
   let history = useHistory();
@@ -30,7 +34,13 @@ export const IndividualCharacters = ({item}) => {
 
     return (
       <div className="Characters-Background-Container">
-          <img className="Individual-Character-Styling"src={Ardash} />
+                <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
+
+          <img className="Blackboard" src={Blackboard} alt="Blackboard" />
+          <div> {character.name}</div>
+
+
+          {/* <img className="Individual-Character-Styling"src={Ardash} />
           <img className="Character-Tool"src={HoverBoard} />
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
@@ -72,7 +82,7 @@ export const IndividualCharacters = ({item}) => {
               lacinia proin hendrerit, congue ultricies conubia tellus mus mollis turpis orci pharetra, 
               curae sem interdum aptent odio phasellus augue.
             </p>
-        </div>
+        </div> */}
 
         
           
