@@ -47,7 +47,7 @@ function App() {
           <Characters />
         </Route>
 
-        <Route path="/each-character">
+        <Route path="/characters/:id">
           <IndividualCharacters />
         </Route>
 
