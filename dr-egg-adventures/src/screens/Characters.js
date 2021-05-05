@@ -8,23 +8,27 @@ import '../App.css';
 import assets from '../dummy.json';
 
 
-import Carlin from '../images/Carlin.png';
+import Carlin from '../images/characters/Carlin.png';
 import LabBench from '../images/labbench.png';
-import RifRaf from '../images/RifRaf.png';
-import Pigeon from '../images/Pigeon.png';
-import Ardash from '../images/Ardash.png';
-import Cornelia from '../images/Cornelia.png';
+import RifRaf from '../images/characters/RifRaf.png';
+import Pigeon from '../images/characters/Pigeon.png';
+import Ardash from '../images/characters/Ardash.png';
+import Cornelia from '../images/characters/Cornelia.png';
 import DrEgg from '../images/DrEgg.png';
-import DrMoon from '../images/DrMoon.png';
-import Vivi from '../images/Vivi.png';
-import EggDrone from '../images/EggDrone.png';
+import DrMoon from '../images/characters/DrMoon.png';
+import Vivi from '../images/characters/Vivi.png';
+import EggDrone from '../images/characters/EggDrone.png';
+import characters from '../images/characters.js';
 import Back from '../images/btn-Back.png';
 import Snake from '../images/Snake.png';
+// let images = [];
 
 
 // import items from '../server/dummy.json';
 
 const Characters = () => {
+
+
 
     useEffect(() => {
         console.log("effect is being run") 
@@ -37,13 +41,36 @@ const Characters = () => {
       let history = useHistory();
 
       const CharcaterEventHandler = () => {
-        history.push('/each-character')
+        history.push('/characters/:id')
         console.log("page has been redirected to individual 'Character' pages") 
       }
 
       const BackEventHandler = () => {
         history.push('/map')
       }
+
+      // function  importAll(r)  {
+
+        // return r.keys().map((image) => { images[image.replace('../images/characters/', '')] = r(image); });
+    // }
+
+      // images = importAll(require.context('../images/characters/', false, /\.(png|jpe?g|svg)$/));
+    
+      
+    //   function  importAll(r)  {
+    //     return r.keys().map(r);
+    // }
+
+    //   images = importAll(require.context('../images/characters/', false, /\.(png|jpe?g|svg)$/));
+    
+      
+
+      //  function importAll(r) {
+      //   r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+      //   return images;
+      // }
+      
+      //  images = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
 
 
     return (
@@ -59,12 +86,14 @@ const Characters = () => {
             <img className="Vivi characters" src={Vivi} onClick={CharcaterEventHandler} alt="Vivi"/>
             <img className="Cornelia characters" src={Cornelia} onClick={CharcaterEventHandler} alt="Cornelia"/>
 
+
+
             <img className="Character-Bench" src={LabBench} alt="LabBench"/>
 
-            <img className="Carlin characters" src={Carlin} onClick={CharcaterEventHandler} alt="Carlin"/>
+             <img className="Carlin characters" src={Carlin} onClick={CharcaterEventHandler} alt="Carlin"/>
             <img className="Rifraf characters" src={RifRaf} onClick={CharcaterEventHandler} alt="RifRaf"/>
             <img className="Pigeon characters" src={Pigeon} onClick={CharcaterEventHandler} alt="Pigeon"/>
-            <img className="EggDrone characters" src={EggDrone} onClick={CharcaterEventHandler} alt="EggDrone"/>
+            <img className="EggDrone characters" src={EggDrone} onClick={CharcaterEventHandler} alt="EggDrone"/> 
 
             <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
             <a href="/chatbot">
