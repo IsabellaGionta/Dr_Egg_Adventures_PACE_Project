@@ -394,6 +394,7 @@ h2 {
 }
 
 .Map-Snake {
+  background-color: red;
   position: absolute;
   bottom: 4%;
   left: 77%;
