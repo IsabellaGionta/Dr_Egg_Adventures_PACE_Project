@@ -131,14 +131,14 @@ const Characters = () => {
             {/* {assets.map((character) => (
               <span> {character.image} </span>
             ))}           */}
-            <img className="Ardash characters" src={Ardash} onClick={ArdashEventHandler} alt="Ardash"/>
-            <img className="DrEgg characters" src={DrEgg} onClick={DrEggEventHandler} alt="DrEgg"/>
+            <img className="Ardash characters all" src={Ardash} onClick={ArdashEventHandler} alt="Ardash"/>
+            <img className="DrEgg characters all" src={DrEgg} onClick={DrEggEventHandler} alt="DrEgg"/>
 
-            <img className="DrMoon characters" src={DrMoon} onClick={DrMoonEventHandler} alt="DrMoon"/>
-            <img className="Vivi characters" src={Vivi} onClick={ViviEventHandler} alt="Vivi"/>
-            <img className="Cornelia characters" src={Cornelia} onClick={CorneliaEventHandler} alt="Cornelia"/>
+            <img className="DrMoon characters all" src={DrMoon} onClick={DrMoonEventHandler} alt="DrMoon"/>
+            <img className="Vivi characters all" src={Vivi} onClick={ViviEventHandler} alt="Vivi"/>
+            <img className="Cornelia characters all" src={Cornelia} onClick={CorneliaEventHandler} alt="Cornelia"/>
 
-            <img className="ProfMole characters" src={ProfMole} onClick={ProfMoleEventHandler} alt="ProfMole"/> 
+            <img className="ProfMole characters all " src={ProfMole} onClick={ProfMoleEventHandler} alt="ProfMole"/> 
 
             <img className="Character-Bench" src={LabBench} alt="LabBench"/>
 
