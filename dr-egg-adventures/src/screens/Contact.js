@@ -52,24 +52,25 @@ export const Contact = () => {
 		history.push('/map');
 	};
 
-	const validateForm = form => {
+	const validateForm = (field, form) => {
 		const errors = {};
-		if (!form.name) {
+		if (!form.name && field === 'name') {
 			errors.name = 'Name cannot be empty.';
 		}
 
-		if (!form.email) {
-			errors.email = 'Email cannot be empty.';
-		} else if (
-			!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(form.email)
-		) {
-			errors.email = 'Email format is wrong.';
+		if (field === 'email') {
+			if (!form.email) {
+				errors.email = 'Email cannot be empty.';
+			} else if (
+				!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(form.email)
+			) {
+				errors.email = 'Email format is wrong.';
+			}
 		}
 
-		if (!form.message) {
+		if (!form.message && field === 'message') {
 			errors.message = 'Message cannot be empty.';
 		}
-
 		setErrors(errors);
 
 		return errors;
@@ -82,7 +83,7 @@ export const Contact = () => {
 		};
 		setForm(newValue);
 
-		validateForm(newValue);
+		validateForm(name, newValue);
 	};
 
 	const handleSubmit = async e => {
