@@ -18,6 +18,13 @@ import axios from '../axios';
 import '../assets/css/modal.css';
 import '../assets/css/spinner.css';
 import LoadScreen from '../components/LoadScreen';
+import styled from 'styled-components';
+
+const ErrorMsg = styled.span`
+	display: block;
+	color: red;
+	margin-top: 5px;
+`;
 
 export const Contact = () => {
 	let history = useHistory();
@@ -33,6 +40,11 @@ export const Contact = () => {
 		msg: '',
 	});
 	const [loading, setLoading] = useState(false);
+	const [errors, setErrors] = useState({
+		name: '',
+		email: '',
+		message: '',
+	});
 
 	const toggleModal = () => setModal(!modal);
 
@@ -40,22 +52,60 @@ export const Contact = () => {
 		history.push('/map');
 	};
 
+	const validateForm = form => {
+		const errors = {};
+		if (!form.name) {
+			errors.name = 'Name cannot be empty.';
+		}
+
+		if (!form.email) {
+			errors.email = 'Email cannot be empty.';
+		} else if (
+			!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(form.email)
+		) {
+			errors.email = 'Email format is wrong.';
+		}
+
+		if (!form.message) {
+			errors.message = 'Message cannot be empty.';
+		}
+
+		setErrors(errors);
+
+		return errors;
+	};
+
 	const handleFieldChange = (e, name) => {
-		setForm({
+		const newValue = {
 			...form,
 			[name]: e.target.value,
-		});
+		};
+		setForm(newValue);
+
+		validateForm(newValue);
 	};
 
 	const handleSubmit = async e => {
 		e.preventDefault();
 		console.log({ form });
-		setLoading(true);
-		const { data } = await axios.post('/send-form', form);
-		console.log({ data });
-		setResponse(data);
-		setLoading(false);
-		toggleModal();
+
+		// if there is no errors
+		if (!Object.keys(errors).length) {
+			setLoading(true);
+
+			const { data } = await axios.post('/send-form', form);
+			console.log({ data });
+			setResponse(data);
+			setLoading(false);
+			toggleModal();
+
+			// reset the form
+			setForm({
+				name: '',
+				email: '',
+				message: '',
+			});
+		}
 	};
 
 	return (
@@ -84,6 +134,9 @@ export const Contact = () => {
 									value={form['name']}
 									onChange={e => handleFieldChange(e, 'name')}
 								/>
+								{errors && errors.name && (
+									<ErrorMsg>{errors.name}</ErrorMsg>
+								)}
 							</FormGroup>
 						</div>
 						<div className='Contact-FormGroup'>
@@ -102,6 +155,9 @@ export const Contact = () => {
 										handleFieldChange(e, 'email')
 									}
 								/>
+								{errors && errors.email && (
+									<ErrorMsg>{errors.email}</ErrorMsg>
+								)}
 							</FormGroup>
 						</div>
 
@@ -121,10 +177,17 @@ export const Contact = () => {
 										handleFieldChange(e, 'message')
 									}
 								/>
+								{errors && errors.message && (
+									<ErrorMsg>{errors.message}</ErrorMsg>
+								)}
 							</FormGroup>
 						</div>
 
-						<Button className='Contact-Button'>
+						<Button
+							className='Contact-Button'
+							disabled={
+								Object.keys(errors).length ? true : false
+							}>
 							<span className='text'> SUBMIT </span>
 						</Button>
 					</Form>
