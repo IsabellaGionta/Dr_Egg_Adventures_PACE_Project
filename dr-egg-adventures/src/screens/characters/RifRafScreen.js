@@ -27,7 +27,7 @@ export const RifRafScreen = () => {
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 
         <h1 className="Companions"> THE COMPANIONS: </h1>
-        <h2 className="Individual-Character-Name"> RIFRAF: THE PLUGGED IN PERFECTIONIST </h2>
+        <h2 className="Individual-Character-Name"> RIF-RAF THE DOG </h2>
 
         <div className="Companion-Description">
           <p> 
