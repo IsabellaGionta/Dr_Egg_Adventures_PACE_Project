@@ -1,6 +1,5 @@
 import React from 'react';
 import map from '../images/Map.png';
-import DrEgg from '../images/DrEgg.png';
 import { useHistory } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 import Worlds from '../images/Worlds.PNG';

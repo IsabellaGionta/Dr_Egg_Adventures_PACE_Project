@@ -5,20 +5,18 @@ import { useHistory } from "react-router-dom";
 import IndividualCharacters from './IndividualCharacters.js';
 import '../App.css';
 
-import assets from '../dummy.json';
-
-
-import Carlin from '../images/characters/Carlin.png';
-import LabBench from '../images/labbench.png';
-import RifRaf from '../images/characters/RifRaf.png';
-import Pigeon from '../images/characters/Pigeon.png';
-import Ardash from '../images/characters/Ardash.png';
-import Cornelia from '../images/characters/Cornelia.png';
-import DrEgg from '../images/DrEgg.png';
-import DrMoon from '../images/characters/DrMoon.png';
-import Vivi from '../images/characters/Vivi.png';
-import EggDrone from '../images/characters/EggDrone.png';
-import characters from '../images/characters.js';
+import Carlin from '../images/characters/Carlin - Copy.png';
+import LabBench from '../images/labbench - Copy.png';
+import RifRaf from '../images/characters/RifRaf - Copy.png';
+import Pigeon from '../images/characters/Pigeon - Copy.png';
+import Ardash from '../images/characters/Ardash - Copy.png';
+import Cornelia from '../images/characters/Cornelia - Copy.png';
+import DrEgg from '../images/characters/DrEgg - Copy.png';
+import DrMoon from '../images/characters/DrMoon - Copy.png';
+import Vivi from '../images/characters/Vivi - Copy.png';
+import SnakeImg from '../images/characters/Snake.png';
+import EggDrone from '../images/characters/EggDrone - Copy.png';
+import ProfMole from '../images/characters/ProfMole.png';
 import Back from '../images/btn-Back.png';
 import Snake from '../images/Snake.png';
 // let images = [];
@@ -41,7 +39,61 @@ const Characters = () => {
       let history = useHistory();
 
       const CharcaterEventHandler = () => {
-        history.push('/characters/:id')
+        history.push('/each-character')
+        console.log("page has been redirected to individual 'Character' pages") 
+      }
+      const ArdashEventHandler = () => {
+        history.push('/character/Ardash')
+        console.log("page has been redirected to individual 'Character' pages") 
+      }
+
+      const CarlinEventHandler = () => {
+        history.push('/character/Carlin')
+        console.log("page has been redirected to individual 'Character' pages") 
+      }
+
+      const DrEggEventHandler = () => {
+        history.push('/character/DrEgg')
+        console.log("page has been redirected to individual 'Character' pages") 
+      }
+
+      const ViviEventHandler = () => {
+        history.push('/character/Vivi')
+        console.log("page has been redirected to individual 'Character' pages") 
+      }
+
+      const DrMoonEventHandler = () => {
+        history.push('/character/DrMoon')
+        console.log("page has been redirected to individual 'Character' pages") 
+      }
+
+      const CorneliaEventHandler = () => {
+        history.push('/character/Cornelia')
+        console.log("page has been redirected to individual 'Character' pages") 
+      }
+
+      const RifRafEventHandler = () => {
+        history.push('/character/RifRaf')
+        console.log("page has been redirected to individual 'Character' pages") 
+      }
+
+      const PigeonEventHandler = () => {
+        history.push('/character/Pigeon')
+        console.log("page has been redirected to individual 'Character' pages") 
+      }
+
+      const EggDroneEventHandler = () => {
+        history.push('/character/EggDrone')
+        console.log("page has been redirected to individual 'Character' pages") 
+      }
+
+      const SnakeEventHandler = () => {
+        history.push('/character/Snake')
+        console.log("page has been redirected to individual 'Character' pages") 
+      }
+
+      const ProfMoleEventHandler = () => {
+        history.push('/character/Professor-Mole')
         console.log("page has been redirected to individual 'Character' pages") 
       }
 
@@ -79,21 +131,25 @@ const Characters = () => {
             {/* {assets.map((character) => (
               <span> {character.image} </span>
             ))}           */}
-            <img className="Ardash characters" src={Ardash} onClick={CharcaterEventHandler} alt="Ardash"/>
-            <img className="DrEgg characters" src={DrEgg} onClick={CharcaterEventHandler} alt="DrEgg"/>
+            <img className="Ardash characters" src={Ardash} onClick={ArdashEventHandler} alt="Ardash"/>
+            <img className="DrEgg characters" src={DrEgg} onClick={DrEggEventHandler} alt="DrEgg"/>
 
-            <img className="DrMoon characters" src={DrMoon} onClick={CharcaterEventHandler} alt="DrMoon"/>
-            <img className="Vivi characters" src={Vivi} onClick={CharcaterEventHandler} alt="Vivi"/>
-            <img className="Cornelia characters" src={Cornelia} onClick={CharcaterEventHandler} alt="Cornelia"/>
+            <img className="DrMoon characters" src={DrMoon} onClick={DrMoonEventHandler} alt="DrMoon"/>
+            <img className="Vivi characters" src={Vivi} onClick={ViviEventHandler} alt="Vivi"/>
+            <img className="Cornelia characters" src={Cornelia} onClick={CorneliaEventHandler} alt="Cornelia"/>
 
-
+            <img className="ProfMole characters" src={ProfMole} onClick={ProfMoleEventHandler} alt="ProfMole"/> 
 
             <img className="Character-Bench" src={LabBench} alt="LabBench"/>
 
-             <img className="Carlin characters" src={Carlin} onClick={CharcaterEventHandler} alt="Carlin"/>
-            <img className="Rifraf characters" src={RifRaf} onClick={CharcaterEventHandler} alt="RifRaf"/>
-            <img className="Pigeon characters" src={Pigeon} onClick={CharcaterEventHandler} alt="Pigeon"/>
-            <img className="EggDrone characters" src={EggDrone} onClick={CharcaterEventHandler} alt="EggDrone"/> 
+             <img className="Carlin characters" src={Carlin} onClick={CarlinEventHandler} alt="Carlin"/>
+            <img className="Rifraf characters" src={RifRaf} onClick={RifRafEventHandler} alt="RifRaf"/>
+            <img className="Pigeon characters" src={Pigeon} onClick={PigeonEventHandler} alt="Pigeon"/>
+            <img className="EggDrone characters" src={EggDrone} onClick={EggDroneEventHandler} alt="EggDrone"/> 
+            <img className="SnakeImg characters" src={SnakeImg} onClick={SnakeEventHandler} alt="SnakeImg"/> 
+
+
+
 
             <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
             <a href="/chatbot">

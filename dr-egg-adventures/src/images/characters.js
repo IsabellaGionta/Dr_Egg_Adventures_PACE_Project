@@ -30,7 +30,7 @@
         {
             _id: 4,
             name: "Dr Egg",
-            image: "/images/characters/DrEgg.png",
+            image: "/images/characters/Dr-Egg.png",
             Description: "DR ERIC EGG: THE INGENIOUS INVENTOR CHARACTERISTICS: Dr Egg creates small inventions to cure diseases, as well as inventing biological spying devices to track activities in Professor Mole’s totalitarian empire. He is the twin brother of Dr Moon. Dr Egg acts as Professor Mole’s nemesis. VIRTUES: Altruistic. Inventive. TOOLS: Flying Egg Spy WORLD: Egg Laboratories"
         
         }, 

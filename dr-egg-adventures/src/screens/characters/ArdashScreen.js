@@ -1,37 +1,19 @@
 import React from 'react'
-// import getAll from '../services/characters.js';
-// import { useEffect } from 'react';
-// import characters from '/dummy.js';
-import Ardash from '../images/Ardash-Cropped.png';
-import Snake from '../images/Snake.png';
-import Back from '../images/btn-Back.png';
-import Blackboard from '../images/Blackboard.png';
-import HoverBoard from '../images/HoverBoard.png';
-
-import characters from '../images/characters.js'
+import Ardash from '../../images/Ardash-Cropped.png';
+import Snake from '../../images/Snake.png';
+import Back from '../../images/btn-Back.png';
+import Blackboard from '../../images/Blackboard.png';
+import HoverBoard from '../../images/HoverBoard.png';
 
 import { useHistory } from "react-router-dom";
 
-export const IndividualCharacters = () => {
-
-  // const character = characters.find(c => c._id === match.params.id)
-
+export const ArdashScreen = () => {
   
   let history = useHistory();
 
   const BackEventHandler = () => {
       history.push('/characters')
     }
-
-//     useEffect(() => {
-//         console.log("effect is being run") // unit test
-//         getAll()
-//         .then (res => {
-//           console.log(res.data)
-    
-//         })
-//       })
-
 
 
     return (
@@ -41,15 +23,16 @@ export const IndividualCharacters = () => {
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-          {/* <img className="Individual-Character-Styling"src={Ardash} />
-          <img className="Character-Tool"src={HoverBoard} />
+          <img className="Individual-Character-Styling-Ardash"src={Ardash} />
+          <img className="Character-Tool-Ardash"src={HoverBoard} />
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-        <img className="Blackboard" src={Blackboard} alt="Blackboard" />
+        <h1 className="Companions"> THE KID INVENTORS: </h1>
 
         <h2 className="Individual-Character-Name"> ARDASH: THE PLUGGED IN PERFECTIONIST </h2>
 
         <div className="Character-Description">
+             <p> AGE: 13 </p>
              <p> 
               CHARACTERISTICS: Ardash is a boy with no belly button and 
               he is literally perfect. He hails from Techno-world and has
@@ -77,13 +60,7 @@ export const IndividualCharacters = () => {
               WORLD: Techno-towers
             </p>
 
-            <p>
-              sociosqu faucibus in, nascetur tempus mauris ornare 
-              molestie, netus arcu scelerisque proin et. Placerat egestas aliquam morbi imperdiet quis 
-              lacinia proin hendrerit, congue ultricies conubia tellus mus mollis turpis orci pharetra, 
-              curae sem interdum aptent odio phasellus augue.
-            </p>
-        </div> */}
+        </div>
 
         
           
@@ -93,4 +70,4 @@ export const IndividualCharacters = () => {
       </div>
     )
 }
-export default IndividualCharacters
+export default ArdashScreen
