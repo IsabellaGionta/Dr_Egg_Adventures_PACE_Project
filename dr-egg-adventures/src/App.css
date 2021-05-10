@@ -31,11 +31,7 @@ h2 {
   color: white;
 }
 
-/* h1 {
-  font-family: Polaris;
-  font-size: 4vh;
 
-} */
 
 .Loading-gif {
   display: block;
@@ -137,40 +133,136 @@ h2 {
   position: absolute;
   bottom: 0%;
   left: 9%;
-  max-width: 25%;
+  max-width: 30%;
   max-height: auto;
 }
 
-.Blackboard {
-  width: 100%;
-  max-width: 100%;
-  max-height: 100vh;
-  /* transform: scaleX(-1); */
+.Individual-Character-Styling-Ardash {
+  position: absolute;
+  bottom: 0%;
+  left: 9%;
+  max-width: 26%;
+  max-height: auto;
+
 }
 
-.Character-Tool {
+.Individual-Character-Styling-ProfMole {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
   width: 100%;
+  max-width: 40%;
+  max-height: auto;
+}
+
+.Individual-Character-Styling-Pigeon {
+  position: absolute;
+  bottom: -14%;
+  left: 10%;
+  width: 100%;
+  max-width: 30%;
+  max-height: auto;
+
+}
+
+.Individual-Character-Styling-Snake {
+
+  position: absolute;
+  bottom: 0%;
+  left: 10%;
+  width: 100%;
+  max-width: 50%;
+  max-height: auto;
+
+}
+.Blackboard {
+  width: 100vw;
+  max-height: 100vh;
+}
+
+@media screen and (min-width: 1669px) {
+  .blackboard {
+    height:100%;
+  }
+}
+
+.Character-Tool-Ardash {
+  width: 100%;
+  max-width: 15%;
+  max-height: auto;
+  position: absolute;
+  top: 17%;
+  left: 24%;
+}
+
+.Character-Tool-Toolbelt {
   width: 100%;
   max-width: 20%;
   max-height: auto;
   position: absolute;
-  top: 17%;
-  left: 18%;
+  bottom: 5%;
+  left: 40%;
+
 }
 
+.Character-Tool-Goggles {
+  width: 100%;
+  max-width: 10%;
+  max-height: auto;
+  position: absolute;
+  top: 14%;
+  left: 30%;
+}
+.Character-Tool {
+  width: 100%;
+  max-width: 15%;
+  max-height: auto;
+  position: absolute;
+  top: 17%;
+  left: 24%;
+}
+
+.Character-Pet {
+  width: 100%;
+  max-width: 10%;
+  max-height: auto;
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
+}
+ 
 .Character-Tool:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
 }
 
+
+@media screen and (max-width: 900px) {
+  .character {
+    width:10%;
+  }
+}
+
+h1.Companions {
+  position: absolute;
+  top:12%;
+  left: 50%;
+  font-family: Polaris;
+  font-size: 4vh;
+  color: white
+
+}
+
 .Individual-Character-Name {
+  font-family: Polaris;
   position: absolute;
   left: 44%;
   top: 20%;
 }
 
 .Character-Description {
+  font-family: museo sans;
   width: 100%;
   max-width: 40%;
   max-height: auto;
@@ -180,30 +272,26 @@ h2 {
   font-family: Museo-sans;
   font-size: 2vh;
   text-align: left;
-  line-height: 30px;
+  line-height: 40px;
   color: white;
 }
 
-.Indivdual-Character-Text2 {
+
+.Companion-Description {
+  font-family: museo sans;
   width: 100%;
-  max-width: 20%;
+  max-width: 40%;
   max-height: auto;
   position: absolute;
-  left: 48%;
-  top: 40%;
+  left: 42%;
+  top: 27%;
   font-family: Museo-sans;
-  font-size: 2vh;
+  font-size: 3vh;
   text-align: left;
+  line-height: 150px;
+  color: white;
 }
 
-.Individual-Character-Table {
-  position: absolute;
-  left: 48%;
-  top: 60%;
-  width: 100%;
-  max-width: 20%;
-  max-height: auto;
-}
 
 /* Character Screen Styling */
 
@@ -213,11 +301,12 @@ h2 {
   background-position: center;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
-@media screen and (max-width: 176px) {
-  .Ardash {
-    width: 500px;
+@media screen and (max-width: 1002px) {
+  .SnakeImg {
+    bottom:50%;
   }
 }
 
@@ -358,16 +447,18 @@ h2 {
 
 .Carlin {
   position: absolute;
-  bottom: 10%;
-  left: 20%;
+  bottom: 15%;
+  left: 0%;
   max-width: 8%;
   max-height: auto;
 }
 
+
+
 .Rifraf {
   position: absolute;
-  bottom: 6%;
-  left: 40%;
+  bottom: 15%;
+  left: 15%;
   max-width: 18%;
   max-height: auto;
 }
@@ -384,8 +475,19 @@ h2 {
   position: absolute;
   bottom: 0%;
   left: 35%;
+  width: 28%;
+  /* max-width: 28%; */
+  max-height: auto;
+}
+
+.ProfMole {
+  position: absolute;
+  bottom: 45%;
+  left: 73%;
+  width: 100%;
   max-width: 28%;
   max-height: auto;
+
 }
 
 .Cornelia {
@@ -424,6 +526,14 @@ h2 {
   bottom: 10%;
   left: 85%;
   max-width: 12%;
+  max-height: auto;
+}
+
+.SnakeImg {
+  position: absolute;
+  bottom: 8%;
+  left: 20%;
+  max-width: 42%;
   max-height: auto;
 }
 
