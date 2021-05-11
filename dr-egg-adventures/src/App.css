@@ -702,7 +702,7 @@ input {
 }
 
 .world-text {
-	max-width: 50%;
+	max-width: 58%;
 	max-height: auto;
 }
 
@@ -773,10 +773,10 @@ input {
 
 .slum-text {
 	position: absolute;
-	bottom: 3%;
-	left: 2%;
+	bottom: 1%;
+	left: 6%;
 	width: 290px;
-	height: 480px;
+	height: 580px;
 	text-align: center;
 }
 
