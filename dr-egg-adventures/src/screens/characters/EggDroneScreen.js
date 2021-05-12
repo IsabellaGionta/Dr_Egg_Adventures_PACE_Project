@@ -1,5 +1,5 @@
 import React from 'react';
-import EggDrone from '../../images/characters/EggDrone - Copy.png';
+import EggDrone from '../../images/characters/EggDrone.png';
 import Snake from '../../images/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
@@ -22,17 +22,17 @@ export const EggDroneScreen = () => {
         <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-        <img className="Individual-Character-Styling"src={EggDrone} />
+        <img className="Individual-Character-Styling-EggDrone"src={EggDrone} />
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 
-        <h2 className="Individual-Character-Name"> FLYING EGG SPY: DR EGG'S COMPANION </h2>
+        <h2 className="Individual-Character-DrEggDrone"> FLYING EGG SPY: DR EGG'S COMPANION </h2>
 
         <div className="Companion-Description">
           <p> 
               GOAL: Help Dr Egg find clues
           </p>
-          <p> 
+          <p className="Powers"> 
             SPECIAL POWER: Gathers data and clues through roving eye-camera for Dr Egg
           </p>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Cornelia from '../../images/Cornelia-Cropped.png';
-import Carlin from '../../images/characters/Carlin - Copy.png';
+import Carlin from '../../images/characters/Carlin.png';
 import Snake from '../../images/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';

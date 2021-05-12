@@ -2,7 +2,7 @@ import React from 'react'
 import DrEgg from '../../images/DrEgg-Cropped.png';
 import Snake from '../../images/Snake.png';
 import Back from '../../images/btn-Back.png';
-import EggDrone from '../../images/characters/EggDrone - Copy.png';
+import EggDrone from '../../images/characters/EggDrone.png';
 import Blackboard from '../../images/Blackboard.png';
 
 import { useHistory } from "react-router-dom";

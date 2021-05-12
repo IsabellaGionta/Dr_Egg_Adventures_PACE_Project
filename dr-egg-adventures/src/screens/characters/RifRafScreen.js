@@ -1,5 +1,5 @@
 import React from 'react';
-import RifRaf from '../../images/characters/RifRaf - Copy.png';
+import RifRaf from '../../images/characters/RifRaf.png';
 import Snake from '../../images/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
@@ -33,7 +33,7 @@ export const RifRafScreen = () => {
           <p> 
             GOAL: Help liberate the birds and animals
           </p>
-          <p> 
+          <p className="Powers"> 
             SPECIAL POWER: Following a scent, seeing in the dark
           </p>
         </div>   
