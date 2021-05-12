@@ -1,5 +1,5 @@
 import React from 'react';
-import Carlin from '../../images/characters/Carlin - Copy.png';
+import Carlin from '../../images/characters/Carlin.png';
 import Snake from '../../images/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
