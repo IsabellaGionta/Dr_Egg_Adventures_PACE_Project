@@ -1,5 +1,5 @@
 import React from 'react'
-import DrMoon from '../../images/DrMoon-Cropped.png';
+import DrMoon from '../../images/characters/DrMoon-Cropped.png';
 import PetriDish from '../../images/PetriDish.png';
 import Snake from '../../images/Snake.png';
 import Back from '../../images/btn-Back.png';

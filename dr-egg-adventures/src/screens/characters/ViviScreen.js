@@ -1,5 +1,5 @@
 import React from 'react'
-import Vivi from '../../images/Vivi-Cropped.png';
+import Vivi from '../../images/characters/Vivi-Cropped.png';
 import Snake from '../../images/Snake.png';
 import Goggle from '../../images/Goggle.png';
 import Toolbelt from '../../images/Toolbelt.png';
