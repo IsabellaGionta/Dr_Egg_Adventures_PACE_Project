@@ -17,19 +17,19 @@ export const SnakeScreen = () => {
 
     return (
       <div className="Characters-Background-Container">
-                <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
+        <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 
-          <img className="Blackboard" src={Blackboard} alt="Blackboard" />
+        <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-          <img className="Individual-Character-Styling-Snake"src={SnakeImg} />
+        <img className="Individual-Character-Styling-Snake"src={SnakeImg} />
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
         <h1 className="Companions"> THE NARRATOR: </h1>
 
         <h2 className="Individual-Character-Name"> THE SNAKE NARRATOR </h2>
 
-        <div className="Character-Description">
+        <div className="Character-Description-Snake">
              <p> 
                 CHARACTERISTICS: The Snake narrator moves in 
                 and out of the Laboratory’s interactive story-world,
