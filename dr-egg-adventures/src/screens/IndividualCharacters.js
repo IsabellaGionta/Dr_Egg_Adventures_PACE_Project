@@ -2,7 +2,7 @@ import React from 'react'
 // import getAll from '../services/characters.js';
 // import { useEffect } from 'react';
 // import characters from '/dummy.js';
-import Ardash from '../images/Ardash-Cropped.png';
+import Ardash from '../images/characters/Ardash-Cropped.png';
 import Snake from '../images/Snake.png';
 import Back from '../images/btn-Back.png';
 import Blackboard from '../images/Blackboard.png';
