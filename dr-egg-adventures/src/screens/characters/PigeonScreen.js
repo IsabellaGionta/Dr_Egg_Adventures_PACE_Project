@@ -1,5 +1,5 @@
 import React from 'react';
-import Pigeon from '../../images/characters/Pigeon - Copy.png';
+import Pigeon from '../../images/characters/Pigeon.png';
 import Snake from '../../images/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
@@ -33,7 +33,7 @@ export const PigeonScreen = () => {
           <p> 
             GOAL: Help Cornelia liberate the animals
           </p>
-          <p> 
+          <p className="Powers"> 
             SPECIAL POWER: ‘Pigeon-Poop Pummelings’
           </p>
         </div>
