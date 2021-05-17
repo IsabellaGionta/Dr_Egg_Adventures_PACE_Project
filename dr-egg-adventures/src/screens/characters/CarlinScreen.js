@@ -1,6 +1,6 @@
 import React from 'react';
 import Carlin from '../../images/characters/Carlin.png';
-import Snake from '../../images/Snake.png';
+import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 
@@ -17,7 +17,6 @@ export const CarlinScreen = () => {
 
     return (
       <div className="Characters-Background-Container">
-                <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
@@ -26,14 +25,15 @@ export const CarlinScreen = () => {
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 
-        <h1 className="Companions"> THE COMPANIONS: </h1>
-        <h2 className="Individual-Character-Name"> CARLIN: CORNELIA'S MOUSE </h2>
+        <h1 className="Character-Type"> THE COMPANIONS: </h1>
+        <h2 className="Individual-Character-Name">  CARLIN:  </h2> 
+        <h2 className="Individual-Character-Slogan"> CORNELIA'S MOUSE </h2>
 
         <div className="Companion-Description">
              <p> 
                GOAL: Help Cornelia
             </p>
-            <p> 
+            <p className="Powers"> 
               SPECIAL POWER: ‘Thought-wave’ clues to Cornelia
             </p>
         </div>

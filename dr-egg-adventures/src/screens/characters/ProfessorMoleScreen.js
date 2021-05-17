@@ -1,6 +1,6 @@
 import React from 'react'
-import Snake from '../../images/Snake.png';
-import ProfMole2 from '../../images/characters/ProfMole2.png';
+import Snake from '../../images/characters/Snake.png';
+import ProfMole from '../../images/characters/ProfMole.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 
@@ -17,18 +17,15 @@ export const ProfessorMoleScreen = () => {
 
     return (
       <div className="Characters-Background-Container">
-                <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-          <img className="Individual-Character-Styling-ProfMole"src={ProfMole2} />
+          <img className="Individual-Character-Styling-ProfMole"src={ProfMole} />
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-        <h1 className="Companions"> THE BADDIES: </h1>
-
-        <h2 className="Individual-Character-Name"> PROFESSOR MOLE: THE GREEDY CONTROLLER </h2>
-
+        <h1 className="Character-Type"> THE BADDIES: </h1>
+        <h2 className="Individual-Character-Name">  PROFESSOR MOLE:  </h2> 
+        <h2 className="Individual-Character-Slogan">  THE GREEDY CONTROLLER </h2>
         <div className="Character-Description">
              <p> 
              Professor Mole controls the world’s food supply

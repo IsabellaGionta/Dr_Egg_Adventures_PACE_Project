@@ -1,6 +1,6 @@
 import React from 'react';
 import RifRaf from '../../images/characters/RifRaf.png';
-import Snake from '../../images/Snake.png';
+import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 
@@ -17,8 +17,6 @@ export const RifRafScreen = () => {
 
     return (
       <div className="Characters-Background-Container">
-                <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
@@ -26,8 +24,9 @@ export const RifRafScreen = () => {
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 
-        <h1 className="Companions"> THE COMPANIONS: </h1>
-        <h2 className="Individual-Character-Name"> RIF-RAF THE DOG </h2>
+        <h1 className="Character-Type"> THE COMPANIONS: </h1>
+        <h2 className="Individual-Character-Name">  RIF-RAF:  </h2> 
+        <h2 className="Individual-Character-Slogan">  THE DOG </h2>
 
         <div className="Companion-Description">
           <p> 
