@@ -198,7 +198,7 @@
 
 @media (min-width: 576px) {
 	.modal-dialog {
-		max-width: 500px;
+		max-width: 600px;
 		margin: 15rem auto;
 	}
 	.modal-dialog-scrollable {
