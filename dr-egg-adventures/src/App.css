@@ -878,23 +878,46 @@ input {
   position: absolute;
   top: 12vh;
   left:15vw;
-  height: 65vh;
+  height: 48vh;
   width: 71vw;
   padding: 4vw 0;
   overflow: auto;
+}
+
+@media all and (max-aspect-ratio: 10/16){
+  .ErrorTxtCont {
+    position: absolute;
+    top: 12vh;
+    left:15vw;
+    height: 48vh;
+    width: 71vw;
+    overflow: auto;
+  }
+  
 }
 
 .ErrorTxt {
   width: 69vw;
 }
 
-.h1ErrorChalkboard {
-  font-size: 20vh;
-  font-family: "polaris";
-  color: white;
-  text-align: center;
-  word-wrap: break-word;
+  .h1ErrorChalkboard {
+    font-size: 20vh;
+    font-family: "polaris";
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+@media all and (max-aspect-ratio: 10/16){
+  .h1ErrorChalkboard {
+    font-size: 30vw;
+    font-family: "polaris";
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+  }
 }
+
 
 .h2ErrorChalkboard {
   font-size: 5vh;
@@ -924,6 +947,17 @@ input {
   height: 14vh;
   width: 21vw;
 }
+
+@media all and (max-aspect-ratio: 10/16){
+  .ErrorHomeButton {
+    position: absolute;
+    top: 60vh;
+    left: 28vw;
+    height: 10vh;
+    width: 42vw;
+  }
+}
+
 .ErrorReportButton {
   position: absolute;
   top: 60vh;
@@ -932,6 +966,15 @@ input {
   width: 21vw;
 }
 
+@media all and (max-aspect-ratio: 10/16){
+  .ErrorReportButton {
+    position: absolute;
+    top: 73vh;
+    left: 28vw;
+    height: 10vh;
+    width: 42vw;
+  }
+}
 /* Map Styling */
 
 .Map-Container {
