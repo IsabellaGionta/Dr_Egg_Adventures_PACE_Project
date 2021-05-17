@@ -20,8 +20,9 @@ export const OnlineStore = () => {
     return (
             <div className="OnlineStore-Background-Container">
               <div className="OnlineStore-Container">
-                <img class="Blackboard" src={Blackboard} />
-                <Button className="OnlineStore-Button" onClick={() => { alert('Redirecting to Dr Egg Adventures Online Store Page!')}} >ENTER OUR ONLINE STORE </Button>
+                <img class="Blackboard" src={Blackboard} alt = "Blackboard"/>
+                <Button className="OnlineStore-Button" onClick={() => 
+                  { alert('Redirecting to Dr Egg Adventures Online Store Page!'); window.location.href = "https://dreggadventures.com/shop/?v=6cc98ba2045f";}} >ENTER OUR ONLINE STORE </Button>
           
                 <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
                 <a href="/chatbot">
