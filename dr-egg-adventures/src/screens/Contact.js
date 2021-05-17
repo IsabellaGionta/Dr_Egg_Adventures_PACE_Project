@@ -1,188 +1,74 @@
-import React, { useState } from 'react';
-import {
-	Button,
-	Form,
-	FormGroup,
-	Label,
-	Input,
-	Modal,
-	ModalBody,
-	ModalHeader,
-	ModalFooter,
-} from 'reactstrap';
-import Snake from '../images/Snake.png';
+import React from 'react';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import Snake from '../images/characters/Snake.png';
 import Back from '../images/btn-Back.png';
 import Blackboard from '../images/Blackboard.png';
-import { useHistory } from 'react-router-dom';
-import axios from '../axios';
-import '../assets/css/modal.css';
-import '../assets/css/spinner.css';
-import LoadScreen from '../components/LoadScreen';
-import styled from 'styled-components';
-import ThemeButton from '../components/Button';
+import { useHistory } from "react-router-dom";
 
-const ErrorMsg = styled.span`
-	display: block;
-	color: red;
-	margin-top: 5px;
-`;
+
+
+
 
 export const Contact = () => {
-	let history = useHistory();
 
-	const [form, setForm] = useState({
-		name: '',
-		email: '',
-		message: '',
-	});
-	const [modal, setModal] = useState(false);
-	const [response, setResponse] = useState({
-		status: 0,
-		msg: '',
-	});
-	const [loading, setLoading] = useState(false);
-	const [errors, setErrors] = useState({
-		name: '',
-		email: '',
-		message: '',
-	});
+    let history = useHistory();
 
-	const toggleModal = () => setModal(!modal);
 
-	const BackEventHandler = () => {
-		history.push('/map');
-	};
+    const BackEventHandler = () => {
+        history.push('/map')
+      }
 
-	const validateForm = (field, form) => {
-		const errors = {};
-		if (!form.name && field === 'name') {
-			errors.name = 'Name cannot be empty.';
-		}
+      return (
+        <div className="Contact-Background-Container">
+          <div className="Contact-Container">
+            <img className="Blackboard" src={Blackboard} alt="Blackboard"></img>
+            {/* <h1 className="Contact-Title"> Dr Egg Adventures </h1> */}
 
-		if (field === 'email') {
-			if (!form.email) {
-				errors.email = 'Email cannot be empty.';
-			} else if (
-				!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(form.email)
-			) {
-				errors.email = 'Email format is wrong.';
-			}
-		}
+ 
+            <Form className="Contact-Form">
+            <h2 className="Contact-Title"> Contact Form </h2>
 
-		if (!form.message && field === 'message') {
-			errors.message = 'Message cannot be empty.';
-		}
-		setErrors(errors);
+              {/* <h1 className="Contact-Title"> Dr Egg Adventures </h1> */}
+              <div className="Contact-FormGroup">
+                <FormGroup>
+                  <div className="Contact-Label"> <Label> Full Name </Label> </div>
+                    <Input  type="FullName" />
+                  </FormGroup>
+              </div>
+              <div className="Contact-FormGroup">
+                <FormGroup>
+                  <div className="Contact-Label"> <Label>Email</Label> </div>
+                    <Input  type="email" name="email" id="Email" />
+                </FormGroup>
+              </div> 
 
-		return errors;
-	};
+              <div className="Contact-FormGroup">
+                <FormGroup>
+                  <div className="Contact-Label"><Label>Message</Label></div>
+                    <Input className="Contact-MessageBox" type="textarea" name="text" id="message" />
+                </FormGroup>
+              </div>
+                
+              <Button className="Contact-Button"><span className="text"> SUBMIT </span></Button>
+            </Form>
 
-	const handleFieldChange = (e, name) => {
-		const newValue = {
-			...form,
-			[name]: e.target.value,
-		};
-		setForm(newValue);
+            <div className="Contact-Info" >
+              <p> MOBILE NUMBER: +61 0415 442 209 </p>
+              <p> PHONE NUMBER: +61 02 9314 5121</p>
+              <p> ADDRESS: Dr Egg Digital - The Dr Egg Adventures Project </p>
+              <p className="indent"> City of Sydney Cultural Precint Office </p>
+              <p className="indent"> Suite, 1, Level 22, 66 Oxford Street </p>
+              <p className="indent"> East Sydney, NSW, Australia, 2010 </p>
+              <p> WEBSITE: <a href="www.dreggadventures.com"> www.dreggadventures.com </a> </p>
+            </div>
 
-		validateForm(name, newValue);
-	};
-
-	const handleSubmit = async e => {
-		e.preventDefault();
-		console.log({ form });
-
-		// if there is no errors
-		if (!Object.keys(errors).length) {
-			setLoading(true);
-
-			const { data } = await axios.post('/send-form', form);
-			console.log({ data });
-			setResponse(data);
-			setLoading(false);
-			toggleModal();
-
-			// reset the form
-			setForm({
-				name: '',
-				email: '',
-				message: '',
-			});
-		}
-	};
-
-	return (
-		<>
-			<div className='Contact-Background-Container'>
-				<div className='Contact-Container'>
-					<img
-						className='Blackboard'
-						src={Blackboard}
-						alt='Blackboard'></img>
-					<h1 className='Contact-Title'> Contact us </h1>
-					<div className='Contact-Info'>
-						<p> MOBILE NUMBER: +61 0415 442 209 </p>
-						<p> PHONE NUMBER: +61 02 9314 5121</p>
-						<p>
-							{' '}
-							ADDRESS: Dr Egg Digital - The Dr Egg Adventures
-							Project{' '}
-						</p>
-						<p className='indent'>
-							{' '}
-							City of Sydney Cultural Precint Office{' '}
-						</p>
-						<p className='indent'>
-							{' '}
-							Suite, 1, Level 22, 66 Oxford Street{' '}
-						</p>
-						<p className='indent'>
-							{' '}
-							East Sydney, NSW, Australia, 2010{' '}
-						</p>
-						<p>
-							{' '}
-							WEBSITE:{' '}
-							<a href='www.dreggadventures.com'>
-								{' '}
-								www.dreggadventures.com{' '}
-							</a>{' '}
-						</p>
-					</div>
-					<ThemeButton
-						fontSize={5}
-						top={65}
-						onClick={() => history.push('/contact-form')}>
-						Form
-					</ThemeButton>
-					<img
-						className='Back-Button characters'
-						src={Back}
-						onClick={BackEventHandler}
-						alt='Back'
-					/>
-					<a href='/chatbot'>
-						<img
-							className='Chatbot-Snake'
-							src={Snake}
-							alt='Snake'
-						/>
-					</a>
-				</div>
-			</div>
-			<LoadScreen visible={loading} />
-			<Modal isOpen={modal} toggle={toggleModal}>
-				<ModalHeader toggle={toggleModal}>
-					{response.status ? 'Oops!' : 'Thank you!'}{' '}
-				</ModalHeader>
-				<ModalBody>{response.msg}</ModalBody>
-				<ModalFooter>
-					<Button color='primary' onClick={toggleModal}>
-						Confirm
-					</Button>
-				</ModalFooter>
-			</Modal>
-		</>
-	);
-};
-
-export default Contact;
+            <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
+            <a href="/chatbot">
+             <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
+            </a>          
+          </div>
+        </div>
+      );
+    }
+    
+export default Contact

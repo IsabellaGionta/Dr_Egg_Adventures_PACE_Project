@@ -2,7 +2,7 @@ import React from 'react';
 import TeacherDownloadButton from '../images/TeacherDownloadButton.png';
 import StudentDownloadButton from '../images/StudentDownloadButton.png';
 import Back from '../images/btn-Back.png';
-import Snake from '../images/Snake.png';
+import Snake from '../images/characters/Snake.png';
 import Blackboard from '../images/Blackboard.png';
 import pdf from '../pdf/Resource.pdf';
 import { useHistory } from "react-router-dom";

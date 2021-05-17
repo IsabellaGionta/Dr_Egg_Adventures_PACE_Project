@@ -1,6 +1,6 @@
 import React from 'react';
 import Pigeon from '../../images/characters/Pigeon.png';
-import Snake from '../../images/Snake.png';
+import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 
@@ -17,18 +17,17 @@ export const PigeonScreen = () => {
 
     return (
       <div className="Characters-Background-Container">
-        <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 
         <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-        <img className="Individual-Character-Styling-Pigeon"src={Pigeon} />
+        <img className="Individual-Character-Styling-Pigeon characters"src={Pigeon} />
 
-        <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
+        <img className="Back-Button" src={Back} onClick={BackEventHandler} alt="Back"/>
 
-        <h1 className="Companions"> THE COMPANIONS: </h1>
-        <h2 className="Individual-Character-Name"> PUFF CHEST: PIGEON AIR FORCE PILOT </h2>
-
+        <h1 className="Character-Type"> THE COMPANIONS: </h1>
+        <h2 className="Individual-Character-Name"> PUFF CHEST:  </h2> 
+        <h2 className="Individual-Character-Slogan">  PIGEON AIR FORCE PILOT </h2>
         <div className="Companion-Description">
           <p> 
             GOAL: Help Cornelia liberate the animals
