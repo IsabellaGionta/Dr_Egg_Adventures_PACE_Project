@@ -74,9 +74,7 @@ h2 {
 }
 
 .Home-Enter-Button {
-  width: 100%;
-  max-width: 30vh;
-  max-height: auto;
+  width: 20%;
   padding: 1vh;
   margin: 1vh auto;
   display: block;
@@ -84,11 +82,11 @@ h2 {
   border-width: 1vh;
   border-color: #83cfb1;
   font-family: Polaris;
-  font-size: 4vh;
+  font-size: 100%;
   color: #367771;
   position: absolute;
   bottom: 0%;
-  left: 85vh;
+  left: 70vh;
 }
 
 /* Individual Character Screen Styling */
@@ -393,20 +391,6 @@ h2 {
   max-height: auto;
 }
 
-.Map-Snake {
-  background-color: red;
-  position: absolute;
-  bottom: 4%;
-  left: 77%;
-  max-width: 12%;
-  max-height: auto;
-}
-
-.Map-Container:hover {
-  outline-color: red;
-  border: 1px dolid;
-}
-
 .Container {
   background-image: url("./images/background-texture.jpg");
   background-size: cover;
@@ -427,7 +411,7 @@ h2 {
 }
 
 .MapImage {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -444,77 +428,7 @@ td {
   border: solid;
 }
 
-.GamesHeading {
-  position: absolute;
-  top: 44%;
-  left: 46%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
 
-.ResourcesHeading {
-  position: absolute;
-  top: 83%;
-  left: 16%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
-
-.ContactHeading {
-  position: absolute;
-  top: 88%;
-  left: 89%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
-
-.CharactersHeading {
-  position: absolute;
-  top: 70%;
-  left: 6%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
-
-.LabHeading {
-  position: absolute;
-  top: 25%;
-  left: 65%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
-
-.WorldsHeading {
-  position: absolute;
-  top: 60%;
-  left: 60%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
-
-.TrailerHeading {
-  position: absolute;
-  top: 80%;
-  left: 38%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
-
-.OnlineStoreHeading {
-  position: absolute;
-  top: 74%;
-  left: 46%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
 
 .resources {
   position: absolute;
@@ -893,7 +807,7 @@ input {
 }
 
 .chalkboard {
-  font-size: 50;
+  font-size: 3vh;
   font-family: "Chalktastic";
   color: white;
   padding: 15px;
@@ -921,6 +835,8 @@ input {
 
 } */
 
+
+/* Online Store Style*/
 .OnlineStore-Background-Container {
   background-image: url("./images/Lab.png");
   background-size: cover;
@@ -945,4 +861,161 @@ input {
   position: absolute;
   top: 45vh;
   left: 70vh;
+}
+
+/*Error Pages Style*/
+
+.ErrorPageStyle {
+    background-image: url("./images/Lab.png");
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+ }
+
+.ErrorTxtCont {
+  position: absolute;
+  top: 12vh;
+  left:15vw;
+  height: 65vh;
+  width: 71vw;
+  padding: 4vw 0;
+  overflow: auto;
+}
+
+.ErrorTxt {
+  width: 69vw;
+}
+
+.h1ErrorChalkboard {
+  font-size: 20vh;
+  font-family: "polaris";
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.h2ErrorChalkboard {
+  font-size: 5vh;
+  font-family: "museo sans";
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.h3ErrorChalkboard {
+  font-size: 2vh;
+  font-family: "museo sans";
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.ErrorBlackboard {
+  height: 100vh;
+  width: 100vw;
+}
+
+.ErrorHomeButton {
+  position: absolute;
+  top: 60vh;
+  left: 28vw;
+  height: 14vh;
+  width: 21vw;
+}
+.ErrorReportButton {
+  position: absolute;
+  top: 60vh;
+  left: 50vw;
+  height: 14vh;
+  width: 21vw;
+}
+
+/* Map Styling */
+
+.Map-Container {
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.GamesHeading {
+  position: absolute;
+  top: 44%;
+  left: 46%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.ResourcesHeading {
+  position: absolute;
+  top: 83%;
+  left: 16%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.ContactHeading {
+  position: absolute;
+  top: 88%;
+  left: 89%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.CharactersHeading {
+  position: absolute;
+  top: 70%;
+  left: 6%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.LabHeading {
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.WorldsHeading {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.TrailerHeading {
+  position: absolute;
+  top: 80%;
+  left: 38%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.OnlineStoreHeading {
+  position: absolute;
+  top: 74%;
+  left: 46%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.Map-Snake {
+  position: absolute;
+  bottom: 4%;
+  left: 77%;
+  max-width: 12%;
+  max-height: auto;
 }

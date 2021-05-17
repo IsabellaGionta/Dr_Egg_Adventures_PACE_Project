@@ -18,6 +18,7 @@ import IndividualCharacters from './screens/IndividualCharacters.js'
 import Worlds from './screens/Worlds.js'
 import ChatBotScreen from './screens/ChatbotScreen.js'
 import Loading from './screens/LoadingScreen.js'
+import ErrorPage from './screens/ErrorPage.js'
 
 
 function App() {
@@ -93,8 +94,8 @@ function App() {
           <Loading />
         </Route>
 
-
-      
+        <Route component = {ErrorPage}/>
+              
       </Switch>
     </Router>
 
