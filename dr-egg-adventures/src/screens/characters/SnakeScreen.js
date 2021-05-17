@@ -1,5 +1,5 @@
 import React from 'react'
-import Snake from '../../images/Snake.png';
+import Snake from '../../images/characters/Snake.png';
 import SnakeImg from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
@@ -17,17 +17,17 @@ export const SnakeScreen = () => {
 
     return (
       <div className="Characters-Background-Container">
-        <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 
         <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
         <img className="Individual-Character-Styling-Snake"src={SnakeImg} />
 
-        <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-        <h1 className="Companions"> THE NARRATOR: </h1>
+        <img className="Back-Button " src={Back} onClick={BackEventHandler} alt="Back"/>
+        <h1 className="Character-Type"> THE NARRATOR: </h1>
 
-        <h2 className="Individual-Character-Name"> THE SNAKE NARRATOR </h2>
+        <h2 className="Individual-Character-Name">  THE SNAKE:  </h2> 
+        <h2 className="Individual-Character-Slogan">  NARRATOR </h2>
 
         <div className="Character-Description-Snake">
              <p> 

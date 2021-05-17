@@ -1,7 +1,7 @@
 import React from 'react'
 import DrMoon from '../../images/characters/DrMoon-Cropped.png';
 import PetriDish from '../../images/PetriDish.png';
-import Snake from '../../images/Snake.png';
+import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 
@@ -18,19 +18,18 @@ export const DrMoonScreen = () => {
 
     return (
       <div className="Characters-Background-Container">
-                <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-          <img className="Individual-Character-Styling"src={DrMoon} />
-          <img className="Character-Tool"src={PetriDish} />
+          <img className="Individual-Character-Styling-Inventors"src={DrMoon} />
+          <img className="Character-Tool Petridish"src={PetriDish} />
 
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-        <h1 className="Companions"> THE SCIENTISTS: </h1>
-
-        <h2 className="Individual-Character-Name"> DR CECILIA MOON: THE DNA KNITTER </h2>
+        <h1 className="Character-Type"> THE SCIENTISTS: </h1>
+        <h2 className="Individual-Character-Name"> DR CECILIA MOON:  </h2> 
+        <h2 className="Individual-Character-Slogan"> THE DNA KNITTER </h2>
 
         <div className="Character-Description">
              <p> 

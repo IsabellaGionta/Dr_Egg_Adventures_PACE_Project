@@ -3,7 +3,7 @@ import React from 'react'
 // import { useEffect } from 'react';
 // import characters from '/dummy.js';
 import Ardash from '../images/characters/Ardash-Cropped.png';
-import Snake from '../images/Snake.png';
+import Snake from '../images/characters/Snake.png';
 import Back from '../images/btn-Back.png';
 import Blackboard from '../images/Blackboard.png';
 import HoverBoard from '../images/HoverBoard.png';

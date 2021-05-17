@@ -9,7 +9,7 @@ import ChatbotScreen from './ChatbotScreen.js'
 
 
 
-import Snake from '../images/Snake.png';
+import Snake from '../images/characters/Snake.png';
 
 
 

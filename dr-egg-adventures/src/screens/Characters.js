@@ -18,7 +18,9 @@ import SnakeImg from '../images/characters/Snake.png';
 import EggDrone from '../images/characters/EggDrone.png';
 import ProfMole from '../images/characters/ProfMole.png';
 import Back from '../images/btn-Back.png';
-import Snake from '../images/Snake.png';
+import Snake from '../images/characters/Snake.png';
+import Good from '../images/Good-Light.png';
+
 // let images = [];
 
 
@@ -131,24 +133,25 @@ const Characters = () => {
             {/* {assets.map((character) => (
               <span> {character.image} </span>
             ))}           */}
-            <img className="Ardash characters all" src={Ardash} onClick={ArdashEventHandler} alt="Ardash"/>
-            <img className="DrEgg characters all" src={DrEgg} onClick={DrEggEventHandler} alt="DrEgg"/>
+            < div className="Character-Images">
+              <img className="DrEgg good-characters all" src={DrEgg} onClick={DrEggEventHandler} alt="DrEgg"/>
 
-            <img className="DrMoon characters all" src={DrMoon} onClick={DrMoonEventHandler} alt="DrMoon"/>
-            <img className="Vivi characters all" src={Vivi} onClick={ViviEventHandler} alt="Vivi"/>
-            <img className="Cornelia characters all" src={Cornelia} onClick={CorneliaEventHandler} alt="Cornelia"/>
+              <img className="DrMoon good-characters all" src={DrMoon} onClick={DrMoonEventHandler} alt="DrMoon"/>
+              <img className="Ardash good-characters all" src={Ardash} onClick={ArdashEventHandler} alt="Ardash"/>
 
-            <img className="ProfMole characters all " src={ProfMole} onClick={ProfMoleEventHandler} alt="ProfMole"/> 
+              <img className="Vivi good-characters all" src={Vivi} onClick={ViviEventHandler} alt="Vivi"/>
+              <img className="Cornelia good-characters all" src={Cornelia} onClick={CorneliaEventHandler} alt="Cornelia"/>
+              <img className="ProfMole bad-characters all " src={ProfMole} onClick={ProfMoleEventHandler} alt="ProfMole"/> 
 
-            <img className="Character-Bench" src={LabBench} alt="LabBench"/>
+              <img className="Character-Bench" src={LabBench} alt="LabBench"/>
 
-             <img className="Carlin characters" src={Carlin} onClick={CarlinEventHandler} alt="Carlin"/>
-            <img className="Rifraf characters" src={RifRaf} onClick={RifRafEventHandler} alt="RifRaf"/>
-            <img className="Pigeon characters" src={Pigeon} onClick={PigeonEventHandler} alt="Pigeon"/>
-            <img className="EggDrone characters" src={EggDrone} onClick={EggDroneEventHandler} alt="EggDrone"/> 
-            <img className="SnakeImg characters" src={SnakeImg} onClick={SnakeEventHandler} alt="SnakeImg"/> 
+              {/* <img className="Carlin good-characters" src={Carlin} onClick={CarlinEventHandler} alt="Carlin"/>
+              <img className="Rifraf good-characters" src={RifRaf} onClick={RifRafEventHandler} alt="RifRaf"/>
+              <img className="Pigeon good-characters" src={Pigeon} onClick={PigeonEventHandler} alt="Pigeon"/>
+              <img className="EggDrone good-characters" src={EggDrone} onClick={EggDroneEventHandler} alt="EggDrone"/>  */}
+              <img className="SnakeImg characters" src={SnakeImg} onClick={SnakeEventHandler} alt="SnakeImg"/> 
 
-
+            </div>
 
 
             <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>

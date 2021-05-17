@@ -1,6 +1,6 @@
 import React from 'react'
 import Vivi from '../../images/characters/Vivi-Cropped.png';
-import Snake from '../../images/Snake.png';
+import Snake from '../../images/characters/Snake.png';
 import Goggle from '../../images/Goggle.png';
 import Toolbelt from '../../images/Toolbelt.png';
 
@@ -20,23 +20,21 @@ export const ViviScreen = () => {
 
     return (
       <div className="Characters-Background-Container">
-                <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-          <img className="Individual-Character-Styling"src={Vivi} />
-          <img className="Character-Tool-Goggles"src={Goggle} />
-          <img className="Character-Tool-Toolbelt" src={Toolbelt} />
+          <img className="Individual-Character-Styling-Inventors"src={Vivi} />
+          <img className=" Character-Tool-Goggles"src={Goggle} />
+          <img className="Character-Tool" src={Toolbelt} />
 
 
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 
-        <h1 className="Companions"> THE KID INVENTORS: </h1>
+        <h1 className="Character-Type"> THE KID INVENTORS: </h1>
 
-        <h2 className="Individual-Character-Name"> VIVI: THE CURIOUS CAT INVENTOR </h2>
-
+        <h2 className="Individual-Character-Name">  VIVI:   </h2> 
+        <h2 className="Individual-Character-Slogan">  THE CURIOUS CAT INVENTOR </h2>
         <div className="Character-Description">
             <p> AGE: 13 </p>
              <p> 
