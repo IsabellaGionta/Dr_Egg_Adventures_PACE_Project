@@ -19,7 +19,6 @@ import '../assets/css/modal.css';
 import '../assets/css/spinner.css';
 import LoadScreen from '../components/LoadScreen';
 import styled from 'styled-components';
-import ThemeButton from '../components/Button';
 
 const ErrorMsg = styled.span`
 	display: block;
@@ -118,7 +117,82 @@ export const Contact = () => {
 						className='Blackboard'
 						src={Blackboard}
 						alt='Blackboard'></img>
-					<h1 className='Contact-Title'> Contact us </h1>
+					{/* <h1 className="Contact-Title"> Dr Egg Adventures </h1> */}
+
+					<Form className='Contact-Form' onSubmit={handleSubmit}>
+						<h2 className='Contact-Title'> Contact Form </h2>
+
+						{/* <h1 className="Contact-Title"> Dr Egg Adventures </h1> */}
+						<div className='Contact-FormGroup'>
+							<FormGroup>
+								<div className='Contact-Label'>
+									{' '}
+									<Label> Full Name </Label>{' '}
+								</div>
+								<Input
+									type='FullName'
+									required
+									value={form['name']}
+									onChange={e => handleFieldChange(e, 'name')}
+								/>
+								{errors && errors.name && (
+									<ErrorMsg>{errors.name}</ErrorMsg>
+								)}
+							</FormGroup>
+						</div>
+						<div className='Contact-FormGroup'>
+							<FormGroup>
+								<div className='Contact-Label'>
+									{' '}
+									<Label>Email</Label>{' '}
+								</div>
+								<Input
+									type='email'
+									name='email'
+									id='Email'
+									required
+									value={form['email']}
+									onChange={e =>
+										handleFieldChange(e, 'email')
+									}
+								/>
+								{errors && errors.email && (
+									<ErrorMsg>{errors.email}</ErrorMsg>
+								)}
+							</FormGroup>
+						</div>
+
+						<div className='Contact-FormGroup'>
+							<FormGroup>
+								<div className='Contact-Label'>
+									<Label>Message</Label>
+								</div>
+								<Input
+									className='Contact-MessageBox'
+									type='textarea'
+									name='text'
+									id='message'
+									required
+									value={form['message']}
+									onChange={e =>
+										handleFieldChange(e, 'message')
+									}
+								/>
+								{errors && errors.message && (
+									<ErrorMsg>{errors.message}</ErrorMsg>
+								)}
+							</FormGroup>
+						</div>
+
+						<Button
+							className='Contact-Button'
+							disabled={
+								Object.keys(errors).length ? true : false
+							}>
+							<span className='text'> SUBMIT </span>
+						</Button>
+					</Form>
+
 					<div className='Contact-Info'>
 						<p> MOBILE NUMBER: +61 0415 442 209 </p>
 						<p> PHONE NUMBER: +61 02 9314 5121</p>
@@ -148,12 +222,7 @@ export const Contact = () => {
 							</a>{' '}
 						</p>
 					</div>
-					<ThemeButton
-						fontSize={5}
-						top={65}
-						onClick={() => history.push('/contact-form')}>
-						Form
-					</ThemeButton>
+
 					<img
 						className='Back-Button characters'
 						src={Back}
