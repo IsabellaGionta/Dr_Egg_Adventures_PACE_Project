@@ -31,6 +31,7 @@ export const ErrorPage = () => {
                 <img className="ErrorHomeButton" src={Home} onClick={() => HomeEventHandler} alt="Back"/>
                 <img className="ErrorReportButton" src={Report} onClick={() => ReportEventHandler} alt="Back"/>
         </div>
+        
     )
 }
 
