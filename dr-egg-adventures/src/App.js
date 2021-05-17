@@ -19,6 +19,10 @@ import Worlds from './screens/Worlds.js';
 import ChatBotScreen from './screens/ChatbotScreen.js';
 import Loading from './screens/LoadingScreen.js';
 import ContactForm from './screens/ContactForm';
+import SlumWorldSingle from './screens/SlumWorldSingle';
+import TechnoWorldSingle from './screens/TechnoWorldSingle';
+import FarmWorldSingle from './screens/FarmWorldSingle';
+import LabWorldSingle from './screens/LabWorldSingle';
 
 function App() {
 	return (
@@ -54,6 +58,22 @@ function App() {
 
 				<Route path='/worlds'>
 					<Worlds />
+				</Route>
+
+				<Route path='/farmWorld1'>
+					<FarmWorldSingle />
+				</Route>
+
+				<Route path='/slumWorld1'>
+					<SlumWorldSingle />
+				</Route>
+
+				<Route path='/technoWorld1'>
+					<TechnoWorldSingle />
+				</Route>
+
+				<Route path='/lab1'>
+					<LabWorldSingle />
 				</Route>
 
 				<Route path='/farmWorld'>
