@@ -1,5 +1,5 @@
 import React from 'react'
-import Vivi from '../../images/characters/Vivi-Cropped.png';
+import Vivi from '../../images/characters/Vivi-Highlight1.png';
 import Snake from '../../images/characters/Snake.png';
 import Goggle from '../../images/Goggle.png';
 import Toolbelt from '../../images/Toolbelt.png';
@@ -23,7 +23,7 @@ export const ViviScreen = () => {
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-          <img className="Individual-Character-Styling-Inventors"src={Vivi} />
+          <img className="Individual-Character-Styling-Inventors-Vivi"src={Vivi} />
           <img className=" Character-Tool-Goggles"src={Goggle} />
           <img className="Character-Tool" src={Toolbelt} />
 

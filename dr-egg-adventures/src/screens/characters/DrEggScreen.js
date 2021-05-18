@@ -1,5 +1,5 @@
 import { useState, React } from 'react'
-import DrEgg from '../../images/characters/DrEgg-Cropped.png';
+import DrEgg from '../../images/characters/Dr-Egg-Highlight1.png';
 import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import EggDrone from '../../images/characters/EggDrone.png';
@@ -32,8 +32,6 @@ export const DrEggScreen = () => {
 
 
           <img className="Individual-Character-Styling-Inventors"src={DrEgg} />
-          {/* <img className="Character-Pet"src={EggDrone} /> */}
-
 
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
@@ -67,8 +65,9 @@ export const DrEggScreen = () => {
         <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
 
         <h2 className="Individual-Character-Name-Pet"> FLYING EGG SPY:  </h2> 
-        {/* <h2 className="Individual-Character-Slogan">  DR EGG'S COMPANION </h2> */}
         <img className="Character-Pet-Popup"src={EggDroneFlipped}/> 
+        <label class="btn-close" for="3">X</label>
+
 
         <div className="Companion-Description">
           <p> 
