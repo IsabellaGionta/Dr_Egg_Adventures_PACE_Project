@@ -23,14 +23,14 @@ export const Resources = () => {
     return (
         <div className="Resource-Background-Container">
           <img className="Blackboard" src={Blackboard} />
-          <h1 className="Resources-Title"> RESOURCES </h1>
+          <h1 className="Resources-Title"> PRODUCT OVERVIEW </h1>
           <div className="buttons">
             <a href={pdf} target="_blank" download>
-              <img className="TeacherButton" src={TeacherDownloadButton} alt="TeacherDownloadButton"/>
+              <img className="ProductOverview" src={TeacherDownloadButton} alt="TeacherDownloadButton"/>
             </a>
-            <a href={pdf} target="_blank" download >
+            {/* <a href={pdf} target="_blank" download >
               <img className="StudentButton" src={StudentDownloadButton}  alt="StudentDownloadButton"/>
-            </a>
+            </a> */}
           </div>
             <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
             <a href="/chatbot">
@@ -40,6 +40,3 @@ export const Resources = () => {
     )
 }
 export default Resources
-
-
-// onClick={() => { alert('Downloading Student resources!')}}

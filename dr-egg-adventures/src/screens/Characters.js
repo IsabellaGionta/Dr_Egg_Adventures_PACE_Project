@@ -2,29 +2,18 @@ import React from 'react';
 import { useEffect } from 'react';
 import getAll from '../services/characters.js';
 import { useHistory } from "react-router-dom";
-import IndividualCharacters from './IndividualCharacters.js';
 import '../App.css';
-
-import Carlin from '../images/characters/Carlin.png';
 import LabBench from '../images/labbench.png';
-import RifRaf from '../images/characters/RifRaf.png';
-import Pigeon from '../images/characters/Pigeon.png';
 import Ardash from '../images/characters/Ardash.png';
 import Cornelia from '../images/characters/Cornelia.png';
 import DrEgg from '../images/characters/DrEgg.png';
 import DrMoon from '../images/characters/DrMoon.png';
 import Vivi from '../images/characters/Vivi.png';
 import SnakeImg from '../images/characters/Snake.png';
-import EggDrone from '../images/characters/EggDrone.png';
 import ProfMole from '../images/characters/ProfMole.png';
 import Back from '../images/btn-Back.png';
 import Snake from '../images/characters/Snake.png';
-import Good from '../images/Good-Light.png';
 
-// let images = [];
-
-
-// import items from '../server/dummy.json';
 
 const Characters = () => {
 
@@ -103,37 +92,10 @@ const Characters = () => {
         history.push('/map')
       }
 
-      // function  importAll(r)  {
-
-        // return r.keys().map((image) => { images[image.replace('../images/characters/', '')] = r(image); });
-    // }
-
-      // images = importAll(require.context('../images/characters/', false, /\.(png|jpe?g|svg)$/));
-    
-      
-    //   function  importAll(r)  {
-    //     return r.keys().map(r);
-    // }
-
-    //   images = importAll(require.context('../images/characters/', false, /\.(png|jpe?g|svg)$/));
-    
-      
-
-      //  function importAll(r) {
-      //   r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-      //   return images;
-      // }
-      
-      //  images = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
-
-
     return (
         <div className="Character-Container">
           <div className="Character-Background-Container"> 
-            {/* {assets.map((character) => (
-              <span> {character.image} </span>
-            ))}           */}
-            < div className="Character-Images">
+            <div className="Character-Images">
               <img className="DrEgg good-characters all" src={DrEgg} onClick={DrEggEventHandler} alt="DrEgg"/>
 
               <img className="DrMoon good-characters all" src={DrMoon} onClick={DrMoonEventHandler} alt="DrMoon"/>
@@ -145,10 +107,6 @@ const Characters = () => {
 
               <img className="Character-Bench" src={LabBench} alt="LabBench"/>
 
-              {/* <img className="Carlin good-characters" src={Carlin} onClick={CarlinEventHandler} alt="Carlin"/>
-              <img className="Rifraf good-characters" src={RifRaf} onClick={RifRafEventHandler} alt="RifRaf"/>
-              <img className="Pigeon good-characters" src={Pigeon} onClick={PigeonEventHandler} alt="Pigeon"/>
-              <img className="EggDrone good-characters" src={EggDrone} onClick={EggDroneEventHandler} alt="EggDrone"/>  */}
               <img className="SnakeImg characters" src={SnakeImg} onClick={SnakeEventHandler} alt="SnakeImg"/> 
 
             </div>

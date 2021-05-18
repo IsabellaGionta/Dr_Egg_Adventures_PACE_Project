@@ -1,5 +1,5 @@
 import React from 'react'
-import Ardash from '../../images/characters/Ardash-Cropped.png';
+import Ardash from '../../images/characters/Ardash-Highlight1.png';
 import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
@@ -49,7 +49,7 @@ render() {
       <div className="Characters-Background-Container">
 
         <img className="Blackboard" src={Blackboard} alt="Blackboard" />
-        <img className="Individual-Character-Styling-Inventors"src={Ardash} />
+        <img className="Individual-Character-Styling-Inventors-Ardash"src={Ardash} />
         <img className="Character-Tool"src={HoverBoard} />
 
         <a href="/characters">

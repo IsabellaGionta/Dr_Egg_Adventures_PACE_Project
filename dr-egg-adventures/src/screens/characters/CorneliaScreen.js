@@ -1,13 +1,11 @@
 import { useState, React }  from 'react';
-import Cornelia from '../../images/characters/Cornelia-Cropped.png';
+import Cornelia from '../../images/characters/Cornelia-Highlight1.png';
 import Carlin from '../../images/characters/Carlin.png';
 import Pigeon from '../../images/characters/Pigeon.png';
 import PigeonFlipped from '../../images/characters/Pigeon-Flipped.png';
 import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
-// import Popup from './Popup';
-import Popup from "reactjs-popup";
 
 
 import { useHistory } from "react-router-dom";
@@ -27,15 +25,6 @@ export const CorneliaScreen = () => {
     setModalState1(!modalState1)
   }
 
-
-  
- 
-  // const [isOpen, setIsOpen] = useState(false);
- 
-  // const togglePopup = () => {
-  //   setIsOpen(!isOpen);
-  // }
-
   
   let history = useHistory();
 
@@ -43,82 +32,20 @@ export const CorneliaScreen = () => {
       history.push('/characters')
     }
 
-    // const HandleClose = () => {
-    //   history.push('/characters')
-    // }
-
-
     return (
       <div className="Characters-Background-Container">
 
         <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-        {/* <Popup trigger=
-          {
-            <img className="Character-Pet" src={Carlin}/> 
-          } position=" center center">
-          <div className="popup-box"> 
-            <div className="box">
-            
-
-            <h1 className="Character-Type"> THE COMPANIONS: </h1> */}
-            {/* <h2 className="Individual-Character-Name">  CARLIN:  </h2> 
-            <h2 className="Individual-Character-Slogan"> CORNELIA'S MOUSE </h2>
-
-            <div className="Companion-Description">
-              <p> 
-               GOAL: Help Cornelia
-              </p>
-               <p className="Powers"> 
-               SPECIAL POWER: ‘Thought-wave’ clues to Cornelia
-              </p>
-
-
-            </div> */}
-          {/* </div>
-          </div>
-        </Popup> */}
-
-
-        <img className="Individual-Character-Styling-Inventors"src={Cornelia} />
-        {/* <img className="Character-Pet-Pigeon"src={Pigeon} /> */}
-
-        {/* <div> 
-          <input 
-          type="button"
-          value="Characteristics"
-          onClick={togglePopup}
-          />
-
-          {isOpen && <togglePopup 
-          content={<>
-            <h1 className="Character-Type"> THE COMPANIONS: </h1>
-            <h2 className="Individual-Character-Name">  CARLIN:  </h2> 
-            <h2 className="Individual-Character-Slogan"> CORNELIA'S MOUSE </h2>
-          
-            <div className="Companion-Description">
-              <p> 
-                GOAL: Help Cornelia
-              </p>
-              <p className="Powers"> 
-                SPECIAL POWER: ‘Thought-wave’ clues to Cornelia
-              </p>
-            </div>
-        </>
-          }
-        HandleClose={togglePopup}
-      />}
-      </div> */}
+        <img className="Individual-Character-Styling-Inventors-Cornelia"src={Cornelia} />
       
-
-
-
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-
-        <h1 className="Character-Type"> THE KID INVENTORS: </h1>
-        <h2 className="Individual-Character-Name">  CORNELIA:  </h2> 
-        <h2 className="Individual-Character-Slogan"> THE GOLDEN GIRL </h2>
+        <div className="Titles" >
+          <h1 className="Character-Type"> THE KID INVENTORS: </h1>
+          <h2 className="Individual-Character-Name">  CORNELIA:  </h2> 
+          <h2 className="Individual-Character-Slogan"> THE GOLDEN GIRL </h2>
+        </div>
         <div className="Character-Description">
             <p> AGE: 13 </p>
              <p> 
@@ -152,7 +79,7 @@ export const CorneliaScreen = () => {
         
           <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
           <h2 className="Individual-Character-Name-Pet">  CARLIN: CORNELIA'S MOUSE  </h2> 
-          {/* <h2 className="Individual-Character-Slogan"> CORNELIA'S MOUSE </h2> */}
+          <label class="btn-close" for="3">X</label>
           <img className="Character-Pet-Popup"src={Carlin} /> 
 
 
@@ -164,18 +91,17 @@ export const CorneliaScreen = () => {
               <b> SPECIAL POWER: </b> ‘Thought-wave’ clues to Cornelia
               </p>
           </div>
-        
-        
         </div>
-        <img className="Character-Pet"src={Carlin} onClick={() => manageState() } /> 
+        <img className="Character-Pet clicked"src={Carlin} onClick={() => manageState() } /> 
         
 
         <div className={`modalBackground modalShowing-${modalState1}`}> 
         
         <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
         <h2 className="Individual-Character-Name-Pet"> PUFF CHEST: PIGEON AIR FORCE PILOT  </h2> 
-        {/* <h2 className="Individual-Character-Slogan">  PIGEON AIR FORCE PILOT </h2> */}
         <img className="Character-Pet-Popup"src={PigeonFlipped} /> 
+        <label class="btn-close" for="3">X</label>
+
         <div className="Companion-Description">
           <p> 
             GOAL: Help Cornelia liberate the animals
@@ -188,7 +114,7 @@ export const CorneliaScreen = () => {
         
         
         </div>
-        <img className="Character-Pet-Pigeon"src={Pigeon} onClick={() => manageState1() } /> 
+        <img className="Character-Pet-Pigeon clicked"src={Pigeon} onClick={() => manageState1() } /> 
         
           
         <a href="/chatbot">
