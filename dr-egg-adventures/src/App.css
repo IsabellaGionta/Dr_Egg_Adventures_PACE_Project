@@ -202,7 +202,38 @@ h1 {
   position: absolute;
   bottom: 0%;
   left: 9%;
-  max-width: 26%;
+  width: 24%;
+  max-width: 100%;
+  max-height: auto;
+
+}
+
+.Individual-Character-Styling-Inventors-Ardash {
+  position: absolute;
+  bottom: 0%;
+  left: 9%;
+  width: 19%;
+  max-width: 100%;
+  max-height: auto;
+
+}
+
+.Individual-Character-Styling-Inventors-Cornelia {
+  position: absolute;
+  bottom: 0%;
+  left: 9%;
+  width: 16%;
+  max-width: 100%;
+  max-height: auto;
+
+}
+
+.Individual-Character-Styling-Inventors-Vivi {
+  position: absolute;
+  bottom: 0%;
+  left: 9%;
+  width: 20%;
+  max-width: 100%;
   max-height: auto;
 
 }
@@ -211,8 +242,8 @@ h1 {
   position: absolute;
   bottom: 0%;
   left: 60%;
-  width: 100%;
-  max-width: 40%;
+  width: 40%;
+  max-width: 100%;
   max-height: auto;
 }
 
@@ -239,6 +270,7 @@ h1 {
 .Blackboard {
   width: 100vw;
   height: 100vh;
+
 }
 
 /* .Character-Tool-Toolbelt {
@@ -340,8 +372,14 @@ h1 {
 .Character-Pet-Popup {
   position: absolute;
   left: 2%;
-  width: 12%;
+  width: 25%;
   top: 25%;
+}
+
+.btn-close {
+  position: absolute; 
+  left: 96%;
+  top: 4%;
 }
 
 /* Companion popups  */
@@ -352,15 +390,51 @@ h1 {
   transition: opacity 0.4s ease in-out;
   background-image: url("./images/Form-Background.png");
   background-repeat: no-repeat;
-  width: 80%;
+  background-size: 100% 100%;
+  width: 40%;
   height: 50%;
+  max-width: 100%;
   max-height: 100%;
-  max-height: auto;
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 30%;
+  /* backdrop-filter: blur(20px); */
+  /* filter: blur(10px); */
 }
 
+/* .modalBackground:focus-within {
+  filter:blur(5px);
+
+} */
+
+/* .Characters-Background-Container {
+  filter: blur(5px);
+} */
+/* .Blackboard {
+  filter: blur(5px);
+}
+.Individual-Character-Styling-Inventors {
+  filter: blur(5px);
+}
+
+.Character-Pet {
+  filter: blur(5px);
+}
+.Character-Pet-Pigeon {
+  filter: blur(5px);
+}
+.Character-Type {
+  filter: blur(1px);
+}
+
+.Character-Description {
+  filter: blur(5px);
+} */
+
+.clicked:active {
+  opacity: 80%;
+
+}
 .modalShowing-true {
   opacity: 1;
   pointer-events: showing;
@@ -369,11 +443,11 @@ h1 {
 
 .Companion-Description {
   font-family: museo sans;
-  width: 25%;
+  width: 50%;
   max-width: 100%;
   max-height: auto;
   position: absolute;
-  left: 15%;
+  left: 30%;
   top: 33%;
   font-size: 2vh;
   /* text-align: left; */
@@ -498,7 +572,9 @@ h1.Resources-Title {
   width: 60%;
 }
 
-.TeacherButton {
+.ProductOverview {
+  position: absolute;
+  left: 10%;
 
   max-width: 100%;
   max-height: auto;
@@ -506,12 +582,20 @@ h1.Resources-Title {
   margin-right: auto;
 }
 
-.StudentButton {
+.Resources-Desc {
+  max-width: 100%;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* .StudentButton {
   max-width: 100%; 
   max-height: auto;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -1484,7 +1568,8 @@ input {
   } 
   .SnakeImg {
     bottom: 7%;
-    width: 35%;
+    left:30%;
+    width: 45%;
   }
   .EggDrone {
     bottom: 10%;
@@ -1529,8 +1614,47 @@ input {
     left: -13%;
   }
   .Individual-Character-Styling-Inventors{
-    max-width: 50%;
+    width: 50%;
     left: 0%;
+  }
+
+  .Individual-Character-Styling-Inventors-Cornelia{
+    width: 30%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-Inventors-Ardash{
+    width: 40%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-Inventors-Vivi{
+    width: 40%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-ProfMole {
+    width: 80%;
+    left: 20%;
+
+  }
+
+  .Character-Pet {
+    width: 20%;
+  }
+
+  .Character-Tool {
+    width: 35%;
+  }
+
+  .Petridish {
+    width: 15%;
+  }
+
+  .Character-Pet-Pigeon {
+    width: 20%;
+    left: 45%;
+    bottom: 3%;
   }
 
   .Character-Description {
@@ -1597,8 +1721,8 @@ input {
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
   .modalBackground {
-    left: 10%;
-    width: 80%;
+    left: 15%;
+    width: 70%;
   }
   
 
@@ -1692,8 +1816,9 @@ input {
     width: 15%;
   } 
   .SnakeImg {
-    bottom: 12%;
-    width: 535;
+    bottom: 14%;
+    left: 30%;
+    width: 40%;
   }
   .EggDrone {
     bottom: 20%;
@@ -1726,6 +1851,64 @@ input {
     top: 20%;  
     font-size: 2.3vh;
   }
+
+
+
+
+  .Individual-Character-Styling{
+    max-width: 68%;
+    left: -13%;
+  }
+  .Individual-Character-Styling-Inventors{
+    width: 50%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-Inventors-Cornelia{
+    width: 30%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-Inventors-Ardash{
+    width: 40%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-Inventors-Vivi{
+    width: 40%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-ProfMole {
+    width: 70%;
+    left: 30%;
+
+  }
+
+  .Character-Pet {
+    width: 20%;
+  }
+
+  .Character-Tool {
+    width: 35%;
+  }
+
+  .Petridish {
+    width: 15%;
+  }
+
+  .Character-Pet-Pigeon {
+    width: 20%;
+    left: 45%;
+    bottom: 0%;
+  }
+
+
+
+
+
+
+
 
  /* Companion popups  */
   .Character-Pet-Popup{
@@ -1797,8 +1980,8 @@ input {
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
   .modalBackground {
-    left: 15%;
-    width: 100%;
+      left: 1%;
+      background-size: 70%;
   }
   
   .Ardash:hover {
@@ -1905,6 +2088,60 @@ input {
   .Vivi {
     left: 185px;
   } */
+
+
+
+  .Individual-Character-Styling{
+    max-width: 68%;
+    left: -13%;
+  }
+  .Individual-Character-Styling-Inventors{
+    width: 35%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-Inventors-Cornelia{
+    width: 25%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-Inventors-Ardash{
+    width: 30%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-Inventors-Vivi{
+    width: 30%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-ProfMole {
+    width: 60%;
+    left: 40%;
+
+  }
+
+  .Character-Pet {
+    width: 20%;
+  }
+
+  .Character-Tool {
+    width: 25%;
+  }
+
+  .Petridish {
+    width: 10%;
+  }
+
+  .Character-Pet-Pigeon {
+    width: 20%;
+    left: 45%;
+    bottom: 0%;
+  }
+
+
+
+
 
 
    /* Companion popups  */
