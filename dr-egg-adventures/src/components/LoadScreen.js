@@ -1,4 +1,4 @@
-import { Spinner } from 'reactstrap';
+/*import { Spinner } from 'reactstrap';
 import styled from 'styled-components';
 
 const Overlay = styled.div`
@@ -18,6 +18,6 @@ const LoadScreen = ({ visible }) => (
 			</Overlay>
 		)}
 	</>
-);
+);*/
 
-export default LoadScreen;
+// export default LoadScreen;
