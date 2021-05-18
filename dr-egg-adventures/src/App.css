@@ -74,9 +74,7 @@ h2 {
 }
 
 .Home-Enter-Button {
-  width: 100%;
-  max-width: 30vh;
-  max-height: auto;
+  width: 20%;
   padding: 1vh;
   margin: 1vh auto;
   display: block;
@@ -84,11 +82,11 @@ h2 {
   border-width: 1vh;
   border-color: #83cfb1;
   font-family: Polaris;
-  font-size: 4vh;
+  font-size: 100%;
   color: #367771;
   position: absolute;
   bottom: 0%;
-  left: 85vh;
+  left: 70vh;
 }
 
 /* Individual Character Screen Styling */
@@ -379,19 +377,10 @@ h2 {
 
 .Back-Button {
   position: fixed;
-  top: 2%;
-  left: 86%;
-  max-width: 10%;
+  top: 0%;
+  left: 85%;
+  max-width: 12%;
   max-height: auto;
-}
-
-.Back-Button:hover {
-  position: fixed;
-  top: 2%;
-  left: 86%;
-  max-width: 10%;
-  max-height: auto;
-  transform: scale(1.3);
 }
 
 .Chatbot-Snake {
@@ -400,19 +389,6 @@ h2 {
   left: 88%;
   max-width: 12%;
   max-height: auto;
-}
-
-.Map-Snake {
-  position: absolute;
-  bottom: 4%;
-  left: 77%;
-  max-width: 12%;
-  max-height: auto;
-}
-
-.Map-Container:hover {
-  outline-color: red;
-  border: 1px dolid;
 }
 
 .Container {
@@ -435,7 +411,7 @@ h2 {
 }
 
 .MapImage {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -452,77 +428,7 @@ td {
   border: solid;
 }
 
-.GamesHeading {
-  position: absolute;
-  top: 44%;
-  left: 46%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
 
-.ResourcesHeading {
-  position: absolute;
-  top: 83%;
-  left: 16%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
-
-.ContactHeading {
-  position: absolute;
-  top: 88%;
-  left: 89%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
-
-.CharactersHeading {
-  position: absolute;
-  top: 70%;
-  left: 6%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
-
-.LabHeading {
-  position: absolute;
-  top: 25%;
-  left: 65%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
-
-.WorldsHeading {
-  position: absolute;
-  top: 60%;
-  left: 60%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
-
-.TrailerHeading {
-  position: absolute;
-  top: 80%;
-  left: 38%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
-
-.OnlineStoreHeading {
-  position: absolute;
-  top: 74%;
-  left: 46%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
-}
 
 .resources {
   position: absolute;
@@ -571,7 +477,6 @@ h1.Contact-Title {
 .Contact-MessageBox {
   width: 100%;
   height: 20vh;
-  padding: 12px 20px;
 }
 
 .Contact-Form {
@@ -711,7 +616,7 @@ input {
 }
 
 .world-text {
-  max-width: 58%;
+  max-width: 50%;
   max-height: auto;
 }
 
@@ -782,10 +687,10 @@ input {
 
 .slum-text {
   position: absolute;
-  bottom: 1%;
-  left: 6%;
+  bottom: 3%;
+  left: 2%;
   width: 290px;
-  height: 580px;
+  height: 480px;
   text-align: center;
 }
 
@@ -832,8 +737,7 @@ input {
   position: absolute;
   max-width: 50%;
   max-height: auto;
-  right: 25%;
-  bottom: 25%;
+  right: 30%;
 }
 
 .drmoon {
@@ -846,79 +750,28 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  right: 72%;
+  right: 15%;
   bottom: 40%;
 }
 
-.lab-button-wc {
-  max-width: 75%;
+.lab-buttons {
+  max-width: 70%;
   max-height: auto;
   padding: 7px;
 }
 
-.lab-button-facts {
-  max-width: 85%;
-  max-height: auto;
-  padding: 7px;
-}
-
-.lab-button-fanfic {
-  max-width: 60%;
-  max-height: auto;
-  padding: 7px;
-}
-
-.lab-button-inv {
-  max-width: 60%;
-  max-height: auto;
-  padding: 7px;
-}
-
-.lab-button-biogoo {
-  max-width: 45%;
-  max-height: auto;
-  padding: 7px;
-}
-
-.plank-container {
+.bb-container {
   position: absolute;
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-  top: 83%;
 }
 
-.plankname {
-  position: absolute;
-  font-family: museo sans;
-  font-weight: bold;
-  text-align: left;
-  font-size: 30px;
-  color: white;
-  top: 25%;
-}
-
-.plank {
-  max-width: 60%;
+.bench-button {
+  max-width: 35%;
   max-height: auto;
-}
-
-.aboriginal-flag {
-  position: absolute;
-  max-width: 100%;
-  max-height: auto;
-  left: 86%;
-  top: 18%;
-}
-
-.aboriginal-flag:hover {
-  position: absolute;
-  max-width: 100%;
-  max-height: auto;
-  left: 85%;
-  top: 17%;
-  transform: scale(1.2);
+  padding: 10px;
 }
 
 .tool-container {
@@ -926,7 +779,7 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  bottom: 18%;
+  bottom: 10%;
 }
 
 .tools {
@@ -937,14 +790,6 @@ input {
 
 .tools:hover {
   transform: scale(1.5);
-}
-
-.wc-box {
-  position: absolute;
-  max-width: 30%;
-  max-height: auto;
-  left: 70%;
-  top: 30%;
 }
 
 .back-container {
@@ -961,18 +806,12 @@ input {
   top: 15%;
 }
 
-.popup-text {
-  font-family: museo sans;
-  font-weight: bold;
+.chalkboard {
+  font-size: 3vh;
+  font-family: "Chalktastic";
+  color: white;
+  padding: 15px;
   text-align: center;
-  font-size: 18px;
-}
-
-.yt-trailer {
-  position: absolute;
-  max-width: 100%;
-  left: 15%;
-  top: 12%;
 }
 
 /* .container {
@@ -996,6 +835,8 @@ input {
 
 } */
 
+
+/* Online Store Style*/
 .OnlineStore-Background-Container {
   background-image: url("./images/Lab.png");
   background-size: cover;
@@ -1020,4 +861,209 @@ input {
   position: absolute;
   top: 45vh;
   left: 70vh;
+}
+
+.BookStore {
+  height: 99vh;
+  width: 100vw;
+}
+
+/*Error Pages Style*/
+
+.ErrorPageStyle {
+    background-image: url("./images/Lab.png");
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+ }
+
+.ErrorTxtCont {
+  position: absolute;
+  top: 12vh;
+  left:15vw;
+  height: 48vh;
+  width: 71vw;
+  padding: 4vw 0;
+  overflow: auto;
+}
+
+@media all and (max-aspect-ratio: 10/16){
+  .ErrorTxtCont {
+    position: absolute;
+    top: 12vh;
+    left:15vw;
+    height: 48vh;
+    width: 71vw;
+    overflow: auto;
+  }
+  
+}
+
+.ErrorTxt {
+  width: 69vw;
+}
+
+.h1ErrorChalkboard {
+  font-size: 20vh;
+  font-family: "polaris";
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+@media all and (max-aspect-ratio: 10/16){
+  .h1ErrorChalkboard {
+    font-size: 30vw;
+    font-family: "polaris";
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+  }
+}
+
+
+.h2ErrorChalkboard {
+  font-size: 5vh;
+  font-family: "museo sans";
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.h3ErrorChalkboard {
+  font-size: 2vh;
+  font-family: "museo sans";
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.ErrorBlackboard {
+  height: 100vh;
+  width: 100vw;
+}
+
+.ErrorHomeButton {
+  position: absolute;
+  top: 60vh;
+  left: 28vw;
+  height: 14vh;
+  width: 21vw;
+}
+
+@media all and (max-aspect-ratio: 10/16){
+  .ErrorHomeButton {
+    position: absolute;
+    top: 60vh;
+    left: 28vw;
+    height: 10vh;
+    width: 42vw;
+  }
+}
+
+.ErrorReportButton {
+  position: absolute;
+  top: 60vh;
+  left: 50vw;
+  height: 14vh;
+  width: 21vw;
+}
+
+@media all and (max-aspect-ratio: 10/16){
+  .ErrorReportButton {
+    position: absolute;
+    top: 73vh;
+    left: 28vw;
+    height: 10vh;
+    width: 42vw;
+  }
+}
+/* Map Styling */
+
+.Map-Container {
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.GamesHeading {
+  position: absolute;
+  top: 44%;
+  left: 46%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.ResourcesHeading {
+  position: absolute;
+  top: 83%;
+  left: 16%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.ContactHeading {
+  position: absolute;
+  top: 88%;
+  left: 89%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.CharactersHeading {
+  position: absolute;
+  top: 70%;
+  left: 6%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.LabHeading {
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.WorldsHeading {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.TrailerHeading {
+  position: absolute;
+  top: 80%;
+  left: 38%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.OnlineStoreHeading {
+  position: absolute;
+  top: 74%;
+  left: 46%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
+}
+
+.Map-Snake {
+  position: absolute;
+  bottom: 4%;
+  left: 77%;
+  max-width: 12%;
+  max-height: auto;
 }
