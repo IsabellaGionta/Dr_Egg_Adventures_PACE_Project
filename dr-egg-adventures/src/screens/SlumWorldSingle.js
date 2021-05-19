@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import SlumWorld from '../assets/images/SlumWorld.png';
 import UpperBoardImg from '../assets/images/upperBoard.png';
 import LowerBoardImg from '../assets/images/lowerBoard.png';
-import Vivi from '../images/Vivi.png';
+import Vivi from '../images/characters/Vivi.png';
 
 const UpperBoard = styled.div`
 	width: 820px;

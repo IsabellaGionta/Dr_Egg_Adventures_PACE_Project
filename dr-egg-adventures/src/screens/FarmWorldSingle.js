@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import FarmWorld from '../assets/images/FarmWorld.png';
 import UpperBoardImg from '../assets/images/upperBoard.png';
 import LowerBoardImg from '../assets/images/lowerBoard.png';
-import Cornelia from '../images/Cornelia.png';
+import Cornelia from '../images/characters/Cornelia.png';
 
 const UpperBoard = styled.div`
 	width: 820px;

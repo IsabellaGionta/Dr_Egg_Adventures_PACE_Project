@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import WorldConcept from '../assets/images/WorldConcept.png';
 import UpperBoardImg from '../assets/images/upperBoard.png';
 import LowerBoardImg from '../assets/images/lowerBoard.png';
-import Ardash from '../images/Ardash.png';
+import Ardash from '../images/characters/Ardash.png';
 
 const UpperBoard = styled.div`
 	width: 820px;
