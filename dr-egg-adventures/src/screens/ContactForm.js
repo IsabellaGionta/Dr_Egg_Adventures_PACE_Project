@@ -51,7 +51,7 @@ export const ContactForm = () => {
 	const toggleModal = () => setModal(!modal);
 
 	const BackEventHandler = () => {
-		history.push('/map');
+		history.go(-1);
 	};
 
 	const validateForm = (field, form) => {
