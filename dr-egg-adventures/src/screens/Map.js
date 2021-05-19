@@ -1,58 +1,82 @@
-import React from 'react';
-import map from '../images/Map.png';
-import { useHistory } from "react-router-dom";
-import { Button } from 'react-bootstrap';
-import Worlds from '../images/Worlds.PNG';
-import ChatbotScreen from './ChatbotScreen.js'
+import React  from 'react';
+import Snake from '../images/Snake.png';
+import Helmet from "react-helmet";
 
- 
-
-
-
-import Snake from '../images/characters/Snake.png';
-
-
-
-
-
-
-export const Map = () => {
-
-  let history = useHistory();
-
-
-  const ChatbotEventHandler = () => {
-    <ChatbotScreen />
-  }
-
+let isDown = false;
+let startX;
+let scrollLeft;
+class Map extends React.Component {
+    constructor(props) {
+      super(props);
+      this.MapID = React.createRef();
+    }
+    render(){
     return (
         <div className="Map-Container">
-          <img className="MapImage" src={map} alt="Map" useMap="#Map" />
-          <div className="GamesHeading"> GAMES</div>
-          <div className="ResourcesHeading"> RESOURCES</div>
-          <div className="CharactersHeading"> CHARACTERS </div>
-          <div className="ContactHeading"> CONTACT </div>
-          <div className="LabHeading"> LAB </div>
-          <div className="WorldsHeading"> WORLDS </div>
-          <div className="TrailerHeading"> TRAILER </div>
-          <div className="OnlineStoreHeading"> ONLINE STORE </div>
-
-          <map name="Map" id="Map">
-            <area shape="poly" coords="901, 300, 1081, 530, 1085, 600, 665, 574, 901, 300 " href="/game" alt="Game" />
-            <area  shape="circle" coords="185, 700, 75 " href="/characters " alt="Characters" />
-            <area  shape="circle" coords="370, 810, 60  " href="/resources " alt="Resources" />
-            <area  shape="circle" coords="780, 700, 45 " href="/trailer" alt="Trailer" />
-            <area  shape="circle" coords="1750, 850, 70 " href="/contact " alt="Contact" />
-            <area  shape="poly" coords="1570, 650, 1400, 825, 1100, 825, 1100, 500, 1410, 510 " href="/worlds" alt="World" />
-            <area  shape="poly" coords="1450, 250, 1400, 505, 1100, 500, 1150, 200, 1410, 110 " href="/lab" alt="Lab" />
-            <area  shape="circle" coords="1000, 730, 65 " href="/online-store" alt="Online Store" />
-          </map>
- 
-           <a href="/chatbot">
-           <img className="Map-Snake" src={Snake} alt="Snake"/>  
-           </a>
-            
-        </div>
-    )
+            <Helmet>
+                <title>Map</title>
+            </Helmet>
+            <div 
+                className = "Map"
+                ref = {this.MapID}
+                onMouseDown = {(e) => {
+                    e.preventDefault();
+                    isDown = true;
+                    startX = e.pageX - this.MapID.current.offsetLeft;
+                    scrollLeft = this.MapID.current.scrollLeft;
+                    }
+                }
+                onMouseLeave = {
+                    () => {
+                        isDown = false;
+                    }
+                }
+                onMouseUp = {
+                    () => {
+                        isDown = false;
+                    }
+                }
+                onMouseMove = {
+                    (e) => {
+                        if (!isDown) return;
+                        e.preventDefault();
+                        const x = e.pageX - this.MapID.current.offsetLeft;
+                        const walk = x - startX;
+                        this.MapID.current.scrollLeft = scrollLeft - walk;
+                    }
+                }
+            >
+                <div className = "BtnContain">
+                    <a href="/Game">
+                        <div className = "GamesHeading"/>
+                    </a>
+                    <a href="/Contact">
+                        <div className = "ContactHeading"/>
+                    </a>
+                    <a href="/Characters">
+                        <div className = "CharactersHeading"/>
+                    </a>
+                    <a href="/Lab">
+                        <div className = "LabHeading"/>
+                    </a>
+                    <a href="/Worlds">
+                        <div className = "WorldsHeading"/>
+                    </a>
+                    <a href="/Trailer">
+                        <div className = "TrailerHeading"/>
+                    </a>
+                    <a href="/Resources">
+                        <div className = "ResourcesHeading"/>
+                    </a>
+                    <a href="/online-store">
+                        <div className = "OnlineStoreHeading"/>
+                    </a> 
+                </div>
+            </div>
+            <a href="/chatbot">
+                <img className = "MapSnake" src = {Snake} alt = "Snake"/>
+            </a>
+        </div>            
+    )}
 }
 export default Map;
