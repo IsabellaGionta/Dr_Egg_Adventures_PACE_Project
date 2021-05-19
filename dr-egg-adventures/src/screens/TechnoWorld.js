@@ -6,7 +6,7 @@ import button from '../images/btn-Back.png';
 import worldText from '../images/world-text-flip.png';
 import exit from '../images/back-icon.png';
 import lab from '../images/lab-button.png';
-import snake from '../images/Snake.png';
+import snake from '../images/characters/Snake.png';
 import { useHistory } from "react-router-dom";
 
 export const TechnoWorld = () => {

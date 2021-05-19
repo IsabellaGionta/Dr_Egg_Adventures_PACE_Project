@@ -1,6 +1,6 @@
 import React from 'react';
 import Back from '../images/btn-Back.png';
-import Snake from '../images/Snake.png';
+import Snake from '../images/characters/Snake.png';
 import { Button} from 'reactstrap';
 import Blackboard from '../images/Blackboard.png';
 import { useHistory } from "react-router-dom";

@@ -2,8 +2,9 @@ import React from 'react';
 import TeacherDownloadButton from '../images/TeacherDownloadButton.png';
 import StudentDownloadButton from '../images/StudentDownloadButton.png';
 import Back from '../images/btn-Back.png';
-import Snake from '../images/Snake.png';
-import Blackboard from '../images/Blackboard.png'
+import Snake from '../images/characters/Snake.png';
+import Blackboard from '../images/Blackboard.png';
+import pdf from '../pdf/Resource.pdf';
 import { useHistory } from "react-router-dom";
 
 
@@ -22,9 +23,12 @@ export const Resources = () => {
     return (
         <div className="Resource-Background-Container">
           <img className="Blackboard" src={Blackboard} />
+          <h1 className="Resources-Title"> PRODUCT OVERVIEW </h1>
           <div className="buttons">
-            <img className="TeacherButton" src={TeacherDownloadButton} onClick={() => { alert('Downloading Teacher resources!')}} alt="TeacherDownloadButton"/>
-            <img className="StudentButton" src={StudentDownloadButton} onClick={() => { alert('Downloading Student resources!')}} alt="StudentDownloadButton"/>
+            <a href={pdf} target="_blank" download>
+              <img className="ProductOverview" src={TeacherDownloadButton} alt="TeacherDownloadButton"/>
+            </a>
+
           </div>
             <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
             <a href="/chatbot">
@@ -34,4 +38,3 @@ export const Resources = () => {
     )
 }
 export default Resources
-

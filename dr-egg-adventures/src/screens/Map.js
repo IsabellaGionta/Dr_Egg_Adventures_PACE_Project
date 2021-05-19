@@ -1,6 +1,5 @@
 import React from 'react';
 import map from '../images/Map.png';
-import DrEgg from '../images/DrEgg.png';
 import { useHistory } from "react-router-dom";
 import { Button } from 'react-bootstrap';
 import Worlds from '../images/Worlds.PNG';
@@ -10,7 +9,7 @@ import ChatbotScreen from './ChatbotScreen.js'
 
 
 
-import Snake from '../images/Snake.png';
+import Snake from '../images/characters/Snake.png';
 
 
 
@@ -57,10 +56,3 @@ export const Map = () => {
     )
 }
 export default Map;
-
-// <img className="DrEggMap characters" src={DrEgg} onClick={CharactersEventHandler} alt="DrEgg"/>
-// <Button onClick={ResourcesEventHandler} variant="primary" className="resources"> RESOURCES </Button>
-// <Button onClick={WorldsEventHandler} variant="primary" className="worlds"> WORLDS </Button>       
-
-// <div className="brightness">
-// <img className="worlds" src={Worlds} onClick={WorldsEventHandler} alt="Worlds"/>
