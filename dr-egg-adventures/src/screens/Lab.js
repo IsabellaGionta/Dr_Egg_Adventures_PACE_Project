@@ -33,7 +33,7 @@ export const Lab = () => {
             <div className = "bb-container">
                 <img className="bench-button" src={benchbutton} alt = "bench button"/>
             </div>
-            <img class="lab-blackboard" src={blackboard} />
+            <img class="lab-blackboard" src={blackboard} alt = "BlackBoard"/>
             <img className="drmoon" src={DrMoon} alt = "dr moon"/>
             <img className="dregg" src={DrEgg} alt = "dr egg"/>
             <div className = "button-container">

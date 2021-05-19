@@ -16,6 +16,7 @@
 		"react-bootstrap": "^1.5.2",
 		"react-chatbot-kit": "^1.1.20",
 		"react-dom": "^17.0.2",
+		"react-helmet": "^6.1.0",
 		"react-loading-screen": "0.0.17",
 		"react-meta-tags": "^1.0.1",
 		"react-router": "^5.2.0",

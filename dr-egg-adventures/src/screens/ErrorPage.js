@@ -3,6 +3,7 @@ import Report from '../images/btn-Report.png';
 import Home from '../images/btn-Home.png';
 import Blackboard from '../images/Blackboard.png';
 import {useHistory } from "react-router-dom";
+import Helmet from "react-helmet";
 
 
 export const ErrorPage = () => {
@@ -20,6 +21,9 @@ export const ErrorPage = () => {
 
     return (
         <div className="ErrorPageStyle">
+        <Helmet>
+            <title>Error 404</title>
+        </Helmet>
             <div className = 'ErrorTxtCont'>
                 <div className = 'ErrorTxt'>
                 <p className = 'h1ErrorChalkboard'> 404 </p>
