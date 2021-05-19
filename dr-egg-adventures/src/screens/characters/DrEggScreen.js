@@ -4,6 +4,8 @@ import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import EggDrone from '../../images/characters/EggDrone.png';
 import EggDroneFlipped from '../../images/characters/EggDrone-Flipped.png';
+import Popup from '../../components/Popup.js';
+
 
 import Blackboard from '../../images/Blackboard.png';
 
@@ -12,11 +14,6 @@ import { useHistory } from "react-router-dom";
 export const DrEggScreen = () => {
 
   const [modalState, setModalState] = useState(false);
-
-  const manageState= () => {
-    setModalState(!modalState)
-  }
-
   
   let history = useHistory();
 
@@ -60,14 +57,16 @@ export const DrEggScreen = () => {
             </p>
 
         </div>
+        <img className="Character-Pet"src={EggDrone} onClick={() => setModalState(true) } /> 
 
-        <div className={`modalBackground modalShowing-${modalState}`}> 
-        <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
+
+        <Popup trigger={modalState} setTrigger = {setModalState}>
+
+          <div className = "popup-background">
+            <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
 
         <h2 className="Individual-Character-Name-Pet"> FLYING EGG SPY:  </h2> 
         <img className="Character-Pet-Popup"src={EggDroneFlipped}/> 
-        <label class="btn-close" for="3">X</label>
-
 
         <div className="Companion-Description">
           <p> 
@@ -77,10 +76,11 @@ export const DrEggScreen = () => {
             <b> SPECIAL POWER: </b> Gathers data and clues through roving eye-camera for Dr Egg
           </p>
         </div>
+          </div>
+        </Popup>
         
         
-        </div>
-        <img className="Character-Pet"src={EggDrone} onClick={() => manageState() } /> 
+        
         
 
         
