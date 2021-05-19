@@ -46,55 +46,6 @@ p {
   font-family: "museo sans"
 }
 
-
-/* Popup style */
-/* .popup-box {
-  position: fixed;
-  background: #00000050;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-}
- 
-.box {
-  position: relative;
-  width: 70%;
-  margin: 0 auto;
-  height: 70%;
-  max-height: 100%;
-  margin-top: calc(100vh - 85vh - 20px);
-  background-image: url("./images/Form-Background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 4px;
-  padding: 20px;
-  border: 1px solid #999;
-  overflow: auto;
-}
- 
-.close-icon {
-  content: 'x';
-  cursor: pointer;
-  position: fixed;
-  right: calc(15% - 30px);
-  top: calc(100vh - 85vh - 33px);
-  background: #ededed;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  line-height: 20px;
-  text-align: center;
-  border: 1px solid #999;
-  font-size: 20px;
-} */
-
-/* .button  {
-  position: absolute;
-  left:0%;
-  top: 0%;
-} */
-
 .Loading-gif {
   display: block;
   margin-left: auto;
@@ -143,12 +94,6 @@ p {
   max-height: 100%;
 }
 
-/* @media screen and (max-width: 1024px) {
-  .Home-Background-Container {
-    width:100vw;
-    height:100vh;
-  }
-} */
 
 .Home-Button-Wrapper {
   display: flex;
@@ -170,12 +115,7 @@ p {
   top: 10%;
   left: 10%;
 }
-/* @media screen and (max-width: 777px) {
-  .Home-Enter-Button {
-    max-width: 40%;
-    left: 35%;
-  }
-} */
+
 
 
 
@@ -276,15 +216,7 @@ p {
 
 }
 
-/* .Character-Tool-Toolbelt {
-  width: 100%;
-  max-width: 20%;
-  max-height: auto;
-  position: absolute;
-  bottom: 5%;
-  left: 40%;
 
-} */
 
 .Character-Tool-Goggles {
   width: 100%;
@@ -333,11 +265,6 @@ p {
 }
 
 
-/* @media screen and (max-width: 900px) {
-  .character {
-    width:10%;
-  }
-} */
 
 .Character-Type {
   position: absolute;
@@ -389,53 +316,6 @@ p {
 
 /* Companion popups  */
 
-/* .modalBackground {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease in-out;
-  background-image: url("./images/Form-Background.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 40%;
-  height: 50%;
-  max-width: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 20%;
-  left: 30%;
-} */
-  /* backdrop-filter: blur(20px); */
-  /* filter: blur(10px); */
-
-
-/* .modalBackground:focus-within {
-  filter:blur(5px);
-
-} */
-
-/* .Characters-Background-Container {
-  filter: blur(5px);
-} */
-/* .Blackboard {
-  filter: blur(5px);
-}
-.Individual-Character-Styling-Inventors {
-  filter: blur(5px);
-}
-
-.Character-Pet {
-  filter: blur(5px);
-}
-.Character-Pet-Pigeon {
-  filter: blur(5px);
-}
-.Character-Type {
-  filter: blur(1px);
-}
-
-.Character-Description {
-  filter: blur(5px);
-} */
 
 .clicked:active {
   opacity: 80%;
@@ -527,11 +407,7 @@ p {
   color: white;
 }
 
-/* .Mobile-Characteristics {
-  position: absolute;
-  top:10%;
-  left:10%;
-} */
+
 
 
 /* Character Screen Styling */
@@ -605,12 +481,6 @@ h1.Resources-Title {
 
 }
 
-/* .StudentButton {
-  max-width: 100%; 
-  max-height: auto;
-  margin-left: auto;
-  margin-right: auto;
-} */
 
 .App-logo {
   height: 40vmin;
@@ -650,8 +520,7 @@ h1.Resources-Title {
 .homeImage {
   width: 100%;
   height: auto;
-  /* background-size: cover; */
-  /* background-image: url("./images/DrEggLogoOnPaper.jpg"); */
+
 }
 
 .enter {
@@ -664,19 +533,11 @@ h1.Resources-Title {
   max-width: 200px;
 }
 
-/* @media only screen and (max-width: 600px) {
-  .homeImage {
-    width: 100%
-    }
-} */
 
 
 
 .good-characters:hover {
-  /* -ms-transform: scale(1.1); IE 9 */
-  /* -webkit-transform: scale(1.1); Safari 3-8 */
-  /* transform: scale(1.1); */
-  /* opacity:80%; */
+
   background-image: url("./images/Good-Light.png");
   background-position:top center;
   /* opacity: 88%; */
@@ -689,10 +550,7 @@ h1.Resources-Title {
 
 
 .bad-characters:hover {
-  /* -ms-transform: scale(1.1); IE 9 */
-  /* -webkit-transform: scale(1.1); Safari 3-8 */
-  /* transform: scale(1.1); */
-  /* opacity:80%; */
+
   background-image: url("./images/Bad-Light.png");
   background-position: center top;
   opacity: 88%;
@@ -700,10 +558,6 @@ h1.Resources-Title {
 
 }
 
-/* .imageHolder {
-  background-image: url(../public/images/Lab.png);
-
-} */
 
 .containerWraper {
   position: relative;
@@ -722,28 +576,9 @@ h1.Resources-Title {
   width: 100%;
   /* max-height: 100%; */
   height: 30vh;
-  /* image-rendering: crisp-edges; */
 }
 
-/* 
-@media screen and (max-width: 768px) {
-  .Character-Bench {
-    max-height: 40%;
-  }
-}
 
-@media screen and (max-width: 768px) {
-  .all {
-    height: 70%;
-    width: 50%;
-  }
-} */
-
-/* @media screen and (max-width: 769px) {
-  .Character-Bench {
-    height: 5vh;
-  }
-} */
 
 .Carlin {
   position: absolute;
@@ -1476,22 +1311,6 @@ input {
 /* Media queries */
 
 
-/* 
-@media screen and (min-width: 1007px) {
-  .TeacherButton {
-    position: absolute;
-    left: 900px;
-  }
-}
-
-@media screen and (max-width: 1007px) {
-  .TeacherButton {
-    max-width: 100%;
-  }
-  .StudentButton {
-    max-width: 100%;
-  }
-} */
 /* Charcter (All) screen */
 
 /* Mobile screens  */
@@ -1697,23 +1516,7 @@ input {
   }
 
   /* Companion popups  */
-  /* .Character-Pet-Popup{
-    width: 30%;
-    top: 30%;
-  }
-
-  .Individual-Character-Name-Pet {
-    font-size: 1.2vh;
-  }
-
-    
-  .Companion-Description {
-    line-height: 30px;
-    left: 40%;
-    font-size: 1.4vh;
-    width: 45%; */
-
-  /* } */
+  
   .Powers {
     padding: 40px 0px;
   }
@@ -1934,29 +1737,6 @@ input {
     bottom: 0%;
   }
 
-
-
-
-
-
-
-
- /* Companion popups 
-  .Character-Pet-Popup{
-    width: 30%;
-    top: 30%;
-  }
-  .Companion-Description {
-    line-height: 40px;
-    left: 38%;
-    top: 28%;
-    width: 60%;
-  }
-
-  .Individual-Character-Name-Pet {
-    font-size: 1.8vh;
-  } */
-
   .Powers {
     padding: 40px 0px;
 
@@ -1983,10 +1763,6 @@ input {
     line-height: 22px;
   }
 
-  /* .Individual-Character-Styling{
-    max-width: 68%;
-    left: -13%;
-  } */
   .Character-Description {
     left: 18%;
     top: 25%;
@@ -2108,17 +1884,6 @@ input {
   .ProfMole {
     left: 60%;
   }
-  /* .EggDrone {
-    bottom: 20%;
-    width: 20%;
-  }
-  /* 
-  .DrEgg {
-    left: -65px;
-  }
-  .Vivi {
-    left: 185px;
-  } */
 
 
 
@@ -2176,35 +1941,12 @@ input {
 
 
    /* Companion popups  */
-/* 
-   .modalBackground {
-    left: 15%;
-    width: 100%;
-  }
-   .Character-Pet-Popup{
-    width: 20%;
-    top: 20%;
-  }
-  .Companion-Description {
-    line-height: 40px;
-    left: 23%;
-    top: 30%;
-    width: 45%;
-  }
-  .Individual-Character-Name-Pet {
-    font-size: 2.3vh;
-  } */
+
   .Powers {
     padding: 40px 0px;
 
   } 
-  /* .Individual-Character-Name {
-    line-height:100px;
-    left: 16%;
-    top: 20%;  
-    font-size: 3vh;
 
-  } */
   .Character-Type {
     left: 25%;
   }
@@ -2273,35 +2015,6 @@ input {
 
 }
 
-
-/* @media screen and (min-width: 1025px) {
-  .Companion-Description {
-    line-height: 90px;
-    top: 30%;
-    left: 35%;
-  }
-  .Individual-Character-Name {
-    line-height:100px;
-    left: 40%;
-    top: 20%;  
-    font-size: 3vh;
-  }
-
-  .Individual-Character-DrEggDrone {
-    line-height:100px;
-    left: 40%;
-    top: 20%;  
-    font-size: 2.5vh;
-  }
-  .Individual-Character-Styling{
-    max-width: 25%;
-  }
-
-  .Individual-Character-Styling-Pigeon{
-    max-width: 25%;
-  }
-
-} */
 
 
 

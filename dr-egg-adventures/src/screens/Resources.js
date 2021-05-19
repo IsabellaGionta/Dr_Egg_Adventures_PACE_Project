@@ -28,9 +28,7 @@ export const Resources = () => {
             <a href={pdf} target="_blank" download>
               <img className="ProductOverview" src={TeacherDownloadButton} alt="TeacherDownloadButton"/>
             </a>
-            {/* <a href={pdf} target="_blank" download >
-              <img className="StudentButton" src={StudentDownloadButton}  alt="StudentDownloadButton"/>
-            </a> */}
+
           </div>
             <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
             <a href="/chatbot">
