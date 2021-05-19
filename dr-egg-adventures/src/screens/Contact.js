@@ -10,7 +10,7 @@ import {
 	ModalHeader,
 	ModalFooter,
 } from 'reactstrap';
-import Snake from '../images/Snake.png';
+import Snake from '../images/characters/Snake.png';
 import Back from '../images/btn-Back.png';
 import Blackboard from '../images/Blackboard.png';
 import { useHistory } from 'react-router-dom';

@@ -1,28 +1,33 @@
 @font-face {
-  font-family: "polaris";
-  src: url("./fonts/Polaris.woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'polaris';
+	src: url('./fonts/Polaris.woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: "museo sans";
-  src: url("./fonts/MuseoSansCyrl-500.woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'museo sans';
+	src: url('./fonts/MuseoSansCyrl-500.woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: "chalktastic";
-  src: url("./fonts/Chalktastic.woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'chalktastic';
+	src: url('./fonts/Chalktastic.woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,
+body {
+	overflow: hidden;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html, body {
@@ -47,31 +52,31 @@ p {
 }
 
 .Loading-gif {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  position: absolute;
-  top: 10%;
-  left: 30%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	position: absolute;
+	top: 10%;
+	left: 30%;
 }
 
 .Loading-Background-Container {
-  background-image: url("./images/background-texture.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
+	background-image: url('./images/background-texture.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
 }
 
 /* Home Screen Styling */
 
 .Lab-Background-Container {
-  background-image: url("./images/Lab.png");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
+	background-image: url('./images/Lab.png');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
 }
 .Home-Background-Container {
   background-image: url("./images/World-Blur.png");
@@ -259,9 +264,9 @@ p {
 }
 
 .Character-Tool:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
 }
 
 
@@ -447,11 +452,11 @@ h1.Resources-Title {
 }
 
 .Resource-Background-Container {
-  background-image: url("./images/Lab.png");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
+	background-image: url('./images/Lab.png');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
 }
 
 .buttons {
@@ -483,38 +488,38 @@ h1.Resources-Title {
 
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .homeImage {
@@ -524,13 +529,13 @@ h1.Resources-Title {
 }
 
 .enter {
-  position: absolute;
-  bottom: 10%;
-  left: 44%;
-  width: 200px;
-  height: 90px;
-  max-height: auto;
-  max-width: 200px;
+	position: absolute;
+	bottom: 10%;
+	left: 44%;
+	width: 200px;
+	height: 90px;
+	max-height: auto;
+	max-width: 200px;
 }
 
 
@@ -560,13 +565,13 @@ h1.Resources-Title {
 
 
 .containerWraper {
-  position: relative;
-  width: 100%;
+	position: relative;
+	width: 100%;
 }
 
 .Lab {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 .Character-Bench {
@@ -716,11 +721,11 @@ h1.Resources-Title {
 }
 
 .Back-Button {
-  position: fixed;
-  top: 0%;
-  left: 85%;
-  max-width: 12%;
-  max-height: auto;
+	position: fixed;
+	top: 0%;
+	left: 85%;
+	max-width: 12%;
+	max-height: auto;
 }
 
 .Back-Button:hover {
@@ -730,248 +735,309 @@ h1.Resources-Title {
 }
 
 .Chatbot-Snake {
-  position: absolute;
-  bottom: 0%;
-  left: 88%;
-  max-width: 12%;
-  max-height: auto;
+	position: absolute;
+	bottom: 0%;
+	left: 88%;
+	max-width: 12%;
+	max-height: auto;
 }
 
 .Map-Snake {
-  position: absolute;
-  bottom: 4%;
-  left: 77%;
-  max-width: 12%;
-  max-height: auto;
+	position: absolute;
+	bottom: 4%;
+	left: 77%;
+	max-width: 12%;
+	max-height: auto;
 }
 
 .Map-Container:hover {
-  outline-color: red;
-  border: 1px dolid;
+	outline-color: red;
+	border: 1px dolid;
 }
 
 .Container {
-  background-image: url("./images/background-texture.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+	background-image: url('./images/background-texture.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 100%;
 }
 
 .DrEggMap {
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  max-width: 15%;
-  max-height: auto;
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	max-width: 15%;
+	max-height: auto;
 }
 
 .CharactersLink {
-  border-color: blue;
+	border-color: blue;
 }
 
 .MapImage {
-  width: 100%;
-  height: 100vh;
+	width: 100%;
+	height: 100vh;
 }
 
 .Characters-Background-Container {
-  background-image: url("./images/Lab.png");
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+	background-image: url('./images/Lab.png');
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
 }
 
 table,
 th,
 td {
-  border: solid;
+	border: solid;
 }
 
 .GamesHeading {
-  position: absolute;
-  top: 44%;
-  left: 46%;
-  font-weight: bold;
-  font-family: polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 44%;
+	left: 46%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .ResourcesHeading {
-  position: absolute;
-  top: 83%;
-  left: 16%;
-  font-weight: bold;
-  font-family: polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 83%;
+	left: 16%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .ContactHeading {
-  position: absolute;
-  top: 88%;
-  left: 89%;
-  font-weight: bold;
-  font-family: polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 88%;
+	left: 89%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .CharactersHeading {
-  position: absolute;
-  top: 70%;
-  left: 6%;
-  font-weight: bold;
-  font-family: polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 70%;
+	left: 6%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .LabHeading {
-  position: absolute;
-  top: 25%;
-  left: 65%;
-  font-weight: bold;
-  font-family: polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 25%;
+	left: 65%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .WorldsHeading {
-  position: absolute;
-  top: 60%;
-  left: 60%;
-  font-weight: bold;
-  font-family: polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .TrailerHeading {
-  position: absolute;
-  top: 80%;
-  left: 38%;
-  font-weight: bold;
-  font-family: polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 80%;
+	left: 38%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .OnlineStoreHeading {
-  position: absolute;
-  top: 74%;
-  left: 46%;
-  font-weight: bold;
-  font-family: polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 74%;
+	left: 46%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .resources {
-  position: absolute;
-  left: 35%;
-  bottom: 15%;
-  background-color: blue;
-  color: white;
-  border-color: blue;
-  width: 100px;
-  height: 50px;
+	position: absolute;
+	left: 35%;
+	bottom: 15%;
+	background-color: blue;
+	color: white;
+	border-color: blue;
+	width: 100px;
+	height: 50px;
 }
 
 
 .worlds {
-  position: absolute;
-  left: 75%;
-  bottom: 32%;
-  background-color: blue;
-  color: white;
-  border-color: blue;
-  width: 25%;
-  height: 42%;
+	position: absolute;
+	left: 75%;
+	bottom: 32%;
+	background-color: blue;
+	color: white;
+	border-color: blue;
+	width: 25%;
+	height: 42%;
 }
 
 .brightness img:hover {
-  opacity: 0.5;
-  color: yellow;
+	opacity: 0.5;
+	color: yellow;
 }
 
 /* Contact Screen Styling  */
 
 .Contact-Background-Container {
-  background-image: url("./images/Lab.png");
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+	background-image: url('./images/Lab.png');
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
 }
 
 h1.Contact-Title {
-  font-family: polaris;
-  font-size: 4vh;
-  position: absolute;
-  left: 45%;
-  top: 10%;
+	font-family: Polaris;
+	text-transform: uppercase;
+	font-size: 5vh;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 400px;
+	margin: 0 auto;
+	top: 20%;
+	color: #fff;
 }
 
 .Contact-MessageBox {
-  width: 100%;
-  height: 20vh;
+	width: 100%;
+	height: 20vh;
+	padding: 12px 20px;
 }
 
 .Contact-Form {
-  width: 100%;
-  max-width: 50vh;
-  padding: 100px 15px;
-  margin: auto;
-  height: 100%;
-  position: absolute;
-  top: 0%;
-  left: 25%;
+	width: 100%;
+	max-width: 50%;
+	padding: 100px 15px;
+	margin: auto;
+	height: 100%;
+	position: absolute;
+	top: 20%;
+	left: 25%;
 }
 
+/* .Contact-Info {
+	font-family: museo sans;
+	position: absolute;
+	top: 30%;
+	left: 55%;
+	color: white;
+	line-height: 40px;
+	font-size: 2vh;
+} */
 .Contact-Info {
-  font-family: museo sans;
-  position: absolute;
-  top: 30%;
-  left: 55%;
-  color: white;
-  line-height: 40px;
-  font-size: 2vh;
+	font-family: museo sans;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	width: 800px;
+	margin: 0 auto;
+	color: white;
+	line-height: 40px;
+	font-size: 3vh;
 }
 
 .indent {
-  text-indent: 19%;
+	text-indent: 19%;
 }
 .Contact-FormGroup {
-  padding: 15px;
+	padding: 15px;
 }
 input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
 }
 
-.Contact-Label {
-  margin: 8px 0;
-  font-family: museo sans;
-  font-size: 2vh;
+.Contact-Form .form-group {
+	display: flex;
 }
 
+.Contact-Form .form-group .input-wrapper {
+	width: 100%;
+}
+
+.Contact-Form .Contact-Label {
+	margin: 8px 0;
+	font-family: Museo-sans;
+	font-size: 2vh;
+	width: 25%;
+	color: #fff;
+	font-weight: 400px;
+	font-size: 3vh;
+}
+
+.Contact-Form input,
+.Contact-Form textarea {
+	border-radius: 20px;
+	background: url('./assets/images/paper_texture_04.jpg');
+}
+
+.Contact-Form input:focus,
+.Contact-Form textarea:focus {
+	outline: none;
+}
+.contact-modal .modal-content {
+	text-align: center;
+	background: url('./assets/images/FormBackground.png');
+	background-size: cover;
+	background-position: center;
+}
+.contact-modal .modal-header {
+	border-bottom: none;
+}
+.contact-modal .modal-body {
+	padding: 1rem 1rem 3rem 1rem;
+}
+.contact-modal h2 {
+	color: #367771;
+	font-size: 2.5rem;
+	margin-top: 0.5em;
+}
+.contact-modal p {
+	color: #367771;
+	font-size: 1.5rem;
+}
 .Contact-Button {
-  width: 100%;
-  max-width: 24vh;
-  height: auto;
-  padding: 1vh;
-  margin: 1vh auto;
-  display: block;
-  border-radius: 3vh;
-  border-width: 1vh;
-  border-color: #83cfb1;
-  font-family: polaris;
-  font-size: 4vh;
-  color: #367771;
+	width: 100%;
+	max-width: 24vh;
+	height: auto;
+	padding: 1vh;
+	margin: 1vh auto;
+	display: block;
+	border-radius: 3vh;
+	border-width: 1vh;
+	border-color: #83cfb1;
+	font-family: Polaris;
+	font-size: 4vh;
+	color: #367771;
 }
 
 .text {
-  max-width: 30%;
-  max-height: auto;
-  font-weight: 9vh;
-  text-align: center;
+	max-width: 30%;
+	max-height: auto;
+	font-weight: 9vh;
+	text-align: center;
 }
 
 /* .TeacherButton {
@@ -988,19 +1054,19 @@ input {
 /* Worlds Screen Styles */
 
 .world-image {
-  background-image: url("./images/background-texture.jpg");
-  background-size: cover;
-  background-position: top;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  position: relative;
-  align-self: center;
-  display: flex;
+	background-image: url('./images/background-texture.jpg');
+	background-size: cover;
+	background-position: top;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	position: relative;
+	align-self: center;
+	display: flex;
 }
 
 .technoworld {
@@ -1034,229 +1100,229 @@ input {
 }
 
 .home-button {
-  max-width: 100%;
-  max-height: auto;
+	max-width: 100%;
+	max-height: auto;
 }
 
 .hb-container {
-  position: absolute;
-  top: 0px;
-  right: 30px;
-  padding: 20px;
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	padding: 20px;
 }
 
 .techno-text-container {
-  position: absolute;
-  left: 41%;
+	position: absolute;
+	left: 41%;
 }
 
 .farm-text-container {
-  position: absolute;
-  left: 61%;
+	position: absolute;
+	left: 61%;
 }
 
 .slum-text-container {
-  position: absolute;
-  left: 35%;
+	position: absolute;
+	left: 35%;
 }
 
 .world-text {
-  max-width: 50%;
-  max-height: auto;
+	max-width: 58%;
+	max-height: auto;
 }
 
 .back-icon {
-  max-width: 70%;
-  max-height: auto;
+	max-width: 70%;
+	max-height: auto;
 }
 
 .world-text-farm {
-  max-width: 50%;
-  max-height: auto;
+	max-width: 50%;
+	max-height: auto;
 }
 
 .techno-exit {
-  width: 3%;
-  position: absolute;
-  left: 45%;
-  bottom: 93%;
+	width: 3%;
+	position: absolute;
+	left: 45%;
+	bottom: 93%;
 }
 
 .farm-exit {
-  width: 3.5%;
-  position: absolute;
-  left: 45%;
-  bottom: 93%;
+	width: 3.5%;
+	position: absolute;
+	left: 45%;
+	bottom: 93%;
 }
 
 .slum-exit {
-  width: 3%;
-  position: absolute;
-  left: 3%;
-  bottom: 93%;
+	width: 3%;
+	position: absolute;
+	left: 3%;
+	bottom: 93%;
 }
 
 .lab-container {
-  position: absolute;
-  height: auto;
-  width: 100%;
-  display: flex;
+	position: absolute;
+	height: auto;
+	width: 100%;
+	display: flex;
 }
 
 .lab-button {
-  position: absolute;
-  width: 35%;
-  height: auto;
-  top: 88%;
-  left: 33%;
+	position: absolute;
+	width: 35%;
+	height: auto;
+	top: 88%;
+	left: 33%;
 }
 
 .techno-text {
-  position: absolute;
-  bottom: 3%;
-  left: 7%;
-  width: 290px;
-  height: 480px;
-  text-align: center;
+	position: absolute;
+	bottom: 3%;
+	left: 7%;
+	width: 290px;
+	height: 480px;
+	text-align: center;
 }
 
 .farm-text {
-  position: absolute;
-  bottom: 9%;
-  left: 8%;
-  width: 100%;
-  max-width: 38%;
-  max-height: auto;
-  text-align: center;
+	position: absolute;
+	bottom: 9%;
+	left: 8%;
+	width: 100%;
+	max-width: 38%;
+	max-height: auto;
+	text-align: center;
 }
 
 .slum-text {
-  position: absolute;
-  bottom: 3%;
-  left: 2%;
-  width: 290px;
-  height: 480px;
-  text-align: center;
+	position: absolute;
+	bottom: 1%;
+	left: 6%;
+	width: 290px;
+	height: 580px;
+	text-align: center;
 }
 
 .world-title {
-  font-size: 30px;
-  font-family: "polaris";
-  font-weight: normal;
+	font-size: 30px;
+	font-family: 'polaris';
+	font-weight: normal;
 }
 
 .info-text {
-  font-family: "museo sans";
-  font-weight: normal;
-  text-align: left;
+	font-family: 'museo sans';
+	font-weight: normal;
+	text-align: left;
 }
 
 .snake-container {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  padding: 20px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 20px;
 }
 
 .chatbot {
-  max-width: 100%;
-  max-height: auto;
+	max-width: 100%;
+	max-height: auto;
 }
 
 .snake-container img:hover {
-  opacity: 0.5;
-  color: yellow;
+	opacity: 0.5;
+	color: yellow;
 }
 
 /* Lab Screen Styles */
 
 .bench {
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  max-width: 100%;
-  max-height: auto;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	max-width: 100%;
+	max-height: auto;
 }
 
 .dregg {
-  position: absolute;
-  max-width: 50%;
-  max-height: auto;
-  right: 30%;
+	position: absolute;
+	max-width: 50%;
+	max-height: auto;
+	right: 30%;
 }
 
 .drmoon {
-  max-width: 50%;
-  max-height: auto;
+	max-width: 50%;
+	max-height: auto;
 }
 
 .button-container {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  right: 15%;
-  bottom: 40%;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	right: 15%;
+	bottom: 40%;
 }
 
 .lab-buttons {
-  max-width: 70%;
-  max-height: auto;
-  padding: 7px;
+	max-width: 70%;
+	max-height: auto;
+	padding: 7px;
 }
 
 .bb-container {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
 }
 
 .bench-button {
-  max-width: 35%;
-  max-height: auto;
-  padding: 10px;
+	max-width: 35%;
+	max-height: auto;
+	padding: 10px;
 }
 
 .tool-container {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  bottom: 10%;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	bottom: 10%;
 }
 
 .tools {
-  max-width: 15%;
-  max-height: auto;
-  padding: 40px;
+	max-width: 15%;
+	max-height: auto;
+	padding: 40px;
 }
 
 .tools:hover {
-  transform: scale(1.5);
+	transform: scale(1.5);
 }
 
 .back-container {
-  position: absolute;
-  width: 100%;
-  padding: 20px;
+	position: absolute;
+	width: 100%;
+	padding: 20px;
 }
 
 .lab-blackboard {
-  position: absolute;
-  max-width: 45%;
-  max-height: auto;
-  left: 55%;
-  top: 15%;
+	position: absolute;
+	max-width: 45%;
+	max-height: auto;
+	left: 55%;
+	top: 15%;
 }
 
 .chalkboard {
-  font-size: 50;
-  font-family: "Chalktastic";
-  color: white;
-  padding: 15px;
-  text-align: center;
+	font-size: 50;
+	font-family: 'Chalktastic';
+	color: white;
+	padding: 15px;
+	text-align: center;
 }
 
 /* .container {
@@ -1281,29 +1347,29 @@ input {
 } */
 
 .OnlineStore-Background-Container {
-  background-image: url("./images/Lab.png");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
+	background-image: url('./images/Lab.png');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
 }
 
 .OnlineStore-Button {
-  width: 100%;
-  max-width: 50vh;
-  max-height: auto;
-  padding: 1vh;
-  margin: 1vh auto;
-  display: block;
-  border-radius: 3vh;
-  border-width: 1vh;
-  border-color: #83cfb1;
-  font-family: polaris;
-  font-size: 4vh;
-  color: #367771;
-  position: absolute;
-  top: 45vh;
-  left: 70vh;
+	width: 100%;
+	max-width: 50vh;
+	max-height: auto;
+	padding: 1vh;
+	margin: 1vh auto;
+	display: block;
+	border-radius: 3vh;
+	border-width: 1vh;
+	border-color: #83cfb1;
+	font-family: Polaris;
+	font-size: 4vh;
+	color: #367771;
+	position: absolute;
+	top: 45vh;
+	left: 70vh;
 }
 
 
