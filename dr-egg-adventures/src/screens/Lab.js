@@ -1,6 +1,5 @@
 import React from 'react'
 import Popup from '../components/Popup';
-import BookPopup from '../components/BookPopup';
 import { useState } from 'react';
 
 import bench from '../images/labbench.png';
