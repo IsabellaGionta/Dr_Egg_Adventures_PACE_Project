@@ -1,7 +1,7 @@
 import React from 'react'
 import btnback from '../images/btn-Back.png';
 import btnbackglow from '../images/btn-Back-hover.png';
-import snake from '../images/Snake.png';
+import snake from '../images/characters/Snake.png';
 import background from '../images/popup-bg.png';
 import { useHistory } from "react-router-dom";
 
