@@ -19,6 +19,11 @@
   font-style: normal;
 }
 
+html,
+body {
+  overflow: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -562,10 +567,15 @@ td {
 
 h1.Contact-Title {
   font-family: Polaris;
-  font-size: 4vh;
+  text-transform: uppercase;
+  font-size: 5vh;
   position: absolute;
-  left: 45%;
-  top: 10%;
+  left: 0;
+  right: 0;
+  width: 400px;
+  margin: 0 auto;
+  top: 20%;
+  color: #fff;
 }
 
 .Contact-MessageBox {
@@ -576,23 +586,35 @@ h1.Contact-Title {
 
 .Contact-Form {
   width: 100%;
-  max-width: 50vh;
+  max-width: 50%;
   padding: 100px 15px;
   margin: auto;
   height: 100%;
   position: absolute;
-  top: 0%;
+  top: 20%;
   left: 25%;
 }
 
+/* .Contact-Info {
+	font-family: museo sans;
+	position: absolute;
+	top: 30%;
+	left: 55%;
+	color: white;
+	line-height: 40px;
+	font-size: 2vh;
+} */
 .Contact-Info {
   font-family: museo sans;
   position: absolute;
   top: 30%;
-  left: 55%;
+  left: 0;
+  right: 0;
+  width: 800px;
+  margin: 0 auto;
   color: white;
   line-height: 40px;
-  font-size: 2vh;
+  font-size: 3vh;
 }
 
 .indent {
@@ -611,12 +633,55 @@ input {
   box-sizing: border-box;
 }
 
-.Contact-Label {
+.Contact-Form .form-group {
+  display: flex;
+}
+
+.Contact-Form .form-group .input-wrapper {
+  width: 100%;
+}
+
+.Contact-Form .Contact-Label {
   margin: 8px 0;
   font-family: Museo-sans;
   font-size: 2vh;
+  width: 25%;
+  color: #fff;
+  font-weight: 400px;
+  font-size: 3vh;
 }
 
+.Contact-Form input,
+.Contact-Form textarea {
+  border-radius: 20px;
+  background: url("./assets/images/paper_texture_04.jpg");
+}
+
+.Contact-Form input:focus,
+.Contact-Form textarea:focus {
+  outline: none;
+}
+.contact-modal .modal-content {
+  text-align: center;
+  background: url("./assets/images/FormBackground.png");
+  background-size: cover;
+  background-position: center;
+}
+.contact-modal .modal-header {
+  border-bottom: none;
+}
+.contact-modal .modal-body {
+  padding: 1rem 1rem 3rem 1rem;
+}
+.contact-modal h2 {
+  color: #367771;
+  font-size: 2.5rem;
+  margin-top: 0.5em;
+}
+.contact-modal p {
+  color: #367771;
+  font-size: 1.5rem;
+}
 .Contact-Button {
   width: 100%;
   max-width: 24vh;
