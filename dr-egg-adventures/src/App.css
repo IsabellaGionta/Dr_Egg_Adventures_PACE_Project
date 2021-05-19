@@ -29,10 +29,13 @@
 html,
 body {
   overflow: hidden;
+<<<<<<< HEAD
 }
 
 p {
 	font-family: 'museo sans';
+=======
+>>>>>>> fdc86a9c2fa4a83cbb02d4f06e904782eb46016f
 }
 
 * {
@@ -942,6 +945,7 @@ input {
   max-width: 60%;
   max-height: auto;
   padding: 7px;
+<<<<<<< HEAD
 }
 
 .lab-button-inv {
@@ -956,6 +960,22 @@ input {
   padding: 7px;
 }
 
+=======
+}
+
+.lab-button-inv {
+  max-width: 60%;
+  max-height: auto;
+  padding: 7px;
+}
+
+.lab-button-biogoo {
+  max-width: 45%;
+  max-height: auto;
+  padding: 7px;
+}
+
+>>>>>>> fdc86a9c2fa4a83cbb02d4f06e904782eb46016f
 .plank-container {
   position: absolute;
   width: 100%;
