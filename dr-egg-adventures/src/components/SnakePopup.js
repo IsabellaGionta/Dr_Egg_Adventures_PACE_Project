@@ -3,15 +3,15 @@ import './Popup.css'
 
 import close from '../images/close-popup.png';
 
-function popup(props) {
+function SnakePopup(props) {
     return (props.trigger) ? (
         <div className = "popup">
-            <div className = "popup-inner">
-                <img className = "close-btn" src = {close} onClick = {() => props.setTrigger(false)}/>
+            <div className = "Snake-popup-inner">
+                <img className = "Snake-close-btn" src = {close} onClick = {() => props.setTrigger(false)}/>
                 {props.children}
             </div>
         </div>
     ) : "";
 }
 
-export default popup
+export default SnakePopup
