@@ -85,9 +85,6 @@ const slumNav = () => {
 
             <img className="Snake"src={Snake} onClick={() => setModalState(true) } /> 
 
-                {/* onClick={() => manageState() } />  */}
-
-
 
                 <Popup trigger={modalState} setTrigger = {setModalState}>
                     <div className = "popup-background">

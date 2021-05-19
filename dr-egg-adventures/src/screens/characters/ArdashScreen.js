@@ -65,7 +65,7 @@ render() {
 
              <p> AGE: 13 </p>
              {characteristics}
-             {/* <p> 
+             <p> 
               CHARACTERISTICS: Ardash is a boy with no belly button and 
               he is literally perfect. He hails from Techno-world and has
               been genetically modified so he can’t catch any diseases. He’s
@@ -75,9 +75,9 @@ render() {
               experiments. He can also travel at super speeds! Ardash likes
               to investigate and discover new diseases and is searching for
               one he could catch. 
-            </p> */}
+            </p>
             
-            {/* <p> 
+            <p> 
               VIRTUES: Fast. Speedy. Can do anything with numbers and data.
             </p>
             <p>
@@ -90,7 +90,7 @@ render() {
             </p>
             <p>
               WORLD: Techno-towers
-            </p> */}
+            </p>
 
         </div>
 

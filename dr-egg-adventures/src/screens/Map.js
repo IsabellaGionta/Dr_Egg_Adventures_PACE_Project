@@ -56,10 +56,3 @@ export const Map = () => {
     )
 }
 export default Map;
-
-// <img className="DrEggMap characters" src={DrEgg} onClick={CharactersEventHandler} alt="DrEgg"/>
-// <Button onClick={ResourcesEventHandler} variant="primary" className="resources"> RESOURCES </Button>
-// <Button onClick={WorldsEventHandler} variant="primary" className="worlds"> WORLDS </Button>       
-
-// <div className="brightness">
-// <img className="worlds" src={Worlds} onClick={WorldsEventHandler} alt="Worlds"/>
