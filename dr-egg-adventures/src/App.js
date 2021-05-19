@@ -8,7 +8,6 @@ import Game from './screens/Game.js';
 import Contact from './screens/Contact.js';
 import Characters from './screens/Characters.js';
 import FarmWorld from './screens/FarmWorld.js';
-import SlumWorld from './screens/SlumWorld.js';
 import TechnoWorld from './screens/TechnoWorld.js';
 import Lab from './screens/Lab.js';
 import OnlineStore from './screens/OnlineStore.js';
@@ -23,6 +22,9 @@ import SlumWorldSingle from './screens/SlumWorldSingle';
 import TechnoWorldSingle from './screens/TechnoWorldSingle';
 import FarmWorldSingle from './screens/FarmWorldSingle';
 import LabWorldSingle from './screens/LabWorldSingle';
+import WeirdCreations from './screens/WeirdCreations.js'
+import CrazyFacts from './screens/CrazyFacts';
+import Fanfic from './screens/Fanfic';
 
 import Ardash from './screens/characters/ArdashScreen.js'
 import Carlin from './screens/characters/CarlinScreen.js'
@@ -89,10 +91,10 @@ function App() {
 				<Route path='/farmWorld'>
 					<FarmWorld />
 				</Route>
-
+{/* 
 				<Route path='/slumWorld'>
 					<SlumWorld />
-				</Route>
+				</Route> */}
 
 				<Route path='/technoWorld'>
 					<TechnoWorld />
@@ -170,11 +172,21 @@ function App() {
           <Worlds />
         </Route>
       
-      </Switch>
-    </Router>
+        <Route path="/weirdcreations">
+          <WeirdCreations />
+        </Route>
 
-    
-  );
+        <Route path="/crazyfacts">
+          <CrazyFacts />
+        </Route>
+
+        <Route path="/fanfiction">
+          <Fanfic />
+        </Route>
+        
+			</Switch>
+		</Router>
+	);
 }
 
 export default App;
