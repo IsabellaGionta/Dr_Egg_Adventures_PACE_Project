@@ -41,7 +41,7 @@ const slumNav = () => {
 
     return (
         <div  className="Background-Container"> 
-            <a href="/farmworld">
+            <a href="/farmworld1">
              <div className="farmworld">
                 <Card 
                 imageUrl= {farmworld}
@@ -49,7 +49,7 @@ const slumNav = () => {
             </div>
             </a>
 
-            <a href="/slumworld">
+            <a href="/slumworld1">
                 <div className="slumworld">
                     <Card className="slumworld"
                     imageUrl= {slumworld}
@@ -57,7 +57,7 @@ const slumNav = () => {
                 </div>
             </a>
             
-            <a href="/seedcorp">
+            <a href="/seedcorp1">
                 <div className="seedcorp">
                     <Card className="seedcorp"
                     imageUrl= {seedcorp}
@@ -65,7 +65,7 @@ const slumNav = () => {
                 </div>
             </a>
 
-            <a href="/egglab">
+            <a href="/egglab1">
                 <div className="egglab">
                     <Card className="egglab"
                     imageUrl= {egglab}
@@ -74,7 +74,7 @@ const slumNav = () => {
             </a>
 
 
-            <a href="/technoworld">
+            <a href="/technoworld1">
                 <div className="technoworld">
                     <Card className="technoworld"
                     imageUrl= {technoworld}
