@@ -24,6 +24,7 @@ import RifRaf from './screens/characters/RifRafScreen.js'
 import Pigeon from './screens/characters/PigeonScreen.js'
 import EggDrone from './screens/characters/EggDroneScreen.js'
 import Snake from './screens/characters/SnakeScreen.js'
+import SnakeWorlds from './components/SnakePopup.js'
 import ProfMole from './screens/characters/ProfessorMoleScreen.js'
 import Worlds from './screens/Worlds.js'
 import ChatBotScreen from './screens/ChatbotScreen.js'
@@ -99,6 +100,10 @@ function App() {
 
         <Route path="/character/Professor-Mole">
           <ProfMole />
+        </Route>
+
+        <Route path="/snake-worlds">
+          <SnakeWorlds />
         </Route>
         
         <Route path="/worlds">

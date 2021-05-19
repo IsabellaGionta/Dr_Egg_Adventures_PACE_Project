@@ -6,7 +6,7 @@ import PigeonFlipped from '../../images/characters/Pigeon-Flipped.png';
 import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
-
+import Popup from '../../components/Popup.js';
 
 import { useHistory } from "react-router-dom";
 
@@ -14,18 +14,18 @@ export const CorneliaScreen = () => {
 
   // Creating state for popups of companions 
   const [modalState, setModalState] = useState(false);
-
-  const manageState= () => {
-    setModalState(!modalState)
-  }
-
   const [modalState1, setModalState1] = useState(false);
 
-  const manageState1= () => {
-    setModalState1(!modalState1)
-  }
+  // const manageState= () => {
+  //   setModalState(!modalState)
+  // }
 
-  
+  // const [modalState1, setModalState1] = useState(false);
+
+  // const manageState1= () => {
+  //   setModalState1(!modalState1)
+  // }
+
   let history = useHistory();
 
   const BackEventHandler = () => {
@@ -75,7 +75,7 @@ export const CorneliaScreen = () => {
             </p>
         </div>
 
-        <div className={`modalBackground modalShowing-${modalState}`}> 
+        {/* <div className={`modalBackground modalShowing-${modalState}`}> 
         
           <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
           <h2 className="Individual-Character-Name-Pet">  CARLIN: CORNELIA'S MOUSE  </h2> 
@@ -91,13 +91,56 @@ export const CorneliaScreen = () => {
               <b> SPECIAL POWER: </b> ‘Thought-wave’ clues to Cornelia
               </p>
           </div>
-        </div>
-        <img className="Character-Pet clicked"src={Carlin} onClick={() => manageState() } /> 
+        </div> */}
+        <img className="Character-Pet clicked"src={Carlin}  onClick = {() => setModalState(true)}/> 
+        <img className="Character-Pet-Pigeon clicked"src={Pigeon} onClick={() => setModalState1(true) } /> 
+
+        {/* onClick={() => manageState() } />  */}
         
 
-        <div className={`modalBackground modalShowing-${modalState1}`}> 
+
+        <Popup trigger={modalState1} setTrigger = {setModalState1}>
+                <div className = "popup-background">
+                  <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
+                  <h2 className="Individual-Character-Name-Pet"> PUFF CHEST: PIGEON AIR FORCE PILOT  </h2> 
+                  <img className="Character-Pet-Popup"src={PigeonFlipped} /> 
+
+                  <div className="Companion-Description">
+                    <p> 
+                      GOAL: Help Cornelia liberate the animals
+                    </p>
+                    <p className="Powers"> 
+                      SPECIAL POWER: ‘Pigeon-Poop Pummelings’
+                    </p>
+
+                  </div>
+                </div>
+          </Popup>
+
+          <Popup trigger={modalState} setTrigger = {setModalState}>
+
+            <div className = "popup-background">
+              <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
+              <h2 className="Individual-Character-Name-Pet">  CARLIN: CORNELIA'S MOUSE  </h2> 
+              <img className="Character-Pet-Popup"src={Carlin} /> 
+
+              <div className="Companion-Description">
+                <p> 
+                  <b> GOAL: </b> Help Cornelia
+                </p>
+                <p className="Powers"> 
+                 <b> SPECIAL POWER: </b> ‘Thought-wave’ clues to Cornelia
+                </p>
+            </div>
+          </div>
+        </Popup>
+
+
+
+
+        {/* <div className={`modalBackground modalShowing-${modalState1}`}>  */}
         
-        <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
+        {/* <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
         <h2 className="Individual-Character-Name-Pet"> PUFF CHEST: PIGEON AIR FORCE PILOT  </h2> 
         <img className="Character-Pet-Popup"src={PigeonFlipped} /> 
         <label class="btn-close" for="3">X</label>
@@ -110,11 +153,11 @@ export const CorneliaScreen = () => {
             SPECIAL POWER: ‘Pigeon-Poop Pummelings’
           </p>
 
-        </div>
+        </div> */}
+{/*         
         
-        
-        </div>
-        <img className="Character-Pet-Pigeon clicked"src={Pigeon} onClick={() => manageState1() } /> 
+        </div> */}
+        {/* <img className="Character-Pet-Pigeon clicked"src={Pigeon} onClick={() => manageState1() } />  */}
         
           
         <a href="/chatbot">

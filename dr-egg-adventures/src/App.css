@@ -42,6 +42,9 @@ h1 {
   color: #0489B1;
 }
 
+p {
+  font-family: "museo sans"
+}
 
 
 /* Popup style */
@@ -372,8 +375,8 @@ h1 {
 .Character-Pet-Popup {
   position: absolute;
   left: 2%;
-  width: 25%;
-  top: 25%;
+  width: 22%;
+  top: 23%;
 }
 
 .btn-close {
@@ -382,9 +385,11 @@ h1 {
   top: 4%;
 }
 
+
+
 /* Companion popups  */
 
-.modalBackground {
+/* .modalBackground {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease in-out;
@@ -398,9 +403,10 @@ h1 {
   position: absolute;
   top: 20%;
   left: 30%;
+} */
   /* backdrop-filter: blur(20px); */
   /* filter: blur(10px); */
-}
+
 
 /* .modalBackground:focus-within {
   filter:blur(5px);
@@ -529,6 +535,15 @@ h1 {
 
 
 /* Character Screen Styling */
+.Background-Container {
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  backdrop-filter: blur(5px);
+}
 
 .Character-Background-Container {
   background-image: url("./images/Lab.png");
@@ -1020,6 +1035,7 @@ td {
   height: 50px;
 }
 
+
 .worlds {
   position: absolute;
   left: 75%;
@@ -1153,18 +1169,33 @@ input {
 }
 
 .technoworld {
-  max-width: 21%;
-  max-height: auto;
+  position: absolute;
+  left: 42%;
+  top: 25%;
 }
 
 .farmworld {
-  max-width: 21%;
-  max-height: auto;
+  position: absolute;
+  left: 10%;
+  top: 25%;
 }
 
 .slumworld {
-  max-width: 21.35%;
-  max-height: auto;
+  position: absolute;
+  left: 26%;
+  top: 25%;
+}
+
+.egglab {
+  position: absolute;
+  left: 74%;
+  top: 25%;
+}
+
+.seedcorp {
+  position: absolute;
+  left: 58%;
+  top: 25%;
 }
 
 .home-button {
@@ -1666,7 +1697,7 @@ input {
   }
 
   /* Companion popups  */
-  .Character-Pet-Popup{
+  /* .Character-Pet-Popup{
     width: 30%;
     top: 30%;
   }
@@ -1680,9 +1711,9 @@ input {
     line-height: 30px;
     left: 40%;
     font-size: 1.4vh;
-    width: 45%;
+    width: 45%; */
 
-  }
+  /* } */
   .Powers {
     padding: 40px 0px;
   }
@@ -1910,7 +1941,7 @@ input {
 
 
 
- /* Companion popups  */
+ /* Companion popups 
   .Character-Pet-Popup{
     width: 30%;
     top: 30%;
@@ -1924,7 +1955,7 @@ input {
 
   .Individual-Character-Name-Pet {
     font-size: 1.8vh;
-  }
+  } */
 
   .Powers {
     padding: 40px 0px;
@@ -2145,7 +2176,7 @@ input {
 
 
    /* Companion popups  */
-
+/* 
    .modalBackground {
     left: 15%;
     width: 100%;
@@ -2162,7 +2193,7 @@ input {
   }
   .Individual-Character-Name-Pet {
     font-size: 2.3vh;
-  }
+  } */
   .Powers {
     padding: 40px 0px;
 
