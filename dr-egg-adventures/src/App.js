@@ -18,6 +18,9 @@ import IndividualCharacters from './screens/IndividualCharacters.js'
 import Worlds from './screens/Worlds.js'
 import ChatBotScreen from './screens/ChatbotScreen.js'
 import Loading from './screens/LoadingScreen.js'
+import WeirdCreations from './screens/WeirdCreations.js'
+import CrazyFacts from './screens/CrazyFacts';
+import Fanfic from './screens/Fanfic';
 
 
 function App() {
@@ -93,7 +96,17 @@ function App() {
           <Loading />
         </Route>
 
+        <Route path="/weirdcreations">
+          <WeirdCreations />
+        </Route>
 
+        <Route path="/crazyfacts">
+          <CrazyFacts />
+        </Route>
+
+        <Route path="/fanfiction">
+          <Fanfic />
+        </Route>
       
       </Switch>
     </Router>
