@@ -1,4 +1,4 @@
-.popup {
+.bookpopup {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,18 +11,17 @@
   align-items: center;
 }
 
-.popup-inner {
+.bookpopup-inner {
   position: relative;
-  padding: 50px;
-  max-width: 30%;
-  background-image: url("../images/background-texture.jpg");
-  border-radius: 20px;
+  max-width: 100%;
+  max-height: auto;
 }
 
-.popup-inner .close-btn {
+.bookpopup-inner .close-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 18%;
+  right: 19%;
   transform: scale(0.8);
   padding: 10px;
+  z-index: 1;
 }

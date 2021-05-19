@@ -2,24 +2,19 @@ import React from 'react'
 import btnback from '../images/btn-Back.png';
 import btnbackglow from '../images/btn-Back-hover.png';
 import snake from '../images/Snake.png';
-import background from '../images/popup-bg.png';
+import blackboard from '../images/Blackboard.png';
 import { useHistory } from "react-router-dom";
 
-export const Game = () => {
+export const WeirdCreations = () => {
 
     const history = useHistory();
 
     const homeNav = () => {
-        history.push('/map');
+        history.push('/lab');
     }
 
     return (
         <div className = "Lab-Background-Container">
-            
-            <div className = "game-container">
-                <img className = "game-bg" src = {background} alt = "background" />
-            </div>
-
             <div className = "back-container"> 
                 <img className = "Back-Button" 
                 src = {btnback}
@@ -30,11 +25,10 @@ export const Game = () => {
             </div>
             <div className = "snake-container">
                 <img className = "chatbot" src = {snake} alt = "chatbot" /> 
-                
             </div> 
             
-
+            <img className = "Blackboard" src = {blackboard} alt = "blackboard" />
         </div>
     )
 }
-export default Game
+export default WeirdCreations

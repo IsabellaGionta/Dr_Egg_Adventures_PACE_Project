@@ -1,5 +1,6 @@
 import React from 'react'
 import Popup from '../components/Popup';
+import BookPopup from '../components/BookPopup';
 import { useState } from 'react';
 
 import bench from '../images/labbench.png';
@@ -10,6 +11,7 @@ import DrEgg from '../images/DrEgg-cut.png';
 import flag from '../images/aboriginal-flag.png';
 import flaghover from '../images/flag-glow.png';
 import plank from '../images/plank.png';
+import book from '../images/book.png';
 import popupBackground from '../images/popup-bg.png';
 
 import { useHistory } from "react-router-dom";
@@ -35,15 +37,29 @@ export const Lab = () => {
         history.push('/map');
     }
 
+    const creationsNav = () => {
+        history.push('/weirdcreations');
+    }
+
+    const factsNav = () => {
+        history.push('/crazyfacts');
+    }
+
+    const fanficNav = () => {
+        history.push('/fanfiction');
+    }
+
     const [buttonPopup, setButtonPopup] = useState(false);
+    // const [buttonFactsPopup, setButtonFactsPopup] = useState(false);
+    // const [buttonFanficPopup, setButtonFanficPopup] = useState(false);
 
     return (
         <div className = "Lab-Background-Container">
             <img className="dregg" src={DrEgg} alt = "dr egg"/>
             <div className = "button-container">
-                <img className="lab-button-facts" src={facts} alt = "crazy facts button"/>
-                <img className="lab-button-wc" src={weird} alt = "weird creations button"/>
-                <img className="lab-button-fanfic" src={fanfic} alt = "fanfiction button"/>
+                <img className="lab-button-facts" src={facts} alt = "crazy facts button" onClick = {factsNav}/>
+                <img className="lab-button-wc" src={weird} alt = "weird creations button" onClick = {creationsNav}/>
+                <img className="lab-button-fanfic" src={fanfic} alt = "fanfiction button" onClick = {fanficNav}/>
                 <img className="lab-button-inv" src={inv} alt = "inventory button"/>
                 <img className="lab-button-biogoo" src={biogoo} alt = "biogoo button"/> 
             </div>
@@ -82,7 +98,7 @@ export const Lab = () => {
             onClick = {() => setButtonPopup(true)}/>
 
             <Popup trigger={buttonPopup} setTrigger = {setButtonPopup}>
-                <div className = "popup-background">
+                <div>
                     <p className = "popup-text">Dr Egg Adventures would like to acknowledge the Traditional Custodians of the land on, and pay our respects to their Elders past and present.
                     We extend that respect to Aboriginal and Torres Strait Islander peoples on this portal today.</p>  
                 </div>
