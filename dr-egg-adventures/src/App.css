@@ -19,9 +19,20 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'quagmire';
+	src: url('./fonts/Quagmire-Bold.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
 html,
 body {
 	overflow: hidden;
+}
+
+p {
+	font-family: 'museo sans';
 }
 
 * {
@@ -722,9 +733,9 @@ h1.Resources-Title {
 
 .Back-Button {
 	position: fixed;
-	top: 0%;
-	left: 85%;
-	max-width: 12%;
+	top: 2%;
+	left: 86%;
+	max-width: 10%;
 	max-height: auto;
 }
 
@@ -1248,7 +1259,8 @@ input {
 	position: absolute;
 	max-width: 50%;
 	max-height: auto;
-	right: 30%;
+	right: 25%;
+	bottom: 25%;
 }
 
 .drmoon {
@@ -1261,28 +1273,79 @@ input {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	right: 15%;
+	right: 72%;
 	bottom: 40%;
 }
 
-.lab-buttons {
-	max-width: 70%;
+.lab-button-wc {
+	max-width: 75%;
 	max-height: auto;
 	padding: 7px;
 }
 
-.bb-container {
+.lab-button-facts {
+	max-width: 85%;
+	max-height: auto;
+	padding: 7px;
+}
+
+.lab-button-fanfic {
+	max-width: 60%;
+	max-height: auto;
+	padding: 7px;
+}
+
+.lab-button-inv {
+	max-width: 60%;
+	max-height: auto;
+	padding: 7px;
+}
+
+.lab-button-biogoo {
+	max-width: 45%;
+	max-height: auto;
+	padding: 7px;
+}
+
+.plank-container {
 	position: absolute;
 	width: 100%;
 	height: auto;
 	display: flex;
 	justify-content: center;
+	top: 83%;
 }
 
-.bench-button {
-	max-width: 35%;
+.plankname {
+	position: absolute;
+	font-family: museo sans;
+	font-weight: bold;
+	text-align: left;
+	font-size: 30px;
+	color: white;
+	top: 25%;
+}
+
+.plank {
+	max-width: 60%;
 	max-height: auto;
-	padding: 10px;
+}
+
+.aboriginal-flag {
+	position: absolute;
+	max-width: 100%;
+	max-height: auto;
+	left: 86%;
+	top: 18%;
+}
+
+.aboriginal-flag:hover {
+	position: absolute;
+	max-width: 100%;
+	max-height: auto;
+	left: 85%;
+	top: 17%;
+	transform: scale(1.2);
 }
 
 .tool-container {
@@ -1290,7 +1353,7 @@ input {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	bottom: 10%;
+	bottom: 18%;
 }
 
 .tools {
@@ -1301,6 +1364,14 @@ input {
 
 .tools:hover {
 	transform: scale(1.5);
+}
+
+.wc-box {
+	position: absolute;
+	max-width: 30%;
+	max-height: auto;
+	left: 70%;
+	top: 30%;
 }
 
 .back-container {
@@ -1317,12 +1388,49 @@ input {
 	top: 15%;
 }
 
-.chalkboard {
-	font-size: 50;
-	font-family: 'Chalktastic';
-	color: white;
-	padding: 15px;
+.popup-text {
+	font-family: museo sans;
+	font-weight: bold;
 	text-align: center;
+	font-size: 18px;
+}
+
+.yt-trailer {
+	position: absolute;
+	max-width: 100%;
+	left: 15%;
+	top: 12%;
+}
+
+.book-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.book {
+	transform: scale(0.8);
+}
+
+.game-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	backdrop-filter: blur(4px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-bg {
+	position: relative;
 }
 
 /* .container {

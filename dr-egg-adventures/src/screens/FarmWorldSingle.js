@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import FarmWorld from '../assets/images/FarmWorld.png';
 import UpperBoardImg from '../assets/images/upperBoard.png';
 import LowerBoardImg from '../assets/images/lowerBoard.png';
+import Cornelia from '../images/Cornelia.png';
 
 const UpperBoard = styled.div`
 	width: 820px;
@@ -38,6 +39,12 @@ const Heading = styled.h1`
 const SubHeading = styled.span`
 	font-weight: 800;
 	text-transform: uppercase;
+`;
+
+const Figure = styled.div`
+	position: absolute;
+	left: 30%;
+	bottom: 0;
 `;
 
 const FarmWorldSingle = () => {
@@ -81,6 +88,10 @@ const FarmWorldSingle = () => {
 							tractors, fuel tanks, all with the SEEDCORP logo.
 						</p>
 					</LowerBoard>
+
+					<Figure>
+						<img src={Cornelia} width='400' />
+					</Figure>
 				</>
 			}></SingleWorld>
 	);

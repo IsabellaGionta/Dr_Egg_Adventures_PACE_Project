@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import Img from '../assets/images/paper_texture_04.jpg';
 
 const TButton = styled.button`
+	font-family: 'quagmire';
 	position: absolute;
 	left: 0;
 	right: 0;

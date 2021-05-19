@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import SlumWorld from '../assets/images/SlumWorld.png';
 import UpperBoardImg from '../assets/images/upperBoard.png';
 import LowerBoardImg from '../assets/images/lowerBoard.png';
+import Vivi from '../images/Vivi.png';
 
 const UpperBoard = styled.div`
 	width: 820px;
@@ -38,6 +39,12 @@ const Heading = styled.h1`
 const SubHeading = styled.span`
 	font-weight: 800;
 	text-transform: uppercase;
+`;
+
+const Figure = styled.div`
+	position: absolute;
+	right: 30%;
+	bottom: 0;
 `;
 
 const SlumWorldSingle = () => {
@@ -76,6 +83,9 @@ const SlumWorldSingle = () => {
 							Posters. Seedcorp Advertising Billboards.
 						</p>
 					</LowerBoard>
+					<Figure>
+						<img src={Vivi} width='400' />
+					</Figure>
 				</>
 			}></SingleWorld>
 	);

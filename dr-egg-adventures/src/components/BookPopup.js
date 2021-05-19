@@ -1,12 +1,12 @@
 import React from 'react'
-import './Popup.css'
+import './BookPopup.css'
 
 import close from '../images/close-popup.png';
 
-function popup(props) {
+function bookpopup(props) {
     return (props.trigger) ? (
-        <div className = "popup">
-            <div className = "popup-inner">
+        <div className = "bookpopup">
+            <div className = "bookpopup-inner">
                 <img className = "close-btn" src = {close} onClick = {() => props.setTrigger(false)}/>
                 {props.children}
             </div>
@@ -14,4 +14,4 @@ function popup(props) {
     ) : "";
 }
 
-export default popup
+export default bookpopup
