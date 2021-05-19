@@ -23,6 +23,9 @@ import SlumWorldSingle from './screens/SlumWorldSingle';
 import TechnoWorldSingle from './screens/TechnoWorldSingle';
 import FarmWorldSingle from './screens/FarmWorldSingle';
 import LabWorldSingle from './screens/LabWorldSingle';
+import WeirdCreations from './screens/WeirdCreations.js'
+import CrazyFacts from './screens/CrazyFacts';
+import Fanfic from './screens/Fanfic';
 
 function App() {
 	return (
@@ -111,6 +114,19 @@ function App() {
 				<Route path='/loading'>
 					<Loading />
 				</Route>
+
+        <Route path="/weirdcreations">
+          <WeirdCreations />
+        </Route>
+
+        <Route path="/crazyfacts">
+          <CrazyFacts />
+        </Route>
+
+        <Route path="/fanfiction">
+          <Fanfic />
+        </Route>
+        
 			</Switch>
 		</Router>
 	);

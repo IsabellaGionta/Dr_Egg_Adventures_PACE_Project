@@ -5,17 +5,16 @@ import snake from '../images/Snake.png';
 import blackboard from '../images/Blackboard.png';
 import { useHistory } from "react-router-dom";
 
-export const Trailer = () => {
+export const WeirdCreations = () => {
 
     const history = useHistory();
 
     const homeNav = () => {
-        history.push('/map');
+        history.push('/lab');
     }
 
     return (
         <div className = "Lab-Background-Container">
-            <iframe className = "yt-trailer" width="1095" height="572" src="https://www.youtube.com/embed/LfT3ow_3R5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
             <div className = "back-container"> 
                 <img className = "Back-Button" 
                 src = {btnback}
@@ -32,5 +31,4 @@ export const Trailer = () => {
         </div>
     )
 }
-export default Trailer
-
+export default WeirdCreations
