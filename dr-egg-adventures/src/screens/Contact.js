@@ -21,94 +21,94 @@ import LoadScreen from '../components/LoadScreen';
 import styled from 'styled-components';
 import ThemeButton from '../components/Button';
 
-const ErrorMsg = styled.span`
-	display: block;
-	color: red;
-	margin-top: 5px;
-`;
+// const ErrorMsg = styled.span`
+// 	display: block;
+// 	color: red;
+// 	margin-top: 5px;
+// `;
 
-export const Contact = () => {
-	let history = useHistory();
+// export const Contact = () => {
+// 	let history = useHistory();
 
-	const [form, setForm] = useState({
-		name: '',
-		email: '',
-		message: '',
-	});
-	const [modal, setModal] = useState(false);
-	const [response, setResponse] = useState({
-		status: 0,
-		msg: '',
-	});
-	const [loading, setLoading] = useState(false);
-	const [errors, setErrors] = useState({
-		name: '',
-		email: '',
-		message: '',
-	});
+// 	const [form, setForm] = useState({
+// 		name: '',
+// 		email: '',
+// 		message: '',
+// 	});
+// 	const [modal, setModal] = useState(false);
+// 	const [response, setResponse] = useState({
+// 		status: 0,
+// 		msg: '',
+// 	});
+// 	const [loading, setLoading] = useState(false);
+// 	const [errors, setErrors] = useState({
+// 		name: '',
+// 		email: '',
+// 		message: '',
+// 	});
 
-	const toggleModal = () => setModal(!modal);
+// 	const toggleModal = () => setModal(!modal);
 
-	const BackEventHandler = () => {
-		history.push('/map');
-	};
+// 	const BackEventHandler = () => {
+// 		history.push('/map');
+// 	};
 
-	const validateForm = (field, form) => {
-		const errors = {};
-		if (!form.name && field === 'name') {
-			errors.name = 'Name cannot be empty.';
-		}
+// 	const validateForm = (field, form) => {
+// 		const errors = {};
+// 		if (!form.name && field === 'name') {
+// 			errors.name = 'Name cannot be empty.';
+// 		}
 
-		if (field === 'email') {
-			if (!form.email) {
-				errors.email = 'Email cannot be empty.';
-			} else if (
-				!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(form.email)
-			) {
-				errors.email = 'Email format is wrong.';
-			}
-		}
+// 		if (field === 'email') {
+// 			if (!form.email) {
+// 				errors.email = 'Email cannot be empty.';
+// 			} else if (
+// 				!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(form.email)
+// 			) {
+// 				errors.email = 'Email format is wrong.';
+// 			}
+// 		}
 
-		if (!form.message && field === 'message') {
-			errors.message = 'Message cannot be empty.';
-		}
-		setErrors(errors);
+// 		if (!form.message && field === 'message') {
+// 			errors.message = 'Message cannot be empty.';
+// 		}
+// 		setErrors(errors);
 
-		return errors;
-	};
+// 		return errors;
+// 	};
 
-	const handleFieldChange = (e, name) => {
-		const newValue = {
-			...form,
-			[name]: e.target.value,
-		};
-		setForm(newValue);
+// 	const handleFieldChange = (e, name) => {
+// 		const newValue = {
+// 			...form,
+// 			[name]: e.target.value,
+// 		};
+// 		setForm(newValue);
 
-		validateForm(name, newValue);
-	};
+// 		validateForm(name, newValue);
+// 	};
 
-	const handleSubmit = async e => {
-		e.preventDefault();
-		console.log({ form });
+// 	const handleSubmit = async e => {
+// 		e.preventDefault();
+// 		console.log({ form });
 
-		// if there is no errors
-		if (!Object.keys(errors).length) {
-			setLoading(true);
+// 		// if there is no errors
+// 		if (!Object.keys(errors).length) {
+// 			setLoading(true);
 
-			const { data } = await axios.post('/send-form', form);
-			console.log({ data });
-			setResponse(data);
-			setLoading(false);
-			toggleModal();
+// 			const { data } = await axios.post('/send-form', form);
+// 			console.log({ data });
+// 			setResponse(data);
+// 			setLoading(false);
+// 			toggleModal();
 
-			// reset the form
-			setForm({
-				name: '',
-				email: '',
-				message: '',
-			});
-		}
-	};
+// 			// reset the form
+// 			setForm({
+// 				name: '',
+// 				email: '',
+// 				message: '',
+// 			});
+// 		}
+// 	};
 
 	return (
 		<>
@@ -183,6 +183,6 @@ export const Contact = () => {
 			</Modal>
 		</>
 	);
-};
 
-export default Contact;
+
+ export default Contact;
