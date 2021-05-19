@@ -1,39 +1,39 @@
 @font-face {
-	font-family: 'polaris';
-	src: url('./fonts/Polaris.woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "polaris";
+  src: url("./fonts/Polaris.woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'museo sans';
-	src: url('./fonts/MuseoSansCyrl-500.woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "museo sans";
+  src: url("./fonts/MuseoSansCyrl-500.woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'chalktastic';
-	src: url('./fonts/Chalktastic.woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "chalktastic";
+  src: url("./fonts/Chalktastic.woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 html,
 body {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h2 {
-	font-family: Polaris;
-	font-size: 3vh;
-	color: white;
+  font-family: Polaris;
+  font-size: 3vh;
+  color: white;
 }
 
 /* h1 {
@@ -43,238 +43,238 @@ h2 {
 } */
 
 .Loading-gif {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 40%;
-	position: absolute;
-	top: 10%;
-	left: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  position: absolute;
+  top: 10%;
+  left: 30%;
 }
 
 .Loading-Background-Container {
-	background-image: url('./images/background-texture.jpg');
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100vh;
+  background-image: url("./images/background-texture.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 
 /* Home Screen Styling */
 
 .Lab-Background-Container {
-	background-image: url('./images/Lab.png');
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100vh;
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 .Home-Background-Container {
-	background-image: url('./images/DrEggLogoOnPaper.jpg');
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100vh;
-	position: relative;
+  background-image: url("./images/DrEggLogoOnPaper.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .Home-Enter-Button {
-	width: 100%;
-	max-width: 30vh;
-	max-height: auto;
-	padding: 1vh;
-	margin: 1vh auto;
-	display: block;
-	border-radius: 3vh;
-	border-width: 1vh;
-	border-color: #83cfb1;
-	font-family: Polaris;
-	font-size: 4vh;
-	color: #367771;
-	position: absolute;
-	bottom: 0%;
-	left: 85vh;
+  width: 100%;
+  max-width: 30vh;
+  max-height: auto;
+  padding: 1vh;
+  margin: 1vh auto;
+  display: block;
+  border-radius: 3vh;
+  border-width: 1vh;
+  border-color: #83cfb1;
+  font-family: Polaris;
+  font-size: 4vh;
+  color: #367771;
+  position: absolute;
+  bottom: 0%;
+  left: 85vh;
 }
 
 /* Individual Character Screen Styling */
 
 .Individual-Character-Styling {
-	position: absolute;
-	bottom: 0%;
-	left: 9%;
-	max-width: 25%;
-	max-height: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 9%;
+  max-width: 25%;
+  max-height: auto;
 }
 
 .Blackboard {
-	width: 100%;
-	max-width: 100%;
-	max-height: 100vh;
-	/* transform: scaleX(-1); */
+  width: 100%;
+  max-width: 100%;
+  max-height: 100vh;
+  /* transform: scaleX(-1); */
 }
 
 .Character-Tool {
-	width: 100%;
-	width: 100%;
-	max-width: 20%;
-	max-height: auto;
-	position: absolute;
-	top: 17%;
-	left: 18%;
+  width: 100%;
+  width: 100%;
+  max-width: 20%;
+  max-height: auto;
+  position: absolute;
+  top: 17%;
+  left: 18%;
 }
 
 .Character-Tool:hover {
-	-ms-transform: scale(1.1); /* IE 9 */
-	-webkit-transform: scale(1.1); /* Safari 3-8 */
-	transform: scale(1.1);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 .Individual-Character-Name {
-	position: absolute;
-	left: 44%;
-	top: 20%;
+  position: absolute;
+  left: 44%;
+  top: 20%;
 }
 
 .Character-Description {
-	width: 100%;
-	max-width: 40%;
-	max-height: auto;
-	position: absolute;
-	left: 42%;
-	top: 27%;
-	font-family: Museo-sans;
-	font-size: 2vh;
-	text-align: left;
-	line-height: 30px;
-	color: white;
+  width: 100%;
+  max-width: 40%;
+  max-height: auto;
+  position: absolute;
+  left: 42%;
+  top: 27%;
+  font-family: Museo-sans;
+  font-size: 2vh;
+  text-align: left;
+  line-height: 30px;
+  color: white;
 }
 
 .Indivdual-Character-Text2 {
-	width: 100%;
-	max-width: 20%;
-	max-height: auto;
-	position: absolute;
-	left: 48%;
-	top: 40%;
-	font-family: Museo-sans;
-	font-size: 2vh;
-	text-align: left;
+  width: 100%;
+  max-width: 20%;
+  max-height: auto;
+  position: absolute;
+  left: 48%;
+  top: 40%;
+  font-family: Museo-sans;
+  font-size: 2vh;
+  text-align: left;
 }
 
 .Individual-Character-Table {
-	position: absolute;
-	left: 48%;
-	top: 60%;
-	width: 100%;
-	max-width: 20%;
-	max-height: auto;
+  position: absolute;
+  left: 48%;
+  top: 60%;
+  width: 100%;
+  max-width: 20%;
+  max-height: auto;
 }
 
 .Character-Background-Container {
-	background-image: url('./images/Lab.png');
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100vh;
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .Resource-Background-Container {
-	background-image: url('./images/Lab.png');
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100vh;
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .buttons {
-	position: absolute;
-	top: 50%;
-	left: 12%;
-	align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  align-items: center;
 }
 
 .TeacherButton {
-	max-width: 80%;
-	max-height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: 80%;
+  max-height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .StudentButton {
-	max-width: 80%;
-	max-height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  max-width: 80%;
+  max-height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 1007px) {
-	.TeacherButton {
-		position: absolute;
-		left: 900px;
-	}
+  .TeacherButton {
+    position: absolute;
+    left: 900px;
+  }
 }
 
 @media screen and (max-width: 1007px) {
-	.TeacherButton {
-		max-width: 100%;
-	}
-	.StudentButton {
-		max-width: 100%;
-	}
+  .TeacherButton {
+    max-width: 100%;
+  }
+  .StudentButton {
+    max-width: 100%;
+  }
 }
 
 .App-logo {
-	height: 40vmin;
-	pointer-events: none;
+  height: 40vmin;
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-link {
-	color: #61dafb;
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .homeImage {
-	width: 100%;
-	height: auto;
-	/* background-size: cover; */
-	/* background-image: url("./images/DrEggLogoOnPaper.jpg"); */
+  width: 100%;
+  height: auto;
+  /* background-size: cover; */
+  /* background-image: url("./images/DrEggLogoOnPaper.jpg"); */
 }
 
 .enter {
-	position: absolute;
-	bottom: 10%;
-	left: 44%;
-	width: 200px;
-	height: 90px;
-	max-height: auto;
-	max-width: 200px;
+  position: absolute;
+  bottom: 10%;
+  left: 44%;
+  width: 200px;
+  height: 90px;
+  max-height: auto;
+  max-width: 200px;
 }
 
 /* @media only screen and (max-width: 600px) {
@@ -284,9 +284,9 @@ h2 {
 } */
 
 .characters:hover {
-	-ms-transform: scale(1.1); /* IE 9 */
-	-webkit-transform: scale(1.1); /* Safari 3-8 */
-	transform: scale(1.1);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 /* .imageHolder {
@@ -295,295 +295,304 @@ h2 {
 } */
 
 .containerWraper {
-	position: relative;
-	width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .Lab {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .Character-Bench {
-	position: absolute;
-	bottom: 0%;
-	width: 100%;
-	height: auto;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: auto;
 }
 
 .Carlin {
-	position: absolute;
-	bottom: 10%;
-	left: 20%;
-	max-width: 8%;
-	max-height: auto;
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  max-width: 8%;
+  max-height: auto;
 }
 
 .Rifraf {
-	position: absolute;
-	bottom: 6%;
-	left: 40%;
-	max-width: 18%;
-	max-height: auto;
+  position: absolute;
+  bottom: 6%;
+  left: 40%;
+  max-width: 18%;
+  max-height: auto;
 }
 
 .Pigeon {
-	position: absolute;
-	bottom: 4%;
-	left: 67%;
-	max-width: 12%;
-	max-height: auto;
+  position: absolute;
+  bottom: 4%;
+  left: 67%;
+  max-width: 12%;
+  max-height: auto;
 }
 
 .Ardash {
-	position: absolute;
-	bottom: 0%;
-	left: 35%;
-	max-width: 28%;
-	max-height: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 35%;
+  max-width: 28%;
+  max-height: auto;
 }
 
 .Cornelia {
-	position: absolute;
-	bottom: 0%;
-	left: 66%;
-	max-width: 28%;
-	max-height: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 66%;
+  max-width: 28%;
+  max-height: auto;
 }
 
 .DrEgg {
-	position: absolute;
-	bottom: 0%;
-	max-width: 28%;
-	max-height: auto;
+  position: absolute;
+  bottom: 0%;
+  max-width: 28%;
+  max-height: auto;
 }
 
 .DrMoon {
-	position: absolute;
-	bottom: 0%;
-	left: 50%;
-	max-width: 28%;
-	max-height: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  max-width: 28%;
+  max-height: auto;
 }
 
 .Vivi {
-	position: absolute;
-	left: 17%;
-	bottom: 1%;
-	max-width: 28%;
-	max-height: auto;
+  position: absolute;
+  left: 17%;
+  bottom: 1%;
+  max-width: 28%;
+  max-height: auto;
 }
 
 .EggDrone {
-	position: absolute;
-	bottom: 10%;
-	left: 85%;
-	max-width: 12%;
-	max-height: auto;
+  position: absolute;
+  bottom: 10%;
+  left: 85%;
+  max-width: 12%;
+  max-height: auto;
 }
 
 .Back-Button {
-	position: fixed;
-	top: 0%;
-	left: 85%;
-	max-width: 12%;
-	max-height: auto;
+  position: fixed;
+  top: 2%;
+  left: 86%;
+  max-width: 10%;
+  max-height: auto;
+}
+
+.Back-Button:hover {
+  position: fixed;
+  top: 2%;
+  left: 86%;
+  max-width: 10%;
+  max-height: auto;
+  transform: scale(1.3);
 }
 
 .Chatbot-Snake {
-	position: absolute;
-	bottom: 0%;
-	left: 88%;
-	max-width: 12%;
-	max-height: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 88%;
+  max-width: 12%;
+  max-height: auto;
 }
 
 .Map-Snake {
-	position: absolute;
-	bottom: 4%;
-	left: 77%;
-	max-width: 12%;
-	max-height: auto;
+  position: absolute;
+  bottom: 4%;
+  left: 77%;
+  max-width: 12%;
+  max-height: auto;
 }
 
 .Map-Container:hover {
-	outline-color: red;
-	border: 1px dolid;
+  outline-color: red;
+  border: 1px dolid;
 }
 
 .Container {
-	background-image: url('./images/background-texture.jpg');
-	background-size: cover;
-	width: 100%;
-	height: 100%;
+  background-image: url("./images/background-texture.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .DrEggMap {
-	position: absolute;
-	bottom: 10%;
-	left: 10%;
-	max-width: 15%;
-	max-height: auto;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  max-width: 15%;
+  max-height: auto;
 }
 
 .CharactersLink {
-	border-color: blue;
+  border-color: blue;
 }
 
 .MapImage {
-	width: 100%;
-	height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 .Characters-Background-Container {
-	background-image: url('./images/Lab.png');
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
 table,
 th,
 td {
-	border: solid;
+  border: solid;
 }
 
 .GamesHeading {
-	position: absolute;
-	top: 44%;
-	left: 46%;
-	font-weight: bold;
-	font-family: Polaris;
-	font-size: 3vh;
+  position: absolute;
+  top: 44%;
+  left: 46%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
 }
 
 .ResourcesHeading {
-	position: absolute;
-	top: 83%;
-	left: 16%;
-	font-weight: bold;
-	font-family: Polaris;
-	font-size: 3vh;
+  position: absolute;
+  top: 83%;
+  left: 16%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
 }
 
 .ContactHeading {
-	position: absolute;
-	top: 88%;
-	left: 89%;
-	font-weight: bold;
-	font-family: Polaris;
-	font-size: 3vh;
+  position: absolute;
+  top: 88%;
+  left: 89%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
 }
 
 .CharactersHeading {
-	position: absolute;
-	top: 70%;
-	left: 6%;
-	font-weight: bold;
-	font-family: Polaris;
-	font-size: 3vh;
+  position: absolute;
+  top: 70%;
+  left: 6%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
 }
 
 .LabHeading {
-	position: absolute;
-	top: 25%;
-	left: 65%;
-	font-weight: bold;
-	font-family: Polaris;
-	font-size: 3vh;
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
 }
 
 .WorldsHeading {
-	position: absolute;
-	top: 60%;
-	left: 60%;
-	font-weight: bold;
-	font-family: Polaris;
-	font-size: 3vh;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
 }
 
 .TrailerHeading {
-	position: absolute;
-	top: 80%;
-	left: 38%;
-	font-weight: bold;
-	font-family: Polaris;
-	font-size: 3vh;
+  position: absolute;
+  top: 80%;
+  left: 38%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
 }
 
 .OnlineStoreHeading {
-	position: absolute;
-	top: 74%;
-	left: 46%;
-	font-weight: bold;
-	font-family: Polaris;
-	font-size: 3vh;
+  position: absolute;
+  top: 74%;
+  left: 46%;
+  font-weight: bold;
+  font-family: Polaris;
+  font-size: 3vh;
 }
 
 .resources {
-	position: absolute;
-	left: 35%;
-	bottom: 15%;
-	background-color: blue;
-	color: white;
-	border-color: blue;
-	width: 100px;
-	height: 50px;
+  position: absolute;
+  left: 35%;
+  bottom: 15%;
+  background-color: blue;
+  color: white;
+  border-color: blue;
+  width: 100px;
+  height: 50px;
 }
 
 .worlds {
-	position: absolute;
-	left: 75%;
-	bottom: 32%;
-	background-color: blue;
-	color: white;
-	border-color: blue;
-	width: 25%;
-	height: 42%;
+  position: absolute;
+  left: 75%;
+  bottom: 32%;
+  background-color: blue;
+  color: white;
+  border-color: blue;
+  width: 25%;
+  height: 42%;
 }
 
 .brightness img:hover {
-	opacity: 0.5;
-	color: yellow;
+  opacity: 0.5;
+  color: yellow;
 }
 
 /* Contact Screen Styling  */
 
 .Contact-Background-Container {
-	background-image: url('./images/Lab.png');
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
 h1.Contact-Title {
-	font-family: Polaris;
-	text-transform: uppercase;
-	font-size: 5vh;
-	position: absolute;
-	left: 0;
-	right: 0;
-	width: 400px;
-	margin: 0 auto;
-	top: 20%;
-	color: #fff;
+  font-family: Polaris;
+  text-transform: uppercase;
+  font-size: 5vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 400px;
+  margin: 0 auto;
+  top: 20%;
+  color: #fff;
 }
 
 .Contact-MessageBox {
-	width: 100%;
-	height: 20vh;
-	padding: 12px 20px;
+  width: 100%;
+  height: 20vh;
+  padding: 12px 20px;
 }
 
 .Contact-Form {
-	width: 100%;
-	max-width: 50%;
-	padding: 100px 15px;
-	margin: auto;
-	height: 100%;
-	position: absolute;
-	top: 20%;
-	left: 25%;
+  width: 100%;
+  max-width: 50%;
+  padding: 100px 15px;
+  margin: auto;
+  height: 100%;
+  position: absolute;
+  top: 20%;
+  left: 25%;
 }
 
 /* .Contact-Info {
@@ -596,103 +605,103 @@ h1.Contact-Title {
 	font-size: 2vh;
 } */
 .Contact-Info {
-	font-family: museo sans;
-	position: absolute;
-	top: 30%;
-	left: 0;
-	right: 0;
-	width: 800px;
-	margin: 0 auto;
-	color: white;
-	line-height: 40px;
-	font-size: 3vh;
+  font-family: museo sans;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  width: 800px;
+  margin: 0 auto;
+  color: white;
+  line-height: 40px;
+  font-size: 3vh;
 }
 
 .indent {
-	text-indent: 19%;
+  text-indent: 19%;
 }
 .Contact-FormGroup {
-	padding: 15px;
+  padding: 15px;
 }
 input {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .Contact-Form .form-group {
-	display: flex;
+  display: flex;
 }
 
 .Contact-Form .form-group .input-wrapper {
-	width: 100%;
+  width: 100%;
 }
 
 .Contact-Form .Contact-Label {
-	margin: 8px 0;
-	font-family: Museo-sans;
-	font-size: 2vh;
-	width: 25%;
-	color: #fff;
-	font-weight: 400px;
-	font-size: 3vh;
+  margin: 8px 0;
+  font-family: Museo-sans;
+  font-size: 2vh;
+  width: 25%;
+  color: #fff;
+  font-weight: 400px;
+  font-size: 3vh;
 }
 
 .Contact-Form input,
 .Contact-Form textarea {
-	border-radius: 20px;
-	background: url('./assets/images/paper_texture_04.jpg');
+  border-radius: 20px;
+  background: url("./assets/images/paper_texture_04.jpg");
 }
 
 .Contact-Form input:focus,
 .Contact-Form textarea:focus {
-	outline: none;
+  outline: none;
 }
 .contact-modal .modal-content {
-	text-align: center;
-	background: url('./assets/images/FormBackground.png');
-	background-size: cover;
-	background-position: center;
+  text-align: center;
+  background: url("./assets/images/FormBackground.png");
+  background-size: cover;
+  background-position: center;
 }
 .contact-modal .modal-header {
-	border-bottom: none;
+  border-bottom: none;
 }
 .contact-modal .modal-body {
-	padding: 1rem 1rem 3rem 1rem;
+  padding: 1rem 1rem 3rem 1rem;
 }
 .contact-modal h2 {
-	color: #367771;
-	font-size: 2.5rem;
-	margin-top: 0.5em;
+  color: #367771;
+  font-size: 2.5rem;
+  margin-top: 0.5em;
 }
 .contact-modal p {
-	color: #367771;
-	font-size: 1.5rem;
+  color: #367771;
+  font-size: 1.5rem;
 }
 .Contact-Button {
-	width: 100%;
-	max-width: 24vh;
-	height: auto;
-	padding: 1vh;
-	margin: 1vh auto;
-	display: block;
-	border-radius: 3vh;
-	border-width: 1vh;
-	border-color: #83cfb1;
-	font-family: Polaris;
-	font-size: 4vh;
-	color: #367771;
+  width: 100%;
+  max-width: 24vh;
+  height: auto;
+  padding: 1vh;
+  margin: 1vh auto;
+  display: block;
+  border-radius: 3vh;
+  border-width: 1vh;
+  border-color: #83cfb1;
+  font-family: Polaris;
+  font-size: 4vh;
+  color: #367771;
 }
 
 .text {
-	max-width: 30%;
-	max-height: auto;
-	font-weight: 9vh;
-	text-align: center;
+  max-width: 30%;
+  max-height: auto;
+  font-weight: 9vh;
+  text-align: center;
 }
 
 /* .TeacherButton {
@@ -709,260 +718,357 @@ input {
 /* Worlds Screen Styles */
 
 .world-image {
-	background-image: url('./images/background-texture.jpg');
-	background-size: cover;
-	background-position: top;
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	flex-direction: row;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	position: relative;
-	align-self: center;
-	display: flex;
+  background-image: url("./images/background-texture.jpg");
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  align-self: center;
+  display: flex;
 }
 
 .technoworld {
-	max-width: 21%;
-	max-height: auto;
+  max-width: 21%;
+  max-height: auto;
 }
 
 .farmworld {
-	max-width: 21%;
-	max-height: auto;
+  max-width: 21%;
+  max-height: auto;
 }
 
 .slumworld {
-	max-width: 21.35%;
-	max-height: auto;
+  max-width: 21.35%;
+  max-height: auto;
 }
 
 .home-button {
-	max-width: 100%;
-	max-height: auto;
+  max-width: 100%;
+  max-height: auto;
 }
 
 .hb-container {
-	position: absolute;
-	top: 0px;
-	right: 30px;
-	padding: 20px;
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  padding: 20px;
 }
 
 .techno-text-container {
-	position: absolute;
-	left: 41%;
+  position: absolute;
+  left: 41%;
 }
 
 .farm-text-container {
-	position: absolute;
-	left: 61%;
+  position: absolute;
+  left: 61%;
 }
 
 .slum-text-container {
-	position: absolute;
-	left: 35%;
+  position: absolute;
+  left: 35%;
 }
 
 .world-text {
-	max-width: 58%;
-	max-height: auto;
+  max-width: 58%;
+  max-height: auto;
 }
 
 .back-icon {
-	max-width: 70%;
-	max-height: auto;
+  max-width: 70%;
+  max-height: auto;
 }
 
 .world-text-farm {
-	max-width: 50%;
-	max-height: auto;
+  max-width: 50%;
+  max-height: auto;
 }
 
 .techno-exit {
-	width: 3%;
-	position: absolute;
-	left: 45%;
-	bottom: 93%;
+  width: 3%;
+  position: absolute;
+  left: 45%;
+  bottom: 93%;
 }
 
 .farm-exit {
-	width: 3.5%;
-	position: absolute;
-	left: 45%;
-	bottom: 93%;
+  width: 3.5%;
+  position: absolute;
+  left: 45%;
+  bottom: 93%;
 }
 
 .slum-exit {
-	width: 3%;
-	position: absolute;
-	left: 3%;
-	bottom: 93%;
+  width: 3%;
+  position: absolute;
+  left: 3%;
+  bottom: 93%;
 }
 
 .lab-container {
-	position: absolute;
-	height: auto;
-	width: 100%;
-	display: flex;
+  position: absolute;
+  height: auto;
+  width: 100%;
+  display: flex;
 }
 
 .lab-button {
-	position: absolute;
-	width: 35%;
-	height: auto;
-	top: 88%;
-	left: 33%;
+  position: absolute;
+  width: 35%;
+  height: auto;
+  top: 88%;
+  left: 33%;
 }
 
 .techno-text {
-	position: absolute;
-	bottom: 3%;
-	left: 7%;
-	width: 290px;
-	height: 480px;
-	text-align: center;
+  position: absolute;
+  bottom: 3%;
+  left: 7%;
+  width: 290px;
+  height: 480px;
+  text-align: center;
 }
 
 .farm-text {
-	position: absolute;
-	bottom: 9%;
-	left: 8%;
-	width: 100%;
-	max-width: 38%;
-	max-height: auto;
-	text-align: center;
+  position: absolute;
+  bottom: 9%;
+  left: 8%;
+  width: 100%;
+  max-width: 38%;
+  max-height: auto;
+  text-align: center;
 }
 
 .slum-text {
-	position: absolute;
-	bottom: 1%;
-	left: 6%;
-	width: 290px;
-	height: 580px;
-	text-align: center;
+  position: absolute;
+  bottom: 1%;
+  left: 6%;
+  width: 290px;
+  height: 580px;
+  text-align: center;
 }
 
 .world-title {
-	font-size: 30px;
-	font-family: 'polaris';
-	font-weight: normal;
+  font-size: 30px;
+  font-family: "polaris";
+  font-weight: normal;
 }
 
 .info-text {
-	font-family: 'museo sans';
-	font-weight: normal;
-	text-align: left;
+  font-family: "museo sans";
+  font-weight: normal;
+  text-align: left;
 }
 
 .snake-container {
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-	padding: 20px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 20px;
 }
 
 .chatbot {
-	max-width: 100%;
-	max-height: auto;
+  max-width: 100%;
+  max-height: auto;
 }
 
 .snake-container img:hover {
-	opacity: 0.5;
-	color: yellow;
+  opacity: 0.5;
+  color: yellow;
 }
 
 /* Lab Screen Styles */
 
 .bench {
-	position: absolute;
-	bottom: 0%;
-	left: 0%;
-	max-width: 100%;
-	max-height: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  max-width: 100%;
+  max-height: auto;
 }
 
 .dregg {
-	position: absolute;
-	max-width: 50%;
-	max-height: auto;
-	right: 30%;
+  position: absolute;
+  max-width: 50%;
+  max-height: auto;
+  right: 25%;
+  bottom: 25%;
 }
 
 .drmoon {
-	max-width: 50%;
-	max-height: auto;
+  max-width: 50%;
+  max-height: auto;
 }
 
 .button-container {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	right: 15%;
-	bottom: 40%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  right: 72%;
+  bottom: 40%;
 }
 
-.lab-buttons {
-	max-width: 70%;
-	max-height: auto;
-	padding: 7px;
+.lab-button-wc {
+  max-width: 75%;
+  max-height: auto;
+  padding: 7px;
 }
 
-.bb-container {
-	position: absolute;
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: center;
+.lab-button-facts {
+  max-width: 85%;
+  max-height: auto;
+  padding: 7px;
 }
 
-.bench-button {
-	max-width: 35%;
-	max-height: auto;
-	padding: 10px;
+.lab-button-fanfic {
+  max-width: 60%;
+  max-height: auto;
+  padding: 7px;
+}
+
+.lab-button-inv {
+  max-width: 60%;
+  max-height: auto;
+  padding: 7px;
+}
+
+.lab-button-biogoo {
+  max-width: 45%;
+  max-height: auto;
+  padding: 7px;
+}
+
+.plank-container {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  top: 83%;
+}
+
+.plankname {
+  position: absolute;
+  font-family: museo sans;
+  font-weight: bold;
+  text-align: left;
+  font-size: 30px;
+  color: white;
+  top: 25%;
+}
+
+.plank {
+  max-width: 60%;
+  max-height: auto;
+}
+
+.aboriginal-flag {
+  position: absolute;
+  max-width: 100%;
+  max-height: auto;
+  left: 86%;
+  top: 18%;
+}
+
+.aboriginal-flag:hover {
+  position: absolute;
+  max-width: 100%;
+  max-height: auto;
+  left: 85%;
+  top: 17%;
+  transform: scale(1.2);
 }
 
 .tool-container {
-	position: absolute;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	bottom: 10%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  bottom: 18%;
 }
 
 .tools {
-	max-width: 15%;
-	max-height: auto;
-	padding: 40px;
+  max-width: 15%;
+  max-height: auto;
+  padding: 40px;
 }
 
 .tools:hover {
-	transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.wc-box {
+  position: absolute;
+  max-width: 30%;
+  max-height: auto;
+  left: 70%;
+  top: 30%;
 }
 
 .back-container {
-	position: absolute;
-	width: 100%;
-	padding: 20px;
+  position: absolute;
+  width: 100%;
+  padding: 20px;
 }
 
 .lab-blackboard {
-	position: absolute;
-	max-width: 45%;
-	max-height: auto;
-	left: 55%;
-	top: 15%;
+  position: absolute;
+  max-width: 45%;
+  max-height: auto;
+  left: 55%;
+  top: 15%;
 }
 
-.chalkboard {
-	font-size: 50;
-	font-family: 'Chalktastic';
-	color: white;
-	padding: 15px;
-	text-align: center;
+.popup-text {
+  font-family: museo sans;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+
+.yt-trailer {
+  position: absolute;
+  max-width: 100%;
+  left: 15%;
+  top: 12%;
+}
+
+.book-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book {
+  transform: scale(0.8);
+}
+
+.game-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-bg {
+  position: relative;
 }
 
 /* .container {
@@ -987,27 +1093,27 @@ input {
 } */
 
 .OnlineStore-Background-Container {
-	background-image: url('./images/Lab.png');
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100vh;
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .OnlineStore-Button {
-	width: 100%;
-	max-width: 50vh;
-	max-height: auto;
-	padding: 1vh;
-	margin: 1vh auto;
-	display: block;
-	border-radius: 3vh;
-	border-width: 1vh;
-	border-color: #83cfb1;
-	font-family: Polaris;
-	font-size: 4vh;
-	color: #367771;
-	position: absolute;
-	top: 45vh;
-	left: 70vh;
+  width: 100%;
+  max-width: 50vh;
+  max-height: auto;
+  padding: 1vh;
+  margin: 1vh auto;
+  display: block;
+  border-radius: 3vh;
+  border-width: 1vh;
+  border-color: #83cfb1;
+  font-family: Polaris;
+  font-size: 4vh;
+  color: #367771;
+  position: absolute;
+  top: 45vh;
+  left: 70vh;
 }
