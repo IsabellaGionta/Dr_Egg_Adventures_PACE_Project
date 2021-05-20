@@ -2208,14 +2208,22 @@ input {
   display: none;
 }
 
-.BookCoverImg{
+.BookCoverContainer{
   width: 100%;
   height: 90%;
   background-color: white;
 }
 
+.BookCoverImg{
+  width: auto;
+  max-width: 38vw;
+  height: 100%;
+  background-color: white;
+}
+
 .BookImg{
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   height: 99%;
   background-color: white;
 }
@@ -2270,6 +2278,8 @@ input {
 .back{
   transform: rotateY(180deg);
   backface-visibility: hidden;
+  text-align: center;
+  background-color: white;
 }
 
 .BookTxt{
