@@ -3,9 +3,9 @@ import Back from '../images/btn-Back.png';
 import Snake from '../images/characters/Snake.png';
 import { Button} from 'reactstrap';
 import Helmet from "react-helmet";
-import ViviPic from "../images/Vivi.png"
-import ArdashPic from "../images/Ardash.png"
-import CorneliaPic from "../images/Cornelia.png"
+import ViviPic from "../images/characters/Vivi.png"
+import ArdashPic from "../images/characters/Ardash.png"
+import CorneliaPic from "../images/characters/Cornelia.png"
 
 
 
