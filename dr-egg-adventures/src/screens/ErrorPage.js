@@ -4,20 +4,10 @@ import Home from '../images/btn-Home.png';
 import Blackboard from '../images/Blackboard.png';
 import {useHistory } from "react-router-dom";
 import Helmet from "react-helmet";
+import BackBtn from "../images/btn-Back.png"
 
 
 export const ErrorPage = () => {
-
-    let history = useHistory();
-
-
-    const ReportEventHandler = () => {
-        history.push('/contact')
-    }
-
-    const HomeEventHandler = () => {
-        history.push('/home')
-    }
 
     return (
         <div className="ErrorPageStyle">
@@ -33,11 +23,12 @@ export const ErrorPage = () => {
             </div>
                 <img class="ErrorBlackboard" src={Blackboard} alt = "Blackboard"/>
                 <a href = "/">
-                <img className="ErrorHomeButton" src={Home} alt="Back"/>
+                <img className="ErrorHomeButton" src={Home} alt="Home"/>
                 </a>
                 <a href = "Contact">
-                <img className="ErrorReportButton" src={Report} alt="Back"/>
+                <img className="ErrorReportButton" src={Report} alt="Report"/>
                 </a>
+                <img className = "ErrorBack" src = {BackBtn} onClick={()=>{ window.history.back()}} alt = "Back"/>
         </div>
         
     )

@@ -2450,6 +2450,15 @@ input {
     width: 42vw;
   }
 }
+
+.ErrorBack{
+  position:absolute;
+  top:1vh;
+  right: 1vw;
+}
+.ErrorBack:hover{
+  cursor: pointer;
+}
 /* Map Styling */
 
 .Map-Container {
