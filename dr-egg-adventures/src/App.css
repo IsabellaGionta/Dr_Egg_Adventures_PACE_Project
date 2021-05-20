@@ -1398,10 +1398,7 @@ input {
 
 .yt-trailer {
 	position: absolute;
-  width: 71.5%;
-  height: 79.5%;
 	max-width: 100%;
-  max-height: 100%;
 	left: 15%;
 	top: 12%;
 }
@@ -1457,6 +1454,7 @@ input {
   background-size: cover;
 
 } */
+
 .OnlineStore-Background-Container {
 	background-image: url('./images/Lab.png');
 	background-size: cover;
@@ -2191,3 +2189,459 @@ input {
   }
 
 }
+
+/* Online Store Style*/
+.OnlineStore-Background-Container {
+  background-image: url("./images/Book.png");
+  background-size: 100% 100%;
+  margin :0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+}
+
+.InputStyle{
+  display: none;
+}
+
+.BookCoverImg{
+  width: 100%;
+  height: 90%;
+  background-color: white;
+}
+
+.BookImg{
+  width: 100%;
+  height: 99%;
+  background-color: white;
+}
+
+
+.OnlineStore-Container{
+  display: flex;
+  width: 75%;
+  height: 90%;
+}
+
+#cover{
+  width: 50vw;
+  height: 98vh;
+}
+
+.pageContainer{
+  width: 50vw;
+  height: 98vh;
+  position: relative;
+  perspective: 100vw;
+}
+
+.page{
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: .5s;
+  -moz-backface-visibility: hidden;
+}
+
+.front, .back{
+  
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+}
+
+.front{
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.back{
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.BookTxt{
+  width: 100%;
+  height: 95%;
+  position: absolute;
+  overflow:auto;
+}
+
+#c1:checked ~ .pageContainer #p1{
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+
+#c2:checked ~ .pageContainer #p2{
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+
+#c3:checked ~ .pageContainer #p3{
+  transform: rotateY(-180deg);
+  z-index: 3;
+}
+
+.nextBtn{
+  position: absolute;
+  bottom: 1vh;
+  right: 1vh;
+  cursor: pointer;
+}
+
+.backBtn{
+  position: absolute;
+  bottom: 1vh;
+  left: 1vw;
+  cursor: pointer;
+}
+
+#p1{
+  z-index: 3;
+}
+#p2{
+  z-index: 2;
+}
+
+#p3{
+  z-index: 1;
+}
+
+.OnlineStore-Button {
+  display: flex;
+  padding: 1vh;
+  margin: 1vh auto;
+  display: block;
+  border-radius: 3vh;
+  border-width: 1vh;
+  border-color: #83cfb1;
+  font-family: Polaris;
+  font-size: 2vw;
+  color: #367771;
+  position: absolute;
+  top:40%;
+  left:3%;
+  width: 90%;
+  height: auto;
+}
+
+.StoreBack{
+  top:0vh;
+  right: 1vw;
+  position: absolute;
+  width: 12vw;
+  height: auto;
+}
+
+/*Error Pages Style*/
+
+.ErrorPageStyle {
+    background-image: url("./images/Lab.png");
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+ }
+
+.ErrorTxtCont {
+  position: absolute;
+  top: 12vh;
+  left:15vw;
+  height: 48vh;
+  width: 71vw;
+  padding: 4vw 0;
+  overflow: auto;
+}
+
+.ErrorTxt {
+  width: 69vw;
+}
+
+.h1ErrorChalkboard {
+  font-size: 20vh;
+  font-family: "polaris";
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+
+.h2ErrorChalkboard {
+  font-size: 5vh;
+  font-family: "museo sans";
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.h3ErrorChalkboard {
+  font-size: 2vh;
+  font-family: "museo sans";
+  color: white;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.ErrorBlackboard {
+  height: 100vh;
+  width: 100vw;
+}
+
+.ErrorHomeButton {
+  position: absolute;
+  top: 60vh;
+  left: 28vw;
+  height: 14vh;
+  width: 21vw;
+}
+
+.ErrorReportButton {
+  position: absolute;
+  top: 60vh;
+  left: 50vw;
+  height: 14vh;
+  width: 21vw;
+}
+
+@media all and (max-aspect-ratio: 10/16){
+  .ErrorTxtCont {
+    position: absolute;
+    top: 12vh;
+    left:15vw;
+    height: 48vh;
+    width: 71vw;
+    overflow: auto;
+  }
+  
+  .h1ErrorChalkboard {
+    font-size: 30vw;
+    font-family: "polaris";
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  .ErrorHomeButton {
+    position: absolute;
+    top: 60vh;
+    left: 28vw;
+    height: 10vh;
+    width: 42vw;
+  }
+  
+  .ErrorReportButton {
+    position: absolute;
+    top: 73vh;
+    left: 28vw;
+    height: 10vh;
+    width: 42vw;
+  }
+}
+/* Map Styling */
+
+.Map-Container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: auto;
+}
+
+.Map{
+  width: 100vw;
+  height: 100vh;
+  overflow:auto;
+}
+
+.GamesHeading {
+  position: absolute;
+  top: 39%;
+  left: 80%;
+  right: 9%;
+  bottom: 54%;
+  background-image: url("./images/MapButton/Btn-Game.png");
+  background-size: 100% 100%;
+}
+.GamesHeading:hover {
+  position: absolute;
+  top: 37%;
+  left: 79%;
+  right: 8%;
+  bottom: 53%;
+  background-image: url("./images/MapButton/Btn-Game-Glow.png");
+  background-size: 100% 100%;
+}
+
+.ContactHeading {
+  position: absolute;
+  top: 87%;
+  bottom: 6%;
+  left:  74%;
+  right: 15%;
+  background-image: url("./images/MapButton/Btn-Contact.png");
+  background-size: 100% 100%;
+}
+
+.ContactHeading:hover {
+  position: absolute;
+  top: 85%;
+  bottom: 5%;
+  left:  73%;
+  right: 14%;
+  background-image: url("./images/MapButton/Btn-Contact-Glow.png");
+  background-size: 100% 100%;
+}
+
+.CharactersHeading {
+  position: absolute;
+  top: 67%;
+  bottom: 26%;
+  left:  28%;
+  right: 55%;
+  background-image: url("./images/MapButton/Btn-Characters.png");
+  background-size: 100% 100%;
+}
+.CharactersHeading:hover {
+  position: absolute;
+  top: 65%;
+  bottom: 25%;
+  left:  27%;
+  right: 54%;
+  background-image: url("./images/MapButton/Btn-Characters-Glow.png");
+  background-size: 100% 100%;
+}
+
+.LabHeading {
+  position: absolute;
+  top: 47%;
+  bottom: 46%;
+  left:  50%;
+  right: 32%;
+  background-image: url("./images/MapButton/Btn-Laboratory.png");
+  background-size: 100% 100%;
+}
+
+.LabHeading:hover {
+  position: absolute;
+  top: 45%;
+  bottom: 45%;
+  left:  49%;
+  right: 31%;
+  background-image: url("./images/MapButton/Btn-Laboratory-Glow.png");
+  background-size: 100% 100%;
+}
+
+.WorldsHeading {
+  position: absolute;
+  top: 38%;
+  bottom: 55%;
+  left:  17%;
+  right: 71%;
+  background-image: url("./images/MapButton/Btn-World.png");
+  background-size: 100% 100%;
+}
+
+.WorldsHeading:hover {
+  position: absolute;
+  top: 36%;
+  bottom: 54%;
+  left:  16%;
+  right: 70%;
+  background-image: url("./images/MapButton/Btn-World-Glow.png");
+  background-size: 100% 100%;
+}
+
+.TrailerHeading {
+  position: absolute;
+  top: 61%;
+  bottom: 32%;
+  left:  83%;
+  right: 3%;
+  background-image: url("./images/MapButton/Btn-Trailer.png");
+  background-size: 100% 100%;
+}
+
+.TrailerHeading:hover {
+  position: absolute;
+  top: 59%;
+  bottom: 31%;
+  left:  82%;
+  right: 2%;
+  background-image: url("./images/MapButton/Btn-Trailer-Glow.png");
+  background-size: 100% 100%;
+}
+
+
+
+.ResourcesHeading{
+  position: absolute;
+  top: 77%;
+  bottom: 16%;
+  left:  3%;
+  right: 73%;
+  background-image: url("./images/MapButton/Btn-ProductOverview.png");
+  background-size: 100% 100%;
+}
+
+.ResourcesHeading:hover{
+  position: absolute;
+  top: 75%;
+  bottom: 15%;
+  left:  2%;
+  right: 72%;
+  background-image: url("./images/MapButton/Btn-ProductOverview-Glow.png");
+  background-size: 100% 100%;
+}
+
+.OnlineStoreHeading {
+  position: absolute;
+  top: 75%;
+  bottom: 18%;
+  left:  54%;
+  right: 35%;
+  background-image: url("./images/MapButton/Btn-Book.png");
+  background-size: 100% 100%;
+}
+.OnlineStoreHeading:hover {
+  position: absolute;
+  top: 73%;
+  bottom: 17%;
+  left:  53%;
+  right: 34%;
+  background-image: url("./images/MapButton/Btn-Book-Glow.png");
+  background-size: 100% 100%;
+}
+.MapSnake {
+  position: absolute;
+  bottom: 4vh;
+  left: 85vw;
+  width: 12vw;
+  height: auto;
+}
+.BtnContain{
+  height: 100vh;
+  width: 141vh;
+  background-image: url("./images/WorldMap.png");
+  background-size: 100% 100%;
+  position: relative;
+}
+@media all and (min-aspect-ratio: 45/32){
+  .BtnContain{
+    height: 71vw;
+    width: 100vw;
+  }
+}
+
+
+
+
+

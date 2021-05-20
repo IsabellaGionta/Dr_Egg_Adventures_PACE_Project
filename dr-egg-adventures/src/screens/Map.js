@@ -1,5 +1,5 @@
 import React  from 'react';
-import Snake from '../images/Snake.png';
+import Snake from '../images/characters/Snake.png';
 import Helmet from "react-helmet";
 
 let isDown = false;
