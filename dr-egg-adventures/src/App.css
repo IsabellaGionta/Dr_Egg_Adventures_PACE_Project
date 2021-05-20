@@ -2338,10 +2338,10 @@ input {
 }
 
 .StoreBack{
-  top:0vh;
+  top:1vh;
   right: 1vw;
   position: absolute;
-  width: 12vw;
+  width: 11vw;
   height: auto;
 }
 
