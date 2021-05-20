@@ -2,7 +2,7 @@ import React from 'react'
 import btnback from '../images/btn-Back.png';
 import btnbackglow from '../images/btn-Back-hover.png';
 import snake from '../images/characters/Snake.png';
-import book from '../images/book.png';
+import book from '../images/Book.png';
 import { useHistory } from "react-router-dom";
 
 export const Fanfic = () => {
