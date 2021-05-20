@@ -1,24 +1,32 @@
 import React from 'react'
+import Popup from '../components/Popup';
+import { useState } from 'react';
+
 import bench from '../images/labbench.png';
-import button from '../images/btn-Back.png';
-import snake from '../images/Snake.png';
+import btnback from '../images/btn-Back.png';
+import btnbackglow from '../images/btn-Back-hover.png';
+import snake from '../images/characters/Snake.png';
 import DrEgg from '../images/DrEgg-cut.png';
-import DrMoon from '../images/DrMoon-cut.png';
-import blackboard from '../images/Blackboard.png';
+import flag from '../images/aboriginal-flag.png';
+import flaghover from '../images/flag-glow.png';
+import plank from '../images/plank.png';
+import book from '../images/book.png';
+import popupBackground from '../images/popup-bg.png';
+
 import { useHistory } from "react-router-dom";
 
 //Buttons
-import weird from '../images/wc-button.png';
-import facts from '../images/facts-button.png';
-import fanfic from '../images/fanfic-button.png';
-import inv from '../images/inv-button.png';
-import biogoo from '../images/bio-button.png';
-import benchbutton from '../images/bench-button.png';
+import weird from '../images/btn-weirdcreations.png';
+import facts from '../images/btn-crazysciencefacts.png';
+import fanfic from '../images/btn-fanfiction.png';
+import inv from '../images/btn-inventory.png';
+import biogoo from '../images/btn-biogoo.png';
 
 //Tools
 import goggles from '../images/Goggle.png';
 import hoverboard from '../images/HoverBoard.png';
 import teletube from '../images/Teletube.png';
+import wcbox from '../images/weirdcreations-box.png';
 
 export const Lab = () => {
 
@@ -28,42 +36,73 @@ export const Lab = () => {
         history.push('/map');
     }
 
+    const creationsNav = () => {
+        history.push('/weirdcreations');
+    }
+
+    const factsNav = () => {
+        history.push('/crazyfacts');
+    }
+
+    const fanficNav = () => {
+        history.push('/fanfiction');
+    }
+
+    const [buttonPopup, setButtonPopup] = useState(false);
+    // const [buttonFactsPopup, setButtonFactsPopup] = useState(false);
+    // const [buttonFanficPopup, setButtonFanficPopup] = useState(false);
+
     return (
         <div className = "Lab-Background-Container">
-            <div className = "bb-container">
-                <img className="bench-button" src={benchbutton} alt = "bench button"/>
-            </div>
-            <img class="lab-blackboard" src={blackboard} alt = "BlackBoard"/>
-            <img className="drmoon" src={DrMoon} alt = "dr moon"/>
             <img className="dregg" src={DrEgg} alt = "dr egg"/>
             <div className = "button-container">
-                {/* <img className="lab-buttons" src={weird} alt = "weird creations button"/> */}
-                {/* <img className="lab-buttons" src={facts} alt = "crazy facts button"/>
-                <img className="lab-buttons" src={fanfic} alt = "fanfiction button"/>
-                <img className="lab-buttons" src={inv} alt = "inventory button"/>
-                <img className="lab-buttons" src={biogoo} alt = "biogoo button"/> */}
-                <h3 className = "chalkboard"> Weird Creations</h3>
-                <h3 className = "chalkboard"> Crazy Science Facts</h3>
-                <h3 className = "chalkboard"> Fanfiction</h3>
-                <h3 className = "chalkboard"> Inventory</h3>
-                <h3 className = "chalkboard"> Biogoo</h3>
-                
+                <img className="lab-button-facts" src={facts} alt = "crazy facts button" onClick = {factsNav}/>
+                <img className="lab-button-wc" src={weird} alt = "weird creations button" onClick = {creationsNav}/>
+                <img className="lab-button-fanfic" src={fanfic} alt = "fanfiction button" onClick = {fanficNav}/>
+                <img className="lab-button-inv" src={inv} alt = "inventory button"/>
+                <img className="lab-button-biogoo" src={biogoo} alt = "biogoo button"/> 
             </div>
             <img className = "bench" src = {bench} alt = "lab bench"/> 
 
+            <div className = "plank-container">
+                <img className = "plank" src = {plank} alt = "plank"/> 
+                <p className = "plankname">DR EGG'S MAGICAL INTERACTIVE LABORATORY</p>
+            </div>
 
             <div className = "tool-container">
                 <img className="tools" src={goggles} alt = "goggles"/>
                 <img className="tools" src={hoverboard} alt = "hoverboard"/>
                 <img className="tools" src={teletube} alt = "teletube"/>
-            </div>  
+            </div> 
+
+            <img className = "wc-box" src = {wcbox} alt = "wc box"/> 
 
             <div className = "snake-container">
                 <img className = "chatbot" src = {snake} alt = "chatbot" /> 
             </div>
             <div className = "back-container"> 
-                <img className = "Back-Button" src = {button} alt = "home button" onClick = {homeNav}/>  
+                <img className = "Back-Button" 
+                src = {btnback}
+                onMouseOver = {e => e.currentTarget.src = btnbackglow}
+                onMouseOut={e => e.currentTarget.src = btnback}
+                alt = "home button" 
+                onClick = {homeNav}/>  
             </div>
+
+            <img className = "aboriginal-flag" 
+            src = {flag} 
+            onMouseOver = {e => e.currentTarget.src = flaghover}
+            onMouseOut={e => e.currentTarget.src = flag}
+            alt = "aboriginal flag"
+            onClick = {() => setButtonPopup(true)}/>
+
+            <Popup trigger={buttonPopup} setTrigger = {setButtonPopup}>
+                <div>
+                    <p className = "popup-text">Dr Egg Adventures would like to acknowledge the Traditional Custodians of the land on, and pay our respects to their Elders past and present.
+                    We extend that respect to Aboriginal and Torres Strait Islander peoples on this portal today.</p>  
+                </div>
+            </Popup>
+
         </div>
     )
 }
