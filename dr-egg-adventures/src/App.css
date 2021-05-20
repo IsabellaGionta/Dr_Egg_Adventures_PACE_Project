@@ -1398,7 +1398,10 @@ input {
 
 .yt-trailer {
 	position: absolute;
+  width: 71.5%;
+  height: 79.5%;
 	max-width: 100%;
+  max-height: 100%;
 	left: 15%;
 	top: 12%;
 }
@@ -1454,7 +1457,6 @@ input {
   background-size: cover;
 
 } */
-
 .OnlineStore-Background-Container {
 	background-image: url('./images/Lab.png');
 	background-size: cover;
@@ -2189,9 +2191,3 @@ input {
   }
 
 }
-
-
-
-
-
-
