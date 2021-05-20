@@ -12,7 +12,6 @@ import technoworld from '../images/technoworld.png';
 import egglab from '../images/egglab.png';
 import seedcorp from '../images/seedcorp.png';
 import Popup from '../components/SnakePopup.js';
-import Back from '../images/btn-Back.png';
 
 
 import Card from '../components/Card.js';
@@ -83,9 +82,6 @@ const slumNav = () => {
                 </div>
 
             </a>
-            <a href="/map">
-         <img className="Back-Button characters" src={Back} alt="Back"/>
-        </a>
 
             <img className="Snake"src={Snake} onClick={() => setModalState(true) } /> 
 
@@ -96,10 +92,6 @@ const slumNav = () => {
                         <p className="Snake-text"> In sprawled out, windy slum world, starvation and food shortages are every day occurences. The poor inhabittants suffer as Dr Mole ruthlessly seeks to control the food supplies. In the scary backstreets, roam gangs of "dumped" mutant thugs, the result of Dr Mole's experiments on children and animals. Anyone can become the thugs' unsuspecting quarry, and be kidnapped for auction at the notorious and scary Mutant and Body Parts Black Market. </p>
                     </div>
                 </Popup>
-
-        <a href="/chatbot">
-           <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
-        </a>
 
         </div>
     )
