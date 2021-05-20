@@ -25,7 +25,7 @@ import LabWorldSingle from './screens/LabWorldSingle';
 import WeirdCreations from './screens/WeirdCreations.js'
 import CrazyFacts from './screens/CrazyFacts';
 import Fanfic from './screens/Fanfic';
-import ErrorPage from './screens/ErrorPage';
+import ErrorPage from './screens/ErrorPage'
 import Ardash from './screens/characters/ArdashScreen.js'
 import Carlin from './screens/characters/CarlinScreen.js'
 import DrEgg from './screens/characters/DrEggScreen.js'
@@ -183,7 +183,8 @@ function App() {
         <Route path="/fanfiction">
           <Fanfic />
         </Route>
-        <Route component={ErrorPage}/>
+        <Route component = {ErrorPage}/>
+
 			</Switch>
 		</Router>
 	);

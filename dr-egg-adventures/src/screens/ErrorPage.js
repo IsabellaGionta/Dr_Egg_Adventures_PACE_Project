@@ -17,7 +17,6 @@ export const ErrorPage = () => {
 
     const HomeEventHandler = () => {
         history.push('/home')
-        console.log(2);
     }
 
     return (
@@ -33,12 +32,8 @@ export const ErrorPage = () => {
                 </div>
             </div>
                 <img class="ErrorBlackboard" src={Blackboard} alt = "Blackboard"/>
-                <a href = "/">
-                <img className="ErrorHomeButton" src={Home} alt="Back"/>
-                </a>
-                <a href = "/contact">
-                <img className="ErrorReportButton" src={Report} alt="Back"/>
-                </a>
+                <img className="ErrorHomeButton" src={Home} onClick={() => HomeEventHandler} alt="Back"/>
+                <img className="ErrorReportButton" src={Report} onClick={() => ReportEventHandler} alt="Back"/>
         </div>
         
     )
