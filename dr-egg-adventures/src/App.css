@@ -2194,7 +2194,7 @@ input {
 
 /* Online Store Style*/
 .OnlineStore-Background-Container {
-  background-image: url("./images/Book.png");
+  background-image: url("./images/book.png");
   background-size: 100% 100%;
   margin :0;
   height: 100vh;
