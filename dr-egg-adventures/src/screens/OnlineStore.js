@@ -20,7 +20,9 @@ export const OnlineStore = () => {
                 <input className = "InputStyle" type="checkbox" id = "c2"/>
                 <input className = "InputStyle" type="checkbox" id = "c3"/>                
                 <div id = "cover">
+                  <div className = "BookCoverContainer">
                   <img className = "BookCoverImg" src = {ViviPic} alt = "Vivi"/>
+                  </div>
                 </div>
                 <div className = "pageContainer">
                   <div className = "page" id = "p1">
