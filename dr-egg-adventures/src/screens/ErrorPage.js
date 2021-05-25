@@ -2,8 +2,7 @@ import React from 'react';
 import Report from '../images/btn-Report.png';
 import Home from '../images/btn-Home.png';
 import Blackboard from '../images/Blackboard.png';
-import {useHistory } from "react-router-dom";
-import Helmet from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import BackBtn from "../images/btn-Back.png"
 
 
@@ -11,9 +10,10 @@ export const ErrorPage = () => {
 
     return (
         <div className="ErrorPageStyle">
-        <Helmet>
+        <HelmetProvider><Helmet>
             <title>Error 404</title>
-        </Helmet>
+        </Helmet></HelmetProvider>
+        <link rel="manifest" href="manifest.json"/>
             <div className = 'ErrorTxtCont'>
                 <div className = 'ErrorTxt'>
                 <p className = 'h1ErrorChalkboard'> 404 </p>

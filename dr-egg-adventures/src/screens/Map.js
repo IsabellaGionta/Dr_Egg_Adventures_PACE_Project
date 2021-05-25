@@ -1,6 +1,6 @@
 import React  from 'react';
 import Snake from '../images/characters/Snake.png';
-import Helmet from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 let isDown = false;
 let startX;
@@ -13,9 +13,9 @@ class Map extends React.Component {
     render(){
     return (
         <div className="Map-Container">
-            <Helmet>
+            <HelmetProvider><Helmet>
                 <title>Map</title>
-            </Helmet>
+            </Helmet></HelmetProvider>
             <div 
                 className = "Map"
                 ref = {this.MapID}
