@@ -93,18 +93,23 @@ const Characters = () => {
       }
 
     return (
+      
         <div className="Character-Container">
           <div className="Character-Background-Container"> 
             <div className="Character-Images">
-              <img className="DrEgg good-characters all" src={DrEgg} onClick={DrEggEventHandler} alt="DrEgg"/>
+            <figure className="good-characters">
+                <img className="DrEgg  all" src={DrEgg} onClick={DrEggEventHandler} alt="DrEgg"/>
 
-              <img className="DrMoon good-characters all" src={DrMoon} onClick={DrMoonEventHandler} alt="DrMoon"/>
-              <img className="Ardash good-characters all" src={Ardash} onClick={ArdashEventHandler} alt="Ardash"/>
+                <img className="DrMoon  all" src={DrMoon} onClick={DrMoonEventHandler} alt="DrMoon"/>
+                <img className="Ardash  all" src={Ardash} onClick={ArdashEventHandler} alt="Ardash"/>
 
-              <img className="Vivi good-characters all" src={Vivi} onClick={ViviEventHandler} alt="Vivi"/>
-              <img className="Cornelia good-characters all" src={Cornelia} onClick={CorneliaEventHandler} alt="Cornelia"/>
-              <img className="ProfMole bad-characters all " src={ProfMole} onClick={ProfMoleEventHandler} alt="ProfMole"/> 
+                <img className="Vivi all" src={Vivi} onClick={ViviEventHandler} alt="Vivi"/>
+                <img className="Cornelia all" src={Cornelia} onClick={CorneliaEventHandler} alt="Cornelia"/>
+              </figure>
 
+              <figure className="bad-characters">
+               <img className="ProfMole all " src={ProfMole} onClick={ProfMoleEventHandler} alt="ProfMole"/> 
+              </figure>
               <img className="Character-Bench" src={LabBench} alt="LabBench"/>
 
               <img className="SnakeImg characters" src={SnakeImg} onClick={SnakeEventHandler} alt="SnakeImg"/> 
