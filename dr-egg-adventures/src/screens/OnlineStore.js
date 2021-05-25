@@ -2,7 +2,7 @@ import React from 'react';
 import Back from '../images/btn-Back.png';
 import Snake from '../images/characters/Snake.png';
 import { Button} from 'reactstrap';
-import Helmet from "react-helmet";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ViviPic from "../images/characters/Vivi.png"
 import ArdashPic from "../images/characters/Ardash.png"
 import CorneliaPic from "../images/characters/Cornelia.png"
@@ -12,25 +12,26 @@ import CorneliaPic from "../images/characters/Cornelia.png"
 export const OnlineStore = () => {
   return (
     <div className="OnlineStore-Background-Container">
-      <Helmet>
+      <HelmetProvider><Helmet>
         <title>Store Preview</title>
-      </Helmet>
+      </Helmet></HelmetProvider>
       <div className="OnlineStore-Container">
                 <input className = "InputStyle" type="checkbox" id = "c1"/>
                 <input className = "InputStyle" type="checkbox" id = "c2"/>
                 <input className = "InputStyle" type="checkbox" id = "c3"/>                
-                <div id = "cover">
-                  <div className = "BookCoverContainer">
-                  <img className = "BookCoverImg" src = {ViviPic} alt = "Vivi"/>
+                <div id = "bookCover">
+                  <div className = "imgPageCoverContainer">
+                    <img className = "BookCoverImg" src = {ViviPic} alt = "Vivi"/>
                   </div>
                 </div>
                 <div className = "pageContainer">
+
                   <div className = "page" id = "p1">
-                    <div className = "back">
+                    <div className = "backPageContainer">
                       <img className = "BookImg" src = {ArdashPic} alt = "Ardash"/>
-                      <label className="backBtn" for = "c1">Back</label>
+                      <label className="backBtn" htmlFor = "c1">Back</label>
                     </div>
-                    <div className = "front">
+                    <div className = "frontPageContainer">
                       <div className = "BookTxt">
                       <p>
                         Vivi’s foot landed on something squelchy that released the all too familiar Bio-goo smell. Like a mix of toe cheese, truck oil soap scum from a bath plug and the worst tasting old cheese rind. ‘Yuck,’ she muttered, trying not to gag. She’d wash it off as soon as she could, before it burnt through the sole of a shoe, but she needed to keep her spot if she was going to find what she was looking for: something particular and rare for her latest invention. 
@@ -39,15 +40,16 @@ export const OnlineStore = () => {
                         Maybe if she was a better inventor or builder her father might not make them move quite so often. But he insisted on moving every year. There was always some new incident befalling him – like losing yet another newspaper delivery job – but Vivi knew it was because of the dog, it always found him.
                       </p>
                       </div>
-                      <label className="nextBtn" for = "c1">Next</label>
+                      <label className="nextBtn" htmlFor = "c1">Next</label>
                     </div>
                   </div>
+
                   <div className = "page" id = "p2">
-                    <div className = "back">
+                    <div className = "backPageContainer">
                       <img className = "BookImg" src = {CorneliaPic} alt = "Cornelia"/>
-                      <label className="backBtn" for = "c2">Back</label>
+                      <label className="backBtn" htmlFor = "c2">Back</label>
                     </div>
-                    <div className = "front">
+                    <div className = "frontPageContainer">
                       <div className = "BookTxt">
                       <p>
                         Ardash closed the file, satisfied with his preliminary hypothesis. He loved planning detailed experiments, and if they didn't succeed, there were always lessons to be learned from failure. 
@@ -57,11 +59,12 @@ export const OnlineStore = () => {
                         She'd thrown everything down the rubbish shoot.
                       </p>
                       </div>
-                      <label className="nextBtn" for = "c2">Next</label>
+                      <label className="nextBtn" htmlFor = "c2">Next</label>
                     </div>
                   </div>
+
                   <div className = "page" id = "p3">
-                    <div className = "back">
+                    <div className = "backPageContainer">
                       <div className = "BookImg">
                         <Button className="OnlineStore-Button" onClick={() => 
                           { alert('Redirecting to Dr Egg Adventures Online Store Page!'); 
@@ -70,9 +73,9 @@ export const OnlineStore = () => {
                           ENTER OUR ONLINE STORE TO CONTINUE
                         </Button>
                       </div>
-                      <label className="backBtn" for = "c3">Back</label>
+                      <label className="backBtn" htmlFor = "c3">Back</label>
                     </div>
-                    <div className = "front">
+                    <div className = "frontPageContainer">
                       <div className = "BookTxt">
                       <p>
                         Cornelia looked up. The clouds were gathering, but there wasn’t much rain in them. She adored rain drops on her face, the freshness she felt as it fell on her, like she was a plant that grew a little taller every time it rained. 
@@ -84,13 +87,14 @@ export const OnlineStore = () => {
                         How could they even dream of having a celebration, Cornelia thought. When everyone else in the district is struggling?
                       </p>
                       </div>
-                      <label className="nextBtn" for = "c3">Next</label>
+                      <label className="nextBtn" htmlFor = "c3">Next</label>
                     </div>
                   </div>
+
                 </div>
               </div>
               <a href="/chatbot">
-                  <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
+                  <img className="StoreSnake" src={Snake} alt="Snake"/>  
               </a>
               <a href = "/Map">
                 <img className="StoreBack" src={Back} alt="Back"/>
