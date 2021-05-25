@@ -20,7 +20,7 @@ import Card from '../components/Card.js';
 
 export const Worlds = () => {
 
-const [modalState, setModalState] = useState(false);
+const [modalState, setModalState] = useState(true);
 
 
 const history = useHistory();
@@ -56,7 +56,7 @@ const slumNav = () => {
 
             <a href="/slumworld1">
                 <div className="slumworld">
-                    <Card className="slumworld"
+                    <Card className="slumworld-img"
                     imageUrl= {slumworld}
                     /> 
                 </div>
@@ -87,9 +87,6 @@ const slumNav = () => {
                 </div>
 
             </a>
-
-            <img className="Snake"src={Snake} onClick={() => setModalState(true) } /> 
-
 
                 <Popup trigger={modalState} setTrigger = {setModalState}>
                     <div className = "popup-background">

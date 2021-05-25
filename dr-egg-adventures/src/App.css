@@ -446,11 +446,6 @@ p {
   position: relative;
 }
 
-@media screen and (max-width: 1002px) {
-  .SnakeImg {
-    bottom:50%;
-  }
-}
 /* Resource screen styling  */
 
 h1.Resources-Title {
@@ -481,13 +476,31 @@ h1.Resources-Title {
 
 .ProductOverview {
   position: absolute;
-  left: 10%;
+  left: 3%;
+  top: 35%;
+  width: 70%;
 
   max-width: 100%;
   max-height: auto;
   margin-left: auto;
   margin-right: auto;
 }
+
+
+.Text {
+  position: absolute;
+  left: 8%;
+  top: 10%;
+  color: #367771;
+  font-size: 4vh;
+  font-family: 'polaris';
+
+  max-width: 100%;
+  max-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .Resources-Desc {
   max-width: 100%;
@@ -555,23 +568,16 @@ h1.Resources-Title {
 .good-characters:hover {
 
   background-image: url("./images/Good-Light.png");
-  background-position:top center;
-  /* opacity: 88%; */
+  background-repeat: no-repeat;
+  background-size:cover;
 }
-
 
 .characters:hover{
   opacity:80%;
 }
 
-
 .bad-characters:hover {
-
-  background-image: url("./images/Bad-Light.png");
-  background-position: center top;
-  opacity: 88%;
-
-
+  background-image:  url("./images/Bad-Light.png");
 }
 
 
@@ -624,20 +630,37 @@ h1.Resources-Title {
   height: auto;
 }
 
+.bad-characters {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 55%;
+  /* top: 15%; */
+}
 .ProfMole {
   position: absolute;
   bottom: 45%;
-  left: 73%;
+  left: 17%;
   width: 28%;
+  height: 40%;
   max-width: 100%; 
   max-height: auto;
 
 }
 
+
+.good-characters {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left:-30%;  
+  /* top: 15%; */
+}
+
 .Cornelia {
   position: absolute;
   bottom: 4%;
-  left: 10%;
+  left: 40%;
   width: 20%;
   max-width: 100%; 
   max-height: 100%;
@@ -647,13 +670,13 @@ h1.Resources-Title {
 .Cornelia:hover {
   content: url("./images/characters/Cornelia-Highlight.png");
   width: 15%;
-  left: 12%;
+  left: 42%;
 }
 
 .Ardash {
   position: absolute;
   bottom: 8%;
-  left: 20%;
+  left: 50%;
   width: 22%;
   max-width: 100%; 
   max-height: 100%;
@@ -663,12 +686,13 @@ h1.Resources-Title {
 .Ardash:hover {
   content: url("./images/characters/Ardash-Highlight.png");
   width: 18%;
-  left: 22%;
+  left: 52%;
 } 
 
 .DrEgg {
   position: absolute;
   bottom: 7%;
+  left: 30%;
   width: 28%;
   max-width: 100%; 
   height: 100%;
@@ -685,7 +709,7 @@ h1.Resources-Title {
 .DrMoon {
   position: absolute;
   bottom: 7%;
-  left: 15%;
+  left: 45%;
   width: 28%;
   max-width: 100%; 
   height: 100%;
@@ -694,12 +718,12 @@ h1.Resources-Title {
 .DrMoon:hover {
   content: url("./images/characters/Dr-Moon-Highlight.png");
   width: 23%;
-  left: 18%;
+  left: 48%;
 }
 
 .Vivi {
   position: absolute;
-  left: 0%;
+  left: 30%;
   bottom: 3%;
   width: 20%;
   max-width: 100%; 
@@ -942,15 +966,6 @@ h1.Contact-Title {
 	left: 25%;
 }
 
-/* .Contact-Info {
-	font-family: museo sans;
-	position: absolute;
-	top: 30%;
-	left: 55%;
-	color: white;
-	line-height: 40px;
-	font-size: 2vh;
-} */
 .Contact-Info {
 	font-family: museo sans;
 	position: absolute;
@@ -1090,13 +1105,22 @@ input {
   position: absolute;
   left: 10%;
   top: 25%;
+
+  max-width: 100%;
+  max-height: 100%;
+  width: 22rem;
 }
 
-.slumworld {
+.slumworld { 
   position: absolute;
   left: 26%;
   top: 25%;
+
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
 
 .egglab {
   position: absolute;
@@ -1493,13 +1517,24 @@ input {
 /* Mobile screens  */
 
 /* Individual character screen  */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  
+@media screen and (max-width: 490px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+/*   
   .modalBackground {
     left: 10%;
     width: 80%;
   }
-  
+   */
   .DrEggLogo {
     width: 65%;
     left: 17%;
@@ -1511,8 +1546,6 @@ input {
     left:25%;
     top: 70%;
   }
-
-  /* Resource screen */
 
   .Ardash:hover {
     width: 40%;
@@ -1540,8 +1573,6 @@ input {
     left: 28%;
   }
 
-
-
   h1.Resources-Title {
     left: 30%;
     font-size: 3vh;
@@ -1563,6 +1594,7 @@ input {
     left: -15%;
     top: 20%;
   }
+
   .Vivi {
     left: -15%;
     top: 48%;
@@ -1608,6 +1640,9 @@ input {
     height: 15%;
   }
 
+  /* .slumworld {
+    width:1rem;
+  } */
   h1.Character-Type {
     left: 20%;
     font-size: 3vh;
@@ -1699,6 +1734,7 @@ input {
   }
   .Character-Description-Inventors {
     /* display: none; */
+
   }
   .Individual-Character-Styling-Pigeon{
     max-width: 55%;
@@ -1727,241 +1763,9 @@ input {
 
 }
 
-/* iPads and Tablet screens */
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-  .modalBackground {
-    left: 15%;
-    width: 70%;
-  }
-  
-
-  .Ardash:hover {
-    width: 29%;
-    left: 40%;
-  } 
-
-    
-  .Cornelia:hover {
-    width: 26%;
-    left: 23%;
-  } 
-
-    
-  .Vivi:hover {
-    width: 33%;
-    left: -3%;
-  } 
-
-  .DrEgg:hover {  
-    width: 43%;
-    left: -3%;
-  }
-  .DrMoon:hover {  
-    width: 47%;
-    left: 25%;
-  }
-
-
-
-  .DrEggLogo {
-    width: 60%;
-    height: 60%;
-    left: 22%;
-    top: 10%;
-  }
-
-  .Home-Enter-Button {
-    width: 50%;
-    left:30%;
-    top: 75%;
-  }
-
-    /* Resource screen */
-    h1.Resources-Title {
-      left: 32%;
-    }
-    .buttons {
-      left: 20%;
-    }
-  .Character-Bench {
-    height: 32%;
-  }
-  .all {
-    width: 40%;
-  }
-  .DrEgg { 
-    width: 65%;
-    height: 80%;
-    left: -15%;
-  }
-  .Vivi {
-    left: -8%;
-    top: 30%;
-  }
-  .Ardash {
-    left: 35%;
-    top: 28%;
-  }
-  .DrMoon {
-    top: 15%;
-    width: 65%;
-    height: 80%;
-    left: 15%;
-  }
-  .Cornelia {
-    left: 17%;
-    top: 32%;
-  }
-  .Pigeon {
-    bottom: 20%;
-    width: 20%;
-  }
-  .Rifraf {
-    bottom: 20%;
-    width: 30%;
-  }
-  .Carlin {
-    bottom: 20%;
-    width: 15%;
-  } 
-  .SnakeImg {
-    bottom: 14%;
-    left: 30%;
-    width: 40%;
-  }
-  .EggDrone {
-    bottom: 20%;
-    width: 20%;
-  }
-  .ProfMole {
-    left: 60%;
-  }
-
-  h1.Character-Type {
-    position: absolute;
-    left: 20%;
-    font-size: 3vh;
-  }
-
-  .Individual-Character-Name {
-    left: 20%;
-    top: 15%;  
-    font-size: 2.5vh;
-
-  }
-  .Individual-Character-Slogan {
-    left: 20%;
-    top: 18%;  
-    font-size: 2.4vh;
-  }
-  .Individual-Character-DrEggDrone {
-    line-height:100px;
-    left: 18%;
-    top: 20%;  
-    font-size: 2.3vh;
-  }
-
-
-
-
-  .Individual-Character-Styling{
-    max-width: 68%;
-    left: -13%;
-  }
-  .Individual-Character-Styling-Inventors{
-    width: 50%;
-    left: 0%;
-  }
-
-  .Individual-Character-Styling-Inventors-Cornelia{
-    width: 30%;
-    left: 0%;
-  }
-
-  .Individual-Character-Styling-Inventors-Ardash{
-    width: 40%;
-    left: 0%;
-  }
-
-  .Individual-Character-Styling-Inventors-Vivi{
-    width: 40%;
-    left: 0%;
-  }
-
-  .Individual-Character-Styling-ProfMole {
-    width: 70%;
-    left: 30%;
-
-  }
-
-  .Character-Pet {
-    width: 20%;
-  }
-
-  .Character-Tool {
-    width: 35%;
-  }
-
-  .Petridish {
-    width: 15%;
-  }
-
-  .Character-Pet-Pigeon {
-    width: 20%;
-    left: 45%;
-    bottom: 0%;
-  }
-
-  .Powers {
-    padding: 40px 0px;
-
-  }
-  .Individual-Character-Styling{
-    max-width: 45%;
-  }
-
-  .Individual-Character-Styling-Pigeon{
-    max-width: 45%;
-  }
-  .Individual-Character-Styling-EggDrone {
-    max-width: 35%;
-  }
-  
-  .Character-Description-Snake {
-    line-height: 37px;
-
-  }
-
-  .Character-Description-Inventors {
-    left: 30%;
-    top: 22%;
-    line-height: 22px;
-  }
-
-  .Character-Description {
-    left: 18%;
-    top: 25%;
-    width: 60%;
-    line-height: 30px;
-
-}
-
-  .Individual-Character-Styling-Inventors{
-    max-width: 40%;
-    left: 0%;
-  }
-
-  .Mobile-Characteristics {
-    /* display: none; */
-  }
-
-}
-
 
 /* Tablet / Desktop screens */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 801) and (max-width: 1024px) and (orientation: landscape) {
 
   .modalBackground {
       left: 1%;
@@ -2338,10 +2142,10 @@ input {
 }
 
 .StoreBack{
-  top:1vh;
+  top:0vh;
   right: 1vw;
   position: absolute;
-  width: 11vw;
+  width: 12vw;
   height: auto;
 }
 
