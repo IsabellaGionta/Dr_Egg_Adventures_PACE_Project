@@ -4,20 +4,20 @@ import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 import HoverBoard from '../../images/HoverBoard.png';
-import { Button } from 'react-bootstrap';
-import Dropdown from 'react-dropdown';
+// import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
 
 
 import { useHistory } from "react-router-dom";
+export const ArdashScreen = () => {
 
-export default class ArdashScreen extends React.Component{ 
-  constructor(props) {
-    super(props);
-    this.state={
-    display: false
-  }
-}
-render() {
+// export default class ArdashScreen extends React.Component{ 
+//   constructor(props) {
+//     super(props);
+//     this.state={
+//     display: false
+//   }
+// }
+
   // let history = useHistory();
 
   const BackEventHandler = () => {
@@ -37,7 +37,7 @@ render() {
     //   characteristics= 
     //   <p className="Character-Description-Inventors">
     //     CHARACTERISTICS: Ardash is a boy with no belly button and 
-    //     he is literally perfect. He hails from Techno-world and has
+    //     he is literally perfect. He hails from Techno-Towers and has
     //     been genetically modified so he can’t catch any diseases. He’s
     //     a super plugged in and clever kid, and knows heaps about 
     //     technology. He’s able to work out scientific and mathematical
@@ -64,13 +64,13 @@ render() {
         <h2 className="Individual-Character-Slogan">THE PLUGGED IN PERFECTIONIST </h2>
         {/* <Button onClick={CharacteristicsHandler} variant="primary" className="Mobile-Characteristics"> CHARACTERISTICS </Button>     */}
 
-        <div className="Character-Description-Inventors">
+        <div className="Character-Description">
 
              <p> AGE: 13 </p>
              {/* {characteristics} */}
              <p> 
               CHARACTERISTICS: Ardash is a boy with no belly button and 
-              he is literally perfect. He hails from Techno-world and has
+              he is literally perfect. He hails from Techno-Towers and has
               been genetically modified so he can’t catch any diseases. He’s
               a super plugged in and clever kid, and knows heaps about 
               technology. He’s able to work out scientific and mathematical
@@ -92,15 +92,25 @@ render() {
               Super eyesight. Super fast. Knows everything about numbers and data!
             </p>
             <p>
-              WORLD: Techno-towers
+              WORLD: Techno-Towers
             </p>
+{/* 
+            <DropdownMenu className="Dropdown" title="Dropdown">
+                <MenuItem href="#books">Books</MenuItem>
+                <MenuItem href="#podcasts">Podcasts</MenuItem>
+                <MenuItem href="#">Tech I Like</MenuItem>
+                <MenuItem href="#">About me</MenuItem>
+                <MenuItem href="#addBlog">Add a Blog</MenuItem>
+            </DropdownMenu> */}
 
         </div>
 
 
 
 
-        <Dropdown>
+
+
+        {/* <Dropdown>
           <Dropdown.Toggle variant="success" id="dropdown-basic">
             Dropdown Button
           </Dropdown.Toggle>
@@ -110,14 +120,14 @@ render() {
             <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
             <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
           </Dropdown.Menu>
-        </Dropdown>
+        </Dropdown> */}
         
           
         <a href="/chatbot">
            <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
         </a>      
       </div>
-    )
+    );
 }
-}
-// export default ArdashScreen
+
+export default ArdashScreen

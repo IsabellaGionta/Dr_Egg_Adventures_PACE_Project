@@ -32,6 +32,8 @@ import DrEgg from './screens/characters/DrEggScreen.js'
 import Vivi from './screens/characters/ViviScreen.js'
 import DrMoon from './screens/characters/DrMoonScreen.js'
 import Cornelia from './screens/characters/CorneliaScreen.js'
+import MutantThugs from './screens/characters/MutantThugs.js'
+import HybridHelpers from './screens/characters/HybridHelpers.js'
 import RifRaf from './screens/characters/RifRafScreen.js'
 import Pigeon from './screens/characters/PigeonScreen.js'
 import EggDrone from './screens/characters/EggDroneScreen.js'
@@ -146,6 +148,14 @@ function App() {
 
         <Route path="/character/Cornelia">
           <Cornelia />
+        </Route>
+
+		<Route path="/character/MutantThugs">
+          <MutantThugs />
+        </Route>
+
+		<Route path="/character/HybridHelpers">
+          <HybridHelpers />
         </Route>
 
         <Route path="/character/RifRaf">
