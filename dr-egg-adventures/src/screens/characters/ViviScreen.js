@@ -57,7 +57,7 @@ export const ViviScreen = () => {
               With her fix it mentality, she can create inventions for any circumstance.
             </p>
             <p>
-              WORLD: Slum-lanes
+              WORLD: Slum-Lanes
             </p>
 
         </div>

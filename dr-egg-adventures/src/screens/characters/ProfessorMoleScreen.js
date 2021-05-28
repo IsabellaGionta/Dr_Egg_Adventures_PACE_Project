@@ -1,6 +1,6 @@
 import React from 'react'
 import Snake from '../../images/characters/Snake.png';
-import ProfMole from '../../images/characters/ProfMole.png';
+import ProfMole from '../../images/characters/ProfMole-Highlight.PNG';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 
