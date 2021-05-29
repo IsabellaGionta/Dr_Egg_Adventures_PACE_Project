@@ -4,7 +4,7 @@ import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import EggDrone from '../../images/characters/EggDrone.png';
 import EggDroneFlipped from '../../images/characters/EggDrone-Flipped.png';
-import Popup from '../../components/Popup.js';
+import Popup from '../../components/CharacterPopup.js';
 
 
 import Blackboard from '../../images/Blackboard.png';

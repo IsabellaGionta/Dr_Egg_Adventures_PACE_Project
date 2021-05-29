@@ -6,7 +6,7 @@ import PigeonFlipped from '../../images/characters/Pigeon-Flipped.png';
 import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
-import Popup from '../../components/Popup.js';
+import Popup from '../../components/CharacterPopup.js';
 
 import { useHistory } from "react-router-dom";
 
