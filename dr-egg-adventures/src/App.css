@@ -80,9 +80,6 @@ p {
 	height: 100vh;
 }
 
-.Dropdown {
-  width: 100%;
-}
 /* Home Screen Styling */
 
 .Lab-Background-Container {
@@ -163,7 +160,7 @@ p {
 .Individual-Character-Styling-Inventors {
   position: absolute;
   bottom: 0%;
-  left: 5%;
+  left: 9%;
   width: 24%;
   max-width: 100%;
   max-height: auto;
@@ -203,7 +200,7 @@ p {
 .Individual-Character-Styling-ProfMole {
   position: absolute;
   bottom: 0%;
-  left: 62%;
+  left: 60%;
   width: 40%;
   max-width: 100%;
   max-height: auto;
@@ -334,7 +331,10 @@ p {
 
 
 /* Companion popups  */
-
+.pop-background {
+  width:100%;
+  max-width: 100%;
+}
 
 .clicked:active {
   opacity: 80%;
@@ -385,7 +385,7 @@ p {
   line-height: 100px;
 }
 
-/* .Character-Description {
+.Character-Description {
   font-family: museo sans;
   width: 50%;
   max-width: 100%;
@@ -397,23 +397,20 @@ p {
   text-align: left;
   line-height: 40px;
   color: white;
-} */
+}
 
-.Character-Description {
+.Character-Description-Inventors {
   font-family: museo sans;
   width: 50%;
-  height: 35.5%;
   max-width: 100%;
   max-height: auto;
   position: absolute;
   left: 32%;
-  top: 35%;
+  top: 27%;
   font-size: 2vh;
   text-align: left;
-  line-height: 25px;
+  line-height: 40px;
   color: white;
-  overflow: auto;
-
 }
 .Character-Description-Snake {
   font-family: museo sans;
@@ -428,8 +425,6 @@ p {
   line-height: 50px;
   color: white;
 }
-
-
 
 
 /* Character Screen Styling */
@@ -447,11 +442,16 @@ p {
   background-image: url("./images/Lab.png");
   background-size: cover;
   background-position: center;
-  width: 101vw;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
 
+@media screen and (max-width: 1002px) {
+  .SnakeImg {
+    bottom:50%;
+  }
+}
 /* Resource screen styling  */
 
 h1.Resources-Title {
@@ -482,31 +482,13 @@ h1.Resources-Title {
 
 .ProductOverview {
   position: absolute;
-  left: 3%;
-  top: 35%;
-  width: 70%;
+  left: 10%;
 
   max-width: 100%;
   max-height: auto;
   margin-left: auto;
   margin-right: auto;
 }
-
-
-.Text {
-  position: absolute;
-  left: 8%;
-  top: 10%;
-  color: #367771;
-  font-size: 4vh;
-  font-family: 'polaris';
-
-  max-width: 100%;
-  max-height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
 .Resources-Desc {
   max-width: 100%;
@@ -574,16 +556,23 @@ h1.Resources-Title {
 .good-characters:hover {
 
   background-image: url("./images/Good-Light.png");
-  background-repeat: no-repeat;
-  background-size:cover;
+  background-position:top center;
+  /* opacity: 88%; */
 }
+
 
 .characters:hover{
   opacity:80%;
 }
 
+
 .bad-characters:hover {
-  background-image:  url("./images/Bad-Light.png");
+
+  background-image: url("./images/Bad-Light.png");
+  background-position: center top;
+  opacity: 88%;
+
+
 }
 
 
@@ -601,7 +590,7 @@ h1.Resources-Title {
   position: absolute;
   bottom: 0%;
   left: 0%;
-  width: 99.5vw;
+  width: 100%;
   /* max-height: 100%; */
   height: 30vh;
 }
@@ -636,46 +625,20 @@ h1.Resources-Title {
   height: auto;
 }
 
-.bad-characters {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 55%;
-  /* top: 15%; */
-}
 .ProfMole {
   position: absolute;
   bottom: 45%;
-  left: 16.5%;
+  left: 73%;
   width: 28%;
-  height: 40%;
   max-width: 100%; 
   max-height: auto;
 
 }
 
-.ProfMole:hover {
-  content: url("./images/characters/ProfMole-Highlight.PNG");
-  width: 35%;
-  height: 46%;
-
-  left: 11%;
-}
-
-
-
-.good-characters {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left:-30%;  
-  /* top: 15%; */
-}
-
 .Cornelia {
   position: absolute;
   bottom: 4%;
-  left: 40%;
+  left: 10%;
   width: 20%;
   max-width: 100%; 
   max-height: 100%;
@@ -685,13 +648,13 @@ h1.Resources-Title {
 .Cornelia:hover {
   content: url("./images/characters/Cornelia-Highlight.png");
   width: 15%;
-  left: 42%;
+  left: 12%;
 }
 
 .Ardash {
   position: absolute;
   bottom: 8%;
-  left: 50%;
+  left: 20%;
   width: 22%;
   max-width: 100%; 
   max-height: 100%;
@@ -701,13 +664,12 @@ h1.Resources-Title {
 .Ardash:hover {
   content: url("./images/characters/Ardash-Highlight.png");
   width: 18%;
-  left: 52%;
+  left: 22%;
 } 
 
 .DrEgg {
   position: absolute;
   bottom: 7%;
-  left: 30%;
   width: 28%;
   max-width: 100%; 
   height: 100%;
@@ -724,7 +686,7 @@ h1.Resources-Title {
 .DrMoon {
   position: absolute;
   bottom: 7%;
-  left: 45%;
+  left: 15%;
   width: 28%;
   max-width: 100%; 
   height: 100%;
@@ -733,12 +695,12 @@ h1.Resources-Title {
 .DrMoon:hover {
   content: url("./images/characters/Dr-Moon-Highlight.png");
   width: 23%;
-  left: 48%;
+  left: 18%;
 }
 
 .Vivi {
   position: absolute;
-  left: 30%;
+  left: 0%;
   bottom: 3%;
   width: 20%;
   max-width: 100%; 
@@ -770,12 +732,6 @@ h1.Resources-Title {
   max-height: auto;
 }
 
-.SnakeImg:hover {
-  content: url("./images/characters/Snake-Highlight.png");
-  width: 24%;
-  left: 40%;
-}
-
 .Back-Button {
 	position: fixed;
 	top: 2%;
@@ -793,7 +749,7 @@ h1.Resources-Title {
 .Chatbot-Snake {
 	position: absolute;
 	bottom: 0%;
-	left: 87%;
+	left: 88%;
 	max-width: 12%;
 	max-height: auto;
 }
@@ -838,7 +794,7 @@ h1.Resources-Title {
 .Characters-Background-Container {
 	background-image: url('./images/Lab.png');
 	background-size: cover;
-	width: 101vw;
+	width: 100%;
 	height: 100vh;
 }
 
@@ -987,6 +943,15 @@ h1.Contact-Title {
 	left: 25%;
 }
 
+/* .Contact-Info {
+	font-family: museo sans;
+	position: absolute;
+	top: 30%;
+	left: 55%;
+	color: white;
+	line-height: 40px;
+	font-size: 2vh;
+} */
 .Contact-Info {
 	font-family: museo sans;
 	position: absolute;
@@ -1126,22 +1091,13 @@ input {
   position: absolute;
   left: 10%;
   top: 25%;
-
-  max-width: 100%;
-  max-height: 100%;
-  width: 22rem;
 }
 
-.slumworld { 
+.slumworld {
   position: absolute;
   left: 26%;
   top: 25%;
-
-  margin-left: auto;
-  margin-right: auto;
 }
-
-
 
 .egglab {
   position: absolute;
@@ -1154,6 +1110,8 @@ input {
   left: 58%;
   top: 25%;
 }
+
+
 
 .home-button {
 	max-width: 100%;
@@ -1434,6 +1392,14 @@ input {
 	top: 15%;
 }
 
+
+
+/* .snake-popup-background {
+  position: absolute;
+  top:10%;
+  width:90%;
+  height:40%;
+} */
 .popup-text {
 	font-family: museo sans;
 	font-weight: bold;
@@ -1538,24 +1504,13 @@ input {
 /* Mobile screens  */
 
 /* Individual character screen  */
-@media screen and (max-width: 490px) and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-
-/*   
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  
   .modalBackground {
     left: 10%;
     width: 80%;
   }
-   */
+  
   .DrEggLogo {
     width: 65%;
     left: 17%;
@@ -1567,6 +1522,8 @@ input {
     left:25%;
     top: 70%;
   }
+
+  /* Resource screen */
 
   .Ardash:hover {
     width: 40%;
@@ -1594,6 +1551,8 @@ input {
     left: 28%;
   }
 
+
+
   h1.Resources-Title {
     left: 30%;
     font-size: 3vh;
@@ -1615,7 +1574,6 @@ input {
     left: -15%;
     top: 20%;
   }
-
   .Vivi {
     left: -15%;
     top: 48%;
@@ -1661,8 +1619,9 @@ input {
     height: 15%;
   }
 
-  /* .slumworld {
-    width:1rem;
+  /* .Snake-Text{
+    top:-10%;
+
   } */
   h1.Character-Type {
     left: 20%;
@@ -1755,9 +1714,6 @@ input {
   }
   .Character-Description-Inventors {
     /* display: none; */
-    left: 10%;
- 
-
   }
   .Individual-Character-Styling-Pigeon{
     max-width: 55%;
@@ -1783,12 +1739,252 @@ input {
 
   }
 
+.Individual-Character-Name-Pet {
+  line-height:30px;
+}
+
+.Companion-Description {
+  line-height:20px;
+}
+
+
+}
+
+/* iPads and Tablet screens */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .modalBackground {
+    left: 15%;
+    width: 70%;
+  }
+  
+
+  .Ardash:hover {
+    width: 29%;
+    left: 40%;
+  } 
+
+    
+  .Cornelia:hover {
+    width: 26%;
+    left: 23%;
+  } 
+
+    
+  .Vivi:hover {
+    width: 33%;
+    left: -3%;
+  } 
+
+  .DrEgg:hover {  
+    width: 43%;
+    left: -3%;
+  }
+  .DrMoon:hover {  
+    width: 47%;
+    left: 25%;
+  }
+
+
+
+  .DrEggLogo {
+    width: 60%;
+    height: 60%;
+    left: 22%;
+    top: 10%;
+  }
+
+  .Home-Enter-Button {
+    width: 50%;
+    left:30%;
+    top: 75%;
+  }
+
+    /* Resource screen */
+    h1.Resources-Title {
+      left: 32%;
+    }
+    .buttons {
+      left: 20%;
+    }
+  .Character-Bench {
+    height: 32%;
+  }
+  .all {
+    width: 40%;
+  }
+  .DrEgg { 
+    width: 65%;
+    height: 80%;
+    left: -15%;
+  }
+  .Vivi {
+    left: -8%;
+    top: 30%;
+  }
+  .Ardash {
+    left: 35%;
+    top: 28%;
+  }
+  .DrMoon {
+    top: 15%;
+    width: 65%;
+    height: 80%;
+    left: 15%;
+  }
+  .Cornelia {
+    left: 17%;
+    top: 32%;
+  }
+  .Pigeon {
+    bottom: 20%;
+    width: 20%;
+  }
+  .Rifraf {
+    bottom: 20%;
+    width: 30%;
+  }
+  .Carlin {
+    bottom: 20%;
+    width: 15%;
+  } 
+  .SnakeImg {
+    bottom: 14%;
+    left: 30%;
+    width: 40%;
+  }
+  .EggDrone {
+    bottom: 20%;
+    width: 20%;
+  }
+  .ProfMole {
+    left: 60%;
+  }
+
+  h1.Character-Type {
+    position: absolute;
+    left: 20%;
+    font-size: 3vh;
+  }
+
+  .Individual-Character-Name {
+    left: 20%;
+    top: 15%;  
+    font-size: 2.5vh;
+
+  }
+  .Individual-Character-Slogan {
+    left: 20%;
+    top: 18%;  
+    font-size: 2.4vh;
+  }
+  .Individual-Character-DrEggDrone {
+    line-height:100px;
+    left: 18%;
+    top: 20%;  
+    font-size: 2.3vh;
+  }
+
+
+
+
+  .Individual-Character-Styling{
+    max-width: 68%;
+    left: -13%;
+  }
+  .Individual-Character-Styling-Inventors{
+    width: 50%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-Inventors-Cornelia{
+    width: 30%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-Inventors-Ardash{
+    width: 40%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-Inventors-Vivi{
+    width: 40%;
+    left: 0%;
+  }
+
+  .Individual-Character-Styling-ProfMole {
+    width: 70%;
+    left: 30%;
+
+  }
+
+  .Character-Pet {
+    width: 20%;
+  }
+
+  .Character-Tool {
+    width: 35%;
+  }
+
+  .Petridish {
+    width: 15%;
+  }
+
+  .Character-Pet-Pigeon {
+    width: 20%;
+    left: 45%;
+    bottom: 0%;
+  }
+
+  .Powers {
+    padding: 40px 0px;
+
+  }
+  .Individual-Character-Styling{
+    max-width: 45%;
+  }
+
+  .Individual-Character-Styling-Pigeon{
+    max-width: 45%;
+  }
+  .Individual-Character-Styling-EggDrone {
+    max-width: 35%;
+  }
+  
+  .Character-Description-Snake {
+    line-height: 37px;
+
+  }
+
+  .Character-Description-Inventors {
+    left: 30%;
+    top: 22%;
+    line-height: 22px;
+  }
+
+  .Character-Description {
+    left: 18%;
+    top: 25%;
+    width: 60%;
+    line-height: 30px;
+
+}
+
+  .Individual-Character-Styling-Inventors{
+    max-width: 40%;
+    left: 0%;
+  }
+
+  .Mobile-Characteristics {
+    /* display: none; */
+  }
 
 }
 
 
 /* Tablet / Desktop screens */
-@media screen and (min-width: 801) and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
   .modalBackground {
       left: 1%;
@@ -1968,7 +2164,6 @@ input {
 
   .Character-Description-Inventors {
     line-height: 30px;
-
   }
   .Powers {
     padding: 50px 0px;
@@ -2002,7 +2197,6 @@ input {
 
 @media screen and (min-width: 1025px) {
 
-  
 
 
   .Mobile-Characteristics {
@@ -2018,159 +2212,6 @@ input {
     font-size: 3vh;
   }
 
-}
-
-/* Online Store Style*/
-.OnlineStore-Background-Container {
-  background-image: url("./images/book.png");
-  background-size: 100% 100%;
-  margin :0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow:hidden;
-}
-
-.InputStyle{
-  display: none;
-}
-
-.BookCoverImg{
-  width: 100%;
-  height: 90%;
-  background-color: white;
-}
-
-.BookImg{
-  width: 100%;
-  height: 99%;
-  background-color: white;
-}
-
-
-.OnlineStore-Container{
-  display: flex;
-  width: 75%;
-  height: 90%;
-}
-
-#cover{
-  width: 50vw;
-  height: 98vh;
-}
-
-.pageContainer{
-  width: 50vw;
-  height: 98vh;
-  position: relative;
-  perspective: 100vw;
-}
-
-.page{
-  width: 100%;
-  height: 90%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform-origin: left;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  transition: .5s;
-  -moz-backface-visibility: hidden;
-}
-
-.front, .back{
-  
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  overflow: auto;
-  position: absolute;
-}
-
-.front{
-  box-sizing: border-box;
-  background-color: white;
-}
-
-.back{
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-}
-
-.BookTxt{
-  width: 100%;
-  height: 95%;
-  position: absolute;
-  overflow:auto;
-}
-
-#c1:checked ~ .pageContainer #p1{
-  transform: rotateY(-180deg);
-  z-index: 1;
-}
-
-#c2:checked ~ .pageContainer #p2{
-  transform: rotateY(-180deg);
-  z-index: 2;
-}
-
-#c3:checked ~ .pageContainer #p3{
-  transform: rotateY(-180deg);
-  z-index: 3;
-}
-
-.nextBtn{
-  position: absolute;
-  bottom: 1vh;
-  right: 1vh;
-  cursor: pointer;
-}
-
-.backBtn{
-  position: absolute;
-  bottom: 1vh;
-  left: 1vw;
-  cursor: pointer;
-}
-
-#p1{
-  z-index: 3;
-}
-#p2{
-  z-index: 2;
-}
-
-#p3{
-  z-index: 1;
-}
-
-.OnlineStore-Button {
-  display: flex;
-  padding: 1vh;
-  margin: 1vh auto;
-  display: block;
-  border-radius: 3vh;
-  border-width: 1vh;
-  border-color: #83cfb1;
-  font-family: Polaris;
-  font-size: 2vw;
-  color: #367771;
-  position: absolute;
-  top:40%;
-  left:3%;
-  width: 90%;
-  height: auto;
-}
-
-.StoreBack{
-  top:0vh;
-  right: 1vw;
-  position: absolute;
-  width: 12vw;
-  height: auto;
 }
 
 /*Error Pages Style*/
@@ -2244,49 +2285,186 @@ input {
   width: 21vw;
 }
 
-@media all and (max-aspect-ratio: 10/16){
-  .ErrorTxtCont {
-    position: absolute;
-    top: 12vh;
-    left:15vw;
-    height: 48vh;
-    width: 71vw;
-    overflow: auto;
-  }
-  
-  .h1ErrorChalkboard {
-    font-size: 30vw;
-    font-family: "polaris";
-    color: white;
-    text-align: center;
-    word-wrap: break-word;
-  }
-  
-  .ErrorHomeButton {
-    position: absolute;
-    top: 60vh;
-    left: 28vw;
-    height: 10vh;
-    width: 42vw;
-  }
-  
-  .ErrorReportButton {
-    position: absolute;
-    top: 73vh;
-    left: 28vw;
-    height: 10vh;
-    width: 42vw;
-  }
-}
-
 .ErrorBack{
   position:absolute;
   top:1vh;
   right: 1vw;
+  width: 15vw;
 }
 .ErrorBack:hover{
   cursor: pointer;
 }
+
+
+/* Online Store Stying*/
+
+.OnlineStore-Background-Container {
+  background-image: url("./images/OnlineStoreImage/OnlineStoreBG.png");
+  background-size: 100% 100%;
+  overflow:hidden;
+}
+
+.OnlineStore-Container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.InputStyle{
+  display: none;
+}
+
+#bookCover{
+  width: 100%;
+  height: 100%;
+}
+
+.imgPageCoverContainer{
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url("./images/OnlineStoreImage/LPage.png");
+  background-size: 100% 100%;
+  position: relative;
+  right: -13%;
+  top:6%;
+  height: 88%;
+  width: 87%;
+}
+
+.pageContainer{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  perspective: 100vw;
+}
+
+.page{
+  transform-origin: left;
+transform: rotateY(0deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: .5s;
+  -moz-backface-visibility: hidden;
+}
+
+.frontPageContainer, .backPageContainer{  
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+}
+
+.backPageContainer{
+transform: rotateY(180deg);
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.BookTxt{
+  width: 100%;
+height: 100%;
+  position: absolute;
+  overflow:auto;
+}
+
+#c1:checked ~ .pageContainer #p1{
+transform: rotateY(-180deg);
+z-index: 3;
+}
+
+#c2:checked ~ .pageContainer #p2{
+transform: rotateY(-180deg);
+z-index: 2;
+}
+
+#c3:checked ~ .pageContainer #p3{
+transform: rotateY(-180deg);
+z-index: 1;
+}
+
+.nextBtn{
+  bottom: 1vh;
+  left: 1vh;
+}
+
+.backBtn{
+  bottom: 1vh;
+  right: 1vw;
+}
+
+.OnlineStore-Button {
+  padding: 1vh;
+  margin: 1vh auto;
+  border-radius: 3vh;
+  border-width: 1vh;
+  font-size: 2vw;
+  top:40%;
+  left:3%;
+  width: 90%;
+  height: auto;
+  display: flex;
+  display: block;
+  border-color: #83cfb1;
+  font-family: Polaris;
+  color: #367771;
+  position: absolute;
+}
+
+.StoreBack{
+  top:1vh;
+  right: 1vw;
+  width: 11vw;
+  height: auto;
+  position: absolute;
+}
+
+.StoreSnake {
+  position: absolute;
+  right: 1vw;
+  bottom: 1vw;
+  height: 8vh;
+  width: auto;
+  max-width: 16vw;
+}
+
+
+
+.BookCoverImg {
+  width: auto;
+  max-width: 38vw;
+  height: 100%;
+}
+
+.BookImg{
+  width: auto;
+  max-width: 100%;
+  height: 99%;
+}
+
+.frontPageContainer{
+  box-sizing: border-box;
+}
+
+.nextBtn, .backBtn{
+  position: absolute;
+  cursor: pointer;
+}
+
+
+
+#p1{
+  z-index: 3;
+}
+#p2{
+  z-index: 2;
+}
+
+#p3{
+  z-index: 1;
+}
+
 /* Map Styling */
 
 .Map-Container {
@@ -2462,9 +2640,9 @@ input {
 .MapSnake {
   position: absolute;
   bottom: 4vh;
-  left: 85vw;
-  width: 12vw;
-  height: auto;
+  right: 5vw;
+  width: auto;
+  height: 9vh;
 }
 .BtnContain{
   height: 100vh;
@@ -2473,9 +2651,170 @@ input {
   background-size: 100% 100%;
   position: relative;
 }
+
+/*Map image size*/
 @media all and (min-aspect-ratio: 45/32){
   .BtnContain{
     height: 71vw;
     width: 100vw;
   }
+}
+
+/*Phone Aspect Ratio*/
+@media all and (max-aspect-ratio: 10/16){
+  /*Error Page*/
+  .ErrorBack{
+    position:absolute;
+    top:1vh;
+    right: 1vw;
+    height: 11vh;
+    width: auto;
+  }
+
+  .ErrorTxtCont {
+    position: absolute;
+    top: 12vh;
+    left:15vw;
+    height: 48vh;
+    width: 71vw;
+    overflow: auto;
+  }
+  
+  .h1ErrorChalkboard {
+    font-size: 30vw;
+    font-family: "polaris";
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  .ErrorHomeButton {
+    position: absolute;
+    top: 60vh;
+    left: 28vw;
+    height: 10vh;
+    width: 42vw;
+  }
+  
+  .ErrorReportButton {
+    position: absolute;
+    top: 73vh;
+    left: 28vw;
+    height: 10vh;
+    width: 42vw;
+  }
+
+/*Phone Online Store Style*/
+.OnlineStore-Background-Container {
+  background-image: url("./images/OnlineStoreImage/OnlineStorePBG.png");
+}
+
+.OnlineStore-Container{
+  width: 75%;
+  height: 100%;
+  flex-direction: column;
+}
+
+#bookCover{
+  width: 100%;
+  height: 100%;
+  padding-top: 9vh;
+}
+
+.BookCoverImg{
+  width: auto;
+  max-width: 38vw;
+  height: 100%;
+}
+
+.BookImg{
+  width: auto;
+  max-width: 100%;
+  height: 99%;
+}
+
+.pageContainer{
+  width: 100%;
+  height: 100%;
+}
+
+.page{
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  transform-origin: top;
+  transform: rotateX(0deg);
+}
+
+.frontPageContainer, .backPageContainer{  
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.backPageContainer{
+  transform: rotateX(-180deg);
+}
+
+.backPage{
+
+}
+
+.BookTxt{
+  width: 100%;
+  height: 95%;
+}
+
+#c1:checked ~ .pageContainer #p1{
+  transform: rotateX(180deg);
+}
+
+#c2:checked ~ .pageContainer #p2{
+  transform: rotateX(180deg);
+}
+
+#c3:checked ~ .pageContainer #p3{
+  transform: rotateX(180deg);
+}
+
+.nextBtn{
+  bottom: 1vh;
+  right: 1vh;
+}
+
+.backBtn{
+  top: 1vh;
+  right: 1vw;
+}
+
+.OnlineStore-Button {
+  padding: 1vh;
+  margin: 1vh auto;
+  border-radius: 3vh;
+  border-width: 1vh;
+  font-size: 2vh;
+  top:40%;
+  left:3%;
+  width: 90%;
+  height: auto;
+}
+
+.StoreBack{
+  right:1vw;
+  top: 1vh;
+  width: 11vh;
+  height: auto;
+}
+
+.StoreSnake {
+	position: absolute;
+  right: 1vw;
+  bottom: 1vw;
+  width: 20vw;
+  height: auto;
+  max-height: 5vh;
+}
+
 }

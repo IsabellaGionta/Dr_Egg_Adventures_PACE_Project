@@ -6,8 +6,7 @@ import PigeonFlipped from '../../images/characters/Pigeon-Flipped.png';
 import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
-import Popup from '../../components/Popup.js';
-import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
+import Popup from '../../components/CharacterPopup.js';
 
 import { useHistory } from "react-router-dom";
 
@@ -72,23 +71,9 @@ export const CorneliaScreen = () => {
               almost any creature into a euphoric trance.
             </p>
             <p>
-              WORLD: Corn-Farmlands
+              WORLD: Corn-farmlands
             </p>
-            
-
         </div>
-        {/* <div> 
-           <DropdownMenu className="Dropdown" title="Dropdown">
-              <MenuItem href="#books">Books</MenuItem>
-              <MenuItem href="#podcasts">Podcasts</MenuItem>
-              <MenuItem href="#">Tech I Like</MenuItem>
-              <MenuItem href="#">About me</MenuItem>
-              <MenuItem href="#addBlog">Add a Blog</MenuItem>
-            </DropdownMenu>
-
-
-        </div> */}
-
 
         {/* <div className={`modalBackground modalShowing-${modalState}`}> 
         
