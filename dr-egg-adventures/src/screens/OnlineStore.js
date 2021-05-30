@@ -1,12 +1,11 @@
 import React from 'react';
 import Back from '../images/btn-Back.png';
 import Snake from '../images/characters/Snake.png';
-import { Button} from 'reactstrap';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ViviPic from "../images/characters/Vivi.png"
 import ArdashPic from "../images/characters/Ardash.png"
 import CorneliaPic from "../images/characters/Cornelia.png"
-
+import GroupImg from "../images/OnlineStoreImage/Group.png"
 
 
 export const OnlineStore = () => {
@@ -31,7 +30,7 @@ export const OnlineStore = () => {
                       <div className = "backPage">
                         <img className = "BookImg" src = {ArdashPic} alt = "Ardash"/>
                       </div>
-                      <label className="backBtn" htmlFor = "c1">Back</label>
+                      <label htmlFor = "c1"><div className="backBtn"/></label>
                     </div>
                     <div className = "frontPageContainer">
                       <div className = "frontPage">
@@ -42,7 +41,7 @@ export const OnlineStore = () => {
                         Maybe if she was a better inventor or builder her father might not make them move quite so often. But he insisted on moving every year. There was always some new incident befalling him – like losing yet another newspaper delivery job – but Vivi knew it was because of the dog, it always found him.
                         </div>
                       </div>
-                      <label className="nextBtn" htmlFor = "c1">Next</label>
+                      <label htmlFor = "c1"><div className="nextBtn"/></label>
                     </div>
                   </div>
 
@@ -51,7 +50,7 @@ export const OnlineStore = () => {
                       <div className = "backPage">
                         <img className = "BookImg" src = {CorneliaPic} alt = "Cornelia"/>
                       </div>
-                      <label className="backBtn" htmlFor = "c2">Back</label>
+                      <label htmlFor = "c2"><div className="backBtn"/></label>
                     </div>
                     <div className = "frontPageContainer">
                       <div className = "frontPage">
@@ -63,23 +62,23 @@ export const OnlineStore = () => {
                         She'd thrown everything down the rubbish shoot.
                         </div>
                       </div>
-                      <label className="nextBtn" htmlFor = "c2">Next</label>
+                      <label htmlFor = "c2"><div className="nextBtn"/></label>
                     </div>
                   </div>
 
                   <div className = "page" id = "p3">
                     <div className = "backPageContainer">
                     <div className = "backPage">
-                      <div className = "BookImg">
-                        <Button className="OnlineStore-Button" onClick={() => 
+                      <div className = "OnlineTxt">
+                        YOU CAN ORDER THESE BOOKS <br/>ONLINE HERE
+                      </div>
+                        <div className="OnlineStore-Button" onClick={() => 
                           { alert('Redirecting to Dr Egg Adventures Online Store Page!'); 
                           window.location.href = "https://dreggadventures.com/shop/?v=6cc98ba2045f";}}
-                        >
-                          ENTER OUR ONLINE STORE TO CONTINUE
-                        </Button>
-                      </div>
+                        />
+                        <img className = "OnlineGroupImg" src = {GroupImg} alt = "Vivi, Ardash, Cornelia"/>
                     </div>
-                      <label className="backBtn" htmlFor = "c3">Back</label>
+                      <label htmlFor = "c3"><div className="backBtn"/></label>
                     </div>
                     <div className = "frontPageContainer">
                       <div className = "frontPage">
@@ -93,7 +92,7 @@ export const OnlineStore = () => {
                         How could they even dream of having a celebration, Cornelia thought. When everyone else in the district is struggling?
                       </div>
                       </div>
-                      <label className="nextBtn" htmlFor = "c3">Next</label>
+                      <label htmlFor = "c3"><div className="nextBtn"/></label>
                     </div>
                   </div>
 
@@ -103,7 +102,7 @@ export const OnlineStore = () => {
                   <img className="StoreSnake" src={Snake} alt="Snake"/>  
               </a>
               <a href = "/Map">
-                <img className="StoreBack" src={Back} alt="Back"/>
+                <div className="StoreBack" src={Back} alt="Back"/>
               </a>
             </div>
   )
