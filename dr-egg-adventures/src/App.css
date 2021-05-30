@@ -1468,31 +1468,7 @@ input {
   background-size: cover;
 
 } */
-.OnlineStore-Background-Container {
-	background-image: url('./images/Lab.png');
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100vh;
-}
 
-.OnlineStore-Button {
-	width: 100%;
-	max-width: 50vh;
-	max-height: auto;
-	padding: 1vh;
-	margin: 1vh auto;
-	display: block;
-	border-radius: 3vh;
-	border-width: 1vh;
-	border-color: #83cfb1;
-	font-family: Polaris;
-	font-size: 4vh;
-	color: #367771;
-	position: absolute;
-	top: 45vh;
-	left: 70vh;
-}
 
 
 
@@ -2270,29 +2246,57 @@ input {
 }
 
 .ErrorHomeButton {
+  background-image: url("./images/btn-Home.png");
+  background-size: 100% 100%;
   position: absolute;
   top: 60vh;
+  bottom: 26vh;
+  right: 51vw;
   left: 28vw;
-  height: 14vh;
-  width: 21vw;
+}
+
+.ErrorHomeButton:hover {
+  background-image: url("./images/btn-home-Glow.png");
+  top: 58vh;
+  bottom: 24vh;
+  right: 50vw;
+  left: 27vw;
 }
 
 .ErrorReportButton {
+  background-image: url("./images/btn-Report.png");
+  background-size: 100% 100%;
   position: absolute;
   top: 60vh;
+  bottom: 26vh;
   left: 50vw;
-  height: 14vh;
-  width: 21vw;
+  right: 28vw;
+}
+
+.ErrorReportButton:hover {
+  background-image: url("./images/btn-report-Glow.png");
+  top: 58vh;
+  bottom: 24vh;
+  left: 49vw;
+  right: 27vw;
 }
 
 .ErrorBack{
+  background-image: url("./images/btn-Back.png");
+  background-size: 100% 100%;
   position:absolute;
-  top:1vh;
-  right: 1vw;
-  width: 15vw;
+  top:2vh;
+  bottom: 88vh;
+  right: 2vw;
+  left: 80vw;
 }
 .ErrorBack:hover{
   cursor: pointer;
+  background-image: url("./images/btn-Back-hover.png");
+  top:0vh;
+  bottom: 86vh;
+  right: 0vw;
+  left: 78vw;
 }
 
 
@@ -2302,6 +2306,8 @@ input {
   background-image: url("./images/OnlineStoreImage/OnlineStoreBG.png");
   background-size: 100% 100%;
   overflow:hidden;
+  width: 100vw;
+	height: 100vh;  
 }
 
 .OnlineStore-Container{
@@ -2321,8 +2327,10 @@ input {
 
 .imgPageCoverContainer{
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  background-image: url("./images/OnlineStoreImage/LPage.png");
+  align-items: center;
+  background-image: url("./images/OnlineStoreImage/Page.png");
   background-size: 100% 100%;
   position: relative;
   right: -13%;
@@ -2357,19 +2365,23 @@ input {
 }
 
 .backPageContainer{
-transform: rotateY(180deg);
+  transform: rotateY(180deg);
   backface-visibility: hidden;
   text-align: center;
 }
 
 .backPage{
-  background-image: url("./images/OnlineStoreImage/LPage.png");
+  background-image: url("./images/OnlineStoreImage/Page.png");
   background-size: 100% 100%;
-  position: relative;
   right: -13%;
   top:6%;
   height: 89%;
   width: 87%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .frontPageContainer{
@@ -2378,13 +2390,15 @@ transform: rotateY(180deg);
 
 .frontPage{
   overflow:auto;
-  background-image: url("./images/OnlineStoreImage/RPage.png");
+  background-image: url("./images/OnlineStoreImage/Page.png");
+  transform: rotateY(180deg);
   background-size: 100% 100%;
-  position: relative;
+  position: absolute;
   left: 0%;
   top:6%;
   height: 89%;
   width: 87%;
+  position: relative;
 }
 
 .bookTxt{
@@ -2394,11 +2408,12 @@ transform: rotateY(180deg);
   overflow: auto;
   font-family: 'Museo-sans';
   font-size: 3vh;
+  transform: rotateY(180deg);
 }
 
 #c1:checked ~ .pageContainer #p1{
 transform: rotateY(-180deg);
-z-index: 3;
+z-index: 1;
 }
 
 #c2:checked ~ .pageContainer #p2{
@@ -2408,43 +2423,102 @@ z-index: 2;
 
 #c3:checked ~ .pageContainer #p3{
 transform: rotateY(-180deg);
-z-index: 1;
+z-index: 3;
 }
 
 .nextBtn{
+  background-image: url("./images/OnlineStoreImage/btnRight.png");
+  background-size: 100% 100%;
+  position: absolute;
+  cursor: pointer;  
+  bottom: 2vh;
+  left: 2vh;
+  height: 8%;
+  width: 16%;
+}
+
+.nextBtn:hover{
+  background-image: url("./images/OnlineStoreImage/btnRightGlow.png");
   bottom: 1vh;
   left: 1vh;
+  height: 10%;
+  width: 19%;
 }
 
 .backBtn{
+  background-image: url("./images/OnlineStoreImage/btnRight.png");
+  background-size: 100% 100%;
+  position: absolute;
+  cursor: pointer;
+  bottom: 2vh;
+  right: 2vw;
+  height: 8%;
+  width: 16%;
+  transform: rotateY(180deg);
+}
+
+.backBtn:hover{
+  background-image: url("./images/OnlineStoreImage/btnRightGlow.png");
   bottom: 1vh;
   right: 1vw;
+  height: 10%;
+  width: 19%;
+}
+
+.OnlineTxt{
+  top:25%;
+  width: 100%;
+  position: absolute;
+  font-size: 3vh;
+  font-family: "polaris";
+  font-weight: bold;
+  text-align: center;
 }
 
 .OnlineStore-Button {
-  padding: 1vh;
-  margin: 1vh auto;
-  border-radius: 3vh;
-  border-width: 1vh;
-  font-size: 2vw;
-  top:40%;
-  left:3%;
-  width: 90%;
-  height: auto;
-  display: flex;
-  display: block;
-  border-color: #83cfb1;
-  font-family: Polaris;
-  color: #367771;
   position: absolute;
+  background-image: url("./images/OnlineStoreImage/OrderHere.png");
+  background-size: 100% 100%;
+  cursor: pointer;
+  top: 40%;
+  bottom: 45%;
+  left: 20%;
+  right: 20%;
+}
+
+.OnlineStore-Button:hover{
+  background-image: url("./images/OnlineStoreImage/OrderHereGlow.png");
+  top: 38%;
+  bottom: 43%;
+  left: 18%;
+  right: 18%;
 }
 
 .StoreBack{
-  top:1vh;
-  right: 1vw;
-  width: 11vw;
-  height: auto;
+  background-image: url("./images/btn-Back.png");
+  background-size: 100% 100%;
+  top:2vh;
+  bottom: 90vh;
+  right: 2vw;
+  left: 89vw;
   position: absolute;
+}
+
+.StoreBack:hover{
+  background-image: url("./images/btn-Back-hover.png");
+  top:1vh;
+  bottom: 89vh;
+  right: 1vw;
+  left: 88vw;
+}
+
+.OnlineGroupImg{
+  position: absolute;
+  bottom: 3%;
+  height: 40%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .StoreSnake {
@@ -2456,25 +2530,18 @@ z-index: 1;
   max-width: 16vw;
 }
 
-
-
 .BookCoverImg {
-  width: auto;
-  max-width: 38vw;
+  width: auto;  
   height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .BookImg{
   width: auto;
   max-width: 100%;
   height: 99%;
-}
-
-
-
-.nextBtn, .backBtn{
-  position: absolute;
-  cursor: pointer;
+  object-fit: contain;
 }
 
 #p1{
@@ -2686,46 +2753,46 @@ z-index: 1;
 /*Phone Aspect Ratio*/
 @media all and (max-aspect-ratio: 10/16){
   /*Error Page*/
-  .ErrorBack{
-    position:absolute;
-    top:1vh;
-    right: 1vw;
-    height: 11vh;
-    width: auto;
-  }
 
   .ErrorTxtCont {
-    position: absolute;
     top: 12vh;
     left:15vw;
     height: 48vh;
     width: 71vw;
-    overflow: auto;
   }
   
   .h1ErrorChalkboard {
     font-size: 30vw;
-    font-family: "polaris";
-    color: white;
-    text-align: center;
-    word-wrap: break-word;
   }
   
   .ErrorHomeButton {
-    position: absolute;
-    top: 60vh;
+    top: 60vh;    
+    bottom: 30vh;
     left: 28vw;
-    height: 10vh;
-    width: 42vw;
+    right: 30vw;
+  }
+
+  .ErrorHomeButton:hover {
+    top: 58vh;    
+    bottom: 28vh;
+    left: 26vw;
+    right: 28vw;
   }
   
   .ErrorReportButton {
-    position: absolute;
     top: 73vh;
     left: 28vw;
-    height: 10vh;
-    width: 42vw;
+    right: 30vw;
+    bottom: 17vh;
   }
+
+  .ErrorReportButton:hover {
+    top: 71vh;
+    left: 26vw;
+    right: 28vw;
+    bottom: 15vh;
+  }
+
 
 /*Phone Online Store Style*/
 .OnlineStore-Background-Container {
@@ -2733,61 +2800,58 @@ z-index: 1;
 }
 
 .OnlineStore-Container{
-  width: 75%;
-  height: 100%;
   flex-direction: column;
 }
 
 #bookCover{
   width: 100%;
-  height: 100%;
-  padding-top: 9vh;
-}
-
-.BookCoverImg{
-  width: auto;
-  max-width: 38vw;
-  height: 100%;
-}
-
-.BookImg{
-  width: auto;
-  max-width: 100%;
-  height: 99%;
+  height: 50%;
 }
 
 .pageContainer{
   width: 100%;
-  height: 100%;
+  height: 50%;
+}
+.imgPageCoverContainer{
+  background-image: url("./images/OnlineStoreImage/UPage.png");
+  top:13%;
+  left:3%;
+  height: 87%;
+  width: 93%;
+}
+
+.frontPage{
+  background-image: url("./images/OnlineStoreImage/UPage.png");
+  transform: rotateZ(180deg);
+  height: 87%;
+  width: 93%;
+  top:0%;
+  left: 4%;
+}
+.backPage{
+  background-image: url("./images/OnlineStoreImage/UPage.png");
+  top:13%;
+  left:3%;
+  height: 87%;
+  width: 93%;
+}
+
+.bookTxt{
+  width: 93%;
+  height: 85%;
+  right:3%;
+  top: 2%;
+  transform: rotateZ(180deg);
+  font-size: 3.4vw;
 }
 
 .page{
-  width: 100%;
-  height: 90%;
-  top: 0;
-  left: 0;
   transform-origin: top;
   transform: rotateX(0deg);
 }
 
-.frontPageContainer, .backPageContainer{  
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
 .backPageContainer{
   transform: rotateX(-180deg);
-}
-
-.backPage{
-
-}
-
-.frontPage{
-  width: 100%;
-  height: 95%;
 }
 
 #c1:checked ~ .pageContainer #p1{
@@ -2803,41 +2867,59 @@ z-index: 1;
 }
 
 .nextBtn{
-  bottom: 1vh;
-  right: 1vh;
+  background-image: url("./images/OnlineStoreImage/btnDown.png");
+  transform: rotateZ(180deg);
+  bottom: 90%;
+  left: 82%;
+}
+
+.nextBtn:hover{
+  background-image: url("./images/OnlineStoreImage/btnDownGlow.png");
+  bottom: 89%;
+  left: 81%;
+
 }
 
 .backBtn{
-  top: 1vh;
-  right: 1vw;
+  background-image: url("./images/OnlineStoreImage/btnDown.png");
+  bottom: 1vh;
+  right: 2vw;
 }
 
-.OnlineStore-Button {
-  padding: 1vh;
-  margin: 1vh auto;
-  border-radius: 3vh;
-  border-width: 1vh;
+.backBtn:hover{
+  background-image: url("./images/OnlineStoreImage/btnDownGlow.png");
+  bottom: 0.8vh;
+  right: 0.7vw;
+}
+
+.OnlineTxt{
+  top:20%;
+  position: absolute;
   font-size: 2vh;
-  top:40%;
-  left:3%;
-  width: 90%;
-  height: auto;
+  font-family: "polaris";
+  font-weight: bold;
 }
 
 .StoreBack{
-  right:1vw;
+  right:2vw;
+  top: 2vh;
+  bottom: 90vh;
+  left: 80vw;
+}
+.StoreBack:hover{
+  right:0vw;
   top: 1vh;
-  width: 11vh;
-  height: auto;
+  bottom: 89vh;
+  left: 78vw;
 }
 
 .StoreSnake {
-	position: absolute;
   right: 1vw;
   bottom: 1vw;
-  width: 20vw;
+  width: 25vw;
   height: auto;
-  max-height: 5vh;
+  max-height: 6vh;
+  max-width: 100vw;
 }
 
 }

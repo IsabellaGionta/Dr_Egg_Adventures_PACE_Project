@@ -1,9 +1,6 @@
 import React from 'react';
-import Report from '../images/btn-Report.png';
-import Home from '../images/btn-Home.png';
 import Blackboard from '../images/Blackboard.png';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import BackBtn from "../images/btn-Back.png"
 
 
 export const ErrorPage = () => {
@@ -23,12 +20,12 @@ export const ErrorPage = () => {
             </div>
                 <img class="ErrorBlackboard" src={Blackboard} alt = "Blackboard"/>
                 <a href = "/">
-                <img className="ErrorHomeButton" src={Home} alt="Home"/>
+                <div className="ErrorHomeButton" alt="Home"/>
                 </a>
                 <a href = "Contact">
-                <img className="ErrorReportButton" src={Report} alt="Report"/>
+                <div className="ErrorReportButton" alt="Report"/>
                 </a>
-                <img className = "ErrorBack" src = {BackBtn} onClick={()=>{ window.history.back()}} alt = "Back"/>
+                <div className = "ErrorBack" onClick={()=>{ window.history.back()}} alt = "Back"/>
         </div>
         
     )
