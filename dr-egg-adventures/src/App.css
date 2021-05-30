@@ -331,7 +331,10 @@ p {
 
 
 /* Companion popups  */
-
+.pop-background {
+  width:100%;
+  max-width: 100%;
+}
 
 .clicked:active {
   opacity: 80%;
@@ -422,8 +425,6 @@ p {
   line-height: 50px;
   color: white;
 }
-
-
 
 
 /* Character Screen Styling */
@@ -1110,6 +1111,8 @@ input {
   top: 25%;
 }
 
+
+
 .home-button {
 	max-width: 100%;
 	max-height: auto;
@@ -1389,6 +1392,14 @@ input {
 	top: 15%;
 }
 
+
+
+/* .snake-popup-background {
+  position: absolute;
+  top:10%;
+  width:90%;
+  height:40%;
+} */
 .popup-text {
 	font-family: museo sans;
 	font-weight: bold;
@@ -1608,6 +1619,10 @@ input {
     height: 15%;
   }
 
+  /* .Snake-Text{
+    top:-10%;
+
+  } */
   h1.Character-Type {
     left: 20%;
     font-size: 3vh;
@@ -1723,6 +1738,14 @@ input {
     display: block
 
   }
+
+.Individual-Character-Name-Pet {
+  line-height:30px;
+}
+
+.Companion-Description {
+  line-height:20px;
+}
 
 
 }

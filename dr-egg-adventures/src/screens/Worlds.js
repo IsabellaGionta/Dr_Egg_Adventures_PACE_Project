@@ -20,7 +20,7 @@ import Card from '../components/Card.js';
 
 export const Worlds = () => {
 
-const [modalState, setModalState] = useState(false);
+const [modalState, setModalState] = useState(true);
 
 
 const history = useHistory();
@@ -88,11 +88,11 @@ const slumNav = () => {
 
             </a>
 
-            <img className="Snake"src={Snake} onClick={() => setModalState(true) } /> 
+            {/* <img className="Snake"src={Snake} onClick={() => setModalState(true) } />  */}
 
 
                 <Popup trigger={modalState} setTrigger = {setModalState}>
-                    <div className = "popup-background">
+                    <div className = "snake-popup-background">
                         <img className = "SnakePopup" src={Snake} />
                         <p className="Snake-text"> In sprawled out, windy slum world, starvation and food shortages are every day occurences. The poor inhabittants suffer as Dr Mole ruthlessly seeks to control the food supplies. In the scary backstreets, roam gangs of "dumped" mutant thugs, the result of Dr Mole's experiments on children and animals. Anyone can become the thugs' unsuspecting quarry, and be kidnapped for auction at the notorious and scary Mutant and Body Parts Black Market. </p>
                     </div>
