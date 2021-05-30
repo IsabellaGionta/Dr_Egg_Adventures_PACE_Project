@@ -1370,22 +1370,6 @@ input {
   transform: scale(0.8);
 }
 
-.game-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  backdrop-filter: blur(4px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.game-bg {
-  position: relative;
-}
-
 /* .container {
   text-align: center;
   display: flex;
@@ -2544,5 +2528,76 @@ input {
   .BtnContain {
     height: 71vw;
     width: 100vw;
+  }
+
+  /* Game Screen */
+
+  .Game-Background-Container {
+    background-image: url("./images/World-Blur.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .game-container {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .gamebtn {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 17%;
+  }
+
+  .game-button {
+    max-width: 40%;
+    max-height: auto;
+    margin: 10px;
+  }
+
+  .apple-button {
+    max-width: 68%;
+    max-height: auto;
+    margin-top: 4%;
+  }
+
+  .game-text1 {
+    font-family: polaris;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    color: #5daa86;
+  }
+
+  .game-text2 {
+    font-family: polaris;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .ardash-face {
+    position: absolute;
+    top: 60%;
+    right: 80%;
+    transform: scale(0.8);
+  }
+
+  .vivi-face {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: scale(0.8);
   }
 }
