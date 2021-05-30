@@ -2327,7 +2327,7 @@ input {
   position: relative;
   right: -13%;
   top:6%;
-  height: 88%;
+  height: 89%;
   width: 87%;
 }
 
@@ -2340,7 +2340,7 @@ input {
 
 .page{
   transform-origin: left;
-transform: rotateY(0deg);
+  transform: rotateY(0deg);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2362,11 +2362,38 @@ transform: rotateY(180deg);
   text-align: center;
 }
 
-.BookTxt{
-  width: 100%;
-height: 100%;
-  position: absolute;
+.backPage{
+  background-image: url("./images/OnlineStoreImage/LPage.png");
+  background-size: 100% 100%;
+  position: relative;
+  right: -13%;
+  top:6%;
+  height: 89%;
+  width: 87%;
+}
+
+.frontPageContainer{
+  box-sizing: border-box;
+}
+
+.frontPage{
   overflow:auto;
+  background-image: url("./images/OnlineStoreImage/RPage.png");
+  background-size: 100% 100%;
+  position: relative;
+  left: 0%;
+  top:6%;
+  height: 89%;
+  width: 87%;
+}
+
+.bookTxt{
+  top: 5%;
+  position: absolute;
+  height: 90%;
+  overflow: auto;
+  font-family: 'Museo-sans';
+  font-size: 3vh;
 }
 
 #c1:checked ~ .pageContainer #p1{
@@ -2443,16 +2470,12 @@ z-index: 1;
   height: 99%;
 }
 
-.frontPageContainer{
-  box-sizing: border-box;
-}
+
 
 .nextBtn, .backBtn{
   position: absolute;
   cursor: pointer;
 }
-
-
 
 #p1{
   z-index: 3;
@@ -2762,7 +2785,7 @@ z-index: 1;
 
 }
 
-.BookTxt{
+.frontPage{
   width: 100%;
   height: 95%;
 }
