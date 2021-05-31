@@ -2403,6 +2403,8 @@ input {
 
 .bookTxt{
   top: 5%;
+  right: 5%;
+  left: 2%;
   position: absolute;
   height: 90%;
   overflow: auto;
@@ -2837,9 +2839,9 @@ z-index: 3;
 }
 
 .bookTxt{
-  width: 93%;
+  width: 90%;
   height: 85%;
-  right:3%;
+  left: 5%;
   top: 2%;
   transform: rotateZ(180deg);
   font-size: 3.4vw;
