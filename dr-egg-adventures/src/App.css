@@ -1448,6 +1448,143 @@ input {
 	position: relative;
 }
 
+.page1 {
+  position: absolute;
+  width: 28%;
+  height: 90%;
+  left: 19%;
+  padding: 25px;
+}
+
+.page2 {
+  position: absolute;
+  width: 28%;
+  height: 90%;
+  right: 19%;
+  padding: 25px;
+}
+
+.book-heading {
+  font-family: polaris;
+  color: #367771;
+  text-align: center;
+}
+
+.book-text {
+  font-family: museo sans;
+  text-align: center;
+  font-size: 18px;
+}
+
+.fact {
+  transform: scale(0.9);
+  margin-left: -30px;
+}
+
+.left-turn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(0.8);
+  padding: 10px;
+}
+
+.right-turn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: scale(0.8);
+  padding: 10px;
+}
+
+.popup-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 35%;
+}
+
+.popup-btn {
+  padding: 20px;
+}
+
+.ardash-popup {
+  position: absolute;
+  left: 40%;
+  top: 0%;
+  max-width: 100%;
+  transform: scale(1.9);
+}
+
+.wc-blackboard-container {
+  position: absolute;
+  width: 71.5%;
+  height: 79.5%;
+  max-width: 100%;
+  max-height: 100%;
+  left: 15%;
+  top: 12%;
+}
+
+.wc-heading {
+  color: white;
+  font-family: polaris;
+  text-align: center;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.hr-line {
+  height: 2px;
+  color: white;
+  background-color: white;
+  margin-top: -20px;
+}
+
+.submit-icon {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  right: 0;
+  padding: 30px;
+}
+
+.chat-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 2%;
+}
+
+.wc-text {
+  color: white;
+  text-align: center;
+  font-family: museo sans;
+  font-size: 30px;
+  padding: 20px;
+  width: 80%;
+}
+
+.fish-icon {
+  position: absolute;
+  left: 0;
+}
+
+.hr-line2 {
+  margin-top: 20px;
+  opacity: 0.2;
+  color: white;
+  background-color: white;
+  height: 1px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* .container {
   text-align: center;
   display: flex;
