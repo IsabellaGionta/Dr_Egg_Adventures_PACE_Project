@@ -129,15 +129,6 @@ p {
   left: 35%;
 }
 
-.Mobile-Characteristics {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-}
-
-
-
-
 .Home-Enter-Button:hover {
   content: url("./images/btn-Enter-Glow.png")
 }
@@ -235,8 +226,6 @@ p {
 
 }
 
-
-
 .Character-Tool-Goggles {
   width: 100%;
   max-width: 10%;
@@ -283,8 +272,6 @@ p {
 	transform: scale(1.1);
 }
 
-
-
 .Character-Type {
   position: absolute;
   top:12%;
@@ -318,48 +305,6 @@ p {
 
 }
 
-.Character-Pet-Popup {
-  position: absolute;
-  left: 2%;
-  width: 22%;
-  top: 23%;
-}
-
-.btn-close {
-  position: absolute; 
-  left: 96%;
-  top: 4%;
-}
-
-
-
-/* Companion popups  */
-
-
-.clicked:active {
-  opacity: 80%;
-
-}
-.modalShowing-true {
-  opacity: 1;
-  pointer-events: showing;
-
-}
-
-.Companion-Description {
-  font-family: museo sans;
-  width: 50%;
-  max-width: 100%;
-  max-height: auto;
-  position: absolute;
-  left: 30%;
-  top: 33%;
-  font-size: 2vh;
-  /* text-align: left; */
-  line-height: 50px;
-  color: #5DAA86;
-}
-
 .Individual-Character-Slogan {
   position: absolute;
   left: 38%;
@@ -385,7 +330,29 @@ p {
   line-height: 100px;
 }
 
-/* .Character-Description {
+
+
+/* Companion popups  */
+
+.Character-Pet-Popup {
+  position: absolute;
+  left: 2%;
+  width: 22%;
+  top: 23%;
+}
+
+.btn-close {
+  position: absolute; 
+  left: 96%;
+  top: 4%;
+}
+
+.clicked:active {
+  opacity: 80%;
+
+}
+
+.Companion-Description {
   font-family: museo sans;
   width: 50%;
   max-width: 100%;
@@ -394,10 +361,10 @@ p {
   left: 30%;
   top: 33%;
   font-size: 2vh;
-  text-align: left;
-  line-height: 40px;
-  color: white;
-} */
+  line-height: 50px;
+  color: #5DAA86;
+}
+
 
 .Character-Description {
   font-family: museo sans;
@@ -451,6 +418,23 @@ p {
   height: 100vh;
   position: relative;
 }
+
+
+.good-characters:hover {
+
+  background-image: url("./images/Good-Light.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.characters:hover{
+  opacity:80%;
+}
+
+.bad-characters:hover {
+  background-image:  url("./images/Bad-Light.png");
+}
+
 
 /* Resource screen styling  */
 
@@ -508,14 +492,6 @@ h1.Resources-Title {
 }
 
 
-.Resources-Desc {
-  max-width: 100%;
-  max-height: auto;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
 
 .App-logo {
 	height: 40vmin;
@@ -567,25 +543,6 @@ h1.Resources-Title {
 	max-height: auto;
 	max-width: 200px;
 }
-
-
-
-
-.good-characters:hover {
-
-  background-image: url("./images/Good-Light.png");
-  background-repeat: no-repeat;
-  background-size:cover;
-}
-
-.characters:hover{
-  opacity:80%;
-}
-
-.bad-characters:hover {
-  background-image:  url("./images/Bad-Light.png");
-}
-
 
 .containerWraper {
 	position: relative;
@@ -764,7 +721,7 @@ h1.Resources-Title {
 .EggDroneHighlight:hover {
   content: url("./images/characters/EggDrone1.png");
   left: 65%;
-  top: 73%;
+  top: 63%;
 }
 
 .PigeonHighlight:hover {
@@ -1794,10 +1751,6 @@ input {
 
   }
 
-  .Mobile-Characteristics {
-    display: block
-
-  }
 
 
 }
@@ -2010,20 +1963,13 @@ input {
     line-height: 50px;
 
   }
-  .Mobile-Characteristics {
-    display: none;
-  }
+
 
 }
 
 @media screen and (min-width: 1025px) {
 
-  
 
-
-  .Mobile-Characteristics {
-    display: none;
-  }
 
   .Character-Type {
     left: 25%;
