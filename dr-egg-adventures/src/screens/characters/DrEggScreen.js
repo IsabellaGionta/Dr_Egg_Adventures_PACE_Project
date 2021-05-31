@@ -57,7 +57,7 @@ export const DrEggScreen = () => {
             </p>
 
         </div>
-        <img className="Character-Pet"src={EggDrone} onClick={() => setModalState(true) } /> 
+        <img className="Character-Pet EggDroneHighlight"src={EggDrone} onClick={() => setModalState(true) } /> 
 
 
         <Popup trigger={modalState} setTrigger = {setModalState}>

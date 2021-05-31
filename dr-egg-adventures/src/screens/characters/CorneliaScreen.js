@@ -92,8 +92,8 @@ export const CorneliaScreen = () => {
               </p>
           </div>
         </div> */}
-        <img className="Character-Pet clicked"src={Carlin}  onClick = {() => setModalState(true)}/> 
-        <img className="Character-Pet-Pigeon clicked"src={Pigeon} onClick={() => setModalState1(true) } /> 
+        <img className="Character-Pet CarlinHighlight clicked"src={Carlin}  onClick = {() => setModalState(true)}/> 
+        <img className="Character-Pet-Pigeon PigeonHighlight clicked"src={Pigeon} onClick={() => setModalState1(true) } /> 
 
         {/* onClick={() => manageState() } />  */}
         

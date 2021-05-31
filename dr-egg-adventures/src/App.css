@@ -723,6 +723,21 @@ h1.Resources-Title {
   max-height: auto;
 }
 
+.EggDroneHighlight:hover {
+  content: url("./images/characters/EggDrone1.png");
+  left: 65%;
+  top: 73%;
+}
+
+.PigeonHighlight:hover {
+  content: url("./images/characters/Pigeon-Highlight.png");
+  left: 75%;
+  top: 83%;
+
+}
+
+
+
 .SnakeImg {
   position: absolute;
   bottom: 10%;
@@ -1811,6 +1826,7 @@ input {
     left: 45%;
     bottom: 3%;
   }
+
 
   .Character-Description {
     line-height: 20px;
