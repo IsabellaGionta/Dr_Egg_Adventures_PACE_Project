@@ -1,6 +1,6 @@
 import React from 'react'
 import Snake from '../../images/characters/Snake.png';
-import SnakeImg from '../../images/characters/Snake.png';
+import SnakeImg from '../../images/characters/Snake-Highlight.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 

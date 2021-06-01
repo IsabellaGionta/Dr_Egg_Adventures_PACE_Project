@@ -7,6 +7,7 @@ import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 import Popup from '../../components/Popup.js';
+import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
 
 import { useHistory } from "react-router-dom";
 
@@ -71,9 +72,23 @@ export const CorneliaScreen = () => {
               almost any creature into a euphoric trance.
             </p>
             <p>
-              WORLD: Corn-farmlands
+              WORLD: Corn-Farmlands
             </p>
+            
+
         </div>
+        {/* <div> 
+           <DropdownMenu className="Dropdown" title="Dropdown">
+              <MenuItem href="#books">Books</MenuItem>
+              <MenuItem href="#podcasts">Podcasts</MenuItem>
+              <MenuItem href="#">Tech I Like</MenuItem>
+              <MenuItem href="#">About me</MenuItem>
+              <MenuItem href="#addBlog">Add a Blog</MenuItem>
+            </DropdownMenu>
+
+
+        </div> */}
+
 
         {/* <div className={`modalBackground modalShowing-${modalState}`}> 
         
@@ -92,8 +107,8 @@ export const CorneliaScreen = () => {
               </p>
           </div>
         </div> */}
-        <img className="Character-Pet clicked"src={Carlin}  onClick = {() => setModalState(true)}/> 
-        <img className="Character-Pet-Pigeon clicked"src={Pigeon} onClick={() => setModalState1(true) } /> 
+        <img className="Character-Pet CarlinHighlight clicked"src={Carlin}  onClick = {() => setModalState(true)}/> 
+        <img className="Character-Pet-Pigeon PigeonHighlight clicked"src={Pigeon} onClick={() => setModalState1(true) } /> 
 
         {/* onClick={() => manageState() } />  */}
         

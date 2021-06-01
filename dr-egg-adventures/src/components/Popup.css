@@ -53,6 +53,8 @@
     height: 40%;
     max-height: 100%;
     max-width: 100%;
+    font-size: 2vh;
+    font-family: 'polaris';
     /* background-color: black; */
     border-radius: 20px;
   }
