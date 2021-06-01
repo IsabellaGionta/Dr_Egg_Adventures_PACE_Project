@@ -11,6 +11,11 @@ import Popup from '../components/SnakePopup.js';
 import Continue from '../images/btn-continue.png';
 import ardash from '../images/ardash-thinking.png';
 
+//Glow Buttons
+import arrowleftglow from '../images/btn-left-glow.png';
+import arrowrightglow from '../images/btn-right-glow.png';
+import Continueglow from '../images/btn-continue-glow.png';
+
 export const CrazyFacts = () => {
 
     const history = useHistory();
@@ -51,8 +56,8 @@ export const CrazyFacts = () => {
                 alt = "home button" 
                 onClick = {homeNav}/>  
             </div>
-            <img className = "left-turn" src = {arrowleft}/>
-            <img className = "right-turn" src = {arrowright}/>
+            <img className = "left-turn" src = {arrowleft} onMouseOver = {e => e.currentTarget.src = arrowleftglow} onMouseOut={e => e.currentTarget.src = arrowleft}/>
+            <img className = "right-turn" src = {arrowright} onMouseOver = {e => e.currentTarget.src = arrowrightglow} onMouseOut={e => e.currentTarget.src = arrowright}/>
 
             <Popup trigger={modalState} setTrigger = {setModalState}>
                     <div className = "popup-background">
@@ -60,7 +65,7 @@ export const CrazyFacts = () => {
                         <p className="Snake-text">'I've been researching some scientists from your world, and I thought I'd share what I found with you guys.' 
                         </p>
                         <div className = "popup-btn-container">
-                            <img className = "popup-btn" src={Continue} onClick = {() => setModalState(false)}/>
+                            <img className = "popup-btn" src={Continue} onClick = {() => setModalState(false)} onMouseOver = {e => e.currentTarget.src = Continueglow} onMouseOut={e => e.currentTarget.src = Continue}/>
                         </div>
                     </div>
             </Popup>
