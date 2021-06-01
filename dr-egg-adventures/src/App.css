@@ -316,8 +316,6 @@ p {
   line-height: 100px;
 }
 
-
-
 /* Companion popups  */
 
 .Character-Pet-Popup {
@@ -328,14 +326,13 @@ p {
 }
 
 .btn-close {
-  position: absolute; 
+  position: absolute;
   left: 96%;
   top: 4%;
 }
 
 .clicked:active {
   opacity: 80%;
-
 }
 
 .Companion-Description {
@@ -348,9 +345,8 @@ p {
   top: 33%;
   font-size: 2vh;
   line-height: 50px;
-  color: #5DAA86;
+  color: #5daa86;
 }
-
 
 .Character-Description {
   font-family: museo sans;
@@ -366,7 +362,6 @@ p {
   line-height: 38px;
   color: white;
   overflow: auto;
-
 }
 .Character-Description-Snake {
   font-family: museo sans;
@@ -402,22 +397,19 @@ p {
   position: relative;
 }
 
-
 .good-characters:hover {
-
   background-image: url("./images/Good-Light.png");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
 
-.characters:hover{
-  opacity:80%;
+.characters:hover {
+  opacity: 80%;
 }
 
 .bad-characters:hover {
-  background-image:  url("./images/Bad-Light.png");
+  background-image: url("./images/Bad-Light.png");
 }
-
 
 /* Resource screen styling  */
 
@@ -459,22 +451,19 @@ h1.Resources-Title {
   margin-right: auto;
 }
 
-
 .Text {
   position: absolute;
   left: 8%;
   top: 10%;
   color: #367771;
   font-size: 4vh;
-  font-family: 'polaris';
+  font-family: "polaris";
 
   max-width: 100%;
   max-height: auto;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .App-logo {
   height: 40vmin;
@@ -584,7 +573,7 @@ h1.Resources-Title {
   left: 16.5%;
   width: 28%;
   height: 40%;
-  max-width: 100%; 
+  max-width: 100%;
   max-height: auto;
 }
 
@@ -596,13 +585,11 @@ h1.Resources-Title {
   left: 11%;
 }
 
-
-
 .good-characters {
   height: 100%;
   width: 100%;
   position: absolute;
-  left:-30%;  
+  left: -30%;
   /* top: 15%; */
 }
 
@@ -636,7 +623,7 @@ h1.Resources-Title {
   content: url("./images/characters/Ardash-Highlight.png");
   width: 18%;
   left: 52%;
-} 
+}
 
 .DrEgg {
   position: absolute;
@@ -702,10 +689,7 @@ h1.Resources-Title {
   content: url("./images/characters/Pigeon-Highlight.png");
   left: 75%;
   top: 83%;
-
 }
-
-
 
 .SnakeImg {
   position: absolute;
@@ -737,11 +721,11 @@ h1.Resources-Title {
 }
 
 .Chatbot-Snake {
-	position: absolute;
-	bottom: 0%;
-	left: 87%;
-	max-width: 12%;
-	max-height: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 87%;
+  max-width: 12%;
+  max-height: auto;
 }
 
 .Map-Snake {
@@ -782,10 +766,10 @@ h1.Resources-Title {
 }
 
 .Characters-Background-Container {
-	background-image: url('./images/Lab.png');
-	background-size: cover;
-	width: 101vw;
-	height: 100vh;
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  width: 101vw;
+  height: 100vh;
 }
 
 table,
@@ -1077,7 +1061,7 @@ input {
   width: 22rem;
 }
 
-.slumworld { 
+.slumworld {
   position: absolute;
   left: 26%;
   top: 25%;
@@ -1085,8 +1069,6 @@ input {
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .egglab {
   position: absolute;
@@ -1102,7 +1084,7 @@ input {
 
 .Snake-text {
   font-size: 2.5vh;
-  font-family: 'muso sans';
+  font-family: "muso sans";
 }
 .home-button {
   max-width: 100%;
@@ -1632,7 +1614,7 @@ input {
     left: 0;
   }
 
-/*   
+  /*   
   .modalBackground {
     left: 10%;
     width: 80%;
@@ -1819,7 +1801,6 @@ input {
     bottom: 3%;
   }
 
-
   .Character-Description {
     line-height: 20px;
     top: 23%;
@@ -1836,8 +1817,6 @@ input {
   .Character-Description-Inventors {
     /* display: none; */
     left: 10%;
- 
-
   }
   .Individual-Character-Styling-Pigeon {
     max-width: 55%;
@@ -1857,8 +1836,6 @@ input {
     line-height: 20px;
   }
 
-<<<<<<< HEAD
-=======
   /* Lab Screen Styling */
   .plankname {
     font-size: 1.6vh;
@@ -2084,21 +2061,15 @@ input {
     width: 60%;
     line-height: 30px;
   }
->>>>>>> Kristina_3rd_Development
-
-
-<<<<<<< HEAD
 }
 
 /* Tablet / Desktop screens */
 @media screen and (min-width: 801) and (max-width: 1024px) and (orientation: landscape) {
-
   .modalBackground {
     left: 1%;
     background-size: 70%;
   }
 
-=======
   .plankname {
     font-size: 2.5vh;
   }
@@ -2122,7 +2093,6 @@ input {
 
 /* Tablet / Desktop screens */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
->>>>>>> Kristina_3rd_Development
   .Ardash:hover {
     width: 22%;
     left: 0%;
@@ -2283,7 +2253,6 @@ input {
 
   .Character-Description-Inventors {
     line-height: 30px;
-
   }
   .Powers {
     padding: 50px 0px;
@@ -2308,10 +2277,6 @@ input {
   .Character-Description-Snake {
     line-height: 50px;
   }
-<<<<<<< HEAD
-
-
-=======
   .Mobile-Characteristics {
     display: none;
   }
@@ -2340,13 +2305,9 @@ input {
   .dregg {
     bottom: 18%;
   }
->>>>>>> Kristina_3rd_Development
 }
 
 @media screen and (min-width: 1025px) {
-
-
-
   .Character-Type {
     left: 25%;
   }

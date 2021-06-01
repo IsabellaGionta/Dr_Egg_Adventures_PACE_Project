@@ -54,28 +54,6 @@
   border-radius: 20px;
 }
 
-<<<<<<< HEAD
-  .Snake-popup-inner {
-    position: relative;
-    padding: 50px;
-    width: 40%;
-    height: 40%;
-    max-height: 100%;
-    max-width: 100%;
-    font-size: 2vh;
-    font-family: 'polaris';
-    /* background-color: black; */
-    border-radius: 20px;
-  }
-  
-  .popup-inner .close-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: scale(0.8);
-    padding: 10px;
-  }
-=======
 .popup-inner .close-btn {
   position: absolute;
   top: 0;
@@ -83,4 +61,3 @@
   transform: scale(0.8);
   padding: 10px;
 }
->>>>>>> Kristina_3rd_Development
