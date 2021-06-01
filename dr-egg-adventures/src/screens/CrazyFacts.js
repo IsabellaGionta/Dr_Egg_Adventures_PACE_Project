@@ -9,7 +9,7 @@ import arrowright from '../images/btn-right.png';
 import { useHistory } from "react-router-dom";
 import Popup from '../components/SnakePopup.js';
 import Continue from '../images/btn-continue.png';
-import ardash from '../images/ardash-face.png';
+import ardash from '../images/ardash-thinking.png';
 
 export const CrazyFacts = () => {
 
