@@ -36,7 +36,7 @@ export const Fanfic = () => {
                         [Stories written by kids, submitted.]
                     </p>
                 </div>
-                <div className = "page2">
+                <div className = "page2-fanfic">
                     <h1 className = "book-heading">
                         Fanfiction 2
                     </h1>

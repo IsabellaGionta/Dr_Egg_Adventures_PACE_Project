@@ -66,7 +66,7 @@ export const Lab = () => {
 
             <div className = "plank-container">
                 <img className = "plank" src = {plank} alt = "plank"/> 
-                <p className = "plankname">DR EGG'S MAGICAL INTERACTIVE LABORATORY</p>
+                <p className = "plankname">DR EGG'S ADVENTURES LABORATORY</p>
             </div>
 
             <div className = "tool-container">
@@ -77,7 +77,7 @@ export const Lab = () => {
 
             <img className = "wc-box" src = {wcbox} alt = "wc box"/> 
 
-            <div className = "snake-container">
+            <div className = "Chatbot-Snake">
                 <img className = "chatbot" src = {snake} alt = "chatbot" /> 
             </div>
             <div className = "back-container"> 

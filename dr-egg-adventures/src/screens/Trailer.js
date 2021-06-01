@@ -24,9 +24,7 @@ export const Trailer = () => {
                 alt = "home button" 
                 onClick = {homeNav}/>  
             </div>
-            <div className = "snake-container">
-                <img className = "chatbot" src = {snake} alt = "chatbot" /> 
-            </div> 
+ 
             
             <img className = "Blackboard" src = {blackboard} alt = "blackboard" />
         </div>
