@@ -10,6 +10,12 @@ import Snake from '../images/characters/Snake.png';
 import submit from '../images/btn-submit.png';
 import fanfic from '../images/btn-fanfiction2.png';
 
+//Glow Buttons
+import arrowleftglow from '../images/btn-left-glow.png';
+import arrowrightglow from '../images/btn-right-glow.png';
+import submitglow from '../images/btn-submit-glow.png';
+import fanficglow from '../images/btn-fanfic-glow2.png';
+
 export const Fanfic = () => {
 
     const history = useHistory();
@@ -53,8 +59,8 @@ export const Fanfic = () => {
                 alt = "home button" 
                 onClick = {homeNav}/>  
             </div>
-            <img className = "left-turn" src = {arrowleft}/>
-            <img className = "right-turn" src = {arrowright}/>
+            <img className = "left-turn" src = {arrowleft} onMouseOver = {e => e.currentTarget.src = arrowleftglow} onMouseOut={e => e.currentTarget.src = arrowleft}/>
+            <img className = "right-turn" src = {arrowright} onMouseOver = {e => e.currentTarget.src = arrowrightglow} onMouseOut={e => e.currentTarget.src = arrowright}/>
 
             <Popup trigger={modalState} setTrigger = {setModalState}>
                     <div className = "popup-background">
@@ -63,8 +69,8 @@ export const Fanfic = () => {
                         Read some of the stories or submit your own. 
                         </p>
                         <div className = "popup-btn-container">
-                            <img className = "popup-btn" src={submit} onClick = {submitNav} />
-                            <img className = "popup-btn" src={fanfic} onClick = {() => setModalState(false)}/>
+                            <img className = "popup-btn" src={submit} onClick = {submitNav} onMouseOver = {e => e.currentTarget.src = submitglow} onMouseOut={e => e.currentTarget.src = submit}/>
+                            <img className = "popup-btn" src={fanfic} onClick = {() => setModalState(false)} onMouseOver = {e => e.currentTarget.src = fanficglow} onMouseOut={e => e.currentTarget.src = fanfic}/>
                         </div>
                     </div>
             </Popup>

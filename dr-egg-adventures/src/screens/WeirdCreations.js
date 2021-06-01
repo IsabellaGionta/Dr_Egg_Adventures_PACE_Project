@@ -5,6 +5,7 @@ import blackboard from '../images/Blackboard.png';
 import { useHistory } from "react-router-dom";
 import icon from '../images/add-icon.png';
 import fish from '../images/fish.png';
+import iconglow from '../images/icon-glow.png';
 
 export const WeirdCreations = () => {
 
@@ -30,7 +31,7 @@ export const WeirdCreations = () => {
             </div>
             <div className = "wc-blackboard-container">
                 <h1 className = "wc-heading"> Weird Creations</h1>
-                <img className = "submit-icon" src = {icon} onClick = {submitNav}/>
+                <img className = "submit-icon" src = {icon} onClick = {submitNav} onMouseOver = {e => e.currentTarget.src = iconglow} onMouseOut={e => e.currentTarget.src = icon}/>
                 <hr className = "hr-line"></hr>
                 <div className = "chat-container">
                     <div className = "chat-view">
