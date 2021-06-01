@@ -37,30 +37,22 @@ export const Contact = () => {
 					alt='Blackboard'></img>
 				<h1 className='Contact-Title'> Contact us </h1>
 				<div className='Contact-Info'>
-					<p> MOBILE NUMBER: +61 0415 442 209 </p>
-					<p> PHONE NUMBER: +61 02 9314 5121</p>
 					<p>
-						{' '}
-						ADDRESS: Dr Egg Digital - The Dr Egg Adventures Project{' '}
-					</p>
-					<p className='indent'>
-						{' '}
-						City of Sydney Cultural Precint Office{' '}
-					</p>
-					<p className='indent'>
-						{' '}
-						Suite, 1, Level 22, 66 Oxford Street{' '}
-					</p>
-					<p className='indent'>
-						{' '}
-						East Sydney, NSW, Australia, 2010{' '}
+						<b>EMAIL:</b> info@dreggadventures.com{' '}
 					</p>
 					<p>
+						<b>ADDRESS:</b> Dr Egg Adventures
+					</p>
+					<p className='indent'> Macquarie University Incubator, </p>
+					<p className='indent'>
 						{' '}
-						WEBSITE:{' '}
+						8 Hadenfeld Ave, NSW, 2109, Australia
+					</p>
+					<p>
+						<b>WEBSITE:</b>{' '}
 						<a href='www.dreggadventures.com'>
 							{' '}
-							www.dreggadventures.com{' '}
+							www.dreggadventures.com
 						</a>{' '}
 					</p>
 				</div>

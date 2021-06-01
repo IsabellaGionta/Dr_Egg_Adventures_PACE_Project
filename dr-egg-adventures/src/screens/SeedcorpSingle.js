@@ -1,9 +1,9 @@
 import SingleWorld from '../components/SingleWorld';
 import styled from 'styled-components';
-import SlumWorld from '../assets/images/SlumWorld.png';
+import WorldConcept from '../assets/images/WorldConceptSingle.png';
 import UpperBoardImg from '../assets/images/upperBoard.png';
 import LowerBoardImg from '../assets/images/lowerBoard.png';
-import Vivi from '../images/characters/Vivi.png';
+import DrMole from '../assets/images/DrMole.png';
 
 const UpperBoard = styled.div`
 	width: 820px;
@@ -30,7 +30,7 @@ const LowerBoard = styled.div`
 `;
 
 const Heading = styled.h1`
-	color: black;
+	color: white;
 	text-align: center;
 	font-size: 3em;
 	text-transform: uppercase;
@@ -43,52 +43,52 @@ const SubHeading = styled.span`
 
 const Figure = styled.div`
 	position: absolute;
-	right: 30%;
+	left: 0;
 	bottom: 0;
+	z-index: 10;
 `;
 
-const SlumWorldSingle = () => {
+const SeedcorpSingle = () => {
 	return (
 		<SingleWorld
-			bgSrc={SlumWorld}
-			heading={<Heading>SLUM-LANES</Heading>}
-			left={
+			bgSrc={WorldConcept}
+			heading={<Heading>SEEDCORP INDUSTRIAL LAB</Heading>}
+			right={
 				<>
 					<UpperBoard>
 						<p>
-							In sprawled out, windy slum world, starvation and
-							food shortages are everyday occurrences. The poor
-							inhabitants suffer as Dr Mole ruthlessly seeks to
-							control the food supplies. In the scary backstreets,
-							roam gangs of "dumped" mutant thugs, the result of
-							Dr Mole's experiments on children and animals.
-							Anyone can become the thugs' unsuspecting quarry,
-							and be kidnapped for auction at the notorious and
-							scary Mutant and Body Parts Black Market.
+							SEEDCORP industrial laboratories are owned by Dr
+							Mole and form the headquarters of his vast
+							totalitarian empire. The huge complex, located high
+							on a windy hill overlooking the lanes of Slum World,
+							includes Dr Mole's seedhouse and testing
+							laboratories. It is from here that Dr Mole
+							dispatches his army of Hybrid Helpers in their
+							menacing black SEEDCORP vans. Here the insatiable Dr
+							Mole ruthlessly collects every living organic seed
+							on the planet, as well as creating and experimenting
+							on genetically modified and mutant creatures.
 						</p>
 					</UpperBoard>
 					<LowerBoard>
 						<p>
-							<SubHeading>Inhabitants:</SubHeading> Vivi and her
-							dad Kane.
+							<SubHeading>Inhabitants:</SubHeading> Dr Mole,
+							Hybrid Helpers.
 						</p>
 						<p>
-							<SubHeading>Dangers:</SubHeading> Mutant thugs. Dr
-							Mole’s Hybrid Helpers. Kidnapping. Starvation.
-							Mutant and Body Parts Market.
+							<SubHeading>Dangers:</SubHeading> Hybrid Helpers.
 						</p>
 						<p>
-							<SubHeading>Landscape Features:</SubHeading> Dumped
-							biohazard drums. Rusty pipes. Missing Children
-							Posters. Seedcorp Advertising Billboards.
+							<SubHeading>Landscape Features:</SubHeading>{' '}
+							Seedhouse.
 						</p>
 					</LowerBoard>
 					<Figure>
-						<img src={Vivi} width='400' />
+						<img src={DrMole} width='600' />
 					</Figure>
 				</>
 			}></SingleWorld>
 	);
 };
 
-export default SlumWorldSingle;
+export default SeedcorpSingle;
