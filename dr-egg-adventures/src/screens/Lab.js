@@ -19,8 +19,15 @@ import { useHistory } from "react-router-dom";
 import weird from '../images/btn-weirdcreations.png';
 import facts from '../images/btn-crazysciencefacts.png';
 import fanfic from '../images/btn-fanfiction.png';
-import inv from '../images/btn-inventory.png';
+import inv from '../images/btn-inv.png';
 import biogoo from '../images/btn-biogoo.png';
+
+//Buttons Glow
+import weirdglow from '../images/btn-wc-glow.png';
+import factsglow from '../images/btn-facts-glow.png';
+import fanficglow from '../images/btn-fanfic-glow.png';
+import invglow from '../images/btn-inv-glow.png';
+import biogooglow from '../images/btn-bio-glow.png';
 
 //Tools
 import goggles from '../images/Goggle.png';
@@ -49,24 +56,22 @@ export const Lab = () => {
     }
 
     const [buttonPopup, setButtonPopup] = useState(false);
-    // const [buttonFactsPopup, setButtonFactsPopup] = useState(false);
-    // const [buttonFanficPopup, setButtonFanficPopup] = useState(false);
 
     return (
         <div className = "Lab-Background-Container">
             <img className="dregg" src={DrEgg} alt = "dr egg"/>
             <div className = "button-container">
-                <img className="lab-button-facts" src={facts} alt = "crazy facts button" onClick = {factsNav}/>
-                <img className="lab-button-wc" src={weird} alt = "weird creations button" onClick = {creationsNav}/>
-                <img className="lab-button-fanfic" src={fanfic} alt = "fanfiction button" onClick = {fanficNav}/>
-                <img className="lab-button-inv" src={inv} alt = "inventory button"/>
-                <img className="lab-button-biogoo" src={biogoo} alt = "biogoo button"/> 
+            <img className="lab-button-inv" src={inv} alt = "inventory button" onMouseOver = {e => e.currentTarget.src = invglow} onMouseOut={e => e.currentTarget.src = inv}/>
+                <img className="lab-button-facts" src={facts} alt = "crazy facts button" onClick = {factsNav} onMouseOver = {e => e.currentTarget.src = factsglow} onMouseOut={e => e.currentTarget.src = facts}/>
+                <img className="lab-button-wc" src={weird} alt = "weird creations button" onClick = {creationsNav} onMouseOver = {e => e.currentTarget.src = weirdglow} onMouseOut={e => e.currentTarget.src = weird}/>
+                <img className="lab-button-fanfic" src={fanfic} alt = "fanfiction button" onClick = {fanficNav} onMouseOver = {e => e.currentTarget.src = fanficglow} onMouseOut={e => e.currentTarget.src = fanfic}/>
+                <img className="lab-button-biogoo" src={biogoo} alt = "biogoo button" onMouseOver = {e => e.currentTarget.src = biogooglow} onMouseOut={e => e.currentTarget.src = biogoo}/> 
             </div>
             <img className = "bench" src = {bench} alt = "lab bench"/> 
 
             <div className = "plank-container">
                 <img className = "plank" src = {plank} alt = "plank"/> 
-                <p className = "plankname">DR EGG'S MAGICAL INTERACTIVE LABORATORY</p>
+                <p className = "plankname">DR EGG'S ADVENTURES LABORATORY</p>
             </div>
 
             <div className = "tool-container">
@@ -77,7 +82,7 @@ export const Lab = () => {
 
             <img className = "wc-box" src = {wcbox} alt = "wc box"/> 
 
-            <div className = "snake-container">
+            <div className = "Chatbot-Snake">
                 <img className = "chatbot" src = {snake} alt = "chatbot" /> 
             </div>
             <div className = "back-container"> 
