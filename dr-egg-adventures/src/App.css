@@ -87,7 +87,7 @@ p {
   background-image: url("./images/Lab.png");
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: 101%;
   height: 100vh;
 }
 .Home-Background-Container {
@@ -1177,19 +1177,13 @@ input {
   text-align: left;
 }
 
-.snake-container {
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  padding: 20px;
-}
 
 .chatbot {
   max-width: 100%;
   max-height: auto;
 }
 
-.snake-container img:hover {
+.Chatbot-Snake img:hover {
   opacity: 0.5;
   color: yellow;
 }
@@ -1223,8 +1217,9 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  right: 72%;
-  bottom: 40%;
+  left: 4%;  
+  top: 4%;
+  width: 25%;
 }
 
 .lab-button-wc {
@@ -1263,7 +1258,7 @@ input {
   height: auto;
   display: flex;
   justify-content: center;
-  top: 83%;
+  bottom: 0%;
 }
 
 .plankname {
@@ -1271,9 +1266,10 @@ input {
   font-family: museo sans;
   font-weight: bold;
   text-align: left;
-  font-size: 30px;
+  font-size: 4vh;
   color: white;
   top: 25%;
+  
 }
 
 .plank {
@@ -1285,7 +1281,7 @@ input {
   position: absolute;
   max-width: 100%;
   max-height: auto;
-  left: 86%;
+  right: 5%;
   top: 18%;
 }
 
@@ -1307,7 +1303,8 @@ input {
 }
 
 .tools {
-  max-width: 15%;
+  width: 15%;
+  max-width: 100%;
   max-height: auto;
   padding: 40px;
 }
@@ -1339,10 +1336,14 @@ input {
 }
 
 .popup-text {
-  font-family: museo sans;
+  position:absolute;
+  top: 25%;
+  left: 0%;
+  padding:2px;
+  font-family: 'museo sans';
   font-weight: bold;
   text-align: center;
-  font-size: 18px;
+  font-size: 3vh;
 }
 
 .yt-trailer {
@@ -1372,17 +1373,32 @@ input {
 
 .page1 {
   position: absolute;
-  width: 28%;
+  max-width:100%;
+  width: 20%;
   height: 90%;
-  left: 19%;
+  left: 27%;
+  top: 18%;
   padding: 25px;
 }
 
 .page2 {
   position: absolute;
-  width: 28%;
+  max-width: 100%;
+  width: 20%;
   height: 90%;
-  right: 19%;
+  right: 28%;
+  top: 25%;
+  padding: 25px;
+}
+
+
+.page2-fanfic {
+  position: absolute;
+  max-width: 100%;
+  width: 20%;
+  height: 90%;
+  right: 28%;
+  top: 18%;
   padding: 25px;
 }
 
@@ -1432,10 +1448,12 @@ input {
 
 .ardash-popup {
   position: absolute;
-  left: 15%;
-  bottom: 5%;
+  left: 25%;
+  bottom: 12%;
   max-width: 100%;
   transform: scale(0.6);
+
+  /* Add media queries  */
 }
 
 .wc-blackboard-container {
@@ -1779,9 +1797,24 @@ input {
     line-height: 20px;
   }
 
-  .Mobile-Characteristics {
-    display: block;
+  /* Lab Screen Styling */
+  .plankname {
+    font-size: 1.6vh;
   }
+  .aboriginal-flag {
+    width: 20%;
+
+  }
+
+  .tool-container {
+    bottom: 2%;
+  }
+
+  .tools {
+    width: 30%;
+  }
+
+/* Dregg still needs to be complete  */
 }
 
 /* iPads and Tablet screens */
@@ -1996,17 +2029,29 @@ input {
     left: 0%;
   }
 
-  .Mobile-Characteristics {
-    /* display: none; */
+  .plankname {
+    font-size: 2.5vh;
+  }
+
+  .aboriginal-flag {
+    width: 15%;
+  }
+
+  .tool-container {
+    bottom: 7%;
+  }
+
+  .tools {
+    width: 24%;
+  }
+
+  .dregg {
+    bottom: 12%;
   }
 }
 
 /* Tablet / Desktop screens */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .modalBackground {
-    left: 1%;
-    background-size: 70%;
-  }
 
   .Ardash:hover {
     width: 22%;
@@ -2195,6 +2240,31 @@ input {
   .Mobile-Characteristics {
     display: none;
   }
+
+  /* Lab Screen Styling */
+
+  .button-container {
+    width: 20%;
+  }
+
+  .plankname {
+    font-size: 3vh;
+  }
+
+  .aboriginal-flag {
+    width: 10%;
+  }
+  .tool-container {
+    bottom: 10%;
+  }
+
+  .tools {
+    width:20%;
+  }
+
+  .dregg {
+    bottom: 18%;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -2210,6 +2280,8 @@ input {
     top: 24%;
     font-size: 3vh;
   }
+
+
 }
 
 /* Online Store Style*/
@@ -2704,9 +2776,10 @@ input {
   }
 
   .apple-button {
-    max-width: 68%;
+    width: 65%;
+    max-width: 100%;
     max-height: auto;
-    margin-top: 4%;
+    margin-top: 3%;
   }
 
   .game-text1 {
@@ -2728,13 +2801,13 @@ input {
     position: absolute;
     top: 60%;
     right: 80%;
-    transform: scale(0.8);
+    transform: scale(1.1);
   }
 
   .vivi-face {
     position: absolute;
     top: 60%;
     left: 80%;
-    transform: scale(0.8);
+    transform: scale(1.1);
   }
 }

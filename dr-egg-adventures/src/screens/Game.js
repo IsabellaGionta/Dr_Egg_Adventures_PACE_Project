@@ -27,7 +27,7 @@ export const Game = () => {
                     BOOK AND PUZZLE GAME</h1> 
                     <div className = "gamebtn">
                         <img className="game-button" src={google} alt = "google play"/>
-                        <a className = "game-link" href="https://apps.apple.com/au/app/dr-egg-adventures-laboratory/id1372550003">
+                        <a className = "game-link" target="_blank" href="https://apps.apple.com/au/app/dr-egg-adventures-laboratory/id1372550003">
                             <img className="apple-button" src={apple} alt = "apple"/>
                         </a>
                     </div>
