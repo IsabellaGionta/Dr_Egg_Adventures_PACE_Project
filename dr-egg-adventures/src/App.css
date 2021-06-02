@@ -1114,6 +1114,7 @@ input {
 }
 
 .Snake-text {
+
   font-size: 2.5vh;
   font-family: "museo sans";
 }
@@ -1391,7 +1392,12 @@ input {
 	top: 15%;
 }
 
+.popup-background {
+  /* position: absolute;
+  left: 50%;
+  top: 100%; */
 
+}
 
 /* .snake-popup-background {
   position: absolute;

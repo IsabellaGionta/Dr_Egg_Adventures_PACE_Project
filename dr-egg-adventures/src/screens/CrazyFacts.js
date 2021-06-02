@@ -72,4 +72,5 @@ export const CrazyFacts = () => {
         </div>
     )
 }
+
 export default CrazyFacts
