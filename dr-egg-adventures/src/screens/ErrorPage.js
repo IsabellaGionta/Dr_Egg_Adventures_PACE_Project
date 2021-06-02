@@ -1,19 +1,16 @@
 import React from 'react';
-import Report from '../images/btn-Report.png';
-import Home from '../images/btn-Home.png';
 import Blackboard from '../images/Blackboard.png';
-import {useHistory } from "react-router-dom";
-import Helmet from "react-helmet";
-import BackBtn from "../images/btn-Back.png"
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 export const ErrorPage = () => {
 
     return (
         <div className="ErrorPageStyle">
-        <Helmet>
+        <HelmetProvider><Helmet>
             <title>Error 404</title>
-        </Helmet>
+        </Helmet></HelmetProvider>
+        <link rel="manifest" href="manifest.json"/>
             <div className = 'ErrorTxtCont'>
                 <div className = 'ErrorTxt'>
                 <p className = 'h1ErrorChalkboard'> 404 </p>
@@ -23,12 +20,12 @@ export const ErrorPage = () => {
             </div>
                 <img class="ErrorBlackboard" src={Blackboard} alt = "Blackboard"/>
                 <a href = "/">
-                <img className="ErrorHomeButton" src={Home} alt="Home"/>
+                <div className="ErrorHomeButton" alt="Home"/>
                 </a>
                 <a href = "Contact">
-                <img className="ErrorReportButton" src={Report} alt="Report"/>
+                <div className="ErrorReportButton" alt="Report"/>
                 </a>
-                <img className = "ErrorBack" src = {BackBtn} onClick={()=>{ window.history.back()}} alt = "Back"/>
+                <div className = "ErrorBack" onClick={()=>{ window.history.back()}} alt = "Back"/>
         </div>
         
     )

@@ -1,50 +1,49 @@
 @font-face {
-  font-family: "polaris";
-  src: url("./fonts/Polaris.woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'polaris';
+	src: url('./fonts/Polaris.woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: "museo sans";
-  src: url("./fonts/MuseoSansCyrl-500.woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'museo sans';
+	src: url('./fonts/MuseoSansCyrl-500.woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: "chalktastic";
-  src: url("./fonts/Chalktastic.woff");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'chalktastic';
+	src: url('./fonts/Chalktastic.woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: "quagmire";
-  src: url("./fonts/Quagmire-Bold.otf");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'quagmire';
+	src: url('./fonts/Quagmire-Bold.otf');
+	font-weight: normal;
+	font-style: normal;
 }
 
 html,
 body {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 p {
-  font-family: "museo sans";
+	font-family: 'museo sans';
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100%;
-  overflow-x: hidden;
+html, body {
+  width:100%;
+overflow-x:hidden;
 }
 
 h2 {
@@ -56,29 +55,29 @@ h2 {
 h1 {
   font-family: polaris;
   font-size: 4vh;
-  color: #0489b1;
+  color: #0489B1;
 }
 
 p {
-  font-family: "museo sans";
+  font-family: "museo sans"
 }
 
 .Loading-gif {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  position: absolute;
-  top: 10%;
-  left: 30%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	position: absolute;
+	top: 10%;
+	left: 30%;
 }
 
 .Loading-Background-Container {
-  background-image: url("./images/background-texture.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
+	background-image: url('./images/background-texture.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
 }
 
 .Dropdown {
@@ -114,14 +113,16 @@ p {
   max-height: 100%;
 }
 
+
 .Home-Button-Wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .Home-Enter-Button {
   width: 30%;
-  max-width: 100%;
+  max-width: 100%;  
   height: auto;
   position: absolute;
   top: 50%;
@@ -129,7 +130,7 @@ p {
 }
 
 .Home-Enter-Button:hover {
-  content: url("./images/btn-Enter-Glow.png");
+  content: url("./images/btn-Enter-Glow.png")
 }
 
 /* Individual Character Screen Styling */
@@ -157,6 +158,7 @@ p {
   width: 24%;
   max-width: 100%;
   max-height: auto;
+
 }
 
 .Individual-Character-Styling-Inventors-Ardash {
@@ -166,6 +168,7 @@ p {
   width: 19%;
   max-width: 100%;
   max-height: auto;
+
 }
 
 .Individual-Character-Styling-Inventors-Cornelia {
@@ -175,6 +178,7 @@ p {
   width: 16%;
   max-width: 100%;
   max-height: auto;
+
 }
 
 .Individual-Character-Styling-Inventors-Vivi {
@@ -184,6 +188,7 @@ p {
   width: 20%;
   max-width: 100%;
   max-height: auto;
+
 }
 
 .Individual-Character-Styling-ProfMole {
@@ -202,20 +207,26 @@ p {
   width: 100%;
   max-width: 20%;
   max-height: auto;
+
 }
 
 .Individual-Character-Styling-Snake {
+
   position: absolute;
   bottom: 0%;
   left: 10%;
   width: 100%;
   max-width: 25%;
   max-height: auto;
+
 }
 .Blackboard {
   width: 100vw;
   height: 100vh;
+
 }
+
+
 
 .Character-Tool-Goggles {
   width: 100%;
@@ -254,27 +265,31 @@ p {
   position: absolute;
   bottom: 0%;
   left: 75%;
+
 }
 
 .Character-Tool:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
 }
+
+
 
 .Character-Type {
   position: absolute;
-  top: 12%;
+  top:12%;
   left: 30%;
   font-size: 4vh;
 }
 
 .Character-Type-Pet {
   position: absolute;
-  top: 5%;
+  top:5%;
   left: 5%;
   font-size: 2vh;
-  color: #5daa86;
+    color: #5DAA86;
+
 }
 
 .Individual-Character-Name {
@@ -289,8 +304,9 @@ p {
   left: 6%;
   top: 10%;
   line-height: 100px;
-  color: #5daa86;
+  color: #5DAA86;
   font-size: 2.5vh;
+
 }
 
 .Individual-Character-Slogan {
@@ -300,6 +316,7 @@ p {
   line-height: 100px;
 }
 
+
 .Individual-Character-Name-ProfMole {
   font-family: polaris;
   position: absolute;
@@ -307,6 +324,7 @@ p {
   top: 20%;
   line-height: 100px;
 }
+
 
 .Individual-Character-DrEggDrone {
   font-family: polaris;
@@ -377,6 +395,7 @@ p {
   color: white;
 }
 
+
 /* Character Screen Styling */
 .Background-Container {
   background-image: url("./images/Lab.png");
@@ -423,11 +442,11 @@ h1.Resources-Title {
 }
 
 .Resource-Background-Container {
-  background-image: url("./images/Lab.png");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
+	background-image: url('./images/Lab.png');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
 }
 
 .buttons {
@@ -463,66 +482,69 @@ h1.Resources-Title {
   max-height: auto;
   margin-left: auto;
   margin-right: auto;
+
 }
 
+
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .homeImage {
   width: 100%;
   height: auto;
+
 }
 
 .enter {
-  position: absolute;
-  bottom: 10%;
-  left: 44%;
-  width: 200px;
-  height: 90px;
-  max-height: auto;
-  max-width: 200px;
+	position: absolute;
+	bottom: 10%;
+	left: 44%;
+	width: 200px;
+	height: 90px;
+	max-height: auto;
+	max-width: 200px;
 }
 
 .containerWraper {
-  position: relative;
-  width: 100%;
+	position: relative;
+	width: 100%;
 }
 
 .Lab {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 
 .Character-Bench {
@@ -534,6 +556,8 @@ h1.Resources-Title {
   height: 30vh;
 }
 
+
+
 .Carlin {
   position: absolute;
   bottom: 15%;
@@ -542,6 +566,8 @@ h1.Resources-Title {
   max-width: 100%;
   max-height: auto;
 }
+
+
 
 .Rifraf {
   position: absolute;
@@ -575,6 +601,7 @@ h1.Resources-Title {
   height: 40%;
   max-width: 100%;
   max-height: auto;
+
 }
 
 .ProfMole:hover {
@@ -598,7 +625,7 @@ h1.Resources-Title {
   bottom: 4%;
   left: 40%;
   width: 20%;
-  max-width: 100%;
+  max-width: 100%; 
   max-height: 100%;
   height: 70%;
 }
@@ -614,7 +641,7 @@ h1.Resources-Title {
   bottom: 8%;
   left: 50%;
   width: 22%;
-  max-width: 100%;
+  max-width: 100%; 
   max-height: 100%;
   height: 70%;
 }
@@ -630,7 +657,7 @@ h1.Resources-Title {
   bottom: 7%;
   left: 30%;
   width: 28%;
-  max-width: 100%;
+  max-width: 100%; 
   height: 100%;
 }
 
@@ -638,6 +665,8 @@ h1.Resources-Title {
   content: url("./images/characters/Dr-Egg-Highlight.png");
   width: 23%;
   bottom: 5%;
+
+
 }
 
 .DrMoon {
@@ -645,7 +674,7 @@ h1.Resources-Title {
   bottom: 7%;
   left: 45%;
   width: 28%;
-  max-width: 100%;
+  max-width: 100%; 
   height: 100%;
 }
 
@@ -660,7 +689,7 @@ h1.Resources-Title {
   left: 30%;
   bottom: 3%;
   width: 20%;
-  max-width: 100%;
+  max-width: 100%; 
   max-height: 100%;
   height: 70%;
 }
@@ -668,6 +697,7 @@ h1.Resources-Title {
 .Vivi:hover {
   content: url("./images/characters/Vivi-Highlight.png");
   width: 18%;
+
 }
 
 .EggDrone {
@@ -707,11 +737,11 @@ h1.Resources-Title {
 }
 
 .Back-Button {
-  position: fixed;
-  top: 2%;
-  left: 86%;
-  max-width: 10%;
-  max-height: auto;
+	position: fixed;
+	top: 2%;
+	left: 86%;
+	max-width: 10%;
+	max-height: auto;
 }
 
 .Back-Button:hover {
@@ -729,40 +759,40 @@ h1.Resources-Title {
 }
 
 .Map-Snake {
-  position: absolute;
-  bottom: 4%;
-  left: 77%;
-  max-width: 12%;
-  max-height: auto;
+	position: absolute;
+	bottom: 4%;
+	left: 77%;
+	max-width: 12%;
+	max-height: auto;
 }
 
 .Map-Container:hover {
-  outline-color: red;
-  border: 1px dolid;
+	outline-color: red;
+	border: 1px dolid;
 }
 
 .Container {
-  background-image: url("./images/background-texture.jpg");
-  background-size: cover;
-  width: 100%;
-  height: 100%;
+	background-image: url('./images/background-texture.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 100%;
 }
 
 .DrEggMap {
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  max-width: 15%;
-  max-height: auto;
+	position: absolute;
+	bottom: 10%;
+	left: 10%;
+	max-width: 15%;
+	max-height: auto;
 }
 
 .CharactersLink {
-  border-color: blue;
+	border-color: blue;
 }
 
 .MapImage {
-  width: 100%;
-  height: 100vh;
+	width: 100%;
+	height: 100vh;
 }
 
 .Characters-Background-Container {
@@ -775,245 +805,246 @@ h1.Resources-Title {
 table,
 th,
 td {
-  border: solid;
+	border: solid;
 }
 
 .GamesHeading {
-  position: absolute;
-  top: 44%;
-  left: 46%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 44%;
+	left: 46%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .ResourcesHeading {
-  position: absolute;
-  top: 83%;
-  left: 16%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 83%;
+	left: 16%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .ContactHeading {
-  position: absolute;
-  top: 88%;
-  left: 89%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 88%;
+	left: 89%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .CharactersHeading {
-  position: absolute;
-  top: 70%;
-  left: 6%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 70%;
+	left: 6%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .LabHeading {
-  position: absolute;
-  top: 25%;
-  left: 65%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 25%;
+	left: 65%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .WorldsHeading {
-  position: absolute;
-  top: 60%;
-  left: 60%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .TrailerHeading {
-  position: absolute;
-  top: 80%;
-  left: 38%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 80%;
+	left: 38%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .OnlineStoreHeading {
-  position: absolute;
-  top: 74%;
-  left: 46%;
-  font-weight: bold;
-  font-family: Polaris;
-  font-size: 3vh;
+	position: absolute;
+	top: 74%;
+	left: 46%;
+	font-weight: bold;
+	font-family: Polaris;
+	font-size: 3vh;
 }
 
 .resources {
-  position: absolute;
-  left: 35%;
-  bottom: 15%;
-  background-color: blue;
-  color: white;
-  border-color: blue;
-  width: 100px;
-  height: 50px;
+	position: absolute;
+	left: 35%;
+	bottom: 15%;
+	background-color: blue;
+	color: white;
+	border-color: blue;
+	width: 100px;
+	height: 50px;
 }
 
+
 .worlds {
-  position: absolute;
-  left: 75%;
-  bottom: 32%;
-  background-color: blue;
-  color: white;
-  border-color: blue;
-  width: 25%;
-  height: 42%;
+	position: absolute;
+	left: 75%;
+	bottom: 32%;
+	background-color: blue;
+	color: white;
+	border-color: blue;
+	width: 25%;
+	height: 42%;
 }
 
 .brightness img:hover {
-  opacity: 0.5;
-  color: yellow;
+	opacity: 0.5;
+	color: yellow;
 }
 
 /* Contact Screen Styling  */
 
 .Contact-Background-Container {
-  background-image: url("./images/Lab.png");
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
+	background-image: url('./images/Lab.png');
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
 }
 
 h1.Contact-Title {
-  font-family: Polaris;
-  text-transform: uppercase;
-  font-size: 5vh;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 400px;
-  margin: 0 auto;
-  top: 20%;
-  color: #fff;
+	font-family: Polaris;
+	text-transform: uppercase;
+	font-size: 5vh;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 400px;
+	margin: 0 auto;
+	top: 20%;
+	color: #fff;
 }
 
 .Contact-MessageBox {
-  width: 100%;
-  height: 20vh;
-  padding: 12px 20px;
+	width: 100%;
+	height: 20vh;
+	padding: 12px 20px;
 }
 
 .Contact-Form {
-  width: 100%;
-  max-width: 50%;
-  padding: 100px 15px;
-  margin: auto;
-  height: 100%;
-  position: absolute;
-  top: 20%;
-  left: 25%;
+	width: 100%;
+	max-width: 50%;
+	padding: 100px 15px;
+	margin: auto;
+	height: 100%;
+	position: absolute;
+	top: 20%;
+	left: 25%;
 }
 
 .Contact-Info {
-  font-family: museo sans;
-  position: absolute;
-  top: 30%;
-  left: 0;
-  right: 0;
-  width: 800px;
-  margin: 0 auto;
-  color: white;
-  line-height: 40px;
-  font-size: 3vh;
+	font-family: museo sans;
+	position: absolute;
+	top: 30%;
+	left: 0;
+	right: 0;
+	width: 800px;
+	margin: 0 auto;
+	color: white;
+	line-height: 40px;
+	font-size: 3vh;
 }
 
 .indent {
-  text-indent: 19%;
+	text-indent: 19%;
 }
 .Contact-FormGroup {
-  padding: 15px;
+	padding: 15px;
 }
 input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
 }
 
 .Contact-Form .form-group {
-  display: flex;
+	display: flex;
 }
 
 .Contact-Form .form-group .input-wrapper {
-  width: 100%;
+	width: 100%;
 }
 
 .Contact-Form .Contact-Label {
-  margin: 8px 0;
-  font-family: Museo-sans;
-  font-size: 2vh;
-  width: 25%;
-  color: #fff;
-  font-weight: 400px;
-  font-size: 3vh;
+	margin: 8px 0;
+	font-family: Museo-sans;
+	font-size: 2vh;
+	width: 25%;
+	color: #fff;
+	font-weight: 400px;
+	font-size: 3vh;
 }
 
 .Contact-Form input,
 .Contact-Form textarea {
-  border-radius: 20px;
-  background: url("./assets/images/paper_texture_04.jpg");
+	border-radius: 20px;
+	background: url('./assets/images/paper_texture_04.jpg');
 }
 
 .Contact-Form input:focus,
 .Contact-Form textarea:focus {
-  outline: none;
+	outline: none;
 }
 .contact-modal .modal-content {
-  text-align: center;
-  background: url("./assets/images/FormBackground.png");
-  background-size: cover;
-  background-position: center;
+	text-align: center;
+	background: url('./assets/images/FormBackground.png');
+	background-size: cover;
+	background-position: center;
 }
 .contact-modal .modal-header {
-  border-bottom: none;
+	border-bottom: none;
 }
 .contact-modal .modal-body {
-  padding: 1rem 1rem 3rem 1rem;
+	padding: 1rem 1rem 3rem 1rem;
 }
 .contact-modal h2 {
-  color: #367771;
-  font-size: 2.5rem;
-  margin-top: 0.5em;
+	color: #367771;
+	font-size: 2.5rem;
+	margin-top: 0.5em;
 }
 .contact-modal p {
-  color: #367771;
-  font-size: 1.5rem;
+	color: #367771;
+	font-size: 1.5rem;
 }
 .Contact-Button {
-  width: 100%;
-  max-width: 24vh;
-  height: auto;
-  padding: 1vh;
-  margin: 1vh auto;
-  display: block;
-  border-radius: 3vh;
-  border-width: 1vh;
-  border-color: #83cfb1;
-  font-family: Polaris;
-  font-size: 4vh;
-  color: #367771;
+	width: 100%;
+	max-width: 24vh;
+	height: auto;
+	padding: 1vh;
+	margin: 1vh auto;
+	display: block;
+	border-radius: 3vh;
+	border-width: 1vh;
+	border-color: #83cfb1;
+	font-family: Polaris;
+	font-size: 4vh;
+	color: #367771;
 }
 
 .text {
-  max-width: 30%;
-  max-height: auto;
-  font-weight: 9vh;
-  text-align: center;
+	max-width: 30%;
+	max-height: auto;
+	font-weight: 9vh;
+	text-align: center;
 }
 
 /* .TeacherButton {
@@ -1030,19 +1061,19 @@ input {
 /* Worlds Screen Styles */
 
 .world-image {
-  background-image: url("./images/background-texture.jpg");
-  background-size: cover;
-  background-position: top;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  position: relative;
-  align-self: center;
-  display: flex;
+	background-image: url('./images/background-texture.jpg');
+	background-size: cover;
+	background-position: top;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	position: relative;
+	align-self: center;
+	display: flex;
 }
 
 .technoworld {
@@ -1087,126 +1118,126 @@ input {
   font-family: "museo sans";
 }
 .home-button {
-  max-width: 100%;
-  max-height: auto;
+	max-width: 100%;
+	max-height: auto;
 }
 
 .hb-container {
-  position: absolute;
-  top: 0px;
-  right: 30px;
-  padding: 20px;
+	position: absolute;
+	top: 0px;
+	right: 30px;
+	padding: 20px;
 }
 
 .techno-text-container {
-  position: absolute;
-  left: 41%;
+	position: absolute;
+	left: 41%;
 }
 
 .farm-text-container {
-  position: absolute;
-  left: 61%;
+	position: absolute;
+	left: 61%;
 }
 
 .slum-text-container {
-  position: absolute;
-  left: 35%;
+	position: absolute;
+	left: 35%;
 }
 
 .world-text {
-  max-width: 58%;
-  max-height: auto;
+	max-width: 58%;
+	max-height: auto;
 }
 
 .back-icon {
-  max-width: 70%;
-  max-height: auto;
+	max-width: 70%;
+	max-height: auto;
 }
 
 .world-text-farm {
-  max-width: 50%;
-  max-height: auto;
+	max-width: 50%;
+	max-height: auto;
 }
 
 .techno-exit {
-  width: 3%;
-  position: absolute;
-  left: 45%;
-  bottom: 93%;
+	width: 3%;
+	position: absolute;
+	left: 45%;
+	bottom: 93%;
 }
 
 .farm-exit {
-  width: 3.5%;
-  position: absolute;
-  left: 45%;
-  bottom: 93%;
+	width: 3.5%;
+	position: absolute;
+	left: 45%;
+	bottom: 93%;
 }
 
 .slum-exit {
-  width: 3%;
-  position: absolute;
-  left: 3%;
-  bottom: 93%;
+	width: 3%;
+	position: absolute;
+	left: 3%;
+	bottom: 93%;
 }
 
 .lab-container {
-  position: absolute;
-  height: auto;
-  width: 100%;
-  display: flex;
+	position: absolute;
+	height: auto;
+	width: 100%;
+	display: flex;
 }
 
 .lab-button {
-  position: absolute;
-  width: 35%;
-  height: auto;
-  top: 88%;
-  left: 33%;
+	position: absolute;
+	width: 35%;
+	height: auto;
+	top: 88%;
+	left: 33%;
 }
 
 .techno-text {
-  position: absolute;
-  bottom: 3%;
-  left: 7%;
-  width: 290px;
-  height: 480px;
-  text-align: center;
+	position: absolute;
+	bottom: 3%;
+	left: 7%;
+	width: 290px;
+	height: 480px;
+	text-align: center;
 }
 
 .farm-text {
-  position: absolute;
-  bottom: 9%;
-  left: 8%;
-  width: 100%;
-  max-width: 38%;
-  max-height: auto;
-  text-align: center;
+	position: absolute;
+	bottom: 9%;
+	left: 8%;
+	width: 100%;
+	max-width: 38%;
+	max-height: auto;
+	text-align: center;
 }
 
 .slum-text {
-  position: absolute;
-  bottom: 1%;
-  left: 6%;
-  width: 290px;
-  height: 580px;
-  text-align: center;
+	position: absolute;
+	bottom: 1%;
+	left: 6%;
+	width: 290px;
+	height: 580px;
+	text-align: center;
 }
 
 .world-title {
-  font-size: 30px;
-  font-family: "polaris";
-  font-weight: normal;
+	font-size: 30px;
+	font-family: 'polaris';
+	font-weight: normal;
 }
 
 .info-text {
-  font-family: "museo sans";
-  font-weight: normal;
-  text-align: left;
+	font-family: 'museo sans';
+	font-weight: normal;
+	text-align: left;
 }
 
 .chatbot {
-  max-width: 100%;
-  max-height: auto;
+	max-width: 100%;
+	max-height: auto;
 }
 
 .Chatbot-Snake img:hover {
@@ -1217,25 +1248,25 @@ input {
 /* Lab Screen Styles */
 
 .bench {
-  position: absolute;
-  bottom: 0%;
-  left: 0%;
-  width: 100%;
-  max-width: 100%;
-  max-height: auto;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+  width:100%;
+	max-width: 100%;
+	max-height: auto;
 }
 
 .dregg {
-  position: absolute;
-  max-width: 50%;
-  max-height: auto;
-  right: 25%;
-  bottom: 25%;
+	position: absolute;
+	max-width: 50%;
+	max-height: auto;
+	right: 25%;
+	bottom: 25%;
 }
 
 .drmoon {
-  max-width: 50%;
-  max-height: auto;
+	max-width: 50%;
+	max-height: auto;
 }
 
 .button-container {
@@ -1249,21 +1280,21 @@ input {
 }
 
 .lab-button-wc {
-  max-width: 75%;
-  max-height: auto;
-  padding: 7px;
+	max-width: 75%;
+	max-height: auto;
+	padding: 7px;
 }
 
 .lab-button-facts {
-  max-width: 85%;
-  max-height: auto;
-  padding: 7px;
+	max-width: 85%;
+	max-height: auto;
+	padding: 7px;
 }
 
 .lab-button-fanfic {
-  max-width: 60%;
-  max-height: auto;
-  padding: 7px;
+	max-width: 60%;
+	max-height: auto;
+	padding: 7px;
 }
 
 .lab-button-inv {
@@ -1273,9 +1304,9 @@ input {
 }
 
 .lab-button-biogoo {
-  max-width: 45%;
-  max-height: auto;
-  padding: 7px;
+	max-width: 45%;
+	max-height: auto;
+	padding: 7px;
 }
 
 .plank-container {
@@ -1298,8 +1329,8 @@ input {
 }
 
 .plank {
-  max-width: 60%;
-  max-height: auto;
+	max-width: 60%;
+	max-height: auto;
 }
 
 .aboriginal-flag {
@@ -1311,20 +1342,20 @@ input {
 }
 
 .aboriginal-flag:hover {
-  position: absolute;
-  max-width: 100%;
-  max-height: auto;
-  left: 85%;
-  top: 17%;
-  transform: scale(1.2);
+	position: absolute;
+	max-width: 100%;
+	max-height: auto;
+	left: 85%;
+	top: 17%;
+	transform: scale(1.2);
 }
 
 .tool-container {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  bottom: 18%;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	bottom: 18%;
 }
 
 .tools {
@@ -1335,31 +1366,39 @@ input {
 }
 
 .tools:hover {
-  transform: scale(1.5);
+	transform: scale(1.5);
 }
 
 .wc-box {
-  position: absolute;
-  max-width: 30%;
-  max-height: auto;
-  left: 70%;
-  top: 30%;
+	position: absolute;
+	max-width: 30%;
+	max-height: auto;
+	left: 70%;
+	top: 30%;
 }
 
 .back-container {
-  position: absolute;
-  width: 100%;
-  padding: 20px;
+	position: absolute;
+	width: 100%;
+	padding: 20px;
 }
 
 .lab-blackboard {
-  position: absolute;
-  max-width: 45%;
-  max-height: auto;
-  left: 55%;
-  top: 15%;
+	position: absolute;
+	max-width: 45%;
+	max-height: auto;
+	left: 55%;
+	top: 15%;
 }
 
+
+
+/* .snake-popup-background {
+  position: absolute;
+  top:10%;
+  width:90%;
+  height:40%;
+} */
 .popup-text {
   position: absolute;
   top: 25%;
@@ -1372,28 +1411,28 @@ input {
 }
 
 .yt-trailer {
-  position: absolute;
+	position: absolute;
   width: 71.5%;
   height: 79.5%;
-  max-width: 100%;
+	max-width: 100%;
   max-height: 100%;
-  left: 15%;
-  top: 12%;
+	left: 15%;
+	top: 12%;
 }
 
 .book-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .book {
-  transform: scale(0.8);
+	transform: scale(0.8);
 }
 
 .page1 {
@@ -1569,33 +1608,12 @@ input {
   background-size: cover;
 
 } */
-.OnlineStore-Background-Container {
-  background-image: url("./images/Lab.png");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-}
 
-.OnlineStore-Button {
-  width: 100%;
-  max-width: 50vh;
-  max-height: auto;
-  padding: 1vh;
-  margin: 1vh auto;
-  display: block;
-  border-radius: 3vh;
-  border-width: 1vh;
-  border-color: #83cfb1;
-  font-family: Polaris;
-  font-size: 4vh;
-  color: #367771;
-  position: absolute;
-  top: 45vh;
-  left: 70vh;
-}
+
+
 
 /* Media queries */
+
 
 /* Charcter (All) screen */
 
@@ -1628,33 +1646,37 @@ input {
 
   .Home-Enter-Button {
     width: 50%;
-    left: 25%;
+    left:25%;
     top: 70%;
   }
 
   .Ardash:hover {
     width: 40%;
     left: 46%;
-  }
+  } 
 
+    
   .Cornelia:hover {
     width: 35%;
     left: 20%;
-  }
+  } 
 
+    
   .Vivi:hover {
     width: 37%;
     left: -5%;
-  }
+  } 
 
-  .DrEgg:hover {
+  .DrEgg:hover {  
     width: 40%;
     left: -2%;
   }
-  .DrMoon:hover {
+  .DrMoon:hover {  
     width: 44%;
     left: 28%;
   }
+
+
 
   h1.Resources-Title {
     left: 30%;
@@ -1671,7 +1693,7 @@ input {
     width: 50%;
     height: 50%;
   }
-  .DrEgg {
+  .DrEgg { 
     width: 65%;
     height: 80%;
     left: -15%;
@@ -1689,7 +1711,7 @@ input {
   .DrMoon {
     width: 65%;
     height: 80%;
-    left: 17%;
+    left: 17%;    
     top: 20%;
   }
   .Cornelia {
@@ -1707,10 +1729,10 @@ input {
   .Carlin {
     bottom: 15%;
     width: 15%;
-  }
+  } 
   .SnakeImg {
     bottom: 7%;
-    left: 30%;
+    left:30%;
     width: 45%;
   }
   .EggDrone {
@@ -1732,48 +1754,48 @@ input {
   }
   .Individual-Character-Name {
     left: 20%;
-    top: 15%;
+    top: 15%;  
     font-size: 2.5vh;
   }
 
   .Individual-Character-Slogan {
     left: 20%;
-    top: 18%;
+    top: 18%;  
     font-size: 1.5vh;
   }
 
   .Individual-Character-Name-ProfMole {
     left: 20%;
-    top: 15%;
+    top: 15%;  
     font-size: 2vh;
   }
 
   .Individual-Character-DrEggDrone {
-    line-height: 100px;
+    line-height:100px;
     left: 17%;
-    top: 15%;
+    top: 15%;  
     font-size: 1.6vh;
   }
-  .Individual-Character-Styling {
+  .Individual-Character-Styling{
     max-width: 68%;
     left: -13%;
   }
-  .Individual-Character-Styling-Inventors {
+  .Individual-Character-Styling-Inventors{
     width: 50%;
     left: 0%;
   }
 
-  .Individual-Character-Styling-Inventors-Cornelia {
+  .Individual-Character-Styling-Inventors-Cornelia{
     width: 30%;
     left: 0%;
   }
 
-  .Individual-Character-Styling-Inventors-Ardash {
+  .Individual-Character-Styling-Inventors-Ardash{
     width: 40%;
     left: 0%;
   }
 
-  .Individual-Character-Styling-Inventors-Vivi {
+  .Individual-Character-Styling-Inventors-Vivi{
     width: 40%;
     left: 0%;
   }
@@ -1781,6 +1803,7 @@ input {
   .Individual-Character-Styling-ProfMole {
     width: 80%;
     left: 20%;
+
   }
 
   .Character-Pet {
@@ -1810,7 +1833,7 @@ input {
   }
 
   /* Companion popups  */
-
+  
   .Powers {
     padding: 40px 0px;
   }
@@ -1818,10 +1841,10 @@ input {
     /* display: none; */
     left: 10%;
   }
-  .Individual-Character-Styling-Pigeon {
+  .Individual-Character-Styling-Pigeon{
     max-width: 55%;
   }
-  .Individual-Character-Styling-EggDrone {
+  .Individual-Character-Styling-EggDrone{
     max-width: 45%;
     left: 0%;
   }
@@ -1834,6 +1857,7 @@ input {
     left: 20%;
     top: 27%;
     line-height: 20px;
+
   }
 
   /* Lab Screen Styling */
@@ -1858,34 +1882,40 @@ input {
 /* iPads and Tablet screens */
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
   .modalBackground {
     left: 15%;
     width: 70%;
   }
+  
 
   .Ardash:hover {
     width: 29%;
     left: 40%;
-  }
+  } 
 
+    
   .Cornelia:hover {
     width: 26%;
     left: 23%;
-  }
+  } 
 
+    
   .Vivi:hover {
     width: 33%;
     left: -3%;
-  }
+  } 
 
-  .DrEgg:hover {
+  .DrEgg:hover {  
     width: 43%;
     left: -3%;
   }
-  .DrMoon:hover {
+  .DrMoon:hover {  
     width: 47%;
     left: 25%;
   }
+
+
 
   .DrEggLogo {
     width: 60%;
@@ -1896,24 +1926,24 @@ input {
 
   .Home-Enter-Button {
     width: 50%;
-    left: 30%;
+    left:30%;
     top: 75%;
   }
 
-  /* Resource screen */
-  h1.Resources-Title {
-    left: 32%;
-  }
-  .buttons {
-    left: 20%;
-  }
+    /* Resource screen */
+    h1.Resources-Title {
+      left: 32%;
+    }
+    .buttons {
+      left: 20%;
+    }
   .Character-Bench {
     height: 32%;
   }
   .all {
     width: 40%;
   }
-  .DrEgg {
+  .DrEgg { 
     width: 65%;
     height: 80%;
     left: -15%;
@@ -1947,7 +1977,7 @@ input {
   .Carlin {
     bottom: 20%;
     width: 15%;
-  }
+  } 
   .SnakeImg {
     bottom: 14%;
     left: 30%;
@@ -1969,41 +1999,45 @@ input {
 
   .Individual-Character-Name {
     left: 20%;
-    top: 15%;
+    top: 15%;  
     font-size: 2.5vh;
+
   }
   .Individual-Character-Slogan {
     left: 20%;
-    top: 18%;
+    top: 18%;  
     font-size: 2.4vh;
   }
   .Individual-Character-DrEggDrone {
-    line-height: 100px;
+    line-height:100px;
     left: 18%;
-    top: 20%;
+    top: 20%;  
     font-size: 2.3vh;
   }
 
-  .Individual-Character-Styling {
+
+
+
+  .Individual-Character-Styling{
     max-width: 68%;
     left: -13%;
   }
-  .Individual-Character-Styling-Inventors {
+  .Individual-Character-Styling-Inventors{
     width: 50%;
     left: 0%;
   }
 
-  .Individual-Character-Styling-Inventors-Cornelia {
+  .Individual-Character-Styling-Inventors-Cornelia{
     width: 30%;
     left: 0%;
   }
 
-  .Individual-Character-Styling-Inventors-Ardash {
+  .Individual-Character-Styling-Inventors-Ardash{
     width: 40%;
     left: 0%;
   }
 
-  .Individual-Character-Styling-Inventors-Vivi {
+  .Individual-Character-Styling-Inventors-Vivi{
     width: 40%;
     left: 0%;
   }
@@ -2011,6 +2045,7 @@ input {
   .Individual-Character-Styling-ProfMole {
     width: 70%;
     left: 30%;
+
   }
 
   .Character-Pet {
@@ -2033,20 +2068,22 @@ input {
 
   .Powers {
     padding: 40px 0px;
+
   }
-  .Individual-Character-Styling {
+  .Individual-Character-Styling{
     max-width: 45%;
   }
 
-  .Individual-Character-Styling-Pigeon {
+  .Individual-Character-Styling-Pigeon{
     max-width: 45%;
   }
   .Individual-Character-Styling-EggDrone {
     max-width: 35%;
   }
-
+  
   .Character-Description-Snake {
     line-height: 37px;
+
   }
 
   .Character-Description-Inventors {
@@ -2063,11 +2100,12 @@ input {
   }
 }
 
+
 /* Tablet / Desktop screens */
 @media screen and (min-width: 801) and (max-width: 1024px) and (orientation: landscape) {
   .modalBackground {
-    left: 1%;
-    background-size: 70%;
+      left: 1%;
+      background-size: 70%;
   }
 
   .plankname {
@@ -2096,26 +2134,30 @@ input {
   .Ardash:hover {
     width: 22%;
     left: 0%;
-  }
+  } 
 
+    
   .Cornelia:hover {
     width: 22%;
     left: 9%;
-  }
+  } 
 
+    
   .Vivi:hover {
     width: 25%;
     left: -5%;
-  }
+  } 
 
-  .DrEgg:hover {
+  .DrEgg:hover {  
     width: 27%;
     left: 0%;
   }
-  .DrMoon:hover {
+  .DrMoon:hover {  
     width: 27%;
     left: 17%;
   }
+
+
 
   .DrEggLogo {
     width: 45%;
@@ -2129,7 +2171,7 @@ input {
     left: 33%;
     top: 75%;
   }
-  /* Resource screen */
+ /* Resource screen */
   .buttons {
     left: 20%;
   }
@@ -2139,16 +2181,16 @@ input {
   .all {
     width: 40%;
   }
-  .DrEgg {
-    left: -8%;
+  .DrEgg { 
+    left: -8%;   
   }
   .Vivi {
-    width: 30%;
+    width:30%;
     left: -10%;
     top: 24%;
   }
   .Ardash {
-    width: 32%;
+    width:32%;
     left: 20%;
   }
   .DrMoon {
@@ -2170,7 +2212,7 @@ input {
   .Carlin {
     bottom: 20%;
     width: 15%;
-  }
+  } 
   .SnakeImg {
     bottom: 12%;
     width: 30%;
@@ -2183,26 +2225,28 @@ input {
     left: 60%;
   }
 
-  .Individual-Character-Styling {
+
+
+  .Individual-Character-Styling{
     max-width: 68%;
     left: -13%;
   }
-  .Individual-Character-Styling-Inventors {
+  .Individual-Character-Styling-Inventors{
     width: 35%;
     left: 0%;
   }
 
-  .Individual-Character-Styling-Inventors-Cornelia {
+  .Individual-Character-Styling-Inventors-Cornelia{
     width: 25%;
     left: 0%;
   }
 
-  .Individual-Character-Styling-Inventors-Ardash {
+  .Individual-Character-Styling-Inventors-Ardash{
     width: 30%;
     left: 0%;
   }
 
-  .Individual-Character-Styling-Inventors-Vivi {
+  .Individual-Character-Styling-Inventors-Vivi{
     width: 30%;
     left: 0%;
   }
@@ -2210,6 +2254,7 @@ input {
   .Individual-Character-Styling-ProfMole {
     width: 60%;
     left: 40%;
+
   }
 
   .Character-Pet {
@@ -2230,18 +2275,24 @@ input {
     bottom: 0%;
   }
 
-  /* Companion popups  */
+
+
+
+
+
+   /* Companion popups  */
 
   .Powers {
     padding: 40px 0px;
-  }
+
+  } 
 
   .Character-Type {
     left: 25%;
   }
   .Individual-Character-Slogan {
     left: 30%;
-    top: 24%;
+    top: 24%;  
     font-size: 3vh;
   }
 
@@ -2258,24 +2309,25 @@ input {
     padding: 50px 0px;
   }
   .Individual-Character-DrEggDrone {
-    line-height: 100px;
+    line-height:100px;
     left: 18%;
-    top: 20%;
+    top: 20%;  
     font-size: 2.5vh;
   }
-  .Individual-Character-Styling {
+  .Individual-Character-Styling{
     max-width: 35%;
   }
 
-  .Individual-Character-Styling-Pigeon {
+  .Individual-Character-Styling-Pigeon{
     max-width: 35%;
   }
   .Individual-Character-Styling-EggDrone {
     max-width: 35%;
   }
-
+    
   .Character-Description-Snake {
     line-height: 50px;
+
   }
   .Mobile-Characteristics {
     display: none;
@@ -2313,178 +2365,27 @@ input {
   }
   .Individual-Character-Slogan {
     left: 30%;
-    top: 24%;
+    top: 24%;  
     font-size: 3vh;
   }
-}
 
-/* Online Store Style*/
-.OnlineStore-Background-Container {
-  background-image: url("./images/Book.png");
-  background-size: 100% 100%;
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.InputStyle {
-  display: none;
-}
-
-.BookCoverImg {
-  width: 100%;
-  height: 90%;
-  background-color: white;
-}
-
-.BookImg {
-  width: 100%;
-  height: 99%;
-  background-color: white;
-}
-
-.OnlineStore-Container {
-  display: flex;
-  width: 75%;
-  height: 90%;
-}
-
-#cover {
-  width: 50vw;
-  height: 98vh;
-}
-
-.pageContainer {
-  width: 50vw;
-  height: 98vh;
-  position: relative;
-  perspective: 100vw;
-}
-
-.page {
-  width: 100%;
-  height: 90%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform-origin: left;
-  transform-style: preserve-3d;
-  transform: rotateY(0deg);
-  transition: 0.5s;
-  -moz-backface-visibility: hidden;
-}
-
-.front,
-.back {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  overflow: auto;
-  position: absolute;
-}
-
-.front {
-  box-sizing: border-box;
-  background-color: white;
-}
-
-.back {
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-}
-
-.BookTxt {
-  width: 100%;
-  height: 95%;
-  position: absolute;
-  overflow: auto;
-}
-
-#c1:checked ~ .pageContainer #p1 {
-  transform: rotateY(-180deg);
-  z-index: 1;
-}
-
-#c2:checked ~ .pageContainer #p2 {
-  transform: rotateY(-180deg);
-  z-index: 2;
-}
-
-#c3:checked ~ .pageContainer #p3 {
-  transform: rotateY(-180deg);
-  z-index: 3;
-}
-
-.nextBtn {
-  position: absolute;
-  bottom: 1vh;
-  right: 1vh;
-  cursor: pointer;
-}
-
-.backBtn {
-  position: absolute;
-  bottom: 1vh;
-  left: 1vw;
-  cursor: pointer;
-}
-
-#p1 {
-  z-index: 3;
-}
-#p2 {
-  z-index: 2;
-}
-
-#p3 {
-  z-index: 1;
-}
-
-.OnlineStore-Button {
-  display: flex;
-  padding: 1vh;
-  margin: 1vh auto;
-  display: block;
-  border-radius: 3vh;
-  border-width: 1vh;
-  border-color: #83cfb1;
-  font-family: Polaris;
-  font-size: 2vw;
-  color: #367771;
-  position: absolute;
-  top: 40%;
-  left: 3%;
-  width: 90%;
-  height: auto;
-}
-
-.StoreBack {
-  top: 1vh;
-  right: 1vw;
-  position: absolute;
-  width: 12vw;
-  height: auto;
 }
 
 /*Error Pages Style*/
 
 .ErrorPageStyle {
-  background-image: url("./images/Lab.png");
-  background-size: 100% 100%;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
+    background-image: url("./images/Lab.png");
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+ }
 
 .ErrorTxtCont {
   position: absolute;
   top: 12vh;
-  left: 15vw;
+  left:15vw;
   height: 48vh;
   width: 71vw;
   padding: 4vw 0;
@@ -2502,6 +2403,7 @@ input {
   text-align: center;
   word-wrap: break-word;
 }
+
 
 .h2ErrorChalkboard {
   font-size: 5vh;
@@ -2525,64 +2427,317 @@ input {
 }
 
 .ErrorHomeButton {
+  background-image: url("./images/btn-Home.png");
+  background-size: 100% 100%;
   position: absolute;
   top: 60vh;
+  bottom: 26vh;
+  right: 51vw;
   left: 28vw;
-  height: 14vh;
-  width: 21vw;
+}
+
+.ErrorHomeButton:hover {
+  background-image: url("./images/btn-home-Glow.png");
+  top: 58vh;
+  bottom: 24vh;
+  right: 50vw;
+  left: 27vw;
 }
 
 .ErrorReportButton {
+  background-image: url("./images/btn-Report.png");
+  background-size: 100% 100%;
   position: absolute;
   top: 60vh;
+  bottom: 26vh;
   left: 50vw;
-  height: 14vh;
-  width: 21vw;
+  right: 28vw;
 }
 
-@media all and (max-aspect-ratio: 10/16) {
-  .ErrorTxtCont {
-    position: absolute;
-    top: 12vh;
-    left: 15vw;
-    height: 48vh;
-    width: 71vw;
-    overflow: auto;
-  }
-
-  .h1ErrorChalkboard {
-    font-size: 30vw;
-    font-family: "polaris";
-    color: white;
-    text-align: center;
-    word-wrap: break-word;
-  }
-
-  .ErrorHomeButton {
-    position: absolute;
-    top: 60vh;
-    left: 28vw;
-    height: 10vh;
-    width: 42vw;
-  }
-
-  .ErrorReportButton {
-    position: absolute;
-    top: 73vh;
-    left: 28vw;
-    height: 10vh;
-    width: 42vw;
-  }
+.ErrorReportButton:hover {
+  background-image: url("./images/btn-report-Glow.png");
+  top: 58vh;
+  bottom: 24vh;
+  left: 49vw;
+  right: 27vw;
 }
 
-.ErrorBack {
-  position: absolute;
-  top: 1vh;
-  right: 1vw;
+.ErrorBack{
+  background-image: url("./images/btn-Back.png");
+  background-size: 100% 100%;
+  position:absolute;
+  top:2vh;
+  bottom: 88vh;
+  right: 2vw;
+  left: 80vw;
 }
-.ErrorBack:hover {
+.ErrorBack:hover{
   cursor: pointer;
+  background-image: url("./images/btn-Back-hover.png");
+  top:0vh;
+  bottom: 86vh;
+  right: 0vw;
+  left: 78vw;
 }
+
+
+/* Online Store Stying*/
+
+.OnlineStore-Background-Container {
+  background-image: url("./images/OnlineStoreImage/OnlineStoreBG.png");
+  background-size: 100% 100%;
+  overflow:hidden;
+  width: 100vw;
+	height: 100vh;  
+}
+
+.OnlineStore-Container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.InputStyle{
+  display: none;
+}
+
+#bookCover{
+  width: 100%;
+  height: 100%;
+}
+
+.imgPageCoverContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("./images/OnlineStoreImage/Page.png");
+  background-size: 100% 100%;
+  position: relative;
+  right: -13%;
+  top:6%;
+  height: 89%;
+  width: 87%;
+}
+
+.pageContainer{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  perspective: 100vw;
+}
+
+.page{
+  transform-origin: left;
+  transform: rotateY(0deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: .5s;
+  -moz-backface-visibility: hidden;
+}
+
+.frontPageContainer, .backPageContainer{  
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+}
+
+.backPageContainer{
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.backPage{
+  background-image: url("./images/OnlineStoreImage/Page.png");
+  background-size: 100% 100%;
+  right: -13%;
+  top:6%;
+  height: 89%;
+  width: 87%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.frontPageContainer{
+  box-sizing: border-box;
+}
+
+.frontPage{
+  background-image: url("./images/OnlineStoreImage/Page.png");
+  transform: rotateY(180deg);
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0%;
+  top:6%;
+  height: 89%;
+  width: 87%;
+  position: relative;
+}
+
+.bookTxt{
+  top: 5%;
+  right: 5%;
+  left: 2%;
+  position: absolute;
+  height: 90%;
+  overflow: auto;
+  font-family: 'Museo-sans';
+  font-size: 3vh;
+  transform: rotateY(180deg);
+}
+
+#c1:checked ~ .pageContainer #p1{
+transform: rotateY(-180deg);
+z-index: 1;
+}
+
+#c2:checked ~ .pageContainer #p2{
+transform: rotateY(-180deg);
+z-index: 2;
+}
+
+#c3:checked ~ .pageContainer #p3{
+transform: rotateY(-180deg);
+z-index: 3;
+}
+
+.nextBtn{
+  background-image: url("./images/OnlineStoreImage/btnRight.png");
+  background-size: 100% 100%;
+  position: absolute;
+  cursor: pointer;  
+  bottom: 2vh;
+  left: 2vw;
+  height: 8%;
+  width: 16%;
+}
+
+.nextBtn:hover{
+  background-image: url("./images/OnlineStoreImage/btnRightGlow.png");
+  bottom: 1vh;
+  left: 1vw;
+  height: 10%;
+  width: 19%;
+}
+
+.backBtn{
+  background-image: url("./images/OnlineStoreImage/btnRight.png");
+  background-size: 100% 100%;
+  position: absolute;
+  cursor: pointer;
+  bottom: 2vh;
+  right: 2vw;
+  height: 8%;
+  width: 16%;
+  transform: rotateY(180deg);
+}
+
+.backBtn:hover{
+  background-image: url("./images/OnlineStoreImage/btnRightGlow.png");
+  bottom: 1vh;
+  right: 1vw;
+  height: 10%;
+  width: 19%;
+}
+
+.OnlineTxt{
+  top:25%;
+  width: 100%;
+  position: absolute;
+  font-size: 3vh;
+  font-family: "polaris";
+  font-weight: bold;
+  text-align: center;
+}
+
+.OnlineStore-Button {
+  position: absolute;
+  background-image: url("./images/OnlineStoreImage/OrderHere.png");
+  background-size: 100% 100%;
+  cursor: pointer;
+  top: 40%;
+  bottom: 45%;
+  left: 20%;
+  right: 20%;
+}
+
+.OnlineStore-Button:hover{
+  background-image: url("./images/OnlineStoreImage/OrderHereGlow.png");
+  top: 38%;
+  bottom: 43%;
+  left: 18%;
+  right: 18%;
+}
+
+.StoreBack{
+  background-image: url("./images/btn-Back.png");
+  background-size: 100% 100%;
+  top:2vh;
+  bottom: 90vh;
+  right: 2vw;
+  left: 89vw;
+  position: absolute;
+}
+
+.StoreBack:hover{
+  background-image: url("./images/btn-Back-hover.png");
+  top:1vh;
+  bottom: 89vh;
+  right: 1vw;
+  left: 88vw;
+}
+
+.OnlineGroupImg{
+  position: absolute;
+  bottom: 3%;
+  height: 40%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.StoreSnake {
+  position: absolute;
+  right: 1vw;
+  bottom: 1vw;
+  height: 8vh;
+  width: auto;
+  max-width: 16vw;
+}
+
+.BookCoverImg {
+  width: auto;  
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.BookImg{
+  width: auto;
+  max-width: 100%;
+  height: 99%;
+  object-fit: contain;
+}
+
+#p1{
+  z-index: 3;
+}
+#p2{
+  z-index: 2;
+}
+
+#p3{
+  z-index: 1;
+}
+
 /* Map Styling */
 
 .Map-Container {
@@ -2591,10 +2746,10 @@ input {
   overflow-x: auto;
 }
 
-.Map {
+.Map{
   width: 100vw;
   height: 100vh;
-  overflow: auto;
+  overflow:auto;
 }
 
 .GamesHeading {
@@ -2620,7 +2775,7 @@ input {
   position: absolute;
   top: 87%;
   bottom: 6%;
-  left: 74%;
+  left:  74%;
   right: 15%;
   background-image: url("./images/MapButton/Btn-Contact.png");
   background-size: 100% 100%;
@@ -2630,7 +2785,7 @@ input {
   position: absolute;
   top: 85%;
   bottom: 5%;
-  left: 73%;
+  left:  73%;
   right: 14%;
   background-image: url("./images/MapButton/Btn-Contact-Glow.png");
   background-size: 100% 100%;
@@ -2640,7 +2795,7 @@ input {
   position: absolute;
   top: 67%;
   bottom: 26%;
-  left: 28%;
+  left:  28%;
   right: 55%;
   background-image: url("./images/MapButton/Btn-Characters.png");
   background-size: 100% 100%;
@@ -2649,7 +2804,7 @@ input {
   position: absolute;
   top: 65%;
   bottom: 25%;
-  left: 27%;
+  left:  27%;
   right: 54%;
   background-image: url("./images/MapButton/Btn-Characters-Glow.png");
   background-size: 100% 100%;
@@ -2659,7 +2814,7 @@ input {
   position: absolute;
   top: 47%;
   bottom: 46%;
-  left: 50%;
+  left:  50%;
   right: 32%;
   background-image: url("./images/MapButton/Btn-Laboratory.png");
   background-size: 100% 100%;
@@ -2669,7 +2824,7 @@ input {
   position: absolute;
   top: 45%;
   bottom: 45%;
-  left: 49%;
+  left:  49%;
   right: 31%;
   background-image: url("./images/MapButton/Btn-Laboratory-Glow.png");
   background-size: 100% 100%;
@@ -2679,7 +2834,7 @@ input {
   position: absolute;
   top: 38%;
   bottom: 55%;
-  left: 17%;
+  left:  17%;
   right: 71%;
   background-image: url("./images/MapButton/Btn-World.png");
   background-size: 100% 100%;
@@ -2689,7 +2844,7 @@ input {
   position: absolute;
   top: 36%;
   bottom: 54%;
-  left: 16%;
+  left:  16%;
   right: 70%;
   background-image: url("./images/MapButton/Btn-World-Glow.png");
   background-size: 100% 100%;
@@ -2699,7 +2854,7 @@ input {
   position: absolute;
   top: 61%;
   bottom: 32%;
-  left: 83%;
+  left:  83%;
   right: 3%;
   background-image: url("./images/MapButton/Btn-Trailer.png");
   background-size: 100% 100%;
@@ -2709,27 +2864,29 @@ input {
   position: absolute;
   top: 59%;
   bottom: 31%;
-  left: 82%;
+  left:  82%;
   right: 2%;
   background-image: url("./images/MapButton/Btn-Trailer-Glow.png");
   background-size: 100% 100%;
 }
 
-.ResourcesHeading {
+
+
+.ResourcesHeading{
   position: absolute;
   top: 77%;
   bottom: 16%;
-  left: 3%;
+  left:  3%;
   right: 73%;
   background-image: url("./images/MapButton/Btn-ProductOverview.png");
   background-size: 100% 100%;
 }
 
-.ResourcesHeading:hover {
+.ResourcesHeading:hover{
   position: absolute;
   top: 75%;
   bottom: 15%;
-  left: 2%;
+  left:  2%;
   right: 72%;
   background-image: url("./images/MapButton/Btn-ProductOverview-Glow.png");
   background-size: 100% 100%;
@@ -2739,7 +2896,7 @@ input {
   position: absolute;
   top: 75%;
   bottom: 18%;
-  left: 54%;
+  left:  54%;
   right: 35%;
   background-image: url("./images/MapButton/Btn-Book.png");
   background-size: 100% 100%;
@@ -2748,7 +2905,7 @@ input {
   position: absolute;
   top: 73%;
   bottom: 17%;
-  left: 53%;
+  left:  53%;
   right: 34%;
   background-image: url("./images/MapButton/Btn-Book-Glow.png");
   background-size: 100% 100%;
@@ -2756,19 +2913,21 @@ input {
 .MapSnake {
   position: absolute;
   bottom: 4vh;
-  left: 85vw;
-  width: 12vw;
-  height: auto;
+  right: 5vw;
+  width: auto;
+  height: 9vh;
 }
-.BtnContain {
+.BtnContain{
   height: 100vh;
   width: 141vh;
   background-image: url("./images/WorldMap.png");
   background-size: 100% 100%;
   position: relative;
 }
-@media all and (min-aspect-ratio: 45/32) {
-  .BtnContain {
+
+/*Map image size*/
+@media all and (min-aspect-ratio: 45/32){
+  .BtnContain{
     height: 71vw;
     width: 100vw;
   }
@@ -2844,4 +3003,178 @@ input {
     left: 80%;
     transform: scale(1.1);
   }
+}
+
+/*Phone Aspect Ratio*/
+@media all and (max-aspect-ratio: 10/16){
+  /*Error Page*/
+
+  .ErrorTxtCont {
+    top: 12vh;
+    left:15vw;
+    height: 48vh;
+    width: 71vw;
+  }
+  
+  .h1ErrorChalkboard {
+    font-size: 30vw;
+  }
+  
+  .ErrorHomeButton {
+    top: 60vh;    
+    bottom: 30vh;
+    left: 28vw;
+    right: 30vw;
+  }
+
+  .ErrorHomeButton:hover {
+    top: 58vh;    
+    bottom: 28vh;
+    left: 26vw;
+    right: 28vw;
+  }
+  
+  .ErrorReportButton {
+    top: 73vh;
+    left: 28vw;
+    right: 30vw;
+    bottom: 17vh;
+  }
+
+  .ErrorReportButton:hover {
+    top: 71vh;
+    left: 26vw;
+    right: 28vw;
+    bottom: 15vh;
+  }
+
+
+/*Phone Online Store Style*/
+.OnlineStore-Background-Container {
+  background-image: url("./images/OnlineStoreImage/OnlineStorePBG.png");
+}
+
+.OnlineStore-Container{
+  flex-direction: column;
+}
+
+#bookCover{
+  width: 100%;
+  height: 50%;
+}
+
+.pageContainer{
+  width: 100%;
+  height: 50%;
+}
+.imgPageCoverContainer{
+  background-image: url("./images/OnlineStoreImage/UPage.png");
+  top:13%;
+  left:3%;
+  height: 87%;
+  width: 93%;
+}
+
+.frontPage{
+  background-image: url("./images/OnlineStoreImage/UPage.png");
+  transform: rotateZ(180deg);
+  height: 87%;
+  width: 93%;
+  top:0%;
+  left: 4%;
+}
+.backPage{
+  background-image: url("./images/OnlineStoreImage/UPage.png");
+  top:13%;
+  left:3%;
+  height: 87%;
+  width: 93%;
+}
+
+.bookTxt{
+  width: 90%;
+  height: 85%;
+  left: 5%;
+  top: 2%;
+  transform: rotateZ(180deg);
+  font-size: 3.4vw;
+}
+
+.page{
+  transform-origin: top;
+  transform: rotateX(0deg);
+}
+
+.backPageContainer{
+  transform: rotateX(-180deg);
+}
+
+#c1:checked ~ .pageContainer #p1{
+  transform: rotateX(180deg);
+}
+
+#c2:checked ~ .pageContainer #p2{
+  transform: rotateX(180deg);
+}
+
+#c3:checked ~ .pageContainer #p3{
+  transform: rotateX(180deg);
+}
+
+.nextBtn{
+  background-image: url("./images/OnlineStoreImage/btnDown.png");
+  transform: rotateZ(180deg);
+  bottom: 90%;
+  left: 82%;
+}
+
+.nextBtn:hover{
+  background-image: url("./images/OnlineStoreImage/btnDownGlow.png");
+  bottom: 89%;
+  left: 81%;
+
+}
+
+.backBtn{
+  background-image: url("./images/OnlineStoreImage/btnDown.png");
+  bottom: 1vh;
+  right: 2vw;
+}
+
+.backBtn:hover{
+  background-image: url("./images/OnlineStoreImage/btnDownGlow.png");
+  bottom: 0.8vh;
+  right: 0.7vw;
+}
+
+.OnlineTxt{
+  top:20%;
+  position: absolute;
+  font-size: 2vh;
+  font-family: "polaris";
+  font-weight: bold;
+}
+
+.StoreBack{
+  right:2vw;
+  top: 2vh;
+  bottom: 90vh;
+  left: 80vw;
+}
+.StoreBack:hover{
+  right:0vw;
+  top: 1vh;
+  bottom: 89vh;
+  left: 78vw;
+}
+
+.StoreSnake {
+  right: 1vw;
+  bottom: 1vw;
+  width: 25vw;
+  height: auto;
+  max-height: 6vh;
+  max-width: 100vw;
+}
+
 }
