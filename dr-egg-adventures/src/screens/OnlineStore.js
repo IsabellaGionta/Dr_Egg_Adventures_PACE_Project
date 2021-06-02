@@ -73,8 +73,8 @@ export const OnlineStore = () => {
                         YOU CAN ORDER THESE BOOKS <br/>ONLINE HERE
                       </div>
                         <div className="OnlineStore-Button" onClick={() => 
-                          { alert('Redirecting to Dr Egg Adventures Online Store Page!'); 
-                          window.location.href = "https://dreggadventures.com/shop/?v=6cc98ba2045f";}}
+                          { console.log('Redirecting to Dr Egg Adventures Online Store Page!'); 
+                          window.open("https://dreggadventures.com/shop/?v=6cc98ba2045f", "_blank"); }}
                         />
                         <img className = "OnlineGroupImg" src = {GroupImg} alt = "Vivi, Ardash, Cornelia"/>
                     </div>
