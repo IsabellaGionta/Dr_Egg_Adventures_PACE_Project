@@ -75,3 +75,19 @@
   transform: scale(0.8);
   padding: 10px;
 }
+
+
+/* Mobile Screens */
+
+@media screen and (min-width: 0px) and (max-width: 490px) {
+  .popup-inner {
+    width: 80%;
+  }
+}
+/* Tablet Screens */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .popup-inner {
+    width: 80%;
+  }
+}
