@@ -78,16 +78,61 @@
 
 
 /* Mobile Screens */
-
+/* Portrait Mode */
 @media screen and (min-width: 0px) and (max-width: 490px) {
   .popup-inner {
     width: 80%;
   }
+
+  .Snake-popup-inner {
+    width: 100%;
+    top: -10%;
+  }
+
+  .Snake-popup {
+    top: 0%;
+  }
+
+  .Snake-close-btn {
+    top: 0%;
+  }
+}
+
+/* Mobile Screens */
+/* Landscape Mode */
+@media screen and (min-width: 491px) and (max-width: 767px) and (orientation: landscape) {
+  .SnakePopup {
+    width: 40%;
+    left: 30%;
+    top: -10%;
+  }
+
+  .Snake-popup-inner {
+    width: 80%;
+    top: 0%;
+  }
+
+  .Snake-close-btn {
+    top: -5%;
+    left: 70%;
+  }
+
+
 }
 /* Tablet Screens */
-
+/* Portrait Mode */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .popup-inner {
     width: 80%;
   }
+}
+
+/* Tablet Screens */
+/* Landscape Mode */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .popup-inner {
+    width: 60%;
+  }
+
 }
