@@ -7,6 +7,9 @@ import Toolbelt from '../../images/Toolbelt.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 
+import Accordian from "../../components/Accordian"
+
+
 import { useHistory } from "react-router-dom";
 
 export const ViviScreen = () => {
@@ -21,6 +24,20 @@ export const ViviScreen = () => {
     return (
       <div className="Characters-Background-Container">
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
+
+          <div className="Accordians">
+            <Accordian className="characteristics" title="CHARACTERISTICS" content="Vivi is a curious inventor and a real risk-taker. 
+              She’s resourceful and loves to ‘do-a-lot with not-a-lot’
+              by recycling bits and pieces she finds in slum world. She’s
+              passionate about finding practical solutions to fix problems
+              like her father’s missing ear. She desperately hopes Dr Egg will
+              help her to grow him a new one!  " />
+            <Accordian className="virtues" title="VIRTUES" content="Curious. Empathetic. Brave." />
+            <Accordian title=" TOOLS " content="Home-made tool-kit with lots of gadgets. Dad’s old motorcycle helmet and goggles." />
+            <Accordian title=" POWERS " content="Through the goggles, she can see things that the other inventors can’t.
+              With her fix it mentality, she can create inventions for any circumstance." />
+            <Accordian title="  WORLD " content="Slum-Lanes" />
+          </div> 
 
 
           <img className="Individual-Character-Styling-Inventors-Vivi"src={Vivi} />

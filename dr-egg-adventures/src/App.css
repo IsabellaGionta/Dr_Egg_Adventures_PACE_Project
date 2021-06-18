@@ -227,8 +227,8 @@ p {
   width: 100vw;
   height: 100vh;
 
-}
 
+}
 
 
 .Character-Tool-Goggles {
@@ -240,6 +240,15 @@ p {
   left: 37%;
 }
 .Character-Tool {
+  width: 20%;
+  max-width: 100%;
+  max-height: auto;
+  position: absolute;
+  bottom: 7%;
+  left: 49%;
+}
+
+.Character-Tool-Hoverboard {
   width: 20%;
   max-width: 100%;
   max-height: auto;
@@ -272,6 +281,12 @@ p {
 }
 
 .Character-Tool:hover {
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
+}
+
+.Character-Tool-Hoverboard:hover {
 	-ms-transform: scale(1.1); /* IE 9 */
 	-webkit-transform: scale(1.1); /* Safari 3-8 */
 	transform: scale(1.1);
@@ -399,7 +414,6 @@ p {
   line-height: 38px;
   color: white;
   overflow: auto;
-
 }
 
 
@@ -725,15 +739,15 @@ h1.Resources-Title {
 
 .PigeonHighlight:hover {
   content: url("./images/characters/Pigeon-Highlight.png");
-  left: 75%;
-  top: 83%;
+  left: 44%;
+  top: 78%;
   cursor: pointer;
 }
 
 .CarlinHighlight:hover {
-  /* content: url("./images/characters/Carlin-Highlight.png");
-  left: 75%;
-  top: 83%; */
+  content: url("./images/characters/Carlin-Highlight.png");
+  left: 65%;
+  top: 78%;
   cursor: pointer;
 }
 
@@ -1092,42 +1106,72 @@ input {
 	display: flex;
 }
 
-.technoworld {
+
+.world:hover {
+  z-index: 1;
+  backdrop-filter: blur(5px);
+
+}
+.technoworld1 {
+  max-width: 100%;
   position: absolute;
-  left: 42%;
+  left: 70%;
   top: 25%;
+  width: 25%;
+  
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.farmworld {
+
+.farmworld1 {
   position: absolute;
   left: 10%;
   top: 25%;
-
-  max-width: 100%;
   max-height: 100%;
-  width: 22rem;
+  width: 25%;
+  max-width: 100%;
 }
 
-.slumworld {
+.slumworld1 {
   position: absolute;
-  left: 26%;
+  left: 25%;
   top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  max-width: 100%;
+}
+
+.egglab1 {
+  position: absolute;
+  left: 55%;
+  top: 25%;
+  width: 25%;
+  max-width: 100%;
 
   margin-left: auto;
   margin-right: auto;
+
 }
 
-.egglab {
+.seedcorp1 {
   position: absolute;
-  left: 74%;
+  left: 40%;
   top: 25%;
+  width: 25%;
+  max-width: 100%;
+
+  
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.seedcorp {
-  position: absolute;
-  left: 58%;
-  top: 25%;
-}
+/* .card-container:hover {
+  transform: translate(1px);
+} */
 
 .Snake-text {
 
@@ -1637,11 +1681,174 @@ input {
 /* Media queries */
 
 
-/* Charcter (All) screen */
 
 /* Mobile screens  */
+/* Portrait Mode */
+@media screen and (min-width: 0px) and (max-width: 490px) and (orientation: portrait)  {
+  /* Home Screen */
+  
+.DrEggLogo {
+  width: 50%;
+  left: 25%;
+  top: 20%;
+}
+.Home-Enter-Button {
+  width: 50%;
+  max-width: 100%;  
+  height: auto;
+  position: absolute;
+  top: 70%;
+  left: 25%;
+}
 
-/* Individual character screen  */
+.Home-Enter-Button:hover {
+  content: url("./images/btn-Enter-Glow.png")
+}
+
+
+  /* Main Character screen */
+  .Vivi {
+    left: 15%;
+    top: 23%;
+    width: 45%;
+  }
+
+  .Cornelia {
+    left: 45%;
+    top: 26%;
+    width: 45%;
+  }
+
+  .Ardash {
+    left: 65%;
+    top: 23%;
+    width: 45%;
+  }
+
+  .DrMoon {
+    left: 52%;
+    top: 0%;
+    width: 60%;
+  }
+
+  .DrEgg {
+    left: 22%;
+    top: 0%;
+    width: 60%;
+  }
+
+  /* Individual Character screens */
+
+  .Accordians {
+    position: absolute;
+    top: 260px;
+    left: 140px;
+  }
+
+  .Character-Type {
+    left: 20%;
+    font-size: 3.5vh;
+
+  }
+
+  .Individual-Character-Name {
+    top: 15%;
+    left: 25%;
+  }
+  .Individual-Character-Slogan {
+    top: 20%;
+    left: 25%;
+    font-size: 2vh;
+  }
+  .Character-Pet {
+    width: 23%;
+    left: 50%;
+  }
+
+  .Character-Tool {
+    width: 15%;
+    left: 40%;
+  }
+
+  .Character-Tool-Hoverboard {
+    width: 30%;
+  }
+
+  .Character-Pet-Pigeon {
+    width: 26%;
+    bottom: 3%;
+    left: 67%;
+
+  }
+  .Individual-Character-Styling-Inventors-Cornelia {
+    left: -5%;
+    width: 40%;
+  }
+  .Individual-Character-Styling-Inventors-Ardash {
+    left: -5%;
+    width: 40%;
+  }
+
+  .Individual-Character-Styling-Inventors {
+    left: -5%;
+    width: 50%;
+  }
+
+  .Individual-Character-Styling-ProfMole {
+    left: 33%;
+    width: 70%;
+  }
+
+  .Individual-Character-Styling-Inventors-Vivi {
+    left: -5%;
+    width: 50%;
+  }
+
+  .Titles {
+    display: hidden;
+  }
+
+  .Character-Description {
+    display: none;
+  }
+
+  .Character-Pet-Popup {
+    top: 30%;
+  }
+
+  .Companion-Description {
+    line-height: 40px;
+    width: 70%;
+    font-size: 2vh;
+  }
+
+  .PigeonHighlight:hover {
+    top: 84%;
+    left: 67%;
+  }
+
+  .CarlinHighlight:hover {
+    top: 85%;
+    left: 50%;
+  }
+
+  .Individual-Character-Name-Pet {
+    font-size: 2vh;
+  }
+
+  .EggDroneHighlight:hover {
+    left: 50%;
+    top: 70%;
+
+  }
+}
+
+
+/* Mobile screens  */
+/* Landscape Mode */
+
+
+
 @media screen and (min-width: 0px) and (max-width: 490px) and (orientation: landscape) {
   html {
     transform: rotate(-90deg);
@@ -1692,7 +1899,10 @@ input {
     left: 28%;
   }
 
-
+  .SnakeImg:hover {
+    bottom: 17%;
+    left:30%;
+  }
 
   h1.Resources-Title {
     left: 30%;
@@ -1709,12 +1919,12 @@ input {
     width: 50%;
     height: 50%;
   }
-  .DrEgg { 
-    width: 65%;
+  /* .DrEgg { 
+    width: 50%;
     height: 80%;
     left: -15%;
     top: 20%;
-  }
+  } */
 
   .Vivi {
     left: -15%;
@@ -1747,9 +1957,8 @@ input {
     width: 15%;
   } 
   .SnakeImg {
-    bottom: 7%;
+    bottom: 17%;
     left:30%;
-    width: 45%;
   }
   .EggDrone {
     bottom: 10%;
@@ -1759,6 +1968,10 @@ input {
     left: 50%;
     top: 65%;
     height: 15%;
+  }
+
+  .Snake-text {
+    font-size: 4vh;
   }
 
   /* .slumworld {
@@ -1827,6 +2040,10 @@ input {
   }
 
   .Character-Tool {
+    width: 35%;
+  }
+
+  .Character-Tool-Hoverboard {
     width: 35%;
   }
 
@@ -1900,7 +2117,19 @@ input {
 
 /* iPads and Tablet screens */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+/* Landscape Mode */
+/* @media screen and (min-width: 768px) and (max-width: 481px) and (orientation: landscape) {
+  .Ardash {
+    left: 70%;
+  }
+  .DrMoon {
+    left: 20%;
+  }
+} */
+
+/* Portrait Mode */
+/* Tablet Screen Styling */
+@media screen and (min-width: 491px) and (max-width: 768px) {
 
   .modalBackground {
     left: 15%;
@@ -2002,7 +2231,6 @@ input {
   .SnakeImg {
     bottom: 14%;
     left: 30%;
-    width: 40%;
   }
   .EggDrone {
     bottom: 20%;
@@ -2083,6 +2311,9 @@ input {
   .Character-Tool {
     width: 35%;
   }
+  .Character-Tool-Hoverboard {
+    width: 35%;
+  }
 
   .Character-Pet-Popup {
     top: 30%;
@@ -2130,49 +2361,28 @@ input {
     width: 50%;
     line-height: 30px;
   }
+
+
+
+  
+  /* .technoworld1 {
+    left: 20%;
+  }
+
+  .slumworld {
+    width: 30%;
+  } */
 }
 
 
-/* Tablet / Desktop screens */
-@media screen and (min-width: 801) and (max-width: 1024px) and (orientation: landscape) {
-  .modalBackground {
-      left: 1%;
-      background-size: 70%;
-  }
-
-  .plankname {
-    font-size: 2.5vh;
-  }
-
-  .aboriginal-flag {
-    width: 15%;
-  }
-
-  .tool-container {
-    bottom: 7%;
-  }
-
-  .tools {
-    width: 24%;
-  }
-
-  .dregg {
-    bottom: 12%;
-  }
-
-  .Character-Description {
-    width:50%;
-  }
-}
-
+/* Landscape Mode */
 /* Tablet / Desktop screens */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .Ardash:hover {
     width: 22%;
     left: 0%;
   } 
-
-    
+ 
   .Cornelia:hover {
     width: 22%;
     left: 9%;
@@ -2218,24 +2428,24 @@ input {
     width: 40%;
   }
   .DrEgg { 
-    left: -8%;   
+    left: 25%;   
   }
   .Vivi {
     width:30%;
-    left: -10%;
+    left: 25%;
     top: 24%;
   }
   .Ardash {
     width:32%;
-    left: 20%;
+    left: 60%;
   }
   .DrMoon {
-    left: 10%;
+    left: 50%;
     top: -5%;
   }
   .Cornelia {
     width: 30%;
-    left: 8%;
+    left: 45%;
   }
   .Pigeon {
     bottom: 20%;
@@ -2258,7 +2468,7 @@ input {
     width: 20%;
   }
   .ProfMole {
-    left: 60%;
+    left: 5%;
   }
 
 
@@ -2301,6 +2511,10 @@ input {
     width: 25%;
   }
 
+  .Character-Tool-Hoverboard {
+    width: 25%;
+  }
+
   .Petridish {
     width: 10%;
   }
@@ -2323,6 +2537,10 @@ input {
 
   } 
 
+  .Companion-Description {
+    line-height: 30px;
+  }
+
   .Character-Type {
     left: 25%;
   }
@@ -2333,9 +2551,9 @@ input {
   }
 
   .Character-Description {
-    left: 20%;
-    width: 60%;
-    top: 30%;
+    left: 30%;
+    width:50%;
+    top: 33%;
   }
 
   .Character-Description-Inventors {
@@ -2395,6 +2613,7 @@ input {
   }
 }
 
+/* Large screens styling */
 @media screen and (min-width: 1025px) {
   .Character-Type {
     left: 25%;
@@ -3043,6 +3262,8 @@ z-index: 3;
 
 /*Phone Aspect Ratio*/
 @media all and (max-aspect-ratio: 10/16){
+
+
   /*Error Page*/
 
   .ErrorTxtCont {

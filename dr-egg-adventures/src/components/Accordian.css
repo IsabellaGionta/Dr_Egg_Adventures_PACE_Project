@@ -1,0 +1,111 @@
+.accordian_section {
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.accordian {
+
+
+    width: 70%;
+    background-color: #00BFFF;
+
+    cursor: pointer;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline:none;
+    transition: background-color 0.6s ease;
+    overflow: hidden;
+
+
+}
+
+.accordian:hover,  
+    .active{
+        background-color: #00BFFF;
+
+    }
+
+.accordian_title {
+    font-family: Polaris;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    
+}
+
+.accordian_icon {
+    margin-left: auto;
+    transition: transform 0.6s ease;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.accordian_content {
+    width: 70%;
+
+
+    background-color: lightblue;
+    overflow: auto;
+    transition: max-height 0.6s ease;
+
+
+}
+
+.accordian_text {
+    font-family: museo sans;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 18px;
+    color: white;
+
+}
+
+/* Mobile Screens */
+/* Portrait Mode */
+@media screen and (min-width: 0px) and (max-width: 490px) {
+
+
+
+  }
+  
+  /* Mobile Screens */
+  /* Landscape Mode */
+  @media screen and (min-width: 491px) and (max-width: 767px) and (orientation: landscape) {
+
+  
+  }
+  /* Tablet Screens */
+  /* Portrait Mode */
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .accordian {
+        display: none;
+
+      }
+
+  }
+  
+  /* Tablet Screens */
+  /* Landscape Mode */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .accordian {
+        display: none;
+
+      }
+  
+  
+  }
+
+  /* Large Screens */
+  @media screen and (min-width: 1025px) {
+      .accordian {
+        display: none;
+
+      }
+  }

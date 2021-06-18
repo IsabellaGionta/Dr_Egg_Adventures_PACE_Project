@@ -11,21 +11,15 @@ import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
 
 import { useHistory } from "react-router-dom";
 
+import Accordian from "../../components/Accordian"
+
+
 export const CorneliaScreen = () => {
 
   // Creating state for popups of companions 
   const [modalState, setModalState] = useState(false);
   const [modalState1, setModalState1] = useState(false);
 
-  // const manageState= () => {
-  //   setModalState(!modalState)
-  // }
-
-  // const [modalState1, setModalState1] = useState(false);
-
-  // const manageState1= () => {
-  //   setModalState1(!modalState1)
-  // }
 
   let history = useHistory();
 
@@ -34,14 +28,36 @@ export const CorneliaScreen = () => {
     }
 
     return (
-      <div className="Characters-Background-Container">
+
+      
+      <div className="Characters-Background-Container">        
+        <div className="Accordians">
+          <Accordian className="characteristics" title="CHARACTERISTICS" content="Cornelia is a girl with a sunny personality.
+                  Animals are attracted to her radiance and other farmer’s kids
+                  are jealous of her good fortune, because unlike her, most of
+                  them are starving. Cornelia is passionate about achieving
+                  justice for the animals and to feed the people of Farm World.
+                  With a pet mouse as her sidekick, it becomes her mission to
+                  unify the animals against Dr Mole and liberate the world’s
+                  food and seed supplies from Dr Mole’s control. " />
+          <Accordian className="virtues" title="VIRTUES" content="Just. Radiant." />
+          <Accordian title=" TOOLS " content="Pet mouse. Magic corn. Violin." />
+          <Accordian title=" POWERS " content="The ability to talk to animals, Inner radiance, Can
+                make anything grow. When she plays the violin she can put
+                almost any creature into a euphoric trance." />
+          <Accordian title="  WORLD " content="Corn-Farmlands" />
+       </div>
 
         <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
         <img className="Individual-Character-Styling-Inventors-Cornelia"src={Cornelia} />
+
+
       
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
+        
+
         <div className="Titles" >
           <h1 className="Character-Type"> THE KID INVENTORS: </h1>
           <h2 className="Individual-Character-Name">  CORNELIA:  </h2> 
@@ -77,40 +93,10 @@ export const CorneliaScreen = () => {
             
 
         </div>
-        {/* <div> 
-           <DropdownMenu className="Dropdown" title="Dropdown">
-              <MenuItem href="#books">Books</MenuItem>
-              <MenuItem href="#podcasts">Podcasts</MenuItem>
-              <MenuItem href="#">Tech I Like</MenuItem>
-              <MenuItem href="#">About me</MenuItem>
-              <MenuItem href="#addBlog">Add a Blog</MenuItem>
-            </DropdownMenu>
 
-
-        </div> */}
-
-
-        {/* <div className={`modalBackground modalShowing-${modalState}`}> 
-        
-          <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
-          <h2 className="Individual-Character-Name-Pet">  CARLIN: CORNELIA'S MOUSE  </h2> 
-          <label class="btn-close" for="3">X</label>
-          <img className="Character-Pet-Popup"src={Carlin} /> 
-
-
-          <div className="Companion-Description">
-              <p> 
-              <b> GOAL: </b> Help Cornelia
-              </p>
-              <p className="Powers"> 
-              <b> SPECIAL POWER: </b> ‘Thought-wave’ clues to Cornelia
-              </p>
-          </div>
-        </div> */}
         <img className="Character-Pet CarlinHighlight clicked"src={Carlin}  onClick = {() => setModalState(true)}/> 
         <img className="Character-Pet-Pigeon PigeonHighlight clicked"src={Pigeon} onClick={() => setModalState1(true) } /> 
 
-        {/* onClick={() => manageState() } />  */}
         
 
 
@@ -149,30 +135,6 @@ export const CorneliaScreen = () => {
             </div>
           </div>
         </Popup>
-
-
-
-
-        {/* <div className={`modalBackground modalShowing-${modalState1}`}>  */}
-        
-        {/* <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
-        <h2 className="Individual-Character-Name-Pet"> PUFF CHEST: PIGEON AIR FORCE PILOT  </h2> 
-        <img className="Character-Pet-Popup"src={PigeonFlipped} /> 
-        <label class="btn-close" for="3">X</label>
-
-        <div className="Companion-Description">
-          <p> 
-            GOAL: Help Cornelia liberate the animals
-          </p>
-          <p className="Powers"> 
-            SPECIAL POWER: ‘Pigeon-Poop Pummelings’
-          </p>
-
-        </div> */}
-{/*         
-        
-        </div> */}
-        {/* <img className="Character-Pet-Pigeon clicked"src={Pigeon} onClick={() => manageState1() } />  */}
         
           
         <a href="/chatbot">

@@ -47,7 +47,48 @@ const slumNav = () => {
          <img className="Back-Button characters" src={Back} alt="Back"/>
         </a>
             <a href="/farmworld1">
-             <div className="farmworld">
+             <div className="card-container">
+                <img className="farmworld1 world" src={farmworld} />
+
+            </div>
+            </a>
+
+            <a href="/slumworld1">
+                <div className="card-container">
+ 
+                    <img className="slumworld1 world" src={slumworld} />
+
+                </div>
+            </a>
+            
+            <a href="/seedcorp1">
+                <div className="card-container">
+
+                    <img className="seedcorp1 world" src={seedcorp} />
+
+                </div>
+            </a>
+
+            <a href="/egglab1">
+                <div className="card-container">
+
+                    <img className="egglab1 world" src={egglab} />
+
+                </div>
+            </a>
+
+
+            <a href="/technoworld1">
+                <div className="card-container">
+
+                    <img className="technoworld1 world" src={technoworld} />
+
+                </div>
+
+            </a>
+
+            {/* <a href="/farmworld1">
+             <div className="farmworld world">
                 <Card 
                 imageUrl= {farmworld}
                 /> 
@@ -55,7 +96,7 @@ const slumNav = () => {
             </a>
 
             <a href="/slumworld1">
-                <div className="slumworld">
+                <div className="slumworld world">
                     <Card className="slumworld-img"
                     imageUrl= {slumworld}
                     /> 
@@ -63,7 +104,7 @@ const slumNav = () => {
             </a>
             
             <a href="/seedcorp1">
-                <div className="seedcorp">
+                <div className="seedcorp world">
                     <Card className="seedcorp"
                     imageUrl= {seedcorp}
                     /> 
@@ -71,7 +112,7 @@ const slumNav = () => {
             </a>
 
             <a href="/egglab1">
-                <div className="egglab">
+                <div className="egglab world">
                     <Card className="egglab"
                     imageUrl= {egglab}
                     /> 
@@ -80,13 +121,14 @@ const slumNav = () => {
 
 
             <a href="/technoworld1">
-                <div className="technoworld">
+                <div className="technoworld world">
                     <Card className="technoworld"
                     imageUrl= {technoworld}
                     /> 
                 </div>
 
-            </a>
+            </a> */}
+
 
                 <Popup trigger={modalState} setTrigger = {setModalState}>
                     <div className = "popup-background">

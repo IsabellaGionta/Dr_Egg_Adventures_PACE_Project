@@ -7,6 +7,9 @@ import Blackboard from '../../images/Blackboard.png';
 
 import { useHistory } from "react-router-dom";
 
+import Accordian from "../../components/Accordian"
+
+
 export const HybridHelpers = () => {
   
   let history = useHistory();
@@ -20,6 +23,13 @@ export const HybridHelpers = () => {
       <div className="Characters-Background-Container">
 
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
+
+          <div className="Accordians">
+            <Accordian className="characteristics" title="CHARACTERISTICS" content="  {CONTENT NEEDS TO BE ADDED} " />
+            <Accordian className="virtues" title="VIRTUES" content=" {CONTENT NEEDS TO BE ADDED}" />
+            <Accordian title=" TOOLS " content=" {CONTENT NEEDS TO BE ADDED}" />
+            <Accordian title="  WORLD " content=" {CONTENT NEEDS TO BE ADDED}" />
+          </div> 
 
 
           {/* <img className="Individual-Character-Styling-Inventors"src={} /> */}

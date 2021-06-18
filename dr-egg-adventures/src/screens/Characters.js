@@ -122,6 +122,7 @@ const Characters = () => {
               <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
             </a>
           </div>
+
         </div>
     )
 }

@@ -6,6 +6,9 @@ import EggDrone from '../../images/characters/EggDrone.png';
 import EggDroneFlipped from '../../images/characters/EggDrone-Flipped.png';
 import Popup from '../../components/CharacterPopup.js';
 
+import Accordian from "../../components/Accordian"
+
+
 
 import Blackboard from '../../images/Blackboard.png';
 
@@ -26,6 +29,16 @@ export const DrEggScreen = () => {
       <div className="Characters-Background-Container">
 
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
+          <div className="Accordians">
+          <Accordian className="characteristics" title="CHARACTERISTICS" content="Dr Egg creates small inventions
+              to cure diseases, as well as inventing biological
+              spying devices to track activities in Professor Mole’s
+              totalitarian empire. He is the twin brother of Dr
+              Moon. Dr Egg acts as Professor Mole’s nemesis. " />
+          <Accordian className="virtues" title="VIRTUES" content="Altruistic. Inventive." />
+          <Accordian title=" TOOLS " content="Flying Egg Spy" />
+          <Accordian title="  WORLD " content="Egg Laboratories" />
+       </div>
 
 
           <img className="Individual-Character-Styling-Inventors"src={DrEgg} />
