@@ -1737,6 +1737,11 @@ input {
     width: 60%;
   }
 
+  .SnakeImg {
+    width: 40%;
+    top: 75%;
+    left: 30%;
+  }
   /* Individual Character screens */
 
   .Accordians {
