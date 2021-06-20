@@ -41,8 +41,8 @@ export const ViviScreen = () => {
 
 
           <img className="Individual-Character-Styling-Inventors-Vivi"src={Vivi} />
-          <img className=" Character-Tool-Goggles"src={Goggle} />
-          <img className="Character-Tool" src={Toolbelt} />
+          {/* <img className=" Character-Tool-Goggles"src={Goggle} />
+          <img className="Character-Tool" src={Toolbelt} /> */}
 
 
 

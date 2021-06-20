@@ -39,12 +39,12 @@ export const CorneliaScreen = () => {
                   justice for the animals and to feed the people of Farm World.
                   With a pet mouse as her sidekick, it becomes her mission to
                   unify the animals against Dr Mole and liberate the world’s
-                  food and seed supplies from Dr Mole’s control. " />
-          <Accordian className="virtues" title="VIRTUES" content="Just. Radiant." />
+                  food and seed supplies from Dr Mole’s control. " /> 
+          <Accordian className="virtues" title="VIRTUES" content="Just. Radiant." /> 
           <Accordian title=" TOOLS " content="Pet mouse. Magic corn. Violin." />
           <Accordian title=" POWERS " content="The ability to talk to animals, Inner radiance, Can
                 make anything grow. When she plays the violin she can put
-                almost any creature into a euphoric trance." />
+                almost any creature into a euphoric trance." /> 
           <Accordian title="  WORLD " content="Corn-Farmlands" />
        </div>
 
