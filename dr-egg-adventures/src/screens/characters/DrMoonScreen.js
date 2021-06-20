@@ -40,7 +40,7 @@ export const DrMoonScreen = () => {
 
 
           <img className="Individual-Character-Styling-Inventors"src={DrMoon} />
-          <img className="Character-Tool Petridish"src={PetriDish} />
+          {/* <img className="Character-Tool Petridish"src={PetriDish} /> */}
 
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>

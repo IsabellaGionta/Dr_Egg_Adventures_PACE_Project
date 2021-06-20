@@ -1,14 +1,12 @@
 .accordian_section {
     display: flex;
     flex-direction: column;
-
+    overflow: scroll;
 
 
 }
 
 .accordian {
-
-
     width: 70%;
     background-color: #00BFFF;
 
@@ -16,10 +14,7 @@
     padding: 18px;
     display: flex;
     align-items: center;
-    border: none;
-    outline:none;
     transition: background-color 0.6s ease;
-    overflow: hidden;
 
 
 }
@@ -69,7 +64,19 @@
 
 /* Mobile Screens */
 /* Portrait Mode */
-@media screen and (min-width: 0px) and (max-width: 490px) {
+@media screen and (min-width: 0px) and (max-width: 490px) and (orientation: portrait){
+    .accordian {
+        visibility: visible;
+        width: 80%;
+
+
+      }
+
+      
+      .accordian_content {
+        width: 80%;
+
+    }
 
 
 
@@ -77,15 +84,30 @@
   
   /* Mobile Screens */
   /* Landscape Mode */
-  @media screen and (min-width: 491px) and (max-width: 767px) and (orientation: landscape) {
+  @media screen and (max-width:1000px) and (max-height: 500px) and (orientation: landscape) {
 
-  
+    /* .Blackboard {
+        position: absolute;
+        top: 0%;
+    } */
+
+    .accordian {
+        visibility: visible;
+        width: 75%;
+        padding: 8px;
+
+      }
+
+      .accordian_content {
+          width: 75%;
+
+      }
   }
   /* Tablet Screens */
   /* Portrait Mode */
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-    .accordian {
-        display: none;
+  @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    .accordian_section {
+        visibility: hidden;
 
       }
 
@@ -93,9 +115,9 @@
   
   /* Tablet Screens */
   /* Landscape Mode */
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .accordian {
-        display: none;
+  @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .accordian_section {
+        visibility: hidden;
 
       }
   
@@ -105,7 +127,7 @@
   /* Large Screens */
   @media screen and (min-width: 1025px) {
       .accordian {
-        display: none;
+        visibility: hidden;
 
       }
   }

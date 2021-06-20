@@ -79,7 +79,7 @@
 
 /* Mobile Screens */
 /* Portrait Mode */
-@media screen and (min-width: 0px) and (max-width: 490px) {
+@media screen and (min-width: 0px) and (max-width: 490px) and (orientation: portrait) {
   .popup-inner {
     width: 80%;
   }
@@ -100,7 +100,7 @@
 
 /* Mobile Screens */
 /* Landscape Mode */
-@media screen and (min-width: 491px) and (max-width: 767px) and (orientation: landscape) {
+@media screen and (max-width:1000px) and (max-height: 500px) and (orientation: landscape) {
   .SnakePopup {
     width: 40%;
     left: 30%;
@@ -117,22 +117,47 @@
     left: 70%;
   }
 
+  .popup-inner {
+    width: 50%;
+    height: 50%;
+  }
+
 
 }
 /* Tablet Screens */
 /* Portrait Mode */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 1024px) and (max-height: 1367px) and (orientation: portrait) {
+
+  .Snake-popup-inner {
+    width: 80%;
+    top: -10%;
+  }
+
   .popup-inner {
     width: 80%;
+  }
+
+  .Snake-close-btn {
+    top: -5%;
+    left: 85%;
   }
 }
 
 /* Tablet Screens */
 /* Landscape Mode */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-
+@media screen and (max-width: 1367px) and (max-height: 1024px) and (orientation: landscape) {
+  .Snake-popup-inner {
+    width: 60%;
+    top: -10%;
+  }
   .popup-inner {
     width: 60%;
   }
 
+  .Snake-close-btn {
+    top: -5%;
+    left: 85%;
+  }
+
 }
+

@@ -46,7 +46,7 @@ export const ArdashScreen = () => {
           <Accordian title="  WORLD " content="Techno-Towers" />
        </div>
         <img className="Individual-Character-Styling-Inventors-Ardash"src={Ardash} />
-        <img className="Character-Tool-Hoverboard"src={HoverBoard} />
+        {/* <img className="Character-Tool-Hoverboard"src={HoverBoard} /> */}
 
         <a href="/characters">
          <img className="Back-Button characters" src={Back} alt="Back"/>

@@ -17,6 +17,8 @@ import { useHistory } from "react-router-dom";
 export const DrEggScreen = () => {
 
   const [modalState, setModalState] = useState(false);
+  const [modalState1, setModalState1] = useState(true);
+
   
   let history = useHistory();
 
@@ -92,6 +94,11 @@ export const DrEggScreen = () => {
           </div>
         </Popup>
         
+        {/* <Popup className="Landscape" trigger={modalState1} setTrigger = {setModalState1}>
+          <div className = "popup-background">
+            <p className="Landscape-text"> For a better viewing experience rotate your screen into landscape view.</p>
+          </div>
+        </Popup> */}
         
         
         
