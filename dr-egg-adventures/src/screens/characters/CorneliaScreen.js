@@ -31,6 +31,9 @@ export const CorneliaScreen = () => {
 
       
       <div className="Characters-Background-Container">        
+
+        <img className="Blackboard" src={Blackboard} alt="Blackboard" />
+
         <div className="Accordians">
           <Accordian className="characteristics" title="CHARACTERISTICS" content="Cornelia is a girl with a sunny personality.
                   Animals are attracted to her radiance and other farmer’s kids
@@ -48,7 +51,6 @@ export const CorneliaScreen = () => {
           <Accordian title="  WORLD " content="Corn-Farmlands" />
        </div>
 
-        <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
         <img className="Individual-Character-Styling-Inventors-Cornelia"src={Cornelia} />
