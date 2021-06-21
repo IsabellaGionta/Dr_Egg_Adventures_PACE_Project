@@ -1,46 +1,69 @@
 import SingleWorld from '../components/SingleWorld';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import SlumWorld from '../assets/images/SlumWorld.png';
-import UpperBoardImg from '../assets/images/upperBoard.png';
-import LowerBoardImg from '../assets/images/lowerBoard.png';
-import Stick from '../assets/images/Stick.png';
+import Bg from '../assets/images/Dboard.png';
 import Vivi from '../images/characters/Vivi.png';
 
-const UpperBoard = styled.div`
+const Flexbox = styled.div`
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+
+	${props =>
+		props.reverse &&
+		css`
+			flex-direction: row-reverse;
+		`}
+`;
+
+const InnerWrapper = styled.div`
+	width: 50%;
+
+	@media (max-width: 1366px) {
+		width: 90%;
+	}
+`;
+
+const BoardWrapper = styled.div`
+	width: 100%;
 	position: relative;
-	width: 820px;
-	min-height: 400px;
-	background: url(${UpperBoardImg});
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	padding: 2em 3em;
-	font-weight: 600;
-	font-size: 1.2em;
+
+	img {
+		width: 100%;
+	}
+`;
+
+const ContentWrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	justify-content: space-between;
+	height: 75%;
+
+	@media (max-width: 1366px) {
+		height: 75%;
+	}
+
+	@media (max-width: 1024px) {
+		height: 85%;
+	}
+`;
+
+const UpperBoard = styled.div`
+	padding: 30px;
 `;
 
 const LowerBoard = styled.div`
-	position: relative;
-	width: 820px;
-	min-height: 300px;
-	background: url(${LowerBoardImg});
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	padding: 2em 3em;
-	font-weight: 600;
-	font-size: 1.2em;
+	padding: 2em 6em;
+
+	@media (max-width: 1366px) {
+		padding: 30px 80px;
+	}
 `;
 
-const StickWrapper = styled.div`
-	width: 820px;
-	min-height: 500px;
-	margin-top: -400px;
-	background: url(${Stick});
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-`;
 const Heading = styled.h1`
 	color: black;
 	text-align: center;
@@ -54,9 +77,11 @@ const SubHeading = styled.span`
 `;
 
 const Figure = styled.div`
-	position: absolute;
-	right: 30%;
-	bottom: 0;
+	width: 30%;
+
+	@media (max-width: 1366px) {
+		width: 40%;
+	}
 `;
 
 const SlumWorldSingle = () => {
@@ -65,41 +90,55 @@ const SlumWorldSingle = () => {
 			bgSrc={SlumWorld}
 			heading={<Heading>SLUM-LANES</Heading>}
 			left={
-				<>
-					<UpperBoard>
-						<p>
-							In sprawled out, windy slum world, starvation and
-							food shortages are everyday occurrences. The poor
-							inhabitants suffer as Dr Mole ruthlessly seeks to
-							control the food supplies. In the scary backstreets,
-							roam gangs of "dumped" mutant thugs, the result of
-							Dr Mole's experiments on children and animals.
-							Anyone can become the thugs' unsuspecting quarry,
-							and be kidnapped for auction at the notorious and
-							scary Mutant and Body Parts Black Market.
-						</p>
-					</UpperBoard>
-					<LowerBoard>
-						<p>
-							<SubHeading>Inhabitants:</SubHeading> Vivi and her
-							dad Kane.
-						</p>
-						<p>
-							<SubHeading>Dangers:</SubHeading> Mutant thugs. Dr
-							Mole’s Hybrid Helpers. Kidnapping. Starvation.
-							Mutant and Body Parts Market.
-						</p>
-						<p>
-							<SubHeading>Landscape Features:</SubHeading> Dumped
-							biohazard drums. Rusty pipes. Missing Children
-							Posters. Seedcorp Advertising Billboards.
-						</p>
-					</LowerBoard>
-					<StickWrapper />
+				<Flexbox>
+					<InnerWrapper>
+						<BoardWrapper>
+							<img src={Bg} />
+
+							<ContentWrapper>
+								<UpperBoard>
+									<p>
+										In sprawled out, windy slum world,
+										starvation and food shortages are
+										everyday occurrences. The poor
+										inhabitants suffer as Dr Mole ruthlessly
+										seeks to control the food supplies. In
+										the scary backstreets, roam gangs of
+										"dumped" mutant thugs, the result of Dr
+										Mole's experiments on children and
+										animals. Anyone can become the thugs'
+										unsuspecting quarry, and be kidnapped
+										for auction at the notorious and scary
+										Mutant and Body Parts Black Market.
+									</p>
+								</UpperBoard>
+								<LowerBoard>
+									<p>
+										<SubHeading>Inhabitants:</SubHeading>{' '}
+										Vivi and her dad Kane.
+									</p>
+									<p>
+										<SubHeading>Dangers:</SubHeading> Mutant
+										thugs. Dr Mole’s Hybrid Helpers.
+										Kidnapping. Starvation. Mutant and Body
+										Parts Market.
+									</p>
+									<p>
+										<SubHeading>
+											Landscape Features:
+										</SubHeading>{' '}
+										Dumped biohazard drums. Rusty pipes.
+										Missing Children Posters. Seedcorp
+										Advertising Billboards.
+									</p>
+								</LowerBoard>
+							</ContentWrapper>
+						</BoardWrapper>
+					</InnerWrapper>
 					<Figure>
-						<img src={Vivi} width='400' />
+						<img src={Vivi} width='100%' />
 					</Figure>
-				</>
+				</Flexbox>
 			}></SingleWorld>
 	);
 };
