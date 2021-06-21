@@ -79,7 +79,7 @@
 
 /* Mobile Screens */
 /* Portrait Mode */
-@media screen and (min-width: 0px) and (max-width: 490px) and (orientation: portrait) {
+@media screen and (max-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
   .popup-inner {
     width: 80%;
   }
