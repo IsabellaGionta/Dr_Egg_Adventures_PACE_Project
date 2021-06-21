@@ -1,9 +1,12 @@
-import React from 'react'
+import {React, useState} from 'react'
 import DrMoon from '../../images/characters/Dr-Moon-Highlight1.png';
 import PetriDish from '../../images/PetriDish.png';
 import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
+
+import LandscapePopup from '../../components/Landscape.js';
+
 
 import Accordian from "../../components/Accordian"
 
@@ -15,7 +18,9 @@ export const DrMoonScreen = () => {
 
   const BackEventHandler = () => {
       history.push('/characters')
-    }
+  }
+  const [modalState2, setModalState2] = useState(true);
+
 
 
     return (
@@ -73,6 +78,12 @@ export const DrMoonScreen = () => {
             </p>
 
         </div>
+
+        <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
+          <div className = "popup-background">
+            <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
+          </div>
+        </LandscapePopup>
 
         
           
