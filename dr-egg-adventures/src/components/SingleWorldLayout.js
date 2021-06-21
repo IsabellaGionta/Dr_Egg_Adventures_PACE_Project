@@ -13,6 +13,9 @@ const Wrapper = styled.div`
 			background-size: cover;
 			background-position: center;
 		`}
+	@media (max-width: 1024px) {
+		padding: 2.5em 5em 5em 5em;
+	}
 `;
 
 const SingleWorldLayout = ({ children, bgSrc }) => {
