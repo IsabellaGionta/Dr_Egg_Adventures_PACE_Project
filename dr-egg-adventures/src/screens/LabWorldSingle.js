@@ -3,10 +3,12 @@ import styled from 'styled-components';
 import EggLab from '../assets/images/EggLab.png';
 import UpperBoardImg from '../assets/images/upperBoard.png';
 import LowerBoardImg from '../assets/images/lowerBoard.png';
+import Stick from '../assets/images/Stick.png';
 import DrEgg from '../assets/images/DrEgg.png';
 import DrMoon from '../assets/images/DrMoon.png';
 
 const UpperBoard = styled.div`
+	position: relative;
 	width: 820px;
 	min-height: 400px;
 	background: url(${UpperBoardImg});
@@ -19,6 +21,7 @@ const UpperBoard = styled.div`
 `;
 
 const LowerBoard = styled.div`
+	position: relative;
 	width: 820px;
 	min-height: 300px;
 	background: url(${LowerBoardImg});
@@ -28,6 +31,16 @@ const LowerBoard = styled.div`
 	padding: 2em 3em;
 	font-weight: 600;
 	font-size: 1.2em;
+`;
+
+const StickWrapper = styled.div`
+	width: 820px;
+	min-height: 500px;
+	margin-top: -400px;
+	background: url(${Stick});
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 `;
 
 const Heading = styled.h1`
@@ -94,6 +107,7 @@ const LabWorldSingle = () => {
 							Experiment Record Books.
 						</p>
 					</LowerBoard>
+					<StickWrapper />
 					<Figure>
 						<img src={DrEgg} width='400' />
 					</Figure>

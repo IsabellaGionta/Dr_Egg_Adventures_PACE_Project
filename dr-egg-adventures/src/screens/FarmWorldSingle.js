@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import FarmWorld from '../assets/images/FarmWorld.png';
 import UpperBoardImg from '../assets/images/upperBoard.png';
 import LowerBoardImg from '../assets/images/lowerBoard.png';
+import Stick from '../assets/images/Stick.png';
 import Cornelia from '../images/characters/Cornelia.png';
 
 const UpperBoard = styled.div`
+	position: relative;
 	width: 820px;
 	min-height: 400px;
 	background: url(${UpperBoardImg});
@@ -15,9 +17,11 @@ const UpperBoard = styled.div`
 	padding: 2em 3em;
 	font-weight: 600;
 	font-size: 1.2em;
+	z-index: 99;
 `;
 
 const LowerBoard = styled.div`
+	position: relative;
 	width: 820px;
 	min-height: 300px;
 	background: url(${LowerBoardImg});
@@ -27,6 +31,17 @@ const LowerBoard = styled.div`
 	padding: 2em 3em;
 	font-weight: 600;
 	font-size: 1.2em;
+	z-index: 99;
+`;
+
+const StickWrapper = styled.div`
+	width: 820px;
+	min-height: 500px;
+	margin-top: -400px;
+	background: url(${Stick});
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 `;
 
 const Heading = styled.h1`
@@ -88,7 +103,7 @@ const FarmWorldSingle = () => {
 							tractors, fuel tanks, all with the SEEDCORP logo.
 						</p>
 					</LowerBoard>
-
+					<StickWrapper />
 					<Figure>
 						<img src={Cornelia} width='400' />
 					</Figure>

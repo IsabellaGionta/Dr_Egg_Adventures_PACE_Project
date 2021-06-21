@@ -3,9 +3,11 @@ import styled from 'styled-components';
 import SlumWorld from '../assets/images/SlumWorld.png';
 import UpperBoardImg from '../assets/images/upperBoard.png';
 import LowerBoardImg from '../assets/images/lowerBoard.png';
+import Stick from '../assets/images/Stick.png';
 import Vivi from '../images/characters/Vivi.png';
 
 const UpperBoard = styled.div`
+	position: relative;
 	width: 820px;
 	min-height: 400px;
 	background: url(${UpperBoardImg});
@@ -18,6 +20,7 @@ const UpperBoard = styled.div`
 `;
 
 const LowerBoard = styled.div`
+	position: relative;
 	width: 820px;
 	min-height: 300px;
 	background: url(${LowerBoardImg});
@@ -29,6 +32,15 @@ const LowerBoard = styled.div`
 	font-size: 1.2em;
 `;
 
+const StickWrapper = styled.div`
+	width: 820px;
+	min-height: 500px;
+	margin-top: -400px;
+	background: url(${Stick});
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+`;
 const Heading = styled.h1`
 	color: black;
 	text-align: center;
@@ -83,6 +95,7 @@ const SlumWorldSingle = () => {
 							Posters. Seedcorp Advertising Billboards.
 						</p>
 					</LowerBoard>
+					<StickWrapper />
 					<Figure>
 						<img src={Vivi} width='400' />
 					</Figure>
