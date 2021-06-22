@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect } from 'react';
+import {useState } from 'react';
 import getAll from '../services/characters.js';
 import { useHistory } from "react-router-dom";
 import '../App.css';
@@ -13,19 +13,13 @@ import SnakeImg from '../images/characters/Snake.png';
 import ProfMole from '../images/characters/ProfMole.png';
 import Back from '../images/btn-Back.png';
 import Snake from '../images/characters/Snake.png';
+import LandscapePopup from '../components/Landscape.js';
+
 
 
 const Characters = () => {
 
-
-
-    useEffect(() => {
-        console.log("effect is being run") 
-        getAll()
-        .then (res => {
-          console.log(res.data)
-        })
-      })
+  const [modalState2, setModalState2] = useState(true);
 
       let history = useHistory();
 
@@ -116,12 +110,20 @@ const Characters = () => {
 
             </div>
 
+            {/* <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
+            <div className = "popup-background">
+              <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
+            </div>
+          </LandscapePopup> */}
+
+            
 
             <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
             <a href="/chatbot">
               <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
             </a>
           </div>
+
         </div>
     )
 }

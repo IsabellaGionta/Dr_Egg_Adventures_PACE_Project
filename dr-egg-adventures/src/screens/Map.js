@@ -73,9 +73,7 @@ class Map extends React.Component {
                     </a> 
                 </div>
             </div>
-            <a href="/chatbot">
-                <img className = "MapSnake" src = {Snake} alt = "Snake"/>
-            </a>
+
         </div>            
     )}
 }

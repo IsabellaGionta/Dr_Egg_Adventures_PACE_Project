@@ -1,10 +1,16 @@
-import React from 'react'
+import {React, useState} from 'react'
 import Snake from '../../images/characters/Snake.png';
 import SnakeImg from '../../images/characters/Snake-Highlight.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 
 import { useHistory } from "react-router-dom";
+
+import LandscapePopup from '../../components/Landscape.js';
+
+
+import Accordian from "../../components/Accordian"
+
 
 export const SnakeScreen = () => {
   
@@ -13,12 +19,25 @@ export const SnakeScreen = () => {
   const BackEventHandler = () => {
       history.push('/characters')
     }
+  const [modalState2, setModalState2] = useState(true);
+
 
 
     return (
       <div className="Characters-Background-Container">
 
         <img className="Blackboard" src={Blackboard} alt="Blackboard" />
+
+        <div className="Accordians">
+        <Accordian className="characteristics" title="CHARACTERISTICS" content="Dr Egg creates small inventions
+              to cure diseases, as well as inventing biological
+              spying devices to track activities in Professor Mole’s
+              totalitarian empire. He is the twin brother of Dr
+              Moon. Dr Egg acts as Professor Mole’s nemesis. " />
+          <Accordian className="virtues" title="VIRTUES" content="Altruistic. Inventive." />
+          <Accordian title=" TOOLS " content="Flying Egg Spy" />
+          <Accordian title="  WORLD " content="Egg Laboratories" />
+       </div>
 
 
         <img className="Individual-Character-Styling-Snake"src={SnakeImg} />
@@ -54,11 +73,14 @@ export const SnakeScreen = () => {
 
         </div>
 
+        {/* <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
+          <div className = "popup-background">
+            <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
+          </div>
+        </LandscapePopup> */}
+
         
-          
-        <a href="/chatbot">
-           <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
-        </a>      
+    
       </div>
     )
 }

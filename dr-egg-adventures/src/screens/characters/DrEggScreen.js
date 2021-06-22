@@ -5,6 +5,11 @@ import Back from '../../images/btn-Back.png';
 import EggDrone from '../../images/characters/EggDrone.png';
 import EggDroneFlipped from '../../images/characters/EggDrone-Flipped.png';
 import Popup from '../../components/CharacterPopup.js';
+import LandscapePopup from '../../components/Landscape.js';
+
+
+import Accordian from "../../components/Accordian"
+
 
 
 import Blackboard from '../../images/Blackboard.png';
@@ -14,6 +19,10 @@ import { useHistory } from "react-router-dom";
 export const DrEggScreen = () => {
 
   const [modalState, setModalState] = useState(false);
+  const [modalState1, setModalState1] = useState(true);
+  const [modalState2, setModalState2] = useState(true);
+
+
   
   let history = useHistory();
 
@@ -26,6 +35,16 @@ export const DrEggScreen = () => {
       <div className="Characters-Background-Container">
 
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
+          <div className="Accordians">
+          <Accordian className="characteristics" title="CHARACTERISTICS" content="Dr Egg creates small inventions
+              to cure diseases, as well as inventing biological
+              spying devices to track activities in Professor Mole’s
+              totalitarian empire. He is the twin brother of Dr
+              Moon. Dr Egg acts as Professor Mole’s nemesis. " />
+          <Accordian className="virtues" title="VIRTUES" content="Altruistic. Inventive." />
+          <Accordian title=" TOOLS " content="Flying Egg Spy" />
+          <Accordian title="  WORLD " content="Egg Laboratories" />
+       </div>
 
 
           <img className="Individual-Character-Styling-Inventors"src={DrEgg} />
@@ -78,16 +97,19 @@ export const DrEggScreen = () => {
         </div>
           </div>
         </Popup>
+        {/* <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
+          <div className = "popup-background">
+            <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
+          </div>
+        </LandscapePopup> */}
         
+        {/* <Popup className="Landscape" trigger={modalState1} setTrigger = {setModalState1}>
+          <div className = "popup-background">
+            <p className="Landscape-text"> For a better viewing experience rotate your screen into landscape view.</p>
+          </div>
+        </Popup> */}
         
-        
-        
-
-        
-          
-        <a href="/chatbot">
-           <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
-        </a>      
+             
       </div>
     )
 }
