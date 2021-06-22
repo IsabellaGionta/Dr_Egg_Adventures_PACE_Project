@@ -30,10 +30,7 @@ export const CorneliaScreen = () => {
     }
 
     return (
-
-      
       <div className="Characters-Background-Container">        
-
         <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
         <div className="Accordians">
@@ -53,12 +50,7 @@ export const CorneliaScreen = () => {
           <Accordian title="  WORLD " content="Corn-Farmlands" />
        </div>
 
-
-
         <img className="Individual-Character-Styling-Inventors-Cornelia"src={Cornelia} />
-
-
-      
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
         
 
@@ -146,10 +138,7 @@ export const CorneliaScreen = () => {
           </div>
         </LandscapePopup>
         
-          
-        <a href="/chatbot">
-           <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
-        </a>      
+   
       </div>
     )
 }

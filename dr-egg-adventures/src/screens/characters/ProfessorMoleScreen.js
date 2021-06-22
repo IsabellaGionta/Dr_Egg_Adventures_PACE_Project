@@ -75,17 +75,13 @@ export const ProfessorMoleScreen = () => {
 
         </div>
 
-        <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
+        {/* <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
           <div className = "popup-background">
             <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
           </div>
-        </LandscapePopup>
+        </LandscapePopup> */}
 
-        
-          
-        <a href="/chatbot">
-           <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
-        </a>      
+           
       </div>
     )
 }

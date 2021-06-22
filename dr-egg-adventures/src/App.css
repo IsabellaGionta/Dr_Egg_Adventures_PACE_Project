@@ -31,6 +31,9 @@ body {
 	overflow: hidden;
 }
 
+.all {
+  cursor: pointer;
+}
 p {
 	font-family: 'museo sans';
 }
@@ -80,14 +83,17 @@ p {
 	height: 100vh;
 }
 
+.Dropdown {
+  width: 100%;
+}
 /* Home Screen Styling */
 
 .Lab-Background-Container {
-	background-image: url('./images/Lab.png');
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100vh;
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  background-position: center;
+  width: 101%;
+  height: 100vh;
 }
 .Home-Background-Container {
   background-image: url("./images/World-Blur.png");
@@ -126,15 +132,6 @@ p {
   left: 35%;
 }
 
-.Mobile-Characteristics {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-}
-
-
-
-
 .Home-Enter-Button:hover {
   content: url("./images/btn-Enter-Glow.png")
 }
@@ -160,7 +157,7 @@ p {
 .Individual-Character-Styling-Inventors {
   position: absolute;
   bottom: 0%;
-  left: 9%;
+  left: 5%;
   width: 24%;
   max-width: 100%;
   max-height: auto;
@@ -200,7 +197,7 @@ p {
 .Individual-Character-Styling-ProfMole {
   position: absolute;
   bottom: 0%;
-  left: 60%;
+  left: 62%;
   width: 40%;
   max-width: 100%;
   max-height: auto;
@@ -221,8 +218,8 @@ p {
   position: absolute;
   bottom: 0%;
   left: 10%;
-  width: 100%;
-  max-width: 25%;
+  width: 25%;
+  max-width: 100%;
   max-height: auto;
 
 }
@@ -230,8 +227,8 @@ p {
   width: 100vw;
   height: 100vh;
 
-}
 
+}
 
 
 .Character-Tool-Goggles {
@@ -243,6 +240,15 @@ p {
   left: 37%;
 }
 .Character-Tool {
+  width: 20%;
+  max-width: 100%;
+  max-height: auto;
+  position: absolute;
+  bottom: 7%;
+  left: 49%;
+}
+
+.Character-Tool-Hoverboard {
   width: 20%;
   max-width: 100%;
   max-height: auto;
@@ -280,6 +286,12 @@ p {
 	transform: scale(1.1);
 }
 
+.Character-Tool-Hoverboard:hover {
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
+}
+
 
 
 .Character-Type {
@@ -294,7 +306,7 @@ p {
   top:5%;
   left: 5%;
   font-size: 2vh;
-    color: #5DAA86;
+  color: #5DAA86;
 
 }
 
@@ -313,51 +325,6 @@ p {
   color: #5DAA86;
   font-size: 2.5vh;
 
-}
-
-.Character-Pet-Popup {
-  position: absolute;
-  left: 2%;
-  width: 22%;
-  top: 23%;
-}
-
-.btn-close {
-  position: absolute; 
-  left: 96%;
-  top: 4%;
-}
-
-
-
-/* Companion popups  */
-.pop-background {
-  width:100%;
-  max-width: 100%;
-}
-
-.clicked:active {
-  opacity: 80%;
-
-}
-.modalShowing-true {
-  opacity: 1;
-  pointer-events: showing;
-
-}
-
-.Companion-Description {
-  font-family: museo sans;
-  width: 50%;
-  max-width: 100%;
-  max-height: auto;
-  position: absolute;
-  left: 30%;
-  top: 33%;
-  font-size: 2vh;
-  /* text-align: left; */
-  line-height: 50px;
-  color: #5DAA86;
 }
 
 .Individual-Character-Slogan {
@@ -385,7 +352,27 @@ p {
   line-height: 100px;
 }
 
-.Character-Description {
+/* Companion popups  */
+
+.Character-Pet-Popup {
+  position: absolute;
+  left: 2%;
+  width: 22%;
+  max-width:100%;
+  top: 23%;
+}
+
+.btn-close {
+  position: absolute;
+  left: 96%;
+  top: 4%;
+}
+
+.clicked:active {
+  opacity: 80%;
+}
+
+.Companion-Description {
   font-family: museo sans;
   width: 50%;
   max-width: 100%;
@@ -394,36 +381,39 @@ p {
   left: 30%;
   top: 33%;
   font-size: 2vh;
-  text-align: left;
-  line-height: 40px;
-  color: white;
+  line-height: 50px;
+  color: #5daa86;
 }
 
-.Character-Description-Inventors {
-  font-family: museo sans;
+.Character-Description {
+  font-family: "museo sans";
   width: 50%;
+  height: 35.5%;
   max-width: 100%;
   max-height: auto;
   position: absolute;
   left: 32%;
-  top: 27%;
+  top: 35%;
   font-size: 2vh;
   text-align: left;
-  line-height: 40px;
+  line-height: 38px;
   color: white;
+  overflow: auto;
 }
 .Character-Description-Snake {
-  font-family: museo sans;
-  width: 100%;
-  max-width: 50%;
+  font-family: "museo sans";
+  width: 50%;
+  height: 35.5%;
+  max-width: 100%;
   max-height: auto;
   position: absolute;
-  left: 22%;
-  top: 30%;
+  left: 32%;
+  top: 35%;
   font-size: 2vh;
   text-align: left;
-  line-height: 50px;
+  line-height: 38px;
   color: white;
+  overflow: auto;
 }
 
 
@@ -442,16 +432,25 @@ p {
   background-image: url("./images/Lab.png");
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: 101vw;
   height: 100vh;
   position: relative;
 }
 
-@media screen and (max-width: 1002px) {
-  .SnakeImg {
-    bottom:50%;
-  }
+.good-characters {
+  background-image: url("./images/Good-Light.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.characters:hover {
+  opacity: 80%;
+}
+
+.bad-characters {
+  background-image: url("./images/Bad-Light.png");
+}
+
 /* Resource screen styling  */
 
 h1.Resources-Title {
@@ -482,7 +481,9 @@ h1.Resources-Title {
 
 .ProductOverview {
   position: absolute;
-  left: 10%;
+  left: 3%;
+  top: 35%;
+  width: 70%;
 
   max-width: 100%;
   max-height: auto;
@@ -490,7 +491,14 @@ h1.Resources-Title {
   margin-right: auto;
 }
 
-.Resources-Desc {
+.Text {
+  position: absolute;
+  left: 8%;
+  top: 10%;
+  color: #367771;
+  font-size: 4vh;
+  font-family: "polaris";
+
   max-width: 100%;
   max-height: auto;
   margin-left: auto;
@@ -550,32 +558,6 @@ h1.Resources-Title {
 	max-width: 200px;
 }
 
-
-
-
-.good-characters:hover {
-
-  background-image: url("./images/Good-Light.png");
-  background-position:top center;
-  /* opacity: 88%; */
-}
-
-
-.characters:hover{
-  opacity:80%;
-}
-
-
-.bad-characters:hover {
-
-  background-image: url("./images/Bad-Light.png");
-  background-position: center top;
-  opacity: 88%;
-
-
-}
-
-
 .containerWraper {
 	position: relative;
 	width: 100%;
@@ -590,7 +572,7 @@ h1.Resources-Title {
   position: absolute;
   bottom: 0%;
   left: 0%;
-  width: 100%;
+  width: 99.5vw;
   /* max-height: 100%; */
   height: 30vh;
 }
@@ -625,20 +607,44 @@ h1.Resources-Title {
   height: auto;
 }
 
+.bad-characters {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 55%;
+  /* top: 15%; */
+}
 .ProfMole {
   position: absolute;
   bottom: 45%;
-  left: 73%;
+  left: 16.5%;
   width: 28%;
-  max-width: 100%; 
+  height: 40%;
+  max-width: 100%;
   max-height: auto;
 
+}
+
+.ProfMole:hover {
+  content: url("./images/characters/ProfMole-Highlight.PNG");
+  width: 35%;
+  height: 46%;
+
+  left: 11%;
+}
+
+.good-characters {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: -30%;
+  /* top: 15%; */
 }
 
 .Cornelia {
   position: absolute;
   bottom: 4%;
-  left: 10%;
+  left: 40%;
   width: 20%;
   max-width: 100%; 
   max-height: 100%;
@@ -648,13 +654,13 @@ h1.Resources-Title {
 .Cornelia:hover {
   content: url("./images/characters/Cornelia-Highlight.png");
   width: 15%;
-  left: 12%;
+  left: 42%;
 }
 
 .Ardash {
   position: absolute;
   bottom: 8%;
-  left: 20%;
+  left: 50%;
   width: 22%;
   max-width: 100%; 
   max-height: 100%;
@@ -664,12 +670,13 @@ h1.Resources-Title {
 .Ardash:hover {
   content: url("./images/characters/Ardash-Highlight.png");
   width: 18%;
-  left: 22%;
-} 
+  left: 52%;
+}
 
 .DrEgg {
   position: absolute;
   bottom: 7%;
+  left: 30%;
   width: 28%;
   max-width: 100%; 
   height: 100%;
@@ -686,7 +693,7 @@ h1.Resources-Title {
 .DrMoon {
   position: absolute;
   bottom: 7%;
-  left: 15%;
+  left: 45%;
   width: 28%;
   max-width: 100%; 
   height: 100%;
@@ -695,12 +702,12 @@ h1.Resources-Title {
 .DrMoon:hover {
   content: url("./images/characters/Dr-Moon-Highlight.png");
   width: 23%;
-  left: 18%;
+  left: 48%;
 }
 
 .Vivi {
   position: absolute;
-  left: 0%;
+  left: 30%;
   bottom: 3%;
   width: 20%;
   max-width: 100%; 
@@ -723,6 +730,27 @@ h1.Resources-Title {
   max-height: auto;
 }
 
+.EggDroneHighlight:hover {
+  content: url("./images/characters/EggDrone1.png");
+  left: 65%;
+  top: 63%;
+  cursor: pointer;
+}
+
+.PigeonHighlight:hover {
+  content: url("./images/characters/Pigeon-Highlight.png");
+  left: 44%;
+  top: 78%;
+  cursor: pointer;
+}
+
+.CarlinHighlight:hover {
+  content: url("./images/characters/Carlin-Highlight.png");
+  left: 65%;
+  top: 78%;
+  cursor: pointer;
+}
+
 .SnakeImg {
   position: absolute;
   bottom: 10%;
@@ -730,6 +758,12 @@ h1.Resources-Title {
   width: 22%;
   max-width: 100%;
   max-height: auto;
+}
+
+.SnakeImg:hover {
+  content: url("./images/characters/Snake-Highlight.png");
+  width: 24%;
+  left: 40%;
 }
 
 .Back-Button {
@@ -747,11 +781,11 @@ h1.Resources-Title {
 }
 
 .Chatbot-Snake {
-	position: absolute;
-	bottom: 0%;
-	left: 88%;
-	max-width: 12%;
-	max-height: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 87%;
+  max-width: 12%;
+  max-height: auto;
 }
 
 .Map-Snake {
@@ -792,10 +826,10 @@ h1.Resources-Title {
 }
 
 .Characters-Background-Container {
-	background-image: url('./images/Lab.png');
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  width: 101vw;
+  height: 100vh;
 }
 
 table,
@@ -943,15 +977,6 @@ h1.Contact-Title {
 	left: 25%;
 }
 
-/* .Contact-Info {
-	font-family: museo sans;
-	position: absolute;
-	top: 30%;
-	left: 55%;
-	color: white;
-	line-height: 40px;
-	font-size: 2vh;
-} */
 .Contact-Info {
 	font-family: museo sans;
 	position: absolute;
@@ -1081,38 +1106,88 @@ input {
 	display: flex;
 }
 
-.technoworld {
+
+.world:hover {
+  z-index: 1;
+  backdrop-filter: blur(5px);
+
+}
+.technoworld1 {
+  max-width: 100%;
   position: absolute;
-  left: 42%;
+  left: 70%;
   top: 25%;
+  width: 25%;
+  
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.farmworld {
+
+.farmworld1 {
   position: absolute;
   left: 10%;
   top: 25%;
+  max-height: 100%;
+  width: 25%;
+  max-width: 100%;
 }
 
-.slumworld {
+.slumworld1 {
   position: absolute;
-  left: 26%;
+  left: 25%;
   top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  max-width: 100%;
 }
 
-.egglab {
+.egglab1 {
   position: absolute;
-  left: 74%;
+  left: 55%;
   top: 25%;
+  width: 25%;
+  max-width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.seedcorp {
+.seedcorp1 {
   position: absolute;
-  left: 58%;
+  left: 40%;
   top: 25%;
+  width: 25%;
+  max-width: 100%;
+
+  
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
+/* .card-container:hover {
+  transform: translate(1px);
+} */
 
+.Snake-text {
 
+  font-size: 2.5vh;
+  font-family: "museo sans";
+}
+
+.Landscape-text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+  font-size: 4vh;
+  font-family: "museo sans";
+}
 .home-button {
 	max-width: 100%;
 	max-height: auto;
@@ -1231,21 +1306,14 @@ input {
 	text-align: left;
 }
 
-.snake-container {
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-	padding: 20px;
-}
-
 .chatbot {
 	max-width: 100%;
 	max-height: auto;
 }
 
-.snake-container img:hover {
-	opacity: 0.5;
-	color: yellow;
+.Chatbot-Snake img:hover {
+  opacity: 0.5;
+  color: yellow;
 }
 
 /* Lab Screen Styles */
@@ -1273,12 +1341,13 @@ input {
 }
 
 .button-container {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	right: 72%;
-	bottom: 40%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 4%;
+  top: 4%;
+  width: 25%;
 }
 
 .lab-button-wc {
@@ -1300,9 +1369,9 @@ input {
 }
 
 .lab-button-inv {
-	max-width: 60%;
-	max-height: auto;
-	padding: 7px;
+  max-width: 90%;
+  max-height: auto;
+  padding: 7px;
 }
 
 .lab-button-biogoo {
@@ -1312,22 +1381,22 @@ input {
 }
 
 .plank-container {
-	position: absolute;
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	top: 83%;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  bottom: 0%;
 }
 
 .plankname {
-	position: absolute;
-	font-family: museo sans;
-	font-weight: bold;
-	text-align: left;
-	font-size: 30px;
-	color: white;
-	top: 25%;
+  position: absolute;
+  font-family: museo sans;
+  font-weight: bold;
+  text-align: left;
+  font-size: 4vh;
+  color: white;
+  top: 25%;
 }
 
 .plank {
@@ -1336,11 +1405,11 @@ input {
 }
 
 .aboriginal-flag {
-	position: absolute;
-	max-width: 100%;
-	max-height: auto;
-	left: 86%;
-	top: 18%;
+  position: absolute;
+  max-width: 100%;
+  max-height: auto;
+  right: 5%;
+  top: 18%;
 }
 
 .aboriginal-flag:hover {
@@ -1361,9 +1430,10 @@ input {
 }
 
 .tools {
-	max-width: 15%;
-	max-height: auto;
-	padding: 40px;
+  width: 15%;
+  max-width: 100%;
+  max-height: auto;
+  padding: 40px;
 }
 
 .tools:hover {
@@ -1392,7 +1462,12 @@ input {
 	top: 15%;
 }
 
+.popup-background {
+  /* position: absolute;
+  left: 50%;
+  top: 100%; */
 
+}
 
 /* .snake-popup-background {
   position: absolute;
@@ -1401,10 +1476,14 @@ input {
   height:40%;
 } */
 .popup-text {
-	font-family: museo sans;
-	font-weight: bold;
-	text-align: center;
-	font-size: 18px;
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  padding: 2px;
+  font-family: "museo sans";
+  font-weight: bold;
+  text-align: center;
+  font-size: 3vh;
 }
 
 .yt-trailer {
@@ -1432,20 +1511,157 @@ input {
 	transform: scale(0.8);
 }
 
-.game-container {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	backdrop-filter: blur(4px);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.page1 {
+  position: absolute;
+  max-width: 100%;
+  width: 20%;
+  height: 90%;
+  left: 30%;
+  top: 21%;
+  padding: 25px;
 }
 
-.game-bg {
-	position: relative;
+.page2 {
+  position: absolute;
+  max-width: 100%;
+  width: 20%;
+  height: 90%;
+  right: 30%;
+  top: 28%;
+  padding: 25px;
+}
+
+.page2-fanfic {
+  position: absolute;
+  max-width: 100%;
+  width: 20%;
+  height: 90%;
+  right: 30%;
+  top: 21%;
+  padding: 25px;
+}
+
+.book-heading {
+  font-family: polaris;
+  color: #367771;
+  text-align: center;
+}
+
+.book-text {
+  font-family: museo sans;
+  text-align: center;
+  font-size: 18px;
+}
+
+.fact {
+  transform: scale(0.9);
+  margin-left: -30px;
+}
+
+.left-turn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(0.8);
+  padding: 10px;
+}
+
+.right-turn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: scale(0.8);
+  padding: 10px;
+}
+
+.popup-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40%;
+}
+
+.popup-btn {
+  padding: 20px;
+}
+
+.ardash-popup {
+  position: absolute;
+  left: 25%;
+  bottom: 12%;
+  max-width: 100%;
+  transform: scale(0.6);
+
+  /* Add media queries  */
+}
+
+.wc-blackboard-container {
+  position: absolute;
+  width: 71.5%;
+  height: 79.5%;
+  max-width: 100%;
+  max-height: 100%;
+  left: 15%;
+  top: 12%;
+}
+
+.wc-heading {
+  color: white;
+  font-family: polaris;
+  text-align: center;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.hr-line {
+  height: 2px;
+  color: white;
+  background-color: white;
+  margin-top: -20px;
+}
+
+.submit-icon {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  right: 0;
+  padding: 30px;
+}
+
+.chat-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 2%;
+}
+
+.wc-text {
+  color: white;
+  text-align: center;
+  font-family: museo sans;
+  font-size: 30px;
+  padding: 20px;
+  width: 80%;
+}
+
+.fish-icon {
+  position: absolute;
+  left: 0;
+}
+
+.hr-line2 {
+  margin-top: 20px;
+  opacity: 0.2;
+  color: white;
+  background-color: white;
+  height: 1px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
 }
 
 /* .container {
@@ -1471,20 +1687,308 @@ input {
 
 
 
-
 /* Media queries */
 
-
-/* Charcter (All) screen */
-
 /* Mobile screens  */
+/* Landscape Mode */
+@media screen and (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
 
-/* Individual character screen  */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  
-  .modalBackground {
+  .Character-Pet {
+    left: 75%;
+  }
+
+  .CarlinHighlight:hover {
+    left: 75%;
+  }
+
+  .PigeonHighlight:hover {
+    top: 81%;
+    left: 83%;
+  }
+
+  .EggDroneHighlight:hover {
+    top: 65%;
+    left: 70%;
+  }
+
+  .Character-Pet-Pigeon {
+    left: 84%;
+    top: 80%;
+  }
+
+  .Individual-Character-Styling-Inventors-Ardash{
+  width: 20%;
+  left: 0%;
+}
+
+.Individual-Character-Styling-Inventors-Cornelia{
+  width: 18%;
+  left: 0%;
+}
+
+.Individual-Character-Styling-Inventors-Vivi{
+  width: 20%;
+  left: 0%;
+}
+
+.Individual-Character-Styling-Inventors{
+  width: 25%;
+  left: 0%;
+}
+
+.Character-Description {
+  visibility: hidden;
+}
+
+.Character-Description-Snake {
+  visibility: hidden;
+}
+
+.Character-Tool-Hoverboard {
+  width: 25%;    
+}
+.Accordians {
+  position: absolute;
+  top: 80px;
+  left: 150px;
+}
+
+.Character-Type {
+  left: 17%;
+}
+
+.Individual-Character-Name {
+  top: 4%;
+  left: 45%;
+}
+
+.Individual-Character-Slogan {
+  visibility: hidden;
+  top: 4%;
+  left: 55%;
+}
+
+.Companion-Description {
+  top: 30%;
+  line-height: 30px;
+  width: 70%;
+  font-size: 3vh;
+}
+
+.Character-Type-Pet {
+  font-size: 3vh;
+}
+
+.Individual-Character-Name-Pet {
+  line-height: 40px;
+}
+
+.Character-Pet-Popup {
+  top: 30%;
+}
+
+
+
+}
+/* Mobile screens  */
+/* Portrait Mode */
+@media screen and (max-width: 500px) and (max-width: 1000px) and (orientation: portrait) {
+
+  .Landscape-text {
+    position: absolute;
+    top: 25%;
     left: 10%;
     width: 80%;
+
+  }
+.Back-Button:hover {
+  left: 84%;
+  top: 0%;
+}
+  /* Home Screen */
+  
+.DrEggLogo {
+  width: 50%;
+  left: 25%;
+  top: 20%;
+}
+.Home-Enter-Button {
+  width: 50%;
+  max-width: 100%;  
+  height: auto;
+  position: absolute;
+  top: 70%;
+  left: 25%;
+}
+
+.Home-Enter-Button:hover {
+  content: url("./images/btn-Enter-Glow.png")
+}
+
+
+  /* Main Character screen */
+  .Vivi {
+    left: 15%;
+    top: 23%;
+    width: 45%;
+  }
+
+  .Cornelia {
+    left: 45%;
+    top: 26%;
+    width: 45%;
+  }
+
+  .Ardash {
+    left: 65%;
+    top: 23%;
+    width: 45%;
+  }
+
+  .DrMoon {
+    left: 52%;
+    top: 0%;
+    width: 60%;
+  }
+
+  .DrEgg {
+    left: 22%;
+    top: 0%;
+    width: 60%;
+  }
+
+  .SnakeImg {
+    width: 40%;
+    top: 75%;
+    left: 30%;
+  }
+  /* Individual Character screens */
+
+  .Accordians {
+    position: absolute;
+    top: 200px;
+    left: 90px;
+  }
+
+  .Character-Type {
+    left: 20%;
+    font-size: 3.5vh;
+
+  }
+
+  .Individual-Character-Name {
+    top: 15%;
+    left: 25%;
+  }
+  .Individual-Character-Slogan {
+    top: 20%;
+    left: 25%;
+    font-size: 2vh;
+  }
+  .Character-Pet {
+    width: 23%;
+    left: 50%;
+  }
+
+  .Character-Tool {
+    width: 15%;
+    left: 40%;
+  }
+
+  .Character-Tool-Hoverboard {
+    width: 30%;
+  }
+
+  .Character-Pet-Pigeon {
+    width: 26%;
+    bottom: 3%;
+    left: 67%;
+
+  }
+  .Individual-Character-Styling-Inventors-Cornelia {
+    left: -10%;
+    width: 40%;
+  }
+  .Individual-Character-Styling-Inventors-Ardash {
+    left: -10%;
+    width: 40%;
+  }
+
+  .Individual-Character-Styling-Inventors {
+    left: -10%;
+    width: 50%;
+  }
+
+  .Individual-Character-Styling-ProfMole {
+    left: 33%;
+    width: 70%;
+  }
+
+  .Individual-Character-Styling-Inventors-Vivi {
+    left: -5%;
+    width: 50%;
+  }
+
+  .Titles {
+    display: hidden;
+  }
+
+  .Character-Description {
+    visibility: hidden;
+  }
+
+  .Character-Description-Snake {
+    visibility: hidden;
+  }
+
+  .Character-Pet-Popup {
+    top: 30%;
+  }
+
+  .Companion-Description {
+    line-height: 40px;
+    width: 70%;
+    font-size: 2vh;
+  }
+
+  .PigeonHighlight:hover {
+    top: 84%;
+    left: 67%;
+  }
+
+  .CarlinHighlight:hover {
+    top: 85%;
+    left: 50%;
+  }
+
+  .Individual-Character-Name-Pet {
+    font-size: 2vh;
+  }
+
+  .EggDroneHighlight:hover {
+    left: 50%;
+    top: 70%;
+
+  }
+}
+
+
+/* Mobile screens  */
+/* Landscape Mode */
+
+
+
+/* 
+@media screen and (min-width: 0px) and (max-width: 490px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
   
   .DrEggLogo {
@@ -1498,8 +2002,6 @@ input {
     left:25%;
     top: 70%;
   }
-
-  /* Resource screen */
 
   .Ardash:hover {
     width: 40%;
@@ -1527,7 +2029,10 @@ input {
     left: 28%;
   }
 
-
+  .SnakeImg:hover {
+    bottom: 17%;
+    left:30%;
+  }
 
   h1.Resources-Title {
     left: 30%;
@@ -1543,14 +2048,15 @@ input {
   .all {
     width: 50%;
     height: 50%;
-  }
-  .DrEgg { 
-    width: 65%;
+  } */
+  /* .DrEgg { 
+    width: 50%;
     height: 80%;
     left: -15%;
     top: 20%;
-  }
-  .Vivi {
+  } */
+
+  /* .Vivi {
     left: -15%;
     top: 48%;
   }
@@ -1581,9 +2087,8 @@ input {
     width: 15%;
   } 
   .SnakeImg {
-    bottom: 7%;
+    bottom: 17%;
     left:30%;
-    width: 45%;
   }
   .EggDrone {
     bottom: 10%;
@@ -1595,11 +2100,14 @@ input {
     height: 15%;
   }
 
-  /* .Snake-Text{
-    top:-10%;
-
+  .Snake-text {
+    font-size: 4vh;
   } */
-  h1.Character-Type {
+
+  /* .slumworld {
+    width:1rem;
+  } */
+  /* h1.Character-Type {
     left: 20%;
     font-size: 3vh;
   }
@@ -1637,7 +2145,7 @@ input {
   }
 
   .Individual-Character-Styling-Inventors-Cornelia{
-    width: 30%;
+    width: 0%;
     left: 0%;
   }
 
@@ -1665,6 +2173,10 @@ input {
     width: 35%;
   }
 
+  .Character-Tool-Hoverboard {
+    width: 35%;
+  }
+
   .Petridish {
     width: 15%;
   }
@@ -1681,15 +2193,16 @@ input {
     left: 20%;
     width: 60%;
     font-size: 1.5vh;
-  }
+  } */
 
   /* Companion popups  */
-  
+/*   
   .Powers {
     padding: 40px 0px;
   }
-  .Character-Description-Inventors {
+  .Character-Description-Inventors { */
     /* display: none; */
+    /* left: 10%;
   }
   .Individual-Character-Styling-Pigeon{
     max-width: 55%;
@@ -1707,28 +2220,51 @@ input {
     left: 20%;
     top: 27%;
     line-height: 20px;
+  }
+  
+  .Character-Pet-Popup{
+    top: 40%;
 
+  } */
+  /* Lab Screen Styling */
+  /* .plankname {
+    font-size: 1.6vh;
+  }
+  .aboriginal-flag {
+    width: 20%;
   }
 
-  .Mobile-Characteristics {
-    display: block
-
+  .tool-container {
+    bottom: 2%;
   }
 
-.Individual-Character-Name-Pet {
-  line-height:30px;
-}
+  .tools {
+    width: 30%;
+  } */
 
-.Companion-Description {
-  line-height:20px;
-}
-
-
-}
+  /* Dregg still needs to be complete  */
+/* } */
 
 /* iPads and Tablet screens */
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+/* Landscape Mode */
+/* @media screen and (min-width: 768px) and (max-width: 481px) and (orientation: landscape) {
+  .Ardash {
+    left: 70%;
+  }
+  .DrMoon {
+    left: 20%;
+  }
+} */
+
+/* Portrait Mode */
+/* Tablet Screen Styling */
+@media screen and (max-width: 1024px) and (max-height: 1367px) and (orientation: portrait) {
+
+  .Back-Button:hover {
+    left: 84%;
+    top: 2%;
+  }
 
   .modalBackground {
     left: 15%;
@@ -1738,28 +2274,35 @@ input {
 
   .Ardash:hover {
     width: 29%;
-    left: 40%;
+    left: 62%;
+    top: 33%;
   } 
 
     
   .Cornelia:hover {
     width: 26%;
-    left: 23%;
+    left: 42%;
   } 
 
     
   .Vivi:hover {
     width: 33%;
-    left: -3%;
+    left: 20%;
   } 
 
   .DrEgg:hover {  
     width: 43%;
-    left: -3%;
+    left: 20%;
   }
   .DrMoon:hover {  
     width: 47%;
-    left: 25%;
+    left: 42%;
+  }
+
+  .SnakeImg:hover {
+    width: 45%;
+    bottom: 14%;
+    left: 28%;
   }
 
 
@@ -1779,10 +2322,12 @@ input {
 
     /* Resource screen */
     h1.Resources-Title {
-      left: 32%;
+      left: 25%;
     }
     .buttons {
-      left: 20%;
+      left:15%;
+      width: 90%;
+      cursor: pointer;
     }
   .Character-Bench {
     height: 32%;
@@ -1793,24 +2338,24 @@ input {
   .DrEgg { 
     width: 65%;
     height: 80%;
-    left: -15%;
+    left: 5%;
   }
   .Vivi {
-    left: -8%;
+    left: 15%;
     top: 30%;
   }
   .Ardash {
-    left: 35%;
+    left: 57%;
     top: 28%;
   }
   .DrMoon {
     top: 15%;
     width: 65%;
     height: 80%;
-    left: 15%;
+    left: 35%;
   }
   .Cornelia {
-    left: 17%;
+    left: 38%;
     top: 32%;
   }
   .Pigeon {
@@ -1826,16 +2371,16 @@ input {
     width: 15%;
   } 
   .SnakeImg {
+    width: 40%;
     bottom: 14%;
     left: 30%;
-    width: 40%;
   }
   .EggDrone {
     bottom: 20%;
     width: 20%;
   }
   .ProfMole {
-    left: 60%;
+    left: 4%;
   }
 
   h1.Character-Type {
@@ -1843,6 +2388,9 @@ input {
     left: 20%;
     font-size: 3vh;
   }
+
+
+
 
   .Individual-Character-Name {
     left: 20%;
@@ -1862,16 +2410,14 @@ input {
     font-size: 2.3vh;
   }
 
-
-
-
   .Individual-Character-Styling{
     max-width: 68%;
     left: -13%;
   }
   .Individual-Character-Styling-Inventors{
     width: 50%;
-    left: 0%;
+    left: -10%;
+    height: 60%;
   }
 
   .Individual-Character-Styling-Inventors-Cornelia{
@@ -1895,22 +2441,44 @@ input {
 
   }
 
+  .Individual-Character-Styling-Snake {
+    width: 40%;
+    left: 0%;
+  }
+
+  .Companion-Description {
+    width: 60%;
+    line-height: 20px;
+  }
+
+  .PigeonHighlight:hover {
+    left: 44%;
+  }
+
   .Character-Pet {
     width: 20%;
+    left: 56%;
   }
 
-  .Character-Tool {
-    width: 35%;
+  .CarlinHighlight:hover {
+    left: 56%;
+    top: 83%;
   }
 
-  .Petridish {
-    width: 15%;
+  .Character-Pet-Popup {
+    top: 30%;
   }
+
 
   .Character-Pet-Pigeon {
-    width: 20%;
-    left: 45%;
-    bottom: 0%;
+    width: 25%;
+    left: 74%;
+    top: 75%;
+  }
+
+  .PigeonHighlight:hover {
+    left: 74%;
+    top: 75%;
   }
 
   .Powers {
@@ -1940,57 +2508,58 @@ input {
   }
 
   .Character-Description {
-    left: 18%;
-    top: 25%;
-    width: 60%;
+    left: 30%;
+    top: 27%;
+    width: 50%;
     line-height: 30px;
-
-}
-
-  .Individual-Character-Styling-Inventors{
-    max-width: 40%;
-    left: 0%;
   }
 
-  .Mobile-Characteristics {
-    /* display: none; */
-  }
-
-}
 
 
-/* Tablet / Desktop screens */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-
-  .modalBackground {
-      left: 1%;
-      background-size: 70%;
-  }
   
+  /* .technoworld1 {
+    left: 20%;
+  }
+
+  .slumworld {
+    width: 30%;
+  } */
+}
+
+
+/* Landscape Mode */
+/* Tablet / Desktop screens */
+@media screen and (max-width: 1367px) and (max-height: 1024px) and (orientation: landscape) {
+
+  .Back-Button:hover {
+    left: 84%;
+    top: 2%;
+  }
   .Ardash:hover {
     width: 22%;
-    left: 0%;
+    left: 60%;
   } 
-
-    
+ 
   .Cornelia:hover {
     width: 22%;
-    left: 9%;
+    left: 45%;
   } 
 
     
   .Vivi:hover {
     width: 25%;
-    left: -5%;
+    left: 25%;
   } 
 
   .DrEgg:hover {  
-    width: 27%;
-    left: 0%;
+    top: 0%;
+    width: 28%;
+    left: 25%;
   }
   .DrMoon:hover {  
-    width: 27%;
-    left: 17%;
+    top: 0%;
+    width: 28%;
+    left: 50%;
   }
 
 
@@ -2009,7 +2578,10 @@ input {
   }
  /* Resource screen */
   .buttons {
-    left: 20%;
+    left: 25%;
+  }
+  h1.Resources-Title {
+    left: 30%;
   }
   .Character-Bench {
     height: 32%;
@@ -2018,24 +2590,24 @@ input {
     width: 40%;
   }
   .DrEgg { 
-    left: -8%;   
+    left: 25%;   
   }
   .Vivi {
     width:30%;
-    left: -10%;
+    left: 25%;
     top: 24%;
   }
   .Ardash {
     width:32%;
-    left: 20%;
+    left: 60%;
   }
   .DrMoon {
-    left: 10%;
+    left: 50%;
     top: -5%;
   }
   .Cornelia {
     width: 30%;
-    left: 8%;
+    left: 45%;
   }
   .Pigeon {
     bottom: 20%;
@@ -2058,7 +2630,7 @@ input {
     width: 20%;
   }
   .ProfMole {
-    left: 60%;
+    left: 5%;
   }
 
 
@@ -2094,27 +2666,20 @@ input {
   }
 
   .Character-Pet {
-    width: 20%;
-  }
-
-  .Character-Tool {
-    width: 25%;
-  }
-
-  .Petridish {
-    width: 10%;
+    width: 15%;
+    left: 65%;
   }
 
   .Character-Pet-Pigeon {
     width: 20%;
-    left: 45%;
-    bottom: 0%;
+    left: 78%;
+    bottom: 5%;
   }
 
-
-
-
-
+  .PigeonHighlight:hover {
+    left: 78%;
+    top: 70%;
+  }
 
    /* Companion popups  */
 
@@ -2122,6 +2687,10 @@ input {
     padding: 40px 0px;
 
   } 
+
+  .Companion-Description {
+    line-height: 30px;
+  }
 
   .Character-Type {
     left: 25%;
@@ -2133,9 +2702,10 @@ input {
   }
 
   .Character-Description {
-    left: 20%;
-    width: 60%;
-    top: 30%;
+    left: 30%;
+    width:50%;
+    top: 33%;
+
   }
 
   .Character-Description-Inventors {
@@ -2169,16 +2739,34 @@ input {
     display: none;
   }
 
-}
+  /* Lab Screen Styling */
 
-@media screen and (min-width: 1025px) {
-
-
-
-  .Mobile-Characteristics {
-    display: none;
+  .button-container {
+    width: 20%;
   }
 
+  .plankname {
+    font-size: 3vh;
+  }
+
+  .aboriginal-flag {
+    width: 10%;
+  }
+  .tool-container {
+    bottom: 10%;
+  }
+
+  .tools {
+    width: 20%;
+  }
+
+  .dregg {
+    bottom: 18%;
+  }
+}
+
+/* Large screens styling */
+@media screen and (min-width: 1025px) {
   .Character-Type {
     left: 25%;
   }
@@ -2530,7 +3118,6 @@ z-index: 3;
   height: 8vh;
   width: auto;
   max-width: 16vw;
-  cursor: pointer;
 }
 
 .BookCoverImg {
@@ -2690,6 +3277,8 @@ z-index: 3;
   background-size: 100% 100%;
 }
 
+
+
 .ResourcesHeading{
   position: absolute;
   top: 77%;
@@ -2743,159 +3332,90 @@ z-index: 3;
   position: relative;
 }
 
-  /* Chatbox */
-
-  .ChatBoxContainer{
-    display:none;    
-  }
-
-  #chat:checked ~ .ChatBoxContainer{
-    z-index: 10;
-    left:0;
-    top:0;
-    height:100vh;
-    width:56.25vh;
-    max-width: 100%;
-    position: absolute;
-    display:flex;
-    flex-direction: column;
-  }
-
-  .chatClose{
-    right: 0%;
-    top: 0%;
-    height: 5%;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    position: absolute;
-    cursor: pointer;
-  }
-
-  .chatHBox{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .chatQBox{
-    width: 100%;
-    text-align: center;
-    font-size: 4vh;
-    font-family: 'Museo-sans';
-  }
-
-  .chatABox{
-    flex: 1;
-    width: 100%;
-    position: relative;
-  }
-  .chatbotImg{
-    width: 50%;
-    height: auto;
-    object-fit: contain;
-  }
-
-  /*Chatbox Screens*/
-  /*Book Chatbox*/
-
-  .chatCont{
-    height: 100%;
-    width: 100%;
-    position: relative;
-  }
-  #A1{
-    display: none;
-  }
-
-  #Q1:checked ~ .chatCont#QCont{
-    display: none;
-  }
-  #Q1:checked ~ .chatCont#A1{
-    display: block;
-  }
-  .chatATxt{
-    top: 21.5%;
-    bottom: 10%;
-    left:1%;
-    right: 5%;
-    position:absolute;
-    overflow: auto;
-    font-size: 3vh;
-    font-family: 'Museo-sans';
-    word-wrap: break-word;    
-  }
-  .chatBackBtn{
-    background-image: url("./images/OnlineStoreImage/btnRight.png");
-    background-size: 100% 100%;
-    top: 91%;
-    bottom: 1%;
-    left:1%;
-    right: 85%;
-    transform: rotateY(180deg);
-    position:absolute;
-  }
-
-
-  .chatBackBtn:hover{
-    background-image: url("./images/OnlineStoreImage/btnRightGlow.png");
-    top: 90%;
-    bottom: 0%;
-    left:0%;
-    right: 84%;
-  }
-
-  .chatBookQ1{
-    top: 2%;
-    bottom: 79.5%;
-    left: 2%;
-    right:3%;
-    background-image: url("./images/Chatbot/ChatbotBook.png");
-    background-size: 100% 100%;
-    position: absolute;
-  }
-  .chatBookQ1:hover{
-    top: 0%;
-    bottom: 77.5%;
-    left:0%;
-    right:0%;
-    background-image: url("./images/Chatbot/ChatbotBook(Glow).png");
-  }
-
-  .chatBookA1{
-    top: 2%;
-    bottom: 79.5%;
-    left: 2%;
-    right:3%;
-    background-image: url("./images/Chatbot/ChatbotBook.png");
-    background-size: 100% 100%;
-    position: absolute;
-  }
-
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .ChatBoxContainer{
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-  }
-}
-  
-  /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
-@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  .ChatBoxContainer{
-    background-color: rgba(210, 215, 211, .8);
-  }
-}
-
 /*Map image size*/
 @media all and (min-aspect-ratio: 45/32){
   .BtnContain{
     height: 71vw;
     width: 100vw;
   }
+
+  /* Game Screen */
+
+  .Game-Background-Container {
+    background-image: url("./images/World-Blur.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .game-container {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .gamebtn {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 17%;
+  }
+
+  .game-button {
+    max-width: 40%;
+    max-height: auto;
+    margin: 10px;
+  }
+
+  .apple-button {
+    width: 65%;
+    max-width: 100%;
+    max-height: auto;
+    margin-top: 3%;
+  }
+
+  .game-text1 {
+    font-family: polaris;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    color: #5daa86;
+  }
+
+  .game-text2 {
+    font-family: polaris;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .ardash-face {
+    position: absolute;
+    top: 60%;
+    right: 80%;
+    transform: scale(1.1);
+  }
+
+  .vivi-face {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: scale(1.1);
+  }
 }
 
 /*Phone Aspect Ratio*/
 @media all and (max-aspect-ratio: 10/16){
+
+
   /*Error Page*/
 
   .ErrorTxtCont {
@@ -2936,6 +3456,7 @@ z-index: 3;
     right: 28vw;
     bottom: 15vh;
   }
+
 
 /*Phone Online Store Style*/
 .OnlineStore-Background-Container {
@@ -3063,9 +3584,6 @@ z-index: 3;
   height: auto;
   max-height: 6vh;
   max-width: 100vw;
-  
 }
-
-
 
 }

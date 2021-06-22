@@ -1,7 +1,7 @@
 import {useState, React}from 'react'
 import btnback from '../images/btn-Back.png';
 import btnbackglow from '../images/btn-Back-hover.png';
-import book from '../images/Book.png';
+import book from '../images/book.png';
 import arrowleft from '../images/btn-left.png';
 import arrowright from '../images/btn-right.png';
 import { useHistory } from "react-router-dom";
