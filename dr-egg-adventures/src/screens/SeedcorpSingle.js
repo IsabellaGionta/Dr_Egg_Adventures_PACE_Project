@@ -2,7 +2,9 @@ import SingleWorld from '../components/SingleWorld';
 import styled, { css } from 'styled-components';
 import WorldConcept from '../assets/images/WorldConceptSingle.png';
 import Bg from '../assets/images/Dboard.png';
+import SwitchBoard from '../components/SwitchBoard';
 import DrMole from '../assets/images/DrMole.png';
+import { useState } from 'react';
 
 const Flexbox = styled.div`
 	width: 100%;
@@ -88,10 +90,18 @@ const Figure = styled.div`
 `;
 
 const SeedcorpSingle = () => {
+	const [info] = useState({
+		STORY:
+			"SEEDCORP industrial laboratories are owned by Dr Mole and form the headquarters of his vast totalitarian empire. The huge complex, located high on a windy hill overlooking the lanes of Slum World, includes Dr Mole's seedhouse and testing laboratories. It is from here that Dr Mole dispatches his army of Hybrid Helpers in their menacing black SEEDCORP vans. Here the insatiable Dr Mole ruthlessly collects every living organic seed on the planet, as well as creating and experimenting on genetically modified and mutant creatures. ",
+		INHABITANTS: 'Dr Mole, Hybrid Helpers.',
+		DANGERS: 'Hybrid Helpers.',
+		LANDSCAPE: 'Seedhouse.',
+	});
 	return (
 		<SingleWorld
 			bgSrc={WorldConcept}
 			heading={<Heading>SEEDCORP INDUSTRIAL LAB</Heading>}
+			mobileLayout={<SwitchBoard info={info} />}
 			right={
 				<Flexbox reverse>
 					<InnerWrapper>

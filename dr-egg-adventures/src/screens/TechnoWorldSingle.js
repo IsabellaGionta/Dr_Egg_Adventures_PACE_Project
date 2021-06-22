@@ -3,6 +3,8 @@ import styled, { css } from 'styled-components';
 import WorldConcept from '../assets/images/WorldConcept.png';
 import Bg from '../assets/images/Dboard.png';
 import Ardash from '../images/characters/Ardash.png';
+import SwitchBoard from '../components/SwitchBoard';
+import { useState } from 'react';
 
 const Flexbox = styled.div`
 	width: 100%;
@@ -81,10 +83,19 @@ const Figure = styled.div`
 `;
 
 const TechnoWorldSingle = () => {
+	const [info] = useState({
+		STORY:
+			'A place of extreme wealth and privilege, the highways of the Techno World are a far cry from the alleys of Slum World. Children from the techno-pods are genetically modified to have special qualities, such glow-in-the-dark bottoms, super eyesight, incredibly increased mathematical abilities or a special gene, which means that they will like eating brussel sprouts. The prosperous residents of Techno World are the consumers of SEEDCORP products. They can eat all the SEEDCORP GM food they like, remaining unaffected by genetic modification of foods due to their superior modified genes. Food shortages are unthought of in Techno World. Not gangs of mutant thugs, but scores of snobby young brat packs rove the malls and department store skyscrapers on their hoverboards, purchasing whatever SEEDCORP is advertising on its ever-present billboards week-to-week.',
+		INHABITANTS:
+			'Ardash and his mother Prudence and her genetically modified Chihuahua.',
+		DANGERS: 'Brat packs of spoiled children.',
+		LANDSCAPE: 'High flying highways and super sized.',
+	});
 	return (
 		<SingleWorld
 			bgSrc={WorldConcept}
 			heading={<Heading>TECHNO-TOWERS</Heading>}
+			mobileLayout={<SwitchBoard info={info} />}
 			right={
 				<Flexbox>
 					<InnerWrapper>
