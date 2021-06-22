@@ -51,7 +51,7 @@ const TechnoWorldSingle = () => {
 	return (
 		<SingleWorld
 			bgSrc={WorldConcept}
-			heading={<Heading>TECHNO WORLD</Heading>}
+			heading={<Heading>TECHNO-TOWERS</Heading>}
 			right={
 				<>
 					<UpperBoard>

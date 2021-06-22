@@ -51,7 +51,7 @@ const SlumWorldSingle = () => {
 	return (
 		<SingleWorld
 			bgSrc={SlumWorld}
-			heading={<Heading>Slum World</Heading>}
+			heading={<Heading>SLUM-LANES</Heading>}
 			left={
 				<>
 					<UpperBoard>

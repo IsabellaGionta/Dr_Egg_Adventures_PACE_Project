@@ -1,268 +1,77 @@
-
-
-
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .popup-inner {
-    position: relative;
-    padding: 50px;
-    width: 40%;
-    height: 40%;
-    max-height: 100%;
-    max-width: 100%;
-    background-image: url("../images/background-texture.jpg");
-    border-radius: 20px;
-  }
-
-  .character-popup-inner {
-      position: relative;
-      padding: 50px;
-      width: 40%;
-      height: 40%;
-      max-height: 100%;
-      max-width: 100%;
-      background-image: url("../images/background-texture.jpg");
-      border-radius: 20px;
-  }
-
-
-  .Snake-popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .Snake-text {
-    color: white;
-    text-align: center;
-    line-height: 100%;
-    position: absolute;
-    left: 2%;
-    top: 65%;
-  }
-
-  .SnakePopup {
-    position: absolute;
-    left: 25%;
-    top: 0%;
-    width: 60%;
-  }
-
-  .Snake-close-btn {
-    position: absolute;
-    left: 90%;
-  }
-
-  .Snake-popup-inner {
-    position: relative;
-    padding: 50px;
-    width: 40%;
-    height: 40%;
-
-    max-height: 100%;
-    max-width: 100%;
-    /* background-color: black; */
-    border-radius: 20px;
-  }
-  
-  .popup-inner .close-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: scale(0.8);
-    padding: 10px;
-  }
-
-  .character-popup-inner .close-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: scale(0.8);
-    padding: 10px;
-  }
-
-   /* Mobile Screen styling */
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-
-    .character-popup-inner {
-      top:0%;
-      width: 85%;
-    }
-
-    .Individual-Character-Name-Pet {
-      top: 15%;
-      line-height: 100%;
-    }
-    .Companion-Description {
-      width: 65%;
-      top: 40%;
-      left: 35%;
-    }
-
-    .Character-Pet-Popup {
-      left: 0%;
-      top: 35%;
-      width: 30%;
-    }
-
-    .Snake-popup-inner {
-      top:-20%;
-      width: 80%;
-    }
-
-    .SnakePopup {
-      top: 20%;
-      left: 30%;
-    }
-
-    .Snake-text {
-      width: 100%;
-      left: 10%;
-    }
-
-      /* .Snake-Text{
-        top:-10%;
-
-      } */
-
-
-    
-  }
-
- 
-/* Tablet Screen styling */
-
-  @media screen and (min-width: 481px) and (max-width: 768px) {
-
-    .Companion-Description {
-      width: 65%;
-      top: 40%;
-      left: 35%;
-      line-height: 20px;
-    }
-
-    .character-popup-inner {
-      width: 80%;
-  }
-
-    .Character-Pet-Popup {
-      left: 0%;
-      top: 35%;
-      width: 30%;
-    }
-    .Snake-popup-inner {
-      top:-10%;
-      width: 80%;
-      left:-5%;
-    }
-
-
-}  
-
-/* Desktop / Laptop Screens styling */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-  
-  .Companion-Description {
-    width: 65%;
-    top: 40%;
-    left: 35%;
-    line-height: 25px;
-  }
-
-  .character-popup-inner {
-    width: 80%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.popup-inner {
+  position: relative;
+  padding: 50px;
+  width: 40%;
+  height: 40%;
+  max-height: 100%;
+  max-width: 100%;
+  background-image: url("../images/background-texture.jpg");
+  border-radius: 20px;
+}
 
-  .Character-Pet-Popup {
-    left: 5%;
-    top: 30%;
-    width: 18%;
-  }
+.Snake-text {
+  color: white;
+  text-align: center;
+  line-height: 100%;
+  position: absolute;
+  left: 2%;
+  top: 65%;
+}
 
-  .Snake-popup-inner {
-    top:-5%;
-    width: 80%;
-    left:-5%;
-  }
+.SnakePopup {
+  position: absolute;
+  left: 25%;
+  top: 0%;
+  width: 60%;
+}
 
-  .SnakePopup {
-    width: 50%;
-    top: -25%;
-    left: 30%;
-  }
+.Snake-close-btn {
+  position: absolute;
+  left: 90%;
+}
 
-  .Snake-text {
-    top: 20%;
-  }
-
-  .Snake-close-btn {
-    position: absolute;
-    left: 80%;
-    top: -25%;
-  }
+.Snake-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
-@media screen and (min-width: 1025px) {
-  .Companion-Description {
-    width: 65%;
-    top: 40%;
-    left: 35%;
-    line-height: 25px;
-  }
-
-  .character-popup-inner {
-    width: 60%;
+.Snake-popup-inner {
+  position: relative;
+  padding: 50px;
+  width: 40%;
+  height: 40%;
+  max-height: 100%;
+  max-width: 100%;
+  /* background-color: black; */
+  border-radius: 20px;
 }
 
-
-  .Character-Pet-Popup {
-    left: 5%;
-    top: 30%;
-    width: 18%;
-  }
-
-  .SnakePopup {
-    width: 60%;
-    top: 0%;
-    left: 20%;
-  }
-  .Snake-text {
-    width: 100%;
-    left: 0%;
-    top: 70%;
-
-  }
-
-  .Snake-close-btn {
-    position: absolute;
-    left: 72%;
-    top: 0%;
-    left: 80%;
-  }
-
-
-
+.popup-inner .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(0.8);
+  padding: 10px;
 }
-
-

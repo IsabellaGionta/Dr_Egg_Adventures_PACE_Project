@@ -7,11 +7,13 @@ export const Card = ({imageUrl}) => {
 
 
     return (
-        <div className="card-container">
-            <div className="image-container">
-                <img className="imageUrl" src={imageUrl} alt='' />
+        <div className="card-wrapper"> 
+            <div className="card-container">
+                <div className="image-container">
+                    <img className="imageUrl" src={imageUrl} alt='' />
+                </div>
+            
             </div>
-           
         </div>
     )
 }

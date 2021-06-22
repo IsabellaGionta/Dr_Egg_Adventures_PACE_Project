@@ -22,23 +22,25 @@ import SlumWorldSingle from './screens/SlumWorldSingle';
 import TechnoWorldSingle from './screens/TechnoWorldSingle';
 import FarmWorldSingle from './screens/FarmWorldSingle';
 import LabWorldSingle from './screens/LabWorldSingle';
-import WeirdCreations from './screens/WeirdCreations.js'
+import WeirdCreations from './screens/WeirdCreations.js';
 import CrazyFacts from './screens/CrazyFacts';
 import Fanfic from './screens/Fanfic';
-import ErrorPage from './screens/ErrorPage'
-import Ardash from './screens/characters/ArdashScreen.js'
-import Carlin from './screens/characters/CarlinScreen.js'
-import DrEgg from './screens/characters/DrEggScreen.js'
-import Vivi from './screens/characters/ViviScreen.js'
-import DrMoon from './screens/characters/DrMoonScreen.js'
-import Cornelia from './screens/characters/CorneliaScreen.js'
-import RifRaf from './screens/characters/RifRafScreen.js'
-import Pigeon from './screens/characters/PigeonScreen.js'
-import EggDrone from './screens/characters/EggDroneScreen.js'
-import Snake from './screens/characters/SnakeScreen.js'
-import SnakeWorlds from './components/SnakePopup.js'
-import ProfMole from './screens/characters/ProfessorMoleScreen.js'
-
+import ErrorPage from './screens/ErrorPage';
+import Ardash from './screens/characters/ArdashScreen.js';
+import Carlin from './screens/characters/CarlinScreen.js';
+import DrEgg from './screens/characters/DrEggScreen.js';
+import Vivi from './screens/characters/ViviScreen.js';
+import DrMoon from './screens/characters/DrMoonScreen.js';
+import Cornelia from './screens/characters/CorneliaScreen.js';
+import MutantThugs from './screens/characters/MutantThugs.js';
+import HybridHelpers from './screens/characters/HybridHelpers.js';
+import RifRaf from './screens/characters/RifRafScreen.js';
+import Pigeon from './screens/characters/PigeonScreen.js';
+import EggDrone from './screens/characters/EggDroneScreen.js';
+import Snake from './screens/characters/SnakeScreen.js';
+import SnakeWorlds from './components/SnakePopup.js';
+import ProfMole from './screens/characters/ProfessorMoleScreen.js';
+import SeedcorpSingle from './screens/SeedcorpSingle';
 
 function App() {
 	return (
@@ -84,6 +86,10 @@ function App() {
 					<TechnoWorldSingle />
 				</Route>
 
+				<Route path='/seedcorpWorld1'>
+					<SeedcorpSingle />
+				</Route>
+
 				<Route path='/lab1'>
 					<LabWorldSingle />
 				</Route>
@@ -91,7 +97,7 @@ function App() {
 				<Route path='/farmWorld'>
 					<FarmWorld />
 				</Route>
-{/* 
+				{/* 
 				<Route path='/slumWorld'>
 					<SlumWorld />
 				</Route> */}
@@ -124,67 +130,74 @@ function App() {
 					<Loading />
 				</Route>
 
-        <Route path="/character/Ardash">
-          <Ardash />
-        </Route>
+				<Route path='/character/Ardash'>
+					<Ardash />
+				</Route>
 
-        <Route path="/character/Carlin">
-          <Carlin />
-        </Route>
+				<Route path='/character/Carlin'>
+					<Carlin />
+				</Route>
 
-        <Route path="/character/DrEgg">
-          <DrEgg />
-        </Route>
+				<Route path='/character/DrEgg'>
+					<DrEgg />
+				</Route>
 
-        <Route path="/character/Vivi">
-          <Vivi />
-        </Route>
+				<Route path='/character/Vivi'>
+					<Vivi />
+				</Route>
 
-        <Route path="/character/DrMoon">
-          <DrMoon />
-        </Route>
+				<Route path='/character/DrMoon'>
+					<DrMoon />
+				</Route>
 
-        <Route path="/character/Cornelia">
-          <Cornelia />
-        </Route>
+				<Route path='/character/Cornelia'>
+					<Cornelia />
+				</Route>
 
-        <Route path="/character/RifRaf">
-          <RifRaf />
-        </Route>
+				<Route path='/character/MutantThugs'>
+					<MutantThugs />
+				</Route>
 
-        <Route path="/character/Pigeon">
-          <Pigeon />
-        </Route>
+				<Route path='/character/HybridHelpers'>
+					<HybridHelpers />
+				</Route>
 
-        <Route path="/character/EggDrone">
-          <EggDrone />
-        </Route>
+				<Route path='/character/RifRaf'>
+					<RifRaf />
+				</Route>
 
-        <Route path="/character/Snake">
-          <Snake />
-        </Route>
+				<Route path='/character/Pigeon'>
+					<Pigeon />
+				</Route>
 
-        <Route path="/character/Professor-Mole">
-          <ProfMole />
-        </Route>
-        
-        <Route path="/worlds">
-          <Worlds />
-        </Route>
-      
-        <Route path="/weirdcreations">
-          <WeirdCreations />
-        </Route>
+				<Route path='/character/EggDrone'>
+					<EggDrone />
+				</Route>
 
-        <Route path="/crazyfacts">
-          <CrazyFacts />
-        </Route>
+				<Route path='/character/Snake'>
+					<Snake />
+				</Route>
 
-        <Route path="/fanfiction">
-          <Fanfic />
-        </Route>
-        <Route component = {ErrorPage}/>
+				<Route path='/character/Professor-Mole'>
+					<ProfMole />
+				</Route>
 
+				<Route path='/worlds'>
+					<Worlds />
+				</Route>
+
+				<Route path='/weirdcreations'>
+					<WeirdCreations />
+				</Route>
+
+				<Route path='/crazyfacts'>
+					<CrazyFacts />
+				</Route>
+
+				<Route path='/fanfiction'>
+					<Fanfic />
+				</Route>
+				<Route component={ErrorPage} />
 			</Switch>
 		</Router>
 	);

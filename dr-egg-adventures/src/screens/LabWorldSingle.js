@@ -59,7 +59,7 @@ const LabWorldSingle = () => {
 	return (
 		<SingleWorld
 			bgSrc={EggLab}
-			heading={<Heading>Egg Lab</Heading>}
+			heading={<Heading>DR EGG’S LAB</Heading>}
 			right={
 				<>
 					<UpperBoard>

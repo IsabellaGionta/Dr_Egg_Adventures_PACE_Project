@@ -51,7 +51,7 @@ const FarmWorldSingle = () => {
 	return (
 		<SingleWorld
 			bgSrc={FarmWorld}
-			heading={<Heading>Farm World</Heading>}
+			heading={<Heading>CORN-FARMLANDS</Heading>}
 			right={
 				<>
 					<UpperBoard>

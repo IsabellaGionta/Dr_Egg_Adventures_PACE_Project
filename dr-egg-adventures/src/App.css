@@ -80,14 +80,17 @@ p {
 	height: 100vh;
 }
 
+.Dropdown {
+  width: 100%;
+}
 /* Home Screen Styling */
 
 .Lab-Background-Container {
-	background-image: url('./images/Lab.png');
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: 100vh;
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  background-position: center;
+  width: 101%;
+  height: 100vh;
 }
 .Home-Background-Container {
   background-image: url("./images/World-Blur.png");
@@ -126,15 +129,6 @@ p {
   left: 35%;
 }
 
-.Mobile-Characteristics {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-}
-
-
-
-
 .Home-Enter-Button:hover {
   content: url("./images/btn-Enter-Glow.png")
 }
@@ -160,7 +154,7 @@ p {
 .Individual-Character-Styling-Inventors {
   position: absolute;
   bottom: 0%;
-  left: 9%;
+  left: 5%;
   width: 24%;
   max-width: 100%;
   max-height: auto;
@@ -200,7 +194,7 @@ p {
 .Individual-Character-Styling-ProfMole {
   position: absolute;
   bottom: 0%;
-  left: 60%;
+  left: 62%;
   width: 40%;
   max-width: 100%;
   max-height: auto;
@@ -315,51 +309,6 @@ p {
 
 }
 
-.Character-Pet-Popup {
-  position: absolute;
-  left: 2%;
-  width: 22%;
-  top: 23%;
-}
-
-.btn-close {
-  position: absolute; 
-  left: 96%;
-  top: 4%;
-}
-
-
-
-/* Companion popups  */
-.pop-background {
-  width:100%;
-  max-width: 100%;
-}
-
-.clicked:active {
-  opacity: 80%;
-
-}
-.modalShowing-true {
-  opacity: 1;
-  pointer-events: showing;
-
-}
-
-.Companion-Description {
-  font-family: museo sans;
-  width: 50%;
-  max-width: 100%;
-  max-height: auto;
-  position: absolute;
-  left: 30%;
-  top: 33%;
-  font-size: 2vh;
-  /* text-align: left; */
-  line-height: 50px;
-  color: #5DAA86;
-}
-
 .Individual-Character-Slogan {
   position: absolute;
   left: 38%;
@@ -385,7 +334,26 @@ p {
   line-height: 100px;
 }
 
-.Character-Description {
+/* Companion popups  */
+
+.Character-Pet-Popup {
+  position: absolute;
+  left: 2%;
+  width: 22%;
+  top: 23%;
+}
+
+.btn-close {
+  position: absolute;
+  left: 96%;
+  top: 4%;
+}
+
+.clicked:active {
+  opacity: 80%;
+}
+
+.Companion-Description {
   font-family: museo sans;
   width: 50%;
   max-width: 100%;
@@ -394,23 +362,24 @@ p {
   left: 30%;
   top: 33%;
   font-size: 2vh;
-  text-align: left;
-  line-height: 40px;
-  color: white;
+  line-height: 50px;
+  color: #5daa86;
 }
 
-.Character-Description-Inventors {
-  font-family: museo sans;
+.Character-Description {
+  font-family: "museo sans";
   width: 50%;
+  height: 35.5%;
   max-width: 100%;
   max-height: auto;
   position: absolute;
   left: 32%;
-  top: 27%;
+  top: 35%;
   font-size: 2vh;
   text-align: left;
-  line-height: 40px;
+  line-height: 38px;
   color: white;
+  overflow: auto;
 }
 .Character-Description-Snake {
   font-family: museo sans;
@@ -442,16 +411,25 @@ p {
   background-image: url("./images/Lab.png");
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: 101vw;
   height: 100vh;
   position: relative;
 }
 
-@media screen and (max-width: 1002px) {
-  .SnakeImg {
-    bottom:50%;
-  }
+.good-characters:hover {
+  background-image: url("./images/Good-Light.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.characters:hover {
+  opacity: 80%;
+}
+
+.bad-characters:hover {
+  background-image: url("./images/Bad-Light.png");
+}
+
 /* Resource screen styling  */
 
 h1.Resources-Title {
@@ -482,7 +460,9 @@ h1.Resources-Title {
 
 .ProductOverview {
   position: absolute;
-  left: 10%;
+  left: 3%;
+  top: 35%;
+  width: 70%;
 
   max-width: 100%;
   max-height: auto;
@@ -490,7 +470,14 @@ h1.Resources-Title {
   margin-right: auto;
 }
 
-.Resources-Desc {
+.Text {
+  position: absolute;
+  left: 8%;
+  top: 10%;
+  color: #367771;
+  font-size: 4vh;
+  font-family: "polaris";
+
   max-width: 100%;
   max-height: auto;
   margin-left: auto;
@@ -550,32 +537,6 @@ h1.Resources-Title {
 	max-width: 200px;
 }
 
-
-
-
-.good-characters:hover {
-
-  background-image: url("./images/Good-Light.png");
-  background-position:top center;
-  /* opacity: 88%; */
-}
-
-
-.characters:hover{
-  opacity:80%;
-}
-
-
-.bad-characters:hover {
-
-  background-image: url("./images/Bad-Light.png");
-  background-position: center top;
-  opacity: 88%;
-
-
-}
-
-
 .containerWraper {
 	position: relative;
 	width: 100%;
@@ -590,7 +551,7 @@ h1.Resources-Title {
   position: absolute;
   bottom: 0%;
   left: 0%;
-  width: 100%;
+  width: 99.5vw;
   /* max-height: 100%; */
   height: 30vh;
 }
@@ -625,20 +586,44 @@ h1.Resources-Title {
   height: auto;
 }
 
+.bad-characters {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 55%;
+  /* top: 15%; */
+}
 .ProfMole {
   position: absolute;
   bottom: 45%;
-  left: 73%;
+  left: 16.5%;
   width: 28%;
-  max-width: 100%; 
+  height: 40%;
+  max-width: 100%;
   max-height: auto;
 
+}
+
+.ProfMole:hover {
+  content: url("./images/characters/ProfMole-Highlight.PNG");
+  width: 35%;
+  height: 46%;
+
+  left: 11%;
+}
+
+.good-characters {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: -30%;
+  /* top: 15%; */
 }
 
 .Cornelia {
   position: absolute;
   bottom: 4%;
-  left: 10%;
+  left: 40%;
   width: 20%;
   max-width: 100%; 
   max-height: 100%;
@@ -648,13 +633,13 @@ h1.Resources-Title {
 .Cornelia:hover {
   content: url("./images/characters/Cornelia-Highlight.png");
   width: 15%;
-  left: 12%;
+  left: 42%;
 }
 
 .Ardash {
   position: absolute;
   bottom: 8%;
-  left: 20%;
+  left: 50%;
   width: 22%;
   max-width: 100%; 
   max-height: 100%;
@@ -664,12 +649,13 @@ h1.Resources-Title {
 .Ardash:hover {
   content: url("./images/characters/Ardash-Highlight.png");
   width: 18%;
-  left: 22%;
-} 
+  left: 52%;
+}
 
 .DrEgg {
   position: absolute;
   bottom: 7%;
+  left: 30%;
   width: 28%;
   max-width: 100%; 
   height: 100%;
@@ -686,7 +672,7 @@ h1.Resources-Title {
 .DrMoon {
   position: absolute;
   bottom: 7%;
-  left: 15%;
+  left: 45%;
   width: 28%;
   max-width: 100%; 
   height: 100%;
@@ -695,12 +681,12 @@ h1.Resources-Title {
 .DrMoon:hover {
   content: url("./images/characters/Dr-Moon-Highlight.png");
   width: 23%;
-  left: 18%;
+  left: 48%;
 }
 
 .Vivi {
   position: absolute;
-  left: 0%;
+  left: 30%;
   bottom: 3%;
   width: 20%;
   max-width: 100%; 
@@ -723,6 +709,18 @@ h1.Resources-Title {
   max-height: auto;
 }
 
+.EggDroneHighlight:hover {
+  content: url("./images/characters/EggDrone1.png");
+  left: 65%;
+  top: 63%;
+}
+
+.PigeonHighlight:hover {
+  content: url("./images/characters/Pigeon-Highlight.png");
+  left: 75%;
+  top: 83%;
+}
+
 .SnakeImg {
   position: absolute;
   bottom: 10%;
@@ -730,6 +728,12 @@ h1.Resources-Title {
   width: 22%;
   max-width: 100%;
   max-height: auto;
+}
+
+.SnakeImg:hover {
+  content: url("./images/characters/Snake-Highlight.png");
+  width: 24%;
+  left: 40%;
 }
 
 .Back-Button {
@@ -747,11 +751,11 @@ h1.Resources-Title {
 }
 
 .Chatbot-Snake {
-	position: absolute;
-	bottom: 0%;
-	left: 88%;
-	max-width: 12%;
-	max-height: auto;
+  position: absolute;
+  bottom: 0%;
+  left: 87%;
+  max-width: 12%;
+  max-height: auto;
 }
 
 .Map-Snake {
@@ -792,10 +796,10 @@ h1.Resources-Title {
 }
 
 .Characters-Background-Container {
-	background-image: url('./images/Lab.png');
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
+  background-image: url("./images/Lab.png");
+  background-size: cover;
+  width: 101vw;
+  height: 100vh;
 }
 
 table,
@@ -943,15 +947,6 @@ h1.Contact-Title {
 	left: 25%;
 }
 
-/* .Contact-Info {
-	font-family: museo sans;
-	position: absolute;
-	top: 30%;
-	left: 55%;
-	color: white;
-	line-height: 40px;
-	font-size: 2vh;
-} */
 .Contact-Info {
 	font-family: museo sans;
 	position: absolute;
@@ -1091,12 +1086,19 @@ input {
   position: absolute;
   left: 10%;
   top: 25%;
+
+  max-width: 100%;
+  max-height: 100%;
+  width: 22rem;
 }
 
 .slumworld {
   position: absolute;
   left: 26%;
   top: 25%;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .egglab {
@@ -1111,8 +1113,11 @@ input {
   top: 25%;
 }
 
+.Snake-text {
 
-
+  font-size: 2.5vh;
+  font-family: "museo sans";
+}
 .home-button {
 	max-width: 100%;
 	max-height: auto;
@@ -1231,21 +1236,14 @@ input {
 	text-align: left;
 }
 
-.snake-container {
-	position: absolute;
-	bottom: 0px;
-	right: 0px;
-	padding: 20px;
-}
-
 .chatbot {
 	max-width: 100%;
 	max-height: auto;
 }
 
-.snake-container img:hover {
-	opacity: 0.5;
-	color: yellow;
+.Chatbot-Snake img:hover {
+  opacity: 0.5;
+  color: yellow;
 }
 
 /* Lab Screen Styles */
@@ -1273,12 +1271,13 @@ input {
 }
 
 .button-container {
-	position: absolute;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	right: 72%;
-	bottom: 40%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 4%;
+  top: 4%;
+  width: 25%;
 }
 
 .lab-button-wc {
@@ -1300,9 +1299,9 @@ input {
 }
 
 .lab-button-inv {
-	max-width: 60%;
-	max-height: auto;
-	padding: 7px;
+  max-width: 90%;
+  max-height: auto;
+  padding: 7px;
 }
 
 .lab-button-biogoo {
@@ -1312,22 +1311,22 @@ input {
 }
 
 .plank-container {
-	position: absolute;
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	top: 83%;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  bottom: 0%;
 }
 
 .plankname {
-	position: absolute;
-	font-family: museo sans;
-	font-weight: bold;
-	text-align: left;
-	font-size: 30px;
-	color: white;
-	top: 25%;
+  position: absolute;
+  font-family: museo sans;
+  font-weight: bold;
+  text-align: left;
+  font-size: 4vh;
+  color: white;
+  top: 25%;
 }
 
 .plank {
@@ -1336,11 +1335,11 @@ input {
 }
 
 .aboriginal-flag {
-	position: absolute;
-	max-width: 100%;
-	max-height: auto;
-	left: 86%;
-	top: 18%;
+  position: absolute;
+  max-width: 100%;
+  max-height: auto;
+  right: 5%;
+  top: 18%;
 }
 
 .aboriginal-flag:hover {
@@ -1361,9 +1360,10 @@ input {
 }
 
 .tools {
-	max-width: 15%;
-	max-height: auto;
-	padding: 40px;
+  width: 15%;
+  max-width: 100%;
+  max-height: auto;
+  padding: 40px;
 }
 
 .tools:hover {
@@ -1392,7 +1392,12 @@ input {
 	top: 15%;
 }
 
+.popup-background {
+  /* position: absolute;
+  left: 50%;
+  top: 100%; */
 
+}
 
 /* .snake-popup-background {
   position: absolute;
@@ -1401,10 +1406,14 @@ input {
   height:40%;
 } */
 .popup-text {
-	font-family: museo sans;
-	font-weight: bold;
-	text-align: center;
-	font-size: 18px;
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  padding: 2px;
+  font-family: "museo sans";
+  font-weight: bold;
+  text-align: center;
+  font-size: 3vh;
 }
 
 .yt-trailer {
@@ -1432,20 +1441,157 @@ input {
 	transform: scale(0.8);
 }
 
-.game-container {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	backdrop-filter: blur(4px);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.page1 {
+  position: absolute;
+  max-width: 100%;
+  width: 20%;
+  height: 90%;
+  left: 27%;
+  top: 18%;
+  padding: 25px;
 }
 
-.game-bg {
-	position: relative;
+.page2 {
+  position: absolute;
+  max-width: 100%;
+  width: 20%;
+  height: 90%;
+  right: 28%;
+  top: 25%;
+  padding: 25px;
+}
+
+.page2-fanfic {
+  position: absolute;
+  max-width: 100%;
+  width: 20%;
+  height: 90%;
+  right: 28%;
+  top: 18%;
+  padding: 25px;
+}
+
+.book-heading {
+  font-family: polaris;
+  color: #367771;
+  text-align: center;
+}
+
+.book-text {
+  font-family: museo sans;
+  text-align: center;
+  font-size: 18px;
+}
+
+.fact {
+  transform: scale(0.9);
+  margin-left: -30px;
+}
+
+.left-turn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(0.8);
+  padding: 10px;
+}
+
+.right-turn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: scale(0.8);
+  padding: 10px;
+}
+
+.popup-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40%;
+}
+
+.popup-btn {
+  padding: 20px;
+}
+
+.ardash-popup {
+  position: absolute;
+  left: 25%;
+  bottom: 12%;
+  max-width: 100%;
+  transform: scale(0.6);
+
+  /* Add media queries  */
+}
+
+.wc-blackboard-container {
+  position: absolute;
+  width: 71.5%;
+  height: 79.5%;
+  max-width: 100%;
+  max-height: 100%;
+  left: 15%;
+  top: 12%;
+}
+
+.wc-heading {
+  color: white;
+  font-family: polaris;
+  text-align: center;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.hr-line {
+  height: 2px;
+  color: white;
+  background-color: white;
+  margin-top: -20px;
+}
+
+.submit-icon {
+  position: absolute;
+  max-width: 100%;
+  top: 0;
+  right: 0;
+  padding: 30px;
+}
+
+.chat-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 2%;
+}
+
+.wc-text {
+  color: white;
+  text-align: center;
+  font-family: museo sans;
+  font-size: 30px;
+  padding: 20px;
+  width: 80%;
+}
+
+.fish-icon {
+  position: absolute;
+  left: 0;
+}
+
+.hr-line2 {
+  margin-top: 20px;
+  opacity: 0.2;
+  color: white;
+  background-color: white;
+  height: 1px;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
 }
 
 /* .container {
@@ -1480,13 +1626,24 @@ input {
 /* Mobile screens  */
 
 /* Individual character screen  */
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  
+@media screen and (max-width: 490px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  /*   
   .modalBackground {
     left: 10%;
     width: 80%;
   }
-  
+   */
   .DrEggLogo {
     width: 65%;
     left: 17%;
@@ -1498,8 +1655,6 @@ input {
     left:25%;
     top: 70%;
   }
-
-  /* Resource screen */
 
   .Ardash:hover {
     width: 40%;
@@ -1550,6 +1705,7 @@ input {
     left: -15%;
     top: 20%;
   }
+
   .Vivi {
     left: -15%;
     top: 48%;
@@ -1595,9 +1751,8 @@ input {
     height: 15%;
   }
 
-  /* .Snake-Text{
-    top:-10%;
-
+  /* .slumworld {
+    width:1rem;
   } */
   h1.Character-Type {
     left: 20%;
@@ -1690,6 +1845,7 @@ input {
   }
   .Character-Description-Inventors {
     /* display: none; */
+    left: 10%;
   }
   .Individual-Character-Styling-Pigeon{
     max-width: 55%;
@@ -1710,20 +1866,23 @@ input {
 
   }
 
-  .Mobile-Characteristics {
-    display: block
-
+  /* Lab Screen Styling */
+  .plankname {
+    font-size: 1.6vh;
+  }
+  .aboriginal-flag {
+    width: 20%;
   }
 
-.Individual-Character-Name-Pet {
-  line-height:30px;
-}
+  .tool-container {
+    bottom: 2%;
+  }
 
-.Companion-Description {
-  line-height:20px;
-}
+  .tools {
+    width: 30%;
+  }
 
-
+  /* Dregg still needs to be complete  */
 }
 
 /* iPads and Tablet screens */
@@ -1944,29 +2103,40 @@ input {
     top: 25%;
     width: 60%;
     line-height: 30px;
-
-}
-
-  .Individual-Character-Styling-Inventors{
-    max-width: 40%;
-    left: 0%;
   }
-
-  .Mobile-Characteristics {
-    /* display: none; */
-  }
-
 }
 
 
 /* Tablet / Desktop screens */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-
+@media screen and (min-width: 801) and (max-width: 1024px) and (orientation: landscape) {
   .modalBackground {
       left: 1%;
       background-size: 70%;
   }
-  
+
+  .plankname {
+    font-size: 2.5vh;
+  }
+
+  .aboriginal-flag {
+    width: 15%;
+  }
+
+  .tool-container {
+    bottom: 7%;
+  }
+
+  .tools {
+    width: 24%;
+  }
+
+  .dregg {
+    bottom: 12%;
+  }
+}
+
+/* Tablet / Desktop screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .Ardash:hover {
     width: 22%;
     left: 0%;
@@ -2169,16 +2339,33 @@ input {
     display: none;
   }
 
+  /* Lab Screen Styling */
+
+  .button-container {
+    width: 20%;
+  }
+
+  .plankname {
+    font-size: 3vh;
+  }
+
+  .aboriginal-flag {
+    width: 10%;
+  }
+  .tool-container {
+    bottom: 10%;
+  }
+
+  .tools {
+    width: 20%;
+  }
+
+  .dregg {
+    bottom: 18%;
+  }
 }
 
 @media screen and (min-width: 1025px) {
-
-
-
-  .Mobile-Characteristics {
-    display: none;
-  }
-
   .Character-Type {
     left: 25%;
   }
@@ -2891,6 +3078,78 @@ z-index: 3;
   .BtnContain{
     height: 71vw;
     width: 100vw;
+  }
+
+  /* Game Screen */
+
+  .Game-Background-Container {
+    background-image: url("./images/World-Blur.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .game-container {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .gamebtn {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 17%;
+  }
+
+  .game-button {
+    max-width: 40%;
+    max-height: auto;
+    margin: 10px;
+  }
+
+  .apple-button {
+    width: 65%;
+    max-width: 100%;
+    max-height: auto;
+    margin-top: 3%;
+  }
+
+  .game-text1 {
+    font-family: polaris;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    color: #5daa86;
+  }
+
+  .game-text2 {
+    font-family: polaris;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .ardash-face {
+    position: absolute;
+    top: 60%;
+    right: 80%;
+    transform: scale(1.1);
+  }
+
+  .vivi-face {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: scale(1.1);
   }
 }
 
