@@ -137,6 +137,10 @@
 /* Landscape Mode */
 @media screen and (max-width:1000px) and (max-height: 500px) and (orientation: landscape) {
 
+  .Landscape-popup{
+    visibility: visible;
+  }
+
   .SnakePopup {
     width: 40%;
     left: 30%;

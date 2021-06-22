@@ -267,7 +267,7 @@ p {
   max-height: auto;
   position: absolute;
   bottom: 5%;
-  left: 65%;
+  left: 75%;
 }
 
 .Character-Pet-Pigeon {
@@ -275,21 +275,9 @@ p {
   max-width: 100%;
   max-height: auto;
   position: absolute;
-  bottom: 0%;
-  left: 75%;
+  bottom: 5%;
+  left: 85%;
 
-}
-
-.Character-Tool:hover {
-	-ms-transform: scale(1.1); /* IE 9 */
-	-webkit-transform: scale(1.1); /* Safari 3-8 */
-	transform: scale(1.1);
-}
-
-.Character-Tool-Hoverboard:hover {
-	-ms-transform: scale(1.1); /* IE 9 */
-	-webkit-transform: scale(1.1); /* Safari 3-8 */
-	transform: scale(1.1);
 }
 
 
@@ -732,21 +720,21 @@ h1.Resources-Title {
 
 .EggDroneHighlight:hover {
   content: url("./images/characters/EggDrone1.png");
-  left: 65%;
+  left: 75%;
   top: 63%;
   cursor: pointer;
 }
 
 .PigeonHighlight:hover {
   content: url("./images/characters/Pigeon-Highlight.png");
-  left: 44%;
-  top: 78%;
+  left: 85%;
+  top: 76%;
   cursor: pointer;
 }
 
 .CarlinHighlight:hover {
   content: url("./images/characters/Carlin-Highlight.png");
-  left: 65%;
+  left: 75%;
   top: 78%;
   cursor: pointer;
 }
@@ -1751,6 +1739,7 @@ input {
   position: absolute;
   top: 80px;
   left: 150px;
+  overflow: scroll;
 }
 
 .Character-Type {
@@ -1853,7 +1842,7 @@ input {
 
   .DrEgg {
     left: 22%;
-    top: 0%;
+    top: 12%;
     width: 60%;
   }
 
@@ -1925,7 +1914,7 @@ input {
   }
 
   .Individual-Character-Styling-Inventors-Vivi {
-    left: -5%;
+    left: -10%;
     width: 50%;
   }
 
@@ -2451,9 +2440,7 @@ input {
     line-height: 20px;
   }
 
-  .PigeonHighlight:hover {
-    left: 44%;
-  }
+
 
   .Character-Pet {
     width: 20%;
@@ -2463,6 +2450,11 @@ input {
   .CarlinHighlight:hover {
     left: 56%;
     top: 83%;
+  }
+
+  .EggDroneHighlight:hover {
+    left: 56%;
+    top: 69%;
   }
 
   .Character-Pet-Popup {
@@ -2511,7 +2503,7 @@ input {
     left: 30%;
     top: 27%;
     width: 50%;
-    line-height: 30px;
+    line-height: 40px;
   }
 
 
@@ -2679,6 +2671,16 @@ input {
   .PigeonHighlight:hover {
     left: 78%;
     top: 70%;
+  }
+
+  .EggDroneHighlight:hover {
+    left: 65%;
+    top: 60%;
+  }
+
+  .CarlinHighlight:hover {
+    left: 66%;
+    top: 78%;
   }
 
    /* Companion popups  */

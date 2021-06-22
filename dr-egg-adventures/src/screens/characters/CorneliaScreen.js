@@ -50,7 +50,7 @@ export const CorneliaScreen = () => {
           <Accordian title="  WORLD " content="Corn-Farmlands" />
        </div>
 
-        <img className="Individual-Character-Styling-Inventors-Cornelia"src={Cornelia} />
+        <img className="Individual-Character-Styling-Inventors-Cornelia "src={Cornelia} />
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
         
 
@@ -132,11 +132,11 @@ export const CorneliaScreen = () => {
           </div>
         </Popup>
 
-        <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
+        {/* <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
           <div className = "popup-background">
             <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
           </div>
-        </LandscapePopup>
+        </LandscapePopup> */}
         
    
       </div>
