@@ -20,8 +20,9 @@ export const Game = () => {
     return (
         <div className = "Game-Background-Container">
             
+            <div className = "game-container">
+
             <Popup trigger={buttonPopup} setTrigger = {setButtonPopup}>
-                <div className = "game-container">
                     <h1 className = "game-text1">DR EGG ADVENTURES INTERACTIVE 
                     <br></br>
                     BOOK AND PUZZLE GAME</h1> 
@@ -31,11 +32,13 @@ export const Game = () => {
                             <img className="apple-button" src={apple} alt = "apple"/>
                         </a>
                     </div>
-                    <p className= "game-text2">Click to download the app now!</p> 
-                </div>
+                      <p className= "game-text2">Click to download the app now!</p>
+
                 <img className="ardash-face" src={ardash} alt = "ardash" />
                 <img className="vivi-face" src={vivi} alt = "vivi"/>
             </Popup>
+            </div>
+
             
 
         </div>
