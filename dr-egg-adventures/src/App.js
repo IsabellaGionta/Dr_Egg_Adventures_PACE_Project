@@ -122,10 +122,6 @@ function App() {
 					<Resources />
 				</Route>
 
-				<Route path='/chatbot'>
-					<ChatBotScreen />
-				</Route>
-
 				<Route path='/loading'>
 					<Loading />
 				</Route>
