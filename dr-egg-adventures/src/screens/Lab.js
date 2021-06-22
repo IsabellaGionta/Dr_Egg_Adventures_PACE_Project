@@ -55,13 +55,17 @@ export const Lab = () => {
         history.push('/fanfiction');
     }
 
+    const invNav = () => {
+        history.push('/game');
+    }
+
     const [buttonPopup, setButtonPopup] = useState(false);
 
     return (
         <div className = "Lab-Background-Container">
             <img className="dregg" src={DrEgg} alt = "dr egg"/>
             <div className = "button-container">
-            <img className="lab-button-inv" src={inv} alt = "inventory button" onMouseOver = {e => e.currentTarget.src = invglow} onMouseOut={e => e.currentTarget.src = inv}/>
+            <img className="lab-button-inv" src={inv} alt = "inventory button" onClick = {invNav} onMouseOver = {e => e.currentTarget.src = invglow} onMouseOut={e => e.currentTarget.src = inv}/>
                 <img className="lab-button-facts" src={facts} alt = "crazy facts button" onClick = {factsNav} onMouseOver = {e => e.currentTarget.src = factsglow} onMouseOut={e => e.currentTarget.src = facts}/>
                 <img className="lab-button-wc" src={weird} alt = "weird creations button" onClick = {creationsNav} onMouseOver = {e => e.currentTarget.src = weirdglow} onMouseOut={e => e.currentTarget.src = weird}/>
                 <img className="lab-button-fanfic" src={fanfic} alt = "fanfiction button" onClick = {fanficNav} onMouseOver = {e => e.currentTarget.src = fanficglow} onMouseOut={e => e.currentTarget.src = fanfic}/>
