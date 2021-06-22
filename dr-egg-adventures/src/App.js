@@ -15,7 +15,7 @@ import Trailer from './screens/Trailer.js';
 import Resources from './screens/Resources.js';
 import IndividualCharacters from './screens/IndividualCharacters.js';
 import Worlds from './screens/Worlds.js';
-import ChatBotScreen from './screens/ChatbotScreen.js';
+// import ChatBotScreen from './screens/ChatbotScreen.js';
 import Loading from './screens/LoadingScreen.js';
 import ContactForm from './screens/ContactForm';
 import SlumWorldSingle from './screens/SlumWorldSingle';

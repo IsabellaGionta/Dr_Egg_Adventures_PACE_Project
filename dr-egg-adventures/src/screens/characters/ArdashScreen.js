@@ -1,30 +1,20 @@
-import React from 'react'
+import {React, useState} from 'react'
 import Ardash from '../../images/characters/Ardash-Highlight1.png';
 import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
-import HoverBoard from '../../images/HoverBoard.png';
-// import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
+
+import LandscapePopup from '../../components/Landscape.js';
+
+
+import Accordian from "../../components/Accordian"
+
 
 
 import { useHistory } from "react-router-dom";
 export const ArdashScreen = () => {
+   const [modalState2, setModalState2] = useState(true);
 
-// export default class ArdashScreen extends React.Component{ 
-//   constructor(props) {
-//     super(props);
-//     this.state={
-//     display: false
-//   }
-// }
-
-  // let history = useHistory();
-
-  const BackEventHandler = () => {
-      // history.push('/characters')
-    }
-
-    
     const CharacteristicsHandler = () => {
       const currentStatus=this.state.display;
       this.setState({
@@ -32,28 +22,29 @@ export const ArdashScreen = () => {
       })
     }
 
-    // let characteristics=null;
-    // if(this.state.display) {
-    //   characteristics= 
-    //   <p className="Character-Description-Inventors">
-    //     CHARACTERISTICS: Ardash is a boy with no belly button and 
-    //     he is literally perfect. He hails from Techno-Towers and has
-    //     been genetically modified so he can’t catch any diseases. He’s
-    //     a super plugged in and clever kid, and knows heaps about 
-    //     technology. He’s able to work out scientific and mathematical
-    //     problems super-fast, making him a great helper in Dr Egg’s
-    //     experiments. He can also travel at super speeds! Ardash likes
-    //     to investigate and discover new diseases and is searching for
-    //     one he could catch. 
-    //   </p>
-    // }
-
     return (
       <div className="Characters-Background-Container">
 
         <img className="Blackboard" src={Blackboard} alt="Blackboard" />
+
+        <div className="Accordians">
+          <Accordian className="characteristics" title="CHARACTERISTICS" content="Ardash is a boy with no belly button and 
+              he is literally perfect. He hails from Techno-Towers and has
+              been genetically modified so he can’t catch any diseases. He’s
+              a super plugged in and clever kid, and knows heaps about 
+              technology. He’s able to work out scientific and mathematical
+              problems super-fast, making him a great helper in Dr Egg’s
+              experiments. He can also travel at super speeds! Ardash likes
+              to investigate and discover new diseases and is searching for
+              one he could catch.  " />
+          <Accordian className="virtues" title="VIRTUES" content="Fast. Speedy. Can do anything with numbers and data." />
+          <Accordian title=" TOOLS " content="Hover-tube with a built-in compass. Wearable wrist
+              gadget and camera." />
+          <Accordian title=" POWERS " content="Genetically modified so he can’t catch any diseases.
+              Super eyesight. Super fast. Knows everything about numbers and data!" />
+          <Accordian title="  WORLD " content="Techno-Towers" />
+       </div>
         <img className="Individual-Character-Styling-Inventors-Ardash"src={Ardash} />
-        <img className="Character-Tool"src={HoverBoard} />
 
         <a href="/characters">
          <img className="Back-Button characters" src={Back} alt="Back"/>
@@ -62,12 +53,10 @@ export const ArdashScreen = () => {
 
         <h2 className="Individual-Character-Name"> ARDASH: </h2> 
         <h2 className="Individual-Character-Slogan">THE PLUGGED IN PERFECTIONIST </h2>
-        {/* <Button onClick={CharacteristicsHandler} variant="primary" className="Mobile-Characteristics"> CHARACTERISTICS </Button>     */}
 
         <div className="Character-Description">
 
              <p> AGE: 13 </p>
-             {/* {characteristics} */}
              <p> 
               CHARACTERISTICS: Ardash is a boy with no belly button and 
               he is literally perfect. He hails from Techno-Towers and has
@@ -94,38 +83,19 @@ export const ArdashScreen = () => {
             <p>
               WORLD: Techno-Towers
             </p>
-{/* 
-            <DropdownMenu className="Dropdown" title="Dropdown">
-                <MenuItem href="#books">Books</MenuItem>
-                <MenuItem href="#podcasts">Podcasts</MenuItem>
-                <MenuItem href="#">Tech I Like</MenuItem>
-                <MenuItem href="#">About me</MenuItem>
-                <MenuItem href="#addBlog">Add a Blog</MenuItem>
-            </DropdownMenu> */}
 
         </div>
 
+        {/* <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
+          <div className = "popup-background">
+            <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
+          </div>
+        </LandscapePopup> */}
 
-
-
-
-
-        {/* <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Dropdown Button
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown> */}
         
-          
-        <a href="/chatbot">
-           <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
-        </a>      
+
+        
+        
       </div>
     );
 }
