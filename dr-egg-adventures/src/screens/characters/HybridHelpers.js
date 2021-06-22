@@ -1,20 +1,13 @@
-import { useState, React }  from 'react';
-
+import React from 'react'
+import DrMoon from '../../images/characters/Dr-Moon-Highlight1.png';
+import PetriDish from '../../images/PetriDish.png';
 import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 
-import LandscapePopup from '../../components/Landscape.js';
-
-
 import { useHistory } from "react-router-dom";
 
-import Accordian from "../../components/Accordian"
-
-
 export const HybridHelpers = () => {
-  const [modalState2, setModalState2] = useState(true);
-
   
   let history = useHistory();
 
@@ -27,13 +20,6 @@ export const HybridHelpers = () => {
       <div className="Characters-Background-Container">
 
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
-
-          <div className="Accordians">
-            <Accordian className="characteristics" title="CHARACTERISTICS" content="  {CONTENT NEEDS TO BE ADDED} " />
-            <Accordian className="virtues" title="VIRTUES" content=" {CONTENT NEEDS TO BE ADDED}" />
-            <Accordian title=" TOOLS " content=" {CONTENT NEEDS TO BE ADDED}" />
-            <Accordian title="  WORLD " content=" {CONTENT NEEDS TO BE ADDED}" />
-          </div> 
 
 
           {/* <img className="Individual-Character-Styling-Inventors"src={} /> */}
@@ -67,13 +53,10 @@ export const HybridHelpers = () => {
             </p>
 
         </div>
-{/* 
-        <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
-          <div className = "popup-background">
-            <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
-          </div>
-        </LandscapePopup> */}
-     
+
+        <a href="/chatbot">
+           <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
+        </a>      
       </div>
     )
 }

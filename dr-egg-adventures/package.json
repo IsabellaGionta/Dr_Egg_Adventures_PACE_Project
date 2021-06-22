@@ -6,7 +6,6 @@
 		"@testing-library/jest-dom": "^5.11.9",
 		"@testing-library/react": "^11.2.5",
 		"@testing-library/user-event": "^12.8.3",
-		"accordion": "^3.0.2",
 		"axios": "^0.21.1",
 		"bootstrap": "^4.6.0",
 		"cors": "^2.8.5",
@@ -16,11 +15,9 @@
 		"mongoose": "^5.12.4",
 		"nodemailer": "^6.6.0",
 		"react": "^17.0.2",
-		"react-accessible-accordion": "^3.3.4",
 		"react-bootstrap": "^1.5.2",
 		"react-bootstrap-dropdown": "^0.3.0",
 		"react-bootstrap-dropdown-menu": "^1.1.23",
-		"react-button": "^1.2.1",
 		"react-card-scroll": "^2.2.4",
 		"react-chatbot-kit": "^1.1.20",
 		"react-dom": "^17.0.2",
@@ -37,7 +34,6 @@
 		"reactjs-popup": "^2.0.4",
 		"reactstrap": "^8.9.0",
 		"styled-components": "^5.3.0",
-		"text-slider": "^1.0.1",
 		"web-vitals": "^1.1.1"
 	},
 	"scripts": {
