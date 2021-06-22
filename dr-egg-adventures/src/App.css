@@ -2882,7 +2882,7 @@ z-index: 3;
   /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   .ChatBoxContainer{
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(210, 215, 211, .8);
   }
 }
 
