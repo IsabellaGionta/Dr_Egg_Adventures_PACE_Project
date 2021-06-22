@@ -3,6 +3,8 @@ import styled, { css } from 'styled-components';
 import FarmWorld from '../assets/images/FarmWorld.png';
 import Bg from '../assets/images/Dboard.png';
 import Cornelia from '../images/characters/Cornelia.png';
+import SwitchBoard from '../components/SwitchBoard';
+import { useState } from 'react';
 
 const Flexbox = styled.div`
 	width: 100%;
@@ -81,10 +83,20 @@ const Figure = styled.div`
 `;
 
 const FarmWorldSingle = () => {
+	const [info] = useState({
+		STORY:
+			'In the dusty brown fields under the giant SEEDCORP billboards, sit the empty silos and rusted tractors with their SEEDCORP logos. \nOnly a few farmers, like Tina and Denis, who have unwittingly “sold” the rights to their children for experimentation, are provided with genetically modified seed from SEEDCORP. On those farms, corn grows tall and green and ears of corn act as radio transmitters linked to Dr Mole’s headquarters. As Dr Mole controls all the seed in Farm World, and has locked away all the organic seeds he can, farmers who are unable to afford SEEPCORP’s special genetically modified seed can’t grow anything, and experience severe food shortages. Most farmers survive by procuring what little GM seed they can afford off the “black market”. ',
+		INHABITANTS: 'Cornelia and her parents Tina and Dennis.',
+		DANGERS:
+			'Brat packs of spoiled children.Dr Mole’s Hybrid Helpers. Starvation.',
+		LANDSCAPE: 'Silos, tractors, fuel tanks, all with the SEEDCORP logo.',
+	});
+
 	return (
 		<SingleWorld
 			bgSrc={FarmWorld}
 			heading={<Heading>CORN-FARMLANDS</Heading>}
+			mobileLayout={<SwitchBoard info={info} />}
 			right={
 				<Flexbox reverse>
 					<InnerWrapper>

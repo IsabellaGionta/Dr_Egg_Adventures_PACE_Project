@@ -4,6 +4,8 @@ import EggLab from '../assets/images/EggLab.png';
 import DrEgg from '../assets/images/DrEgg.png';
 import Bg from '../assets/images/Dboard.png';
 import DrMoon from '../assets/images/DrMoon.png';
+import { useState } from 'react';
+import SwitchBoard from '../components/SwitchBoard';
 
 const Flexbox = styled.div`
 	width: 100%;
@@ -110,10 +112,19 @@ const FigureRight = styled.div`
 `;
 
 const LabWorldSingle = () => {
+	const [info] = useState({
+		STORY:
+			'Dr Eggs Interactive Laboratory is a place of marvellous miracles. Next to the monstrous SEEDCORP industrial complex, in this tiny laboratory, Dr Egg sits tinkering away on small, often therapeutic biological inventions, such as the handy square tomato and the famous glow-in-the-dark fishes bottom. Dr Egg is positioned to act like “a thorn on the side of SEEDCORP”, and the three kid-heroes are keen to have his help. He has created a spying, flying hybrid tomato to track the inventions Dr Mole has stolen from him. ',
+		INHABITANTS: 'Dr Egg, Dr Moon, The Snake, Tank Child.',
+		DANGERS: 'Bio-goo and Biohazardous waste.',
+		LANDSCAPE:
+			'Creation Tanks, Petri Dishes, Test-tubes, Bio-goo, Tank Child, The Famous Square tomato plant, Glow In The Dark Creatures (including Fish and Mouse), Experiment Record Books. ',
+	});
 	return (
 		<SingleWorld
 			bgSrc={EggLab}
 			heading={<Heading>DR EGG’S LAB</Heading>}
+			mobileLayout={<SwitchBoard info={info} />}
 			right={
 				<Flexbox reverse>
 					<InnerWrapper>

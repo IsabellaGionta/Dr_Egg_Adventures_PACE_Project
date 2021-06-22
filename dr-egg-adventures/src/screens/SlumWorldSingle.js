@@ -3,6 +3,8 @@ import styled, { css } from 'styled-components';
 import SlumWorld from '../assets/images/SlumWorld.png';
 import Bg from '../assets/images/Dboard.png';
 import Vivi from '../images/characters/Vivi.png';
+import SwitchBoard from '../components/SwitchBoard';
+import { useState } from 'react';
 
 const Flexbox = styled.div`
 	width: 100%;
@@ -85,10 +87,20 @@ const Figure = styled.div`
 `;
 
 const SlumWorldSingle = () => {
+	const [info] = useState({
+		STORY:
+			'In sprawled out, windy slum world, starvation and food shortages are every day occurrences. The poor inhabitants suffer as Dr Mole ruthlessly seeks to control the food supplies. \nIn the scary backstreets, roam gangs of “dumped” mutant thugs, the result of Dr Mole’s experiments on children and animals. Anyone can become the thugs’ unsuspecting quarry, and be kidnapped for auction at the notorious and scary Mutant and Body Parts Black Market.',
+		INHABITANTS: 'Vivi and her dad Kane.',
+		DANGERS:
+			'Mutant thugs. Dr Mole’s Hybrid Helpers. Kidnapping. Starvation. Mutant and Body Parts Market. ',
+		LANDSCAPE:
+			'Dumped biohazard drums. Rusty pipes. Missing Children Posters. Seedcorp Advertising Billboards.',
+	});
 	return (
 		<SingleWorld
 			bgSrc={SlumWorld}
 			heading={<Heading>SLUM-LANES</Heading>}
+			mobileLayout={<SwitchBoard info={info} />}
 			left={
 				<Flexbox>
 					<InnerWrapper>

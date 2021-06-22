@@ -18,6 +18,12 @@ const Wrapper = styled.div`
 	}
 `;
 
+const BigScreenWrapper = styled.div`
+	@media (max-width: 823px) {
+		display: none;
+	}
+`;
+
 const SingleWorldLayout = ({ children, bgSrc }) => {
 	const history = useHistory();
 
@@ -33,7 +39,7 @@ const SingleWorldLayout = ({ children, bgSrc }) => {
 				onClick={BackEventHandler}
 				alt='Back'
 			/>
-			{children}
+			<BigScreenWrapper>{children}</BigScreenWrapper>
 		</Wrapper>
 	);
 };
