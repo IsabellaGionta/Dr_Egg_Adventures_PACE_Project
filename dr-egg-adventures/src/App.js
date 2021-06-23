@@ -15,7 +15,6 @@ import Lab from './screens/Lab.js';
 import OnlineStore from './screens/OnlineStore.js';
 import Trailer from './screens/Trailer.js';
 import Resources from './screens/Resources.js';
-import IndividualCharacters from './screens/IndividualCharacters.js';
 import Worlds from './screens/Worlds.js';
 // import ChatBotScreen from './screens/ChatbotScreen.js';
 import Loading from './screens/LoadingScreen.js';
