@@ -1441,6 +1441,15 @@ input {
   overflow: auto;
 }
 
+.fact1Container{
+  top:5%;
+  bottom:5%;
+  left:1%;
+  right: 1%;
+  position:absolute;
+  overflow: auto;
+}
+
 .fact {
   max-width: 100%;
   width: 70%;
@@ -1453,6 +1462,23 @@ input {
   width: 100%;
   height: auto;
   transform: scale(0.9);
+  width: 100%;
+  height: auto;
+  transform: scale(0.9);
+}
+
+.fact2 {
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
+}
+
+.left-turn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scale(0.8);
+  padding: 10px;
 }
 
 .fact2 {
@@ -2322,6 +2348,10 @@ input {
 
 
 
+  /*Chatbox Screens*/
+
+
+
   .chatCont{
     height: 100%;
     width: 100%;
@@ -2422,6 +2452,365 @@ input {
   background-size: 100% 100%;
   position: absolute;
 }
+
+  /*Resource Chatbox*/
+  .chatRescQ1{
+    top: 0%;
+    bottom: 77.5%;
+    left:0%;
+    right:0%;
+    background-image: url("./images/Chatbot/ChatbotProductOverview.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+  .chatRescQ1:hover{
+    top: 0%;
+    bottom: 77.5%;
+    left:0%;
+    right:0%;
+    background-image: url("./images/Chatbot/ChatbotProductOverview(Glow).png");
+  }
+
+  .chatRescA1{
+    top: 0%;
+    bottom: 77.5%;
+    left:0%;
+    right:0%;
+    background-image: url("./images/Chatbot/ChatbotProductOverview.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+
+  /*Fanfic Chatbox*/
+  .chatFFQ1{
+    top: 2%;
+    bottom: 79.5%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotFanFiction1.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+  .chatFFQ1:hover{
+    top: 0%;
+    bottom: 77.5%;
+    left:0%;
+    right:0%;
+    background-image: url("./images/Chatbot/ChatbotFanFiction1(Glow).png");
+  }
+
+  .chatFFA1{
+    top: 2%;
+    bottom: 79.5%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotFanFiction1.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+
+  .chatFFQ2{
+    top: 24.5%;
+    bottom: 57%;
+    left:2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotFanFiction2.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+  .chatFFQ2:hover{
+    top: 22.5%;
+    bottom: 55%;
+    left:0%;
+    right:0%;
+    background-image: url("./images/Chatbot/ChatbotFanFiction2(Glow).png");
+  }
+
+  .chatFFA2{
+    top: 2%;
+    bottom: 79.5%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotFanFiction2.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+  
+  /*Character Chatbox*/
+  .chatCharQ1{
+    top: 2%;
+    bottom: 79.5%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotCharacters.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+  .chatCharQ1:hover{
+    top: 0%;
+    bottom: 77.5%;
+    left:0%;
+    right:0%;
+    background-image: url("./images/Chatbot/ChatbotCharacters(glow).png");
+  }
+
+  .chatCharA1{
+    top: 2%;
+    bottom: 79.5%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotCharacters.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+
+  /*contact chatbox*/
+  .chatContactQ1{
+    top: 2%;
+    bottom: 79.5%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotContacts.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+  .chatContactQ1:hover{
+    top: 0%;
+    bottom: 77.5%;
+    left:0%;
+    right:0%;
+    background-image: url("./images/Chatbot/ChatbotContacts(glow).png");
+  }
+
+  .chatContactA1{
+    top: 2%;
+    bottom: 79.5%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotContacts.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+
+    /*contact Crazy Science Facts*/
+    .chatCSFQ1{
+      top: 2%;
+      bottom: 79.5%;
+      left: 2%;
+      right:3%;
+      background-image: url("./images/Chatbot/ChatbotCrazyScieneFacts.png");
+      background-size: 100% 100%;
+      position: absolute;
+    }
+    .chatCSFQ1:hover{
+      top: 0%;
+      bottom: 77.5%;
+      left:0%;
+      right:0%;
+      background-image: url("./images/Chatbot/ChatbotCrazyScieneFacts(glow).png");
+    }
+  
+    .chatCSFA1{
+      top: 2%;
+      bottom: 79.5%;
+      left: 2%;
+      right:3%;
+      background-image: url("./images/Chatbot/ChatbotCrazyScieneFacts.png");
+      background-size: 100% 100%;
+      position: absolute;
+    }
+
+        /*Chatbot Crazy Science Facts*/
+    .chatCSFQ1{
+      top: 2%;
+      bottom: 79.5%;
+      left: 2%;
+      right:3%;
+      background-image: url("./images/Chatbot/ChatbotCrazyScieneFacts.png");
+      background-size: 100% 100%;
+      position: absolute;
+    }
+    .chatCSFQ1:hover{
+      top: 0%;
+      bottom: 77.5%;
+      left:0%;
+      right:0%;
+      background-image: url("./images/Chatbot/ChatbotCrazyScieneFacts(glow).png");
+    }
+  
+    .chatCSFA1{
+      top: 2%;
+      bottom: 79.5%;
+      left: 2%;
+      right:3%;
+      background-image: url("./images/Chatbot/ChatbotCrazyScieneFacts.png");
+      background-size: 100% 100%;
+      position: absolute;
+    }
+      /*chatbot World*/
+      .chatWorldQ1{
+        top: 2%;
+        bottom: 79.5%;
+        left: 2%;
+        right:3%;
+        background-image: url("./images/Chatbot/ChatbotWorld.png");
+        background-size: 100% 100%;
+        position: absolute;
+      }
+      .chatWorldQ1:hover{
+        top: 0%;
+        bottom: 77.5%;
+        left:0%;
+        right:0%;
+        background-image: url("./images/Chatbot/ChatbotWorld(glow).png");
+      }
+    
+      .chatWorldA1{
+        top: 2%;
+        bottom: 79.5%;
+        left: 2%;
+        right:3%;
+        background-image: url("./images/Chatbot/ChatbotWorld.png");
+        background-size: 100% 100%;
+        position: absolute;
+      }
+
+        /*Wierd Creaction Chatbox*/
+  .chatWCQ1{
+    top: 2%;
+    bottom: 79.5%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotWeirdCreations1.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+  .chatWCQ1:hover{
+    top: 0%;
+    bottom: 77.5%;
+    left:0%;
+    right:0%;
+    background-image: url("./images/Chatbot/ChatbotWeirdCreations1(glow).png");
+  }
+
+  .chatWCA1{
+    top: 2%;
+    bottom: 79.5%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotWeirdCreations1.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+
+  .chatWCQ2{
+    top: 24.5%;
+    bottom: 57%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotWeirdCreations2.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+  .chatWCQ2:hover{
+    top: 22.5%;
+    bottom: 55%;
+    left:0%;
+    right:0%;
+    background-image: url("./images/Chatbot/ChatbotWeirdCreations2(glow).png");
+  }
+
+  .chatWCA2{
+    top: 2%;
+    bottom: 79.5%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotWeirdCreations2.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+
+          /*Lab Chatbox*/
+          .chatLabQ1{
+            top: 2%;
+            bottom: 79.5%;
+            left: 2%;
+            right:3%;
+            background-image: url("./images/Chatbot/ChatbotLaboratory1.png");
+            background-size: 100% 100%;
+            position: absolute;
+          }
+          .chatLabQ1:hover{
+            top: 0%;
+            bottom: 77.5%;
+            left:0%;
+            right:0%;
+            background-image: url("./images/Chatbot/ChatbotLaboratory1(Glow).png");
+          }
+        
+          .chatLabA1{
+            top: 2%;
+            bottom: 79.5%;
+            left: 2%;
+            right:3%;
+            background-image: url("./images/Chatbot/ChatbotLaboratory1.png");
+            background-size: 100% 100%;
+            position: absolute;
+          }
+        
+          .chatLabQ2{
+            top: 24.5%;
+            bottom: 57%;
+            left:2%;
+            right:3%;
+            background-image: url("./images/Chatbot/ChatbotLaboratory2.png");
+            background-size: 100% 100%;
+            position: absolute;
+          }
+          .chatLabQ2:hover{
+            top: 22.5%;
+            bottom: 55%;
+            left:0%;
+            right:0%;
+            background-image: url("./images/Chatbot/ChatbotLaboratory2(glow).png");
+          }
+        
+          .chatLabA2{
+            top: 2%;
+            bottom: 79.5%;
+            left: 2%;
+            right:3%;
+            background-image: url("./images/Chatbot/ChatbotLaboratory2.png");
+            background-size: 100% 100%;
+            position: absolute;
+          }
+
+  .chatLabQ3{
+    top: 47%;
+    bottom: 34.5%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotLaboratory3.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
+  .chatLabQ3:hover{
+    top: 45%;
+    bottom: 32.5%;
+    left:0%;
+    right:0%;
+    background-image: url("./images/Chatbot/ChatbotLaboratory3(glow).png");
+  }
+
+  .chatLabA3{
+    top: 2%;
+    bottom: 79.5%;
+    left: 2%;
+    right:3%;
+    background-image: url("./images/Chatbot/ChatbotLaboratory3.png");
+    background-size: 100% 100%;
+    position: absolute;
+  }
 
   /*Resource Chatbox*/
   .chatRescQ1{

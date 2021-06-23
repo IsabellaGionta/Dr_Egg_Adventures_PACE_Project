@@ -13,8 +13,6 @@ import ClosePop from "../images/close-popup.png"
 
 
 
-
-
 export const Resources = () => {
 
     let history = useHistory();

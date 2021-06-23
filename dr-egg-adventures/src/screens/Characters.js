@@ -19,7 +19,6 @@ import BadLight from '../images/Bad-Light.png';
 
 
 
-
 const Characters = () => {
 
   const [modalState2, setModalState2] = useState(true);
