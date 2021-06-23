@@ -37,7 +37,7 @@ export const Fanfic = () => {
     return (
         <div className="OnlineStore-Background-Container">
       <HelmetProvider><Helmet>
-        <title>Store Preview</title>
+        <title>Fanfiction</title>
       </Helmet></HelmetProvider>
       <div className="OnlineStore-Container">
                 <input className = "InputStyle" type="checkbox" id = "c1"/>
@@ -51,7 +51,7 @@ export const Fanfic = () => {
                     <p className = "book-text">
                         [Stories written by kids, submitted.]
                     </p>
-                  </div>
+                    </div>
                 </div>
                 <div className = "pageContainer">
 

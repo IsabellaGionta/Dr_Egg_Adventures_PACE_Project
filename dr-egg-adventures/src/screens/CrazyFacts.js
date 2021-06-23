@@ -35,7 +35,7 @@ export const CrazyFacts = () => {
     return (
         <div className="OnlineStore-Background-Container">
       <HelmetProvider><Helmet>
-        <title>Store Preview</title>
+        <title>Crazy Facts</title>
       </Helmet></HelmetProvider>
       <div className="OnlineStore-Container">
                 <input className = "InputStyle" type="checkbox" id = "c1"/>
@@ -123,7 +123,7 @@ export const CrazyFacts = () => {
                         <p className="Snake-text">'I've been researching some scientists from your world, and I thought I'd share what I found with you guys.' 
                         </p>
                         <div className = "popup-btn-container">
-                            <img className = "popup-btn" src={Continue} onClick = {() => setModalState(false)} onMouseOver = {e => e.currentTarget.src = Continueglow} onMouseOut={e => e.currentTarget.src = Continue}/>
+                            <img className = "popup-btn-cont" src={Continue} onClick = {() => setModalState(false)} onMouseOver = {e => e.currentTarget.src = Continueglow} onMouseOut={e => e.currentTarget.src = Continue}/>
                         </div>
                     </div>
             </Popup>
