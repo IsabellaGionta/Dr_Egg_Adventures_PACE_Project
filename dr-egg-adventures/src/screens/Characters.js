@@ -13,7 +13,9 @@ import SnakeImg from '../images/characters/Snake.png';
 import ProfMole from '../images/characters/ProfMole.png';
 import Back from '../images/btn-Back.png';
 import Snake from '../images/characters/Snake.png';
-import LandscapePopup from '../components/Landscape.js';
+import GoodLight from '../images/Good-Light.png';
+import BadLight from '../images/Bad-Light.png';
+
 
 
 
@@ -92,6 +94,10 @@ const Characters = () => {
           <div className="Character-Background-Container"> 
             <div className="Character-Images">
             <figure className="good-characters">
+                <img className="good-light" src={GoodLight} />
+                <img className="bad-light" src={BadLight} />
+
+
                 <img className="DrEgg  all" src={DrEgg} onClick={DrEggEventHandler} alt="DrEgg"/>
 
                 <img className="DrMoon  all" src={DrMoon} onClick={DrMoonEventHandler} alt="DrMoon"/>

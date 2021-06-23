@@ -1,10 +1,8 @@
 import {React, useState} from 'react'
 import Ardash from '../../images/characters/Ardash-Highlight-2.png';
-import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 
-import LandscapePopup from '../../components/Landscape.js';
 
 
 import Accordian from "../../components/Accordian"
@@ -13,7 +11,6 @@ import Accordian from "../../components/Accordian"
 
 import { useHistory } from "react-router-dom";
 export const ArdashScreen = () => {
-   const [modalState2, setModalState2] = useState(true);
 
     const CharacteristicsHandler = () => {
       const currentStatus=this.state.display;
@@ -86,16 +83,6 @@ export const ArdashScreen = () => {
 
         </div>
 
-        {/* <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
-          <div className = "popup-background">
-            <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
-          </div>
-        </LandscapePopup> */}
-
-        
-
-        
-        
       </div>
     );
 }

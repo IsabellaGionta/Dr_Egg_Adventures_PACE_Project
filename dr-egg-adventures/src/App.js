@@ -1,5 +1,5 @@
 import './App.css';
-import './Largescreen.css';
+import './LargeScreen.css';
 import './Mobile.css';
 import './external.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';

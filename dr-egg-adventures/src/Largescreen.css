@@ -1,4 +1,6 @@
-@media screen and (max-width: 1024px) and (max-height: 1367px) and (orientation: portrait) {
+  /* Portrait Mode */
+/* Tablet Screen Styling */
+@media screen and (max-width: 1024px) and (max-height: 1367px) and (orientation: portrait) {  
   /* Fanfiction */
   .page1 {
     margin-top: 35%;
@@ -76,10 +78,261 @@
   .game-text2 {
     left: 25%;
   }
+
+  .Back-Button:hover {
+    left: 84%;
+    top: 2%;
+  }
+
+  .modalBackground {
+    left: 15%;
+    width: 70%;
+  }
+
+  .Ardash:hover {
+    width: 29%;
+    left: 62%;
+    top: 33%;
+  }
+
+  .Cornelia:hover {
+    width: 26%;
+    left: 42%;
+  }
+
+  .Vivi:hover {
+    width: 33%;
+    left: 20%;
+  }
+
+  .DrEgg:hover {
+    width: 43%;
+    left: 20%;
+  }
+  .DrMoon:hover {
+    width: 47%;
+    left: 42%;
+  }
+
+  .SnakeImg:hover {
+    width: 45%;
+    bottom: 14%;
+    left: 28%;
+  }
+
+  .DrEggLogo {
+    width: 60%;
+    height: 60%;
+    left: 22%;
+    top: 10%;
+  }
+
+  .Home-Enter-Button {
+    width: 55%;
+    left: 25%;
+    top: 75%;
+  }
+
+  /* Resource screen */
+  h1.Resources-Title {
+    left: 25%;
+    font-size: 4vh;
+  }
+  .buttons {
+    left: 15%;
+    width: 90%;
+    cursor: pointer;
+  }
+  .Character-Bench {
+    height: 32%;
+  }
+  .all {
+    width: 40%;
+  }
+  .DrEgg {
+    width: 65%;
+    height: 80%;
+    left: 5%;
+  }
+  .Vivi {
+    left: 15%;
+    top: 30%;
+  }
+  .Ardash {
+    left: 57%;
+    top: 28%;
+  }
+  .DrMoon {
+    top: 15%;
+    width: 65%;
+    height: 80%;
+    left: 35%;
+  }
+  .Cornelia {
+    left: 38%;
+    top: 32%;
+  }
+  .Pigeon {
+    bottom: 20%;
+    width: 20%;
+  }
+  .Rifraf {
+    bottom: 20%;
+    width: 30%;
+  }
+  .Carlin {
+    bottom: 20%;
+    width: 15%;
+  }
+  .SnakeImg {
+    width: 40%;
+    bottom: 14%;
+    left: 30%;
+  }
+  .EggDrone {
+    bottom: 20%;
+    width: 20%;
+  }
+  .ProfMole {
+    left: 4%;
+  }
+
+  h1.Character-Type {
+    position: absolute;
+    left: 20%;
+    font-size: 3vh;
+  }
+
+  .Individual-Character-Name {
+    left: 20%;
+    top: 15%;
+    font-size: 2.5vh;
+  }
+  .Individual-Character-Slogan {
+    left: 20%;
+    top: 18%;
+    font-size: 2.4vh;
+  }
+  .Individual-Character-DrEggDrone {
+    line-height: 100px;
+    left: 18%;
+    top: 20%;
+    font-size: 2.3vh;
+  }
+
+  .Individual-Character-Styling {
+    max-width: 68%;
+    left: -13%;
+  }
+  .Individual-Character-Styling-Inventors {
+    top: 50%;
+    width: 45%;
+    left: -10%;
+    height: 60%;
+  }
+
+  .Individual-Character-Styling-Inventors-Cornelia {
+    width: 35%;
+    left: -5%;
+    top: 48%;
+  }
+
+  .Individual-Character-Styling-Inventors-Ardash {
+    width: 40%;
+    left: -5%;
+    top: 50%;
+  }
+
+  .Individual-Character-Styling-Inventors-Vivi {
+    width: 40%;
+    left: -5%;
+    top: 50%;
+  }
+
+  .Individual-Character-Styling-ProfMole {
+    width: 70%;
+    left: 35%;
+  }
+
+  .Individual-Character-Styling-Snake {
+    width: 40%;
+    left: 0%;
+  }
+
+  .Companion-Description {
+    width: 60%;
+    line-height: 20px;
+  }
+
+
+
+  .Character-Pet {
+    width: 20%;
+    left: 56%;
+  }
+
+  .CarlinHighlight:hover {
+    left: 56%;
+    top: 83%;
+  }
+
+  .EggDroneHighlight:hover {
+    left: 56%;
+    top: 69%;
+  }
+
+  .Character-Pet-Popup {
+    top: 30%;
+  }
+
+  .Character-Pet-Pigeon {
+    width: 25%;
+    left: 74%;
+    top: 75%;
+  }
+
+  .PigeonHighlight:hover {
+    left: 74%;
+    top: 75%;
+  }
+
+  .Powers {
+    padding: 40px 0px;
+  }
+  .Individual-Character-Styling {
+    max-width: 45%;
+  }
+
+  .Individual-Character-Styling-Pigeon {
+    max-width: 45%;
+  }
+  .Individual-Character-Styling-EggDrone {
+    max-width: 35%;
+  }
+
+  .Character-Description-Snake {
+    line-height: 37px;
+  }
+
+  .Character-Description-Inventors {
+    left: 30%;
+    top: 22%;
+    line-height: 22px;
+  }
+
+  .Character-Description {
+    left: 30%;
+    top: 27%;
+    width: 50%;
+    line-height: 40px;
+  }
+
+
 }
 
-@media screen and (max-width: 1367px) and (max-height: 1024px) and (orientation: landscape) {
-  /* Fanfiction */
+  /* Landscape Mode */
+  /* Tablet / Desktop screens */
+  @media screen and (max-width: 1367px) and (max-height: 1024px) and (orientation: landscape) {  /* Fanfiction */
   .page1 {
     margin-top: 20%;
   }
@@ -138,4 +391,282 @@
   .wc-box {
     top: 55%;
   }
-}
+
+    .Back-Button:hover {
+      left: 84%;
+      top: 2%;
+    }
+
+    .Ardash:hover {
+      width: 25%;
+      top: 25%;
+      left: 63%;
+    }
+  
+    .Cornelia:hover {
+      width: 22%;
+      left: 47%;
+    }
+  
+    .Vivi:hover {
+      width: 30%;
+      left: 25%;
+    }
+  
+    .DrEgg:hover {
+      top: 0%;
+      width: 30%;
+      left: 30%;
+    }
+
+    .ProfMole:hover {
+      width: 40%;
+      left: 5%;
+      top: 15%;
+    }
+    .DrMoon:hover {
+      top: 0%;
+      width: 30%;
+      left: 55%;
+    }
+
+    .SnakeImg:hover {
+      bottom: 12%;
+      width: 30%;
+    }
+    
+    .Character-Bench {
+      height: 32%;
+    }
+    .all {
+      width: 40%;
+    }
+    .DrEgg {
+      left: 25%;
+    }
+    .Vivi {
+      width: 30%;
+      left: 25%;
+      top: 24%;
+    }
+    .Ardash {
+      width: 32%;
+      left: 60%;
+    }
+    .DrMoon {
+      left: 50%;
+      top: -5%;
+    }
+    .Cornelia {
+      width: 30%;
+      left: 45%;
+    }
+    .Pigeon {
+      bottom: 20%;
+      width: 20%;
+    }
+    .Rifraf {
+      bottom: 20%;
+      width: 30%;
+    }
+    .Carlin {
+      bottom: 20%;
+      width: 15%;
+    }
+    .SnakeImg {
+      bottom: 12%;
+      width: 30%;
+    }
+    .EggDrone {
+      bottom: 20%;
+      width: 20%;
+    }
+    .ProfMole {
+      left: 5%;
+    }
+  
+    /* Home screen */
+    .DrEggLogo {
+      width: 38%;
+      height: 60%;
+      left: 30%;
+      top: 10%;
+    }
+  
+    .Home-Enter-Button {
+      width: 40%;
+      left: 30%;
+      top: 75%;
+    }
+
+    /* Resource screen */
+    .buttons {
+      left: 20%;
+      width: 80%;
+    }
+    h1.Resources-Title {
+      left: 30%;
+    }
+    /* Individual Character screens */
+  
+    .Individual-Character-Styling {
+      max-width: 68%;
+      left: -13%;
+    }
+    .Individual-Character-Styling-Inventors {
+      width: 35%;
+      left: -2%;
+      top: 20%;
+    }
+  
+    .Individual-Character-Styling-Inventors-Cornelia {
+      width: 25%;
+      left: 0%;
+      top: 30%;
+    }
+  
+    .Individual-Character-Styling-Inventors-Ardash {
+      width: 30%;
+      left: 0%;
+      top: 30%;
+
+    }
+  
+    .Individual-Character-Styling-Inventors-Vivi {
+      width: 30%;
+      left: 0%;
+      top: 30%;
+
+    }
+  
+    .Individual-Character-Styling-ProfMole {
+      width: 60%;
+      left: 40%;
+    }
+  
+    .Character-Pet {
+      width: 15%;
+      left: 65%;
+    }
+  
+    .Character-Pet-Pigeon {
+      width: 20%;
+      left: 78%;
+      bottom: 5%;
+    }
+  
+    .PigeonHighlight:hover {
+      left: 78%;
+      top: 70%;
+    }
+  
+    .EggDroneHighlight:hover {
+      left: 65%;
+      top: 60%;
+    }
+  
+    .CarlinHighlight:hover {
+      left: 66%;
+      top: 78%;
+    }
+  
+     /* Companion popups  */
+  
+    .Powers {
+      padding: 40px 0px;
+    }
+  
+    .Companion-Description {
+      line-height: 30px;
+    }
+  
+    .Character-Type {
+      left: 25%;
+    }
+    .Individual-Character-Slogan {
+      left: 30%;
+      top: 24%;
+      font-size: 3vh;
+    }
+  
+    .Character-Description {
+      left: 30%;
+      width: 50%;
+      top: 33%;
+    }
+  
+    .Character-Description-Inventors {
+      line-height: 30px;
+    }
+    .Powers {
+      padding: 50px 0px;
+    }
+    .Individual-Character-DrEggDrone {
+      line-height: 100px;
+      left: 18%;
+      top: 20%;
+      font-size: 2.5vh;
+    }
+    .Individual-Character-Styling {
+      max-width: 35%;
+    }
+  
+    .Individual-Character-Styling-Pigeon {
+      max-width: 35%;
+    }
+    .Individual-Character-Styling-EggDrone {
+      max-width: 35%;
+    }
+  
+    .Character-Description-Snake {
+      line-height: 50px;
+    }
+    .Mobile-Characteristics {
+      display: none;
+    }
+  
+    /* Lab Screen Styling */
+  
+    .button-container {
+      width: 20%;
+    }
+  
+    .plankname {
+      font-size: 3vh;
+    }
+  
+    .aboriginal-flag {
+      width: 10%;
+    }
+    .tool-container {
+      bottom: 10%;
+    }
+  
+    .tools {
+      width: 20%;
+    }
+  
+    .dregg {
+      bottom: 18%;
+    }
+  
+    .wc-box {
+      top: 50%;
+    }
+  }
+  
+  /* Large screens styling */
+  @media screen and (min-width: 1025px) {
+    .Character-Type {
+      left: 25%;
+    }
+    .Individual-Character-Slogan {
+      left: 30%;
+      top: 24%;
+      font-size: 3vh;
+    }
+  
+    .wc-box {
+      top: 40%;
+    }
+  }

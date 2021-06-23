@@ -1,11 +1,7 @@
 import {React, useState} from 'react'
 import DrMoon from '../../images/characters/Dr-Moon-Highlight2.png';
-import PetriDish from '../../images/PetriDish.png';
-import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
-
-import LandscapePopup from '../../components/Landscape.js';
 
 
 import Accordian from "../../components/Accordian"
@@ -19,7 +15,6 @@ export const DrMoonScreen = () => {
   const BackEventHandler = () => {
       history.push('/characters')
   }
-  const [modalState2, setModalState2] = useState(true);
 
 
 
@@ -45,12 +40,10 @@ export const DrMoonScreen = () => {
 
 
           <img className="Individual-Character-Styling-Inventors"src={DrMoon} />
-          {/* <img className="Character-Tool Petridish"src={PetriDish} /> */}
-
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
         <h1 className="Character-Type"> THE SCIENTISTS: </h1>
-        <h2 className="Individual-Character-Name"> DR CECILIA MOON:  </h2> 
+        <h2 className="Individual-Scientist-Name"> DR CECILIA MOON:  </h2> 
         <h2 className="Individual-Character-Slogan"> THE DNA KNITTER </h2>
 
         <div className="Character-Description">
@@ -79,11 +72,6 @@ export const DrMoonScreen = () => {
 
         </div>
 
-        {/* <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
-          <div className = "popup-background">
-            <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
-          </div>
-        </LandscapePopup> */}
 
            
       </div>
