@@ -75,36 +75,24 @@ function App() {
 					<Worlds />
 				</Route>
 
-				<Route path='/farmWorld1'>
+				<Route path='/farmWorld'>
 					<FarmWorldSingle />
 				</Route>
 
-				<Route path='/slumWorld1'>
+				<Route path='/slumWorld'>
 					<SlumWorldSingle />
 				</Route>
 
-				<Route path='/technoWorld1'>
+				<Route path='/technoWorld'>
 					<TechnoWorldSingle />
 				</Route>
 
-				<Route path='/seedcorpWorld1'>
+				<Route path='/seedcorpWorld'>
 					<SeedcorpSingle />
 				</Route>
 
-				<Route path='/lab1'>
+				<Route path='/lab'>
 					<LabWorldSingle />
-				</Route>
-
-				<Route path='/farmWorld'>
-					<FarmWorld />
-				</Route>
-				{/* 
-				<Route path='/slumWorld'>
-					<SlumWorld />
-				</Route> */}
-
-				<Route path='/technoWorld'>
-					<TechnoWorld />
 				</Route>
 
 				<Route path='/lab'>
