@@ -2278,77 +2278,7 @@ input {
   height: auto;
   object-fit: contain;
 }
-
-/*Chatbox Screens*/
-/*Book Chatbox*/
-
-.chatCont {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-#A1 {
-  display: none;
-}
-
-#Q1:checked ~ .chatCont#QCont {
-  display: none;
-}
-#Q1:checked ~ .chatCont#A1 {
-  display: block;
-}
-.chatATxt {
-  top: 21.5%;
-  bottom: 10%;
-  left: 1%;
-  right: 5%;
-  position: absolute;
-  overflow: auto;
-  font-size: 3vh;
-  font-family: "Museo-sans";
-  word-wrap: break-word;
-}
-.chatBackBtn {
-  background-image: url("./images/OnlineStoreImage/btnRight.png");
-  background-size: 100% 100%;
-  top: 91%;
-  bottom: 1%;
-  left: 1%;
-  right: 85%;
-  transform: rotateY(180deg);
-  position: absolute;
-}
-
-.chatBackBtn:hover {
-  background-image: url("./images/OnlineStoreImage/btnRightGlow.png");
-  top: 90%;
-  bottom: 0%;
-  left: 0%;
-  right: 84%;
-}
-
-.chatBookQ1 {
-  top: 2%;
-  bottom: 79.5%;
-  left: 2%;
-  right: 3%;
-  background-image: url("./images/Chatbot/ChatbotBook.png");
-  background-size: 100% 100%;
-  position: absolute;
-}
-.chatBookQ1:hover {
-  top: 0%;
-  bottom: 77.5%;
-  left: 0%;
-  right: 0%;
-  background-image: url("./images/Chatbot/ChatbotBook(Glow).png");
-}
-
-  /*Chatbox Screens*/
-
-
-
-  /*Chatbox Screens*/
+ /*Chatbox Screens*/
 
 
 
