@@ -1817,6 +1817,66 @@ input {
   .Character-Pet-Popup {
     top: 30%;
   }
+
+  /* Game Screen Mobile Landscape*/
+
+  .game-container {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+  }
+
+  .gamebtn {
+    width: 90%;
+    margin-left: 5%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+
+  .game-text1 {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+  }
+
+  .game-text2 {
+    position: absolute;
+    left: 30%;
+    top: 85%;
+  }
+
+  .game-button {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    max-height: auto;
+  }
+
+  .apple-button {
+    width: 40%;
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .ardash-face {
+    position: absolute;
+    top: 70%;
+    right: 70%;
+    width: 15%;
+    max-height: auto;
+    max-width: 100%;
+  }
+
+  .vivi-face {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    width: 15%;
+    max-height: auto;
+    max-width: 100%;
+  }
 }
 /* Mobile screens  */
 /* Portrait Mode */
@@ -1992,6 +2052,53 @@ input {
   .EggDroneHighlight:hover {
     left: 50%;
     top: 70%;
+  }
+  /* Game Screen Mobile Portrait*/
+
+  .Game-Background-Container {
+    background-image: url("./images/World-Blur.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .gamebtn {
+    transform: scale(1.5);
+  }
+
+  .game-button {
+    max-width: 100%;
+    width: 45%;
+    max-height: auto;
+    margin: 10px;
+  }
+
+  .game-text1 {
+    font-family: polaris;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    color: #5daa86;
+  }
+
+  .game-text2 {
+    left: 20%;
+  }
+
+  .ardash-face {
+    position: absolute;
+    right: 70%;
+    width: 20%;
+  }
+
+  .vivi-face {
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    width: 20%;
   }
 }
 
@@ -2280,6 +2387,77 @@ input {
 /* Portrait Mode */
 /* Tablet Screen Styling */
 @media screen and (max-width: 1024px) and (max-height: 1367px) and (orientation: portrait) {
+  /* Game Screen */
+
+  .Game-Background-Container {
+    background-image: url("./images/World-Blur.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .game-container {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .gamebtn {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 17%;
+  }
+
+  .game-button {
+    max-width: 40%;
+    max-height: auto;
+    margin: 10px;
+  }
+
+  .apple-button {
+    width: 65%;
+    max-width: 100%;
+    max-height: auto;
+    margin-top: 3%;
+  }
+
+  .game-text1 {
+    font-family: polaris;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    color: #5daa86;
+  }
+
+  .game-text2 {
+    font-family: polaris;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .ardash-face {
+    position: absolute;
+    top: 60%;
+    right: 80%;
+    transform: scale(1.1);
+  }
+
+  .vivi-face {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: scale(1.1);
+  }
   .Back-Button:hover {
     left: 84%;
     top: 2%;
@@ -2535,6 +2713,77 @@ input {
 /* Landscape Mode */
 /* Tablet / Desktop screens */
 @media screen and (max-width: 1367px) and (max-height: 1024px) and (orientation: landscape) {
+  /* Game Screen */
+
+  .Game-Background-Container {
+    background-image: url("./images/World-Blur.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .game-container {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .gamebtn {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 17%;
+  }
+
+  .game-button {
+    max-width: 40%;
+    max-height: auto;
+    margin: 10px;
+  }
+
+  .apple-button {
+    width: 65%;
+    max-width: 100%;
+    max-height: auto;
+    margin-top: 3%;
+  }
+
+  .game-text1 {
+    font-family: polaris;
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    color: #5daa86;
+  }
+
+  .game-text2 {
+    font-family: polaris;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .ardash-face {
+    position: absolute;
+    top: 60%;
+    right: 80%;
+    transform: scale(1.1);
+  }
+
+  .vivi-face {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: scale(1.1);
+  }
   .Back-Button:hover {
     left: 84%;
     top: 2%;
@@ -2742,6 +2991,35 @@ input {
   }
   .Mobile-Characteristics {
     display: none;
+  }
+
+  /* Lab Screen Styling */
+
+  .button-container {
+    width: 20%;
+  }
+
+  .plankname {
+    font-size: 3vh;
+  }
+
+  .aboriginal-flag {
+    width: 10%;
+  }
+  .tool-container {
+    bottom: 10%;
+  }
+
+  .tools {
+    width: 20%;
+  }
+
+  .dregg {
+    bottom: 18%;
+  }
+
+  .wc-box {
+    top: 50%;
   }
 }
 
