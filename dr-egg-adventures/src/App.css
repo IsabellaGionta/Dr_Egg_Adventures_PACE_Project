@@ -1472,49 +1472,33 @@ input {
 }
 
 .page1 {
-  margin-top: 15%;
-}
-
-.page2 {
-  position: absolute;
-  max-width: 100%;
-  width: 20%;
-  height: 90%;
-  right: 30%;
-  top: 28%;
-  padding: 25px;
-}
-
-.page2-fanfic {
-  position: absolute;
-  max-width: 100%;
-  width: 20%;
-  height: 90%;
-  right: 30%;
-  top: 21%;
-  padding: 25px;
+  margin-top: 12%;
 }
 
 .book-heading {
   font-family: polaris;
   color: #367771;
   text-align: center;
+  font-size: 30px;
 }
 
 .book-text {
   font-family: museo sans;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .fact {
-  transform: scale(0.9);
+  max-width: 100%;
+  width: 70%;
   margin-left: -30px;
 }
 
 .fact2 {
-  transform: scale(0.9);
+  max-width: 100%;
+  width: 70%;
   margin-left: 15%;
+  padding: 20px;
 }
 
 .left-turn {
@@ -1544,14 +1528,16 @@ input {
   padding: 20px;
 }
 
+.popup-btn-cont {
+  padding: 20px;
+}
+
 .ardash-popup {
   position: absolute;
-  left: 25%;
-  bottom: 12%;
+  left: 30%;
+  bottom: 35%;
   max-width: 100%;
-  transform: scale(0.6);
-
-  /* Add media queries  */
+  width: 50%;
 }
 
 .wc-blackboard-container {
@@ -1660,10 +1646,10 @@ input {
 }
 
 .apple-button {
-  width: 65%;
+  width: 70%;
   max-width: 100%;
   max-height: auto;
-  margin-top: 3%;
+  margin-top: 4%;
 }
 
 .game-text1 {
@@ -1688,14 +1674,16 @@ input {
   position: absolute;
   top: 60%;
   right: 80%;
-  transform: scale(1.1);
+  max-width: 100%;
+  width: 18%;
 }
 
 .vivi-face {
   position: absolute;
-  top: 60%;
+  top: 63%;
   left: 80%;
-  transform: scale(1.1);
+  max-width: 100%;
+  width: 18%;
 }
 
 /* .container {
