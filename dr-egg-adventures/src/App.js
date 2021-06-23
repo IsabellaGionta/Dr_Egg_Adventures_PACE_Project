@@ -91,7 +91,7 @@ function App() {
 					<SeedcorpSingle />
 				</Route>
 
-				<Route path='/lab'>
+				<Route path='/laboratory'>
 					<LabWorldSingle />
 				</Route>
 
