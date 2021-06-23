@@ -133,6 +133,10 @@
 /* Mobile Screens */
 /* Landscape Mode */
 @media screen and (max-width: 1000px) and (max-height: 500px) and (orientation: landscape) {
+
+  .Landscape-popup {
+    visibility: visible;
+  }
   .SnakePopup {
     width: 40%;
     left: 30%;
@@ -179,6 +183,10 @@
 /* Tablet Screens */
 /* Landscape Mode */
 @media screen and (max-width: 1367px) and (max-height: 1024px) and (orientation: landscape) {
+
+  .Landscape-popup {
+    visibility: visible;
+  }
   .Snake-popup-inner {
     width: 60%;
     top: -10%;
