@@ -1,23 +1,28 @@
 import SingleWorldLayout from './SingleWorldLayout';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
-	width: 50%;
-
-	${props =>
-		props.right &&
-		css`
-			float: right;
-		`}
+	width: 100%;
 `;
 
-const SingleWorld = ({ heading, left, right, bgSrc }) => {
+const MobileScreen = styled.div`
+	@media (min-width: 823px) {
+		display: none;
+	}
+`;
+
+const SingleWorld = ({ heading, left, right, bgSrc, mobileLayout }) => {
 	return (
-		<SingleWorldLayout bgSrc={bgSrc}>
-			{heading}
-			{left && <Wrapper>{left}</Wrapper>}
-			{right && <Wrapper right>{right}</Wrapper>}
-		</SingleWorldLayout>
+		<>
+			<SingleWorldLayout bgSrc={bgSrc}>
+				{heading}
+				<div>
+					{left && <Wrapper>{left}</Wrapper>}
+					{right && <Wrapper right>{right}</Wrapper>}
+				</div>
+			</SingleWorldLayout>
+			<MobileScreen>{mobileLayout}</MobileScreen>
+		</>
 	);
 };
 

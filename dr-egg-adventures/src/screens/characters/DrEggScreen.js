@@ -1,5 +1,5 @@
 import { useState, React } from 'react'
-import DrEgg from '../../images/characters/Dr-Egg-Highlight1.png';
+import DrEgg from '../../images/characters/Dr-Egg-Highlight2.png';
 import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import EggDrone from '../../images/characters/EggDrone.png';

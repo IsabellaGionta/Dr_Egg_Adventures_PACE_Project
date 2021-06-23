@@ -1,5 +1,5 @@
 import { useState, React }  from 'react';
-import Cornelia from '../../images/characters/Cornelia-Highlight1.png';
+import Cornelia from '../../images/characters/Cornelia-Highlight2.png';
 import Carlin from '../../images/characters/Carlin.png';
 import Pigeon from '../../images/characters/Pigeon.png';
 import PigeonFlipped from '../../images/characters/Pigeon-Flipped.png';

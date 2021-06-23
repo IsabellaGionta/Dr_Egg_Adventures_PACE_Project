@@ -1,5 +1,5 @@
 import {React, useState} from 'react'
-import Ardash from '../../images/characters/Ardash-Highlight1.png';
+import Ardash from '../../images/characters/Ardash-Highlight-2.png';
 import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
@@ -44,7 +44,7 @@ export const ArdashScreen = () => {
               Super eyesight. Super fast. Knows everything about numbers and data!" />
           <Accordian title="  WORLD " content="Techno-Towers" />
        </div>
-        <img className="Individual-Character-Styling-Inventors-Ardash"src={Ardash} />
+        <img className="Individual-Character-Styling-Inventors-Ardash"src={Ardash} alt = "Ardash" />
 
         <a href="/characters">
          <img className="Back-Button characters" src={Back} alt="Back"/>

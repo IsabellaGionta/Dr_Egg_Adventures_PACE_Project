@@ -6,6 +6,7 @@ import ViviPic from "../images/characters/Vivi.png"
 import ArdashPic from "../images/characters/Ardash.png"
 import CorneliaPic from "../images/characters/Cornelia.png"
 import GroupImg from "../images/OnlineStoreImage/Group.png"
+import ClosePop from "../images/close-popup.png"
 
 
 export const OnlineStore = () => {
@@ -98,12 +99,42 @@ export const OnlineStore = () => {
 
                 </div>
               </div>
-              <a href="/chatbot">
+              <label htmlFor = "chat">
                   <img className="StoreSnake" src={Snake} alt="Snake"/>  
-              </a>
+              </label>
               <a href = "/Map">
                 <div className="StoreBack" src={Back} alt="Back"/>
               </a>
+              <input className = "InputStyle" type="checkbox" id = "chat"/>
+              <div className = "ChatBoxContainer">
+                <label htmlFor = "chat">
+                  <img className = "chatClose" src = {ClosePop} alt = "Close"/>
+                </label>
+                <div className = "chatHBox">
+                  <img className="chatbotImg" src={Snake} alt="Snake"/>
+                </div>
+                <div className = "chatQBox">
+                  What do you need help with?
+                </div>
+                <div className = "chatABox">
+                <input className = "InputStyle" type="checkbox" id = "Q1"/>
+                  <div className = "chatCont" id = "QCont">
+                    <label htmlFor = "Q1">
+                      <div className = "chatBookQ1"/>
+                    </label>
+                  </div>
+                  <div className = "chatCont" id = "A1">
+                    <div className = "chatBookA1"/>
+                    <div className = "chatATxt">
+                      sksksk. Human you are sure lucky! Here you can read exceprts from our books! At the end of reading this, you can even download the full version to read!
+                    </div>                     
+                    <label htmlFor = "Q1">
+                      <div className = "chatBackBtn"/>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
             </div>
   )
 }
