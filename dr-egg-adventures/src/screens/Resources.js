@@ -7,7 +7,7 @@ import Snake from '../images/characters/Snake.png';
 import Blackboard from '../images/Blackboard.png';
 import pdf from '../pdf/Resource.pdf';
 import { useHistory } from "react-router-dom";
-
+import ClosePop from "../images/close-popup.png"
 import LandscapePopup from '../components/Landscape.js';
 
 
@@ -49,9 +49,41 @@ export const Resources = () => {
           </div>
         </LandscapePopup> */}
             <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-            <a href="/chatbot">
-           <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
-           </a>        
+            
+
+            <label htmlFor = "chat">
+                  <div className="StoreSnake"/>  
+              </label>
+              <input className = "InputStyle" type="checkbox" id = "chat"/>
+              <div className = "ChatBoxContainer">
+                <label htmlFor = "chat">
+                  <img className = "chatClose" src = {ClosePop} alt = "Close"/>
+                </label>
+                <div className = "chatHBox">
+                  <img className="chatbotImg" src={Snake} alt="Snake"/>
+                </div>
+                <div className = "chatQBox">
+                  What do you need help with?
+                </div>
+                <div className = "chatABox">
+                <input className = "InputStyle" type="checkbox" id = "Q1"/>
+                  <div className = "chatCont" id = "QCont">
+                    <label htmlFor = "Q1">
+                      <div className = "chatRescQ1"/>
+                    </label>
+                  </div>
+                  <div className = "chatCont" id = "A1">
+                    <div className = "chatRescA1"/>
+                    <div className = "chatATxt">
+                    Clicking on the buttons lets you download EXTRA sksksk information about Dr Egg Adventures Laboratory WORLD!  
+                    </div>                     
+                    <label htmlFor = "Q1">
+                      <div className = "chatBackBtn"/>
+                    </label>
+                  </div>
+                </div>
+              </div>
+             
            </div>
     )
 }

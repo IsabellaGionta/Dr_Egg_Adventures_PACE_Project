@@ -5,7 +5,7 @@ import slum from '../images/slumworld.png';
 import button from '../images/btn-Back.png';
 import Snake from '../images/characters/Snake.png';
 import { useHistory } from "react-router-dom";
-
+import ClosePop from "../images/close-popup.png"
 import farmworld from '../images/farmworld.png';
 import slumworld from '../images/slumworld.png';
 import technoworld from '../images/technoworld.png';
@@ -14,6 +14,7 @@ import seedcorp from '../images/seedcorp.png';
 import Popup from '../components/SnakePopup.js';
 import Back from '../images/btn-Back.png';
 import LandscapePopup from '../components/Landscape.js';
+import card from '../images/Chatbot/ChatboxCard.png';
 
 
 
@@ -146,9 +147,40 @@ const slumNav = () => {
                         <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
                     </div>
                 </LandscapePopup> */}
-                <a href="/chatbot">
-           <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
-        </a> 
+
+        <label htmlFor = "chat">
+                  <div className="StoreSnake"/>  
+              </label>
+              <input className = "InputStyle" type="checkbox" id = "chat"/>
+              <div className = "ChatBoxContainer">
+                <label htmlFor = "chat">
+                  <img className = "chatClose" src = {ClosePop} alt = "Close"/>
+                </label>
+                <div className = "chatHBox">
+                  <img className="chatbotImg" src={Snake} alt="Snake"/>
+                </div>
+                <div className = "chatQBox">
+                  What do you need help with?
+                </div>
+                <div className = "chatABox">
+                <input className = "InputStyle" type="checkbox" id = "Q1"/>
+                  <div className = "chatCont" id = "QCont">
+                    <label htmlFor = "Q1">
+                      <div className = "chatWorldQ1"/>
+                    </label>
+                  </div>
+                  <div className = "chatCont" id = "A1">
+                    <div className = "chatWorldA1"/>
+                    <div className = "chatATxt">
+                    sksksksk.. Click on one of the WORLD CARDS to discover interesting facts about each world that our INTERESTING characters reside in! TRY CLICKING ON ONE NOW!                    
+                    <img src = {card} alt = "World Card"/>
+                    </div>                     
+                    <label htmlFor = "Q1">
+                      <div className = "chatBackBtn"/>
+                    </label>
+                  </div>
+                </div>
+              </div>
         </div>
     )
 }

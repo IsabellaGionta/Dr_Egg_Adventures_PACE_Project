@@ -20,6 +20,7 @@ import '../assets/css/spinner.css';
 import LoadScreen from '../components/LoadScreen';
 import styled from 'styled-components';
 import ThemeButton from '../components/Button';
+import ClosePop from "../images/close-popup.png"
 
 export const Contact = () => {
 	let history = useHistory();
@@ -68,9 +69,38 @@ export const Contact = () => {
 					onClick={BackEventHandler}
 					alt='Back'
 				/>
-				<a href='/chatbot'>
-					<img className='Chatbot-Snake' src={Snake} alt='Snake' />
-				</a>
+				<label htmlFor = "chat">
+                  <div className="StoreSnake"/>  
+              </label>
+              <input className = "InputStyle" type="checkbox" id = "chat"/>
+              <div className = "ChatBoxContainer">
+                <label htmlFor = "chat">
+                  <img className = "chatClose" src = {ClosePop} alt = "Close"/>
+                </label>
+                <div className = "chatHBox">
+                  <img className="chatbotImg" src={Snake} alt="Snake"/>
+                </div>
+                <div className = "chatQBox">
+                  What do you need help with?
+                </div>
+                <div className = "chatABox">
+                <input className = "InputStyle" type="checkbox" id = "Q1"/>
+                  <div className = "chatCont" id = "QCont">
+                    <label htmlFor = "Q1">
+                      <div className = "chatContactQ1"/>
+                    </label>
+                  </div>
+                  <div className = "chatCont" id = "A1">
+                    <div className = "chatContactA1"/>
+                    <div className = "chatATxt">
+					human, human, what else are you suppose to do on this page? Do YOU have any questions? Find any errors? Well do the deed human and contact Dr Egg Adventures using the contact form! sksk... I’ll see you on the other side.
+					</div>                     
+                    <label htmlFor = "Q1">
+                      <div className = "chatBackBtn"/>
+                    </label>
+                  </div>
+                </div>
+              </div>
 			</div>
 		</div>
 	);

@@ -5,7 +5,6 @@ import { useState } from 'react';
 import bench from '../images/labbench.png';
 import btnback from '../images/btn-Back.png';
 import btnbackglow from '../images/btn-Back-hover.png';
-import snake from '../images/characters/Snake.png';
 import DrEgg from '../images/DrEgg-cut.png';
 import flag from '../images/aboriginal-flag.png';
 import flaghover from '../images/flag-glow.png';
@@ -32,6 +31,9 @@ import goggles from '../images/Goggle.png';
 import hoverboard from '../images/HoverBoard.png';
 import teletube from '../images/Teletube.png';
 import wcbox from '../images/weirdcreations-box.png';
+
+import Snake from '../images/characters/Snake.png';
+import ClosePop from "../images/close-popup.png"
 
 export const Lab = () => {
 
@@ -83,10 +85,6 @@ export const Lab = () => {
             </div> 
 
             <img className = "wc-box" src = {wcbox} alt = "wc box"/> 
-
-            <div className = "Chatbot-Snake">
-                <img className = "chatbot" src = {snake} alt = "chatbot" /> 
-            </div>
             <div className = "back-container"> 
                 <img className = "Back-Button" 
                 src = {btnback}
@@ -110,6 +108,77 @@ export const Lab = () => {
                 </div>
             </Popup>
 
+            <label htmlFor = "chat">
+                  <div className="StoreSnake"/>  
+              </label>
+              <input className = "InputStyle" type="checkbox" id = "chat"/>
+              <div className = "ChatBoxContainer">
+                <label htmlFor = "chat">
+                  <img className = "chatClose" src = {ClosePop} alt = "Close"/>
+                </label>
+                <div className = "chatHBox">
+                  <img className="chatbotImg" src={Snake} alt="Snake"/>
+                </div>
+                <div className = "chatQBox">
+                  What do you need help with?
+                </div>
+                <div className = "chatABox">
+                <input className = "InputStyle" type="checkbox" id = "Q1"/>
+                <input className = "InputStyle" type="checkbox" id = "Q2"/>
+                <input className = "InputStyle" type="checkbox" id = "Q3"/>
+                <input className = "InputStyle" type="checkbox" id = "Q4"/>
+                  <div className = "chatCont" id = "QCont">
+                    <label htmlFor = "Q1">
+                      <div className = "chatLabQ1"/>
+                    </label>
+                    <label htmlFor = "Q2">
+                      <div className = "chatLabQ2"/>
+                    </label>
+                    <label htmlFor = "Q3">
+                      <div className = "chatLabQ3"/>
+                    </label>
+                    <label htmlFor = "Q4">
+                      <div className = "chatLabQ4"/>
+                    </label>
+                  </div>
+                  <div className = "chatCont" id = "A1">
+                    <div className = "chatLabA1"/>
+                    <div className = "chatATxt">
+                    human do you like puzzles? sksksk... I SURE DO! Click on the “INVENTORY PUZZLE GAME” button and you can download our puzzle game! It will definitely challenge your BRAINsk...                    
+                    </div>                     
+                    <label htmlFor = "Q1">
+                      <div className = "chatBackBtn"/>
+                    </label>
+                  </div>
+                  <div className = "chatCont" id = "A2">
+                    <div className = "chatLabA2"/>
+                    <div className = "chatATxt">
+                    sksksksk... you humans know anything... Click the “FAN FICTION” button, and it will take you to a world of fan fiction written by other kids your age! You can even post a fan fiction of your own! TRY NOW!                    
+                    </div>                     
+                    <label htmlFor = "Q2">
+                      <div className = "chatBackBtn"/>
+                    </label>
+                  </div>
+                  <div className = "chatCont" id = "A3">
+                    <div className = "chatLabA3"/>
+                    <div className = "chatATxt">
+                    FACTS! This button takesk you to a WORLD of intersting CRAZY facts! sksksk.... you human will be sure to find something you don’t know on this page! DONT BELIEVE ME? I DARE YOU!                    
+                    </div>                     
+                    <label htmlFor = "Q3">
+                      <div className = "chatBackBtn"/>
+                    </label>
+                  </div>
+                  <div className = "chatCont" id = "A4">
+                    <div className = "chatLabA4"/>
+                    <div className = "chatATxt">
+                    WEIRD. ALL THINGS WEIRD. Click on the “WEIRD CREATIONS” button to find anything NOT normal! sksksk... It will interest you human! You can even MAKE your own creations and see what other ‘TERRIFYING’ humans can make!                    
+                    </div>                     
+                    <label htmlFor = "Q4">
+                      <div className = "chatBackBtn"/>
+                    </label>
+                  </div>
+                </div>
+              </div>
         </div>
     )
 }

@@ -5,6 +5,8 @@ import { useHistory } from "react-router-dom";
 import Popup from '../components/SnakePopup.js';
 import Continue from '../images/btn-continue.png';
 import ardash from '../images/ardash-thinking.png';
+import ClosePop from "../images/close-popup.png"
+//Glow Buttons
 import Continueglow from '../images/btn-continue-glow.png';
 
 import Back from '../images/btn-Back.png';
@@ -33,14 +35,16 @@ export const CrazyFacts = () => {
                 <input className = "InputStyle" type="checkbox" id = "c2"/>
                 <input className = "InputStyle" type="checkbox" id = "c3"/>                
                 <div id = "bookCover">
-                  <div className = "imgPageCoverContainer">
-                  <h1 className = "book-heading">Science Breakthrough</h1>
+                  <div className = "imgPageCoverContainer">                  
+                    <div className = "fact1Container">
+                    <h1 className = "book-heading">Science Breakthrough</h1>
                     <p className = "book-text">A young girl called Mary Anning was a fossil collecter and a paleontologist in the 1800's. Don't you know what that means?
                     I didn't either, but apparently it is someone who studies the fossils of the past. At the age of 12, she discovered the first
                     Temnodontosaurus platyodon skeleton. Apparently, it is some kind of ichthyosaur from Jurassic times! It looks kind of like a 
                     dolphin, don't you think?
                     </p>
-                    <img className = "fact" src = {fact1}/>
+                    <img className = "fact" src = {fact1} alt = "Temnodontosaurus Skeleton"/>
+                    </div>
                   </div>
                 </div>
                 <div className = "pageContainer">
@@ -57,7 +61,7 @@ export const CrazyFacts = () => {
                         <p className = "book-text"> That wasn't her only discovery though! When she turned 24, she discovered the first Plesiosaurus skeleton.
                         I like to think of them as big, angry turtles, with big teeth. How cool!
                         </p>
-                        <img className = "fact2" src = {fact2}/>
+                        <img className = "fact2" src = {fact2} alt = "Plesiosaurus Skeleton"/>
                         <p className = "book-text"> Unfortunately nobody recognised her much in her day, but now two species of fish are named after Mary!
                         </p>
                         </div>
@@ -102,9 +106,7 @@ export const CrazyFacts = () => {
 
                 </div>
               </div>
-              <a href="/chatbot">
-                  <img className="StoreSnake" src={Snake} alt="Snake"/>  
-              </a>
+              
               <a href = "/Map">
                 <div className="StoreBack" src={Back} alt="Back"/>
               </a>
@@ -118,6 +120,39 @@ export const CrazyFacts = () => {
                         </div>
                     </div>
             </Popup>
+
+            <label htmlFor = "chat">
+                  <div className="StoreSnake"/>  
+              </label>
+              <input className = "InputStyle" type="checkbox" id = "chat"/>
+              <div className = "ChatBoxContainer">
+                <label htmlFor = "chat">
+                  <img className = "chatClose" src = {ClosePop} alt = "Close"/>
+                </label>
+                <div className = "chatHBox">
+                  <img className="chatbotImg" src={Snake} alt="Snake"/>
+                </div>
+                <div className = "chatQBox">
+                  What do you need help with?
+                </div>
+                <div className = "chatABox">
+                <input className = "InputStyle" type="checkbox" id = "Q1"/>
+                  <div className = "chatCont" id = "QCont">
+                    <label htmlFor = "Q1">
+                      <div className = "chatCSFQ1"/>
+                    </label>
+                  </div>
+                  <div className = "chatCont" id = "A1">
+                    <div className = "chatCSFA1"/>
+                    <div className = "chatATxt">
+                    HUMAN! You are currently on the CRAZY SCIENCE FACTS PAGE! sksksk... Welcome human! Click on the arrows on the bottom of the page to discover more FACTSksk, that you don’t know!                     </div>                     
+                    <label htmlFor = "Q1">
+                      <div className = "chatBackBtn"/>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            
             </div>
        
     )

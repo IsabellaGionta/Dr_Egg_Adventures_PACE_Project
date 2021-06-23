@@ -14,6 +14,7 @@ import ProfMole from '../images/characters/ProfMole.png';
 import Back from '../images/btn-Back.png';
 import Snake from '../images/characters/Snake.png';
 import LandscapePopup from '../components/Landscape.js';
+import ClosePop from "../images/close-popup.png"
 
 
 
@@ -119,11 +120,40 @@ const Characters = () => {
             
 
             <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
-            <a href="/chatbot">
-              <img className="Chatbot-Snake" src={Snake} alt="Snake"/>  
-            </a>
-          </div>
+            <label htmlFor = "chat">
+                  <div className="StoreSnake"/>  
+              </label>
+              <input className = "InputStyle" type="checkbox" id = "chat"/>
+              <div className = "ChatBoxContainer">
+                <label htmlFor = "chat">
+                  <img className = "chatClose" src = {ClosePop} alt = "Close"/>
+                </label>
+                <div className = "chatHBox">
+                  <img className="chatbotImg" src={Snake} alt="Snake"/>
+                </div>
+                <div className = "chatQBox">
+                  What do you need help with?
+                </div>
+                <div className = "chatABox">
+                <input className = "InputStyle" type="checkbox" id = "Q1"/>
+                  <div className = "chatCont" id = "QCont">
+                    <label htmlFor = "Q1">
+                      <div className = "chatCharQ1"/>
+                    </label>
+                  </div>
+                  <div className = "chatCont" id = "A1">
+                    <div className = "chatCharA1"/>
+                    <div className = "chatATxt">
+                    sksksks.. See the bright light? That’s the GOOD people! See the dark light? That’s the BAD people! Try clicking on one of them for more INTERESTING INFORMATION! sksksk.                     
+                    </div>                     
+                    <label htmlFor = "Q1">
+                      <div className = "chatBackBtn"/>
+                    </label>
+                  </div>
+                </div>
+              </div>
 
+          </div>
         </div>
     )
 }

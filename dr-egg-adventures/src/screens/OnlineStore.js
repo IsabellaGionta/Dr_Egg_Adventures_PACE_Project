@@ -99,12 +99,14 @@ export const OnlineStore = () => {
 
                 </div>
               </div>
-              <label htmlFor = "chat">
-                  <img className="StoreSnake" src={Snake} alt="Snake"/>  
-              </label>
+
               <a href = "/Map">
                 <div className="StoreBack" src={Back} alt="Back"/>
               </a>
+
+              <label htmlFor = "chat">
+                  <div className="StoreSnake"/>  
+              </label>
               <input className = "InputStyle" type="checkbox" id = "chat"/>
               <div className = "ChatBoxContainer">
                 <label htmlFor = "chat">
