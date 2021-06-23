@@ -1,5 +1,5 @@
 import {React, useState} from 'react'
-import Ardash from '../../images/characters/Ardash-Highlight1.png';
+import Ardash from '../../images/characters/Ardash-Highlight-2.png';
 import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';

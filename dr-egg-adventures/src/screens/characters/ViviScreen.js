@@ -1,5 +1,5 @@
 import { useState, React }  from 'react';
-import Vivi from '../../images/characters/Vivi-Highlight1.png';
+import Vivi from '../../images/characters/Vivi-Highlight2.png';
 import Snake from '../../images/characters/Snake.png';
 import LandscapePopup from '../../components/Landscape.js';
 
