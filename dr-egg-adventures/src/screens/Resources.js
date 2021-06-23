@@ -8,7 +8,8 @@ import Blackboard from '../images/Blackboard.png';
 import pdf from '../pdf/Resource.pdf';
 import { useHistory } from "react-router-dom";
 import ClosePop from "../images/close-popup.png"
-import LandscapePopup from '../components/Landscape.js';
+
+
 
 
 
@@ -23,7 +24,6 @@ export const Resources = () => {
         history.push('/map')
 
     }
-    const [modalState2, setModalState2] = useState(true);
 
 
     return (
@@ -43,11 +43,6 @@ export const Resources = () => {
 
           </div>
           
-          {/* <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
-          <div className = "popup-background">
-            <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
-          </div>
-        </LandscapePopup> */}
             <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
             
 

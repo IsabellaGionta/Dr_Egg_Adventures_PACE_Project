@@ -1,8 +1,5 @@
 import { useState, React }  from 'react';
 import Vivi from '../../images/characters/Vivi-Highlight2.png';
-import Snake from '../../images/characters/Snake.png';
-import LandscapePopup from '../../components/Landscape.js';
-
 
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
@@ -19,10 +16,6 @@ export const ViviScreen = () => {
   const BackEventHandler = () => {
       history.push('/characters')
   }
-
-  const [modalState2, setModalState2] = useState(true);
-
-
 
     return (
       <div className="Characters-Background-Container">
@@ -43,11 +36,7 @@ export const ViviScreen = () => {
           </div> 
 
 
-          <img className="Individual-Character-Styling-Inventors-Vivi"src={Vivi} />
-          {/* <img className=" Character-Tool-Goggles"src={Goggle} />
-          <img className="Character-Tool" src={Toolbelt} /> */}
-
-
+        <img className="Individual-Character-Styling-Inventors-Vivi"src={Vivi} />
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 

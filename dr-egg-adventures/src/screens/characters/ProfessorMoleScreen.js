@@ -1,10 +1,7 @@
 import {React, useState} from 'react'
-import Snake from '../../images/characters/Snake.png';
 import ProfMole from '../../images/characters/ProfMole-Highlight2.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
-
-import LandscapePopup from '../../components/Landscape.js';
 
 
 import { useHistory } from "react-router-dom";
@@ -20,7 +17,6 @@ export const ProfessorMoleScreen = () => {
       history.push('/characters')
   }
 
-  const [modalState2, setModalState2] = useState(true);
 
 
 
@@ -74,12 +70,6 @@ export const ProfessorMoleScreen = () => {
             </p>
 
         </div>
-
-        {/* <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
-          <div className = "popup-background">
-            <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
-          </div>
-        </LandscapePopup> */}
 
            
       </div>

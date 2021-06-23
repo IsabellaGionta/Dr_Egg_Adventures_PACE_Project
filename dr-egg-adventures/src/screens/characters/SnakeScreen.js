@@ -6,7 +6,6 @@ import Blackboard from '../../images/Blackboard.png';
 
 import { useHistory } from "react-router-dom";
 
-import LandscapePopup from '../../components/Landscape.js';
 
 
 import Accordian from "../../components/Accordian"
@@ -19,7 +18,6 @@ export const SnakeScreen = () => {
   const BackEventHandler = () => {
       history.push('/characters')
     }
-  const [modalState2, setModalState2] = useState(true);
 
 
 
