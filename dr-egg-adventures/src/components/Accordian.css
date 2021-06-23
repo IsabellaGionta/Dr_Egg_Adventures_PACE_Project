@@ -19,6 +19,7 @@
 
 }
 
+
 .accordian:hover,  
     .active{
         background-color: #00BFFF;
@@ -68,9 +69,10 @@
     .accordian {
         visibility: visible;
         width: 80%;
-
+       
 
       }
+
 
       
       .accordian_content {
