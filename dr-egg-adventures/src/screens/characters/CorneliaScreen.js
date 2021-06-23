@@ -3,11 +3,9 @@ import Cornelia from '../../images/characters/Cornelia-Highlight2.png';
 import Carlin from '../../images/characters/Carlin.png';
 import Pigeon from '../../images/characters/Pigeon.png';
 import PigeonFlipped from '../../images/characters/Pigeon-Flipped.png';
-import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
 import Popup from '../../components/Popup.js';
-import LandscapePopup from '../../components/Landscape.js';
 
 
 import { useHistory } from "react-router-dom";
@@ -20,7 +18,6 @@ export const CorneliaScreen = () => {
   // Creating state for popups of companions 
   const [modalState, setModalState] = useState(false);
   const [modalState1, setModalState1] = useState(false);
-  const [modalState2, setModalState2] = useState(true);
 
 
   let history = useHistory();
@@ -131,12 +128,6 @@ export const CorneliaScreen = () => {
             </div>
           </div>
         </Popup>
-
-        {/* <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
-          <div className = "popup-background">
-            <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
-          </div>
-        </LandscapePopup> */}
         
    
       </div>
