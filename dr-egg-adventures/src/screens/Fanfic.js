@@ -1,17 +1,10 @@
 import {useState, React}from 'react'
-import btnback from '../images/btn-Back.png';
-import btnbackglow from '../images/btn-Back-hover.png';
-import book from '../images/Book.png';
-import arrowleft from '../images/btn-left.png';
-import arrowright from '../images/btn-right.png';
 import { useHistory } from "react-router-dom";
 import Popup from '../components/SnakePopup.js';
 import submit from '../images/btn-submit.png';
 import fanfic from '../images/btn-fanfiction2.png';
 
 //Glow Buttons
-import arrowleftglow from '../images/btn-left-glow.png';
-import arrowrightglow from '../images/btn-right-glow.png';
 import submitglow from '../images/btn-submit-glow.png';
 import fanficglow from '../images/btn-fanfic-glow2.png';
 
