@@ -1,32 +1,65 @@
 import SingleWorld from '../components/SingleWorld';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import FarmWorld from '../assets/images/FarmWorld.png';
-import UpperBoardImg from '../assets/images/upperBoard.png';
-import LowerBoardImg from '../assets/images/lowerBoard.png';
+import Bg from '../assets/images/Dboard.png';
 import Cornelia from '../images/characters/Cornelia.png';
+import SwitchBoard from '../components/SwitchBoard';
+import { useState } from 'react';
+
+const Flexbox = styled.div`
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+
+	${props =>
+		props.reverse &&
+		css`
+			flex-direction: row-reverse;
+		`}
+`;
+
+const InnerWrapper = styled.div`
+	width: 50%;
+
+	@media (max-width: 1366px) {
+		width: 90%;
+	}
+`;
+
+const BoardWrapper = styled.div`
+	width: 100%;
+	position: relative;
+
+	img {
+		width: 100%;
+	}
+`;
+
+const ContentWrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	justify-content: space-between;
+	height: 70%;
+
+	@media (max-width: 1366px) {
+		height: 75%;
+	}
+`;
 
 const UpperBoard = styled.div`
-	width: 820px;
-	min-height: 400px;
-	background: url(${UpperBoardImg});
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	padding: 2em 3em;
-	font-weight: 600;
-	font-size: 1.2em;
+	padding: 30px;
 `;
 
 const LowerBoard = styled.div`
-	width: 820px;
-	min-height: 300px;
-	background: url(${LowerBoardImg});
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	padding: 2em 3em;
-	font-weight: 600;
-	font-size: 1.2em;
+	padding: 2em 6em;
+
+	@media (max-width: 1366px) {
+		padding: 30px 80px;
+	}
 `;
 
 const Heading = styled.h1`
@@ -42,57 +75,84 @@ const SubHeading = styled.span`
 `;
 
 const Figure = styled.div`
-	position: absolute;
-	left: 30%;
-	bottom: 0;
+	width: 30%;
+
+	@media (max-width: 1366px) {
+		width: 40%;
+	}
 `;
 
 const FarmWorldSingle = () => {
+	const [info] = useState({
+		STORY:
+			'In the dusty brown fields under the giant SEEDCORP billboards, sit the empty silos and rusted tractors with their SEEDCORP logos. \nOnly a few farmers, like Tina and Denis, who have unwittingly “sold” the rights to their children for experimentation, are provided with genetically modified seed from SEEDCORP. On those farms, corn grows tall and green and ears of corn act as radio transmitters linked to Dr Mole’s headquarters. As Dr Mole controls all the seed in Farm World, and has locked away all the organic seeds he can, farmers who are unable to afford SEEPCORP’s special genetically modified seed can’t grow anything, and experience severe food shortages. Most farmers survive by procuring what little GM seed they can afford off the “black market”. ',
+		INHABITANTS: 'Cornelia and her parents Tina and Dennis.',
+		DANGERS:
+			'Brat packs of spoiled children.Dr Mole’s Hybrid Helpers. Starvation.',
+		LANDSCAPE: 'Silos, tractors, fuel tanks, all with the SEEDCORP logo.',
+	});
+
 	return (
 		<SingleWorld
 			bgSrc={FarmWorld}
 			heading={<Heading>CORN-FARMLANDS</Heading>}
+			mobileLayout={<SwitchBoard info={info} />}
 			right={
-				<>
-					<UpperBoard>
-						<p>
-							In the dusty brown fields under the giant SEEDCORP
-							billboards, sit the empty silos and rusted tractors
-							with their SEEDCORP logos. Only a few farmers, like
-							Tina and Denis, who have unwittingly “sold” the
-							rights to their children for experimentation, are
-							provided with genetically modified seed from
-							SEEDCORP. On those farms, corn grows tall and green
-							and ears of corn act as radio transmitters linked to
-							Dr Mole’s headquarters. As Dr Mole controls all the
-							seed in Farm World, and has locked away all the
-							organic seeds he can, farmers who are unable to
-							afford SEEPCORP’s special genetically modified seed
-							can’t grow anything, and experience severe food
-							shortages. Most farmers survive by procuring what
-							little GM seed they can afford off the “black
-							market”.
-						</p>
-					</UpperBoard>
-					<LowerBoard>
-						<p>
-							<SubHeading>Inhabitants:</SubHeading> Cornelia and
-							her parents Tina and Dennis.
-						</p>
-						<p>
-							<SubHeading>Dangers:</SubHeading> Dr Mole’s Hybrid
-							Helpers. Starvation.
-						</p>
-						<p>
-							<SubHeading>Landscape Features:</SubHeading> Silos,
-							tractors, fuel tanks, all with the SEEDCORP logo.
-						</p>
-					</LowerBoard>
+				<Flexbox reverse>
+					<InnerWrapper>
+						<BoardWrapper>
+							<img src={Bg} />
 
+							<ContentWrapper>
+								<UpperBoard>
+									<p>
+										In the dusty brown fields under the
+										giant SEEDCORP billboards, sit the empty
+										silos and rusted tractors with their
+										SEEDCORP logos. Only a few farmers, like
+										Tina and Denis, who have unwittingly
+										“sold” the rights to their children for
+										experimentation, are provided with
+										genetically modified seed from SEEDCORP.
+										On those farms, corn grows tall and
+										green and ears of corn act as radio
+										transmitters linked to Dr Mole’s
+										headquarters. As Dr Mole controls all
+										the seed in Farm World, and has locked
+										away all the organic seeds he can,
+										farmers who are unable to afford
+										SEEPCORP’s special genetically modified
+										seed can’t grow anything, and experience
+										severe food shortages. Most farmers
+										survive by procuring what little GM seed
+										they can afford off the “black market”.
+									</p>
+								</UpperBoard>
+								<LowerBoard>
+									<p>
+										<SubHeading>Inhabitants:</SubHeading>{' '}
+										Cornelia and her parents Tina and
+										Dennis.
+									</p>
+									<p>
+										<SubHeading>Dangers:</SubHeading> Dr
+										Mole’s Hybrid Helpers. Starvation.
+									</p>
+									<p>
+										<SubHeading>
+											Landscape Features:
+										</SubHeading>{' '}
+										Silos, tractors, fuel tanks, all with
+										the SEEDCORP logo.
+									</p>
+								</LowerBoard>
+							</ContentWrapper>
+						</BoardWrapper>
+					</InnerWrapper>
 					<Figure>
-						<img src={Cornelia} width='400' />
+						<img src={Cornelia} width='100%' />
 					</Figure>
-				</>
+				</Flexbox>
 			}></SingleWorld>
 	);
 };
