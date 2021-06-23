@@ -1,19 +1,10 @@
 import {useState, React}from 'react'
-import btnback from '../images/btn-Back.png';
-import btnbackglow from '../images/btn-Back-hover.png';
-import book from '../images/Book.png';
 import fact1 from '../images/fact-img.png';
 import fact2 from '../images/fact-img2.png';
-import arrowleft from '../images/btn-left.png';
-import arrowright from '../images/btn-right.png';
 import { useHistory } from "react-router-dom";
 import Popup from '../components/SnakePopup.js';
 import Continue from '../images/btn-continue.png';
 import ardash from '../images/ardash-thinking.png';
-
-//Glow Buttons
-import arrowleftglow from '../images/btn-left-glow.png';
-import arrowrightglow from '../images/btn-right-glow.png';
 import Continueglow from '../images/btn-continue-glow.png';
 
 import Back from '../images/btn-Back.png';

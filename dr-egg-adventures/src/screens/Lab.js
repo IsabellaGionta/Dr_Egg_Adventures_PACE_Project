@@ -10,8 +10,6 @@ import DrEgg from '../images/DrEgg-cut.png';
 import flag from '../images/aboriginal-flag.png';
 import flaghover from '../images/flag-glow.png';
 import plank from '../images/plank.png';
-import book from '../images/Book.png';
-import popupBackground from '../images/popup-bg.png';
 
 import { useHistory } from "react-router-dom";
 
