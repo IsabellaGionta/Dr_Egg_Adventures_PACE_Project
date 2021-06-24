@@ -198,7 +198,6 @@
 
     /* Resource screen */
     h1.Resources-Title {
-      left: 30%;
       font-size: 7vh;
     }
     .buttons {
@@ -412,10 +411,6 @@
 
 
   /* Resource screen */
-    h1.Resources-Title {
-      left: 25%;
-      font-size: 2vh;
-    }
     .buttons {
       left: 15%;
       width: 90%;

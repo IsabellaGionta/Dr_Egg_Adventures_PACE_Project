@@ -414,8 +414,10 @@ h1.Resources-Title {
   text-align: center;
   position: absolute;
   top: 15%;
-  left: 36%;
+  left: 15%;
+  width: 71%;
   color: white;
+  word-wrap: break-word;
 }
 
 .Resource-Background-Container {
@@ -857,7 +859,7 @@ h1.Contact-Title {
   margin: 0 auto;
   top: 20%;
   color: #fff;
-  word-break: break-all;
+  word-wrap: break-word;
   text-align: center;
 }
 
@@ -888,7 +890,7 @@ h1.Contact-Title {
   color: white;
   line-height: 40px;
   font-size: 3vh;
-  word-break: break-all;
+  word-wrap: break-word;
 }
 
 .indent {

@@ -135,7 +135,6 @@
 
   /* Resource screen */
   h1.Resources-Title {
-    left: 25%;
     font-size: 4vh;
   }
   .buttons {
@@ -483,9 +482,6 @@
     .buttons {
       left: 20%;
       width: 80%;
-    }
-    h1.Resources-Title {
-      left: 30%;
     }
     /* Individual Character screens */
   
