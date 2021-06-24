@@ -518,12 +518,16 @@ h1.Resources-Title {
 }
 
 .Character-Bench {
+  background-image: url('./images/labbench.png');
+  background-size: 100% 100%;
   position: absolute;
   bottom: 0%;
   left: 0%;
   width: 99.5vw;
-  /* max-height: 100%; */
   height: 30vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .Carlin {
@@ -693,32 +697,32 @@ h1.Resources-Title {
 }
 
 .SnakeImg {
-  position: absolute;
-  bottom: 10%;
-  left: 40%;
-  width: 22%;
+  height: 70%;
+  width: auto;
   max-width: 100%;
-  max-height: auto;
 }
 
 .SnakeImg:hover {
   content: url("./images/characters/Snake-Highlight2.png");
-  width: 24%;
-  left: 40%;
+  height: 80%;
+  width: auto;
 }
 
 .Back-Button {
-  position: fixed;
+  position: absolute;
   top: 2%;
   left: 86%;
+  height: auto;
+  width: auto;
   max-width: 10%;
-  max-height: auto;
+  max-height: 100%;
 }
 
 .Back-Button:hover {
   content: url("./images/btn-Back-hover.png");
-  left: 84%;
-  top: 0%;
+  top: 0.5%;
+  left: 85%;
+  max-width: 12%;
 }
 
 .Chatbot-Snake {
@@ -1036,7 +1040,7 @@ input {
 }
 
 .world:hover {
-  z-index: 1;
+  z-index: 5;
   backdrop-filter: blur(5px);
 }
 .technoworld1 {
@@ -1045,16 +1049,18 @@ input {
   left: 70%;
   top: 25%;
   width: 25%;
-
   margin-left: auto;
   margin-right: auto;
+}
+
+.technoworld1:hover ~ .farmworld1{
+  z-index: 5;
 }
 
 .farmworld1 {
   position: absolute;
   left: 10%;
   top: 25%;
-  max-height: 100%;
   width: 25%;
   max-width: 100%;
 }
@@ -1075,7 +1081,6 @@ input {
   top: 25%;
   width: 25%;
   max-width: 100%;
-
   margin-left: auto;
   margin-right: auto;
 }
@@ -1086,7 +1091,6 @@ input {
   top: 25%;
   width: 25%;
   max-width: 100%;
-
   margin-left: auto;
   margin-right: auto;
 }
@@ -1363,12 +1367,6 @@ input {
   max-height: auto;
   left: 70%;
   top: 30%;
-}
-
-.back-container {
-  position: absolute;
-  width: 100%;
-  padding: 20px;
 }
 
 .lab-blackboard {
@@ -1797,7 +1795,12 @@ input {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: 0.5s;
-  -moz-backface-visibility: hidden;
+}
+@supports (-moz-backface-visibility: hidden){
+  .page{
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
 }
 
 .frontPageContainer,
@@ -1806,11 +1809,12 @@ input {
   height: 100%;
   overflow: auto;
   position: absolute;
+  backface-visibility: hidden;
+
 }
 
 .backPageContainer {
   transform: rotateY(180deg);
-  backface-visibility: hidden;
   text-align: center;
 }
 

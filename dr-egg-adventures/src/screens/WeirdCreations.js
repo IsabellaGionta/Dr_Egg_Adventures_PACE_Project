@@ -23,14 +23,12 @@ export const WeirdCreations = () => {
 
     return (
         <div className = "Lab-Background-Container">
-            <div className = "back-container"> 
                 <img className = "Back-Button" 
                 src = {btnback}
                 onMouseOver = {e => e.currentTarget.src = btnbackglow}
                 onMouseOut={e => e.currentTarget.src = btnback}
                 alt = "home button" 
                 onClick = {homeNav}/>  
-            </div>
             <div className = "wc-blackboard-container">
                 <h1 className = "wc-heading"> Weird Creations</h1>
                 <img className = "submit-icon" src = {icon} onClick = {submitNav} onMouseOver = {e => e.currentTarget.src = iconglow} onMouseOut={e => e.currentTarget.src = icon}/>

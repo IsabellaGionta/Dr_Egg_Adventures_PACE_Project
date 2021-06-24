@@ -110,9 +110,9 @@ const Characters = () => {
               <figure className="bad-characters">
                <img className="ProfMole all " src={ProfMole} onClick={ProfMoleEventHandler} alt="ProfMole"/> 
               </figure>
-              <img className="Character-Bench" src={LabBench} alt="LabBench"/>
-
-              <img className="SnakeImg characters" src={SnakeImg} onClick={SnakeEventHandler} alt="SnakeImg"/> 
+              <div className="Character-Bench">
+                <img className="SnakeImg characters" src={SnakeImg} onClick={SnakeEventHandler} alt="SnakeImg"/>
+              </div>
 
             </div>
 

@@ -1,10 +1,5 @@
 import {useState, React}from 'react'
-import techno from '../images/technoworld.png';
-import farm from '../images/farmworld.png';
-import slum from '../images/slumworld.png';
-import button from '../images/btn-Back.png';
 import Snake from '../images/characters/Snake.png';
-import { useHistory } from "react-router-dom";
 import ClosePop from "../images/close-popup.png"
 import farmworld from '../images/farmworld.png';
 import slumworld from '../images/slumworld.png';
@@ -13,38 +8,12 @@ import egglab from '../images/egglab.png';
 import seedcorp from '../images/seedcorp.png';
 import Popup from '../components/SnakePopup.js';
 import Back from '../images/btn-Back.png';
-import LandscapePopup from '../components/Landscape.js';
 import card from '../images/Chatbot/ChatboxCard.png';
-
-
-
-
-import Card from '../components/Card.js';
 
 export const Worlds = () => {
 
 const [modalState, setModalState] = useState(true);
-const [modalState2, setModalState2] = useState(true);
 
-
-
-const history = useHistory();
-
-const homeNav = () => {
-    history.push('/map');
-}
-
-const technoNav = () => {
-    history.push('/TechnoWorld');
-}
-
-const farmNav = () => {
-    history.push('/FarmWorld');
-}
-
-const slumNav = () => {
-    history.push('/SlumWorld');
-}
 
     return (
         <div  className="Background-Container"> 
@@ -52,49 +21,29 @@ const slumNav = () => {
          <img className="Back-Button characters" src={Back} alt="Back"/>
         </a>
             <a href="/farmworld">
-             <div className="card-container">
-                <img className="farmworld1 world" src={farmworld} />
-
-            </div>
+                <img className="farmworld1 world" src={farmworld} alt = "Corn-Farmlands"/>
             </a>
 
             <a href="/slumworld">
-                <div className="card-container">
- 
-                    <img className="slumworld1 world" src={slumworld} />
-
-                </div>
+                    <img className="slumworld1 world" src={slumworld} alt = "Slum-Lanes"/>
             </a>
             
-            <a href="/seedcorp">
-                <div className="card-container">
-
-                    <img className="seedcorp1 world" src={seedcorp} />
-
-                </div>
+            <a href="/seedcorpWorld">
+                    <img className="seedcorp1 world" src={seedcorp} alt = "Seedcorp Lab"/>
             </a>
 
-            <a href="/egglab">
-                <div className="card-container">
-
-                    <img className="egglab1 world" src={egglab} />
-
-                </div>
+            <a href="/labWord">
+                    <img className="egglab1 world" src={egglab} alt = "Dr Egg Lab"/>
             </a>
 
 
             <a href="/technoworld">
-                <div className="card-container">
-
-                    <img className="technoworld1 world" src={technoworld} />
-
-                </div>
-
+                    <img className="technoworld1 world" src={technoworld} alt = "Techno-Towers"/>
             </a>
 
                 <Popup trigger={modalState} setTrigger = {setModalState}>
                     <div className = "popup-background">
-                        <img className = "SnakePopup" src={Snake} />
+                        <img className = "SnakePopup" src={Snake} alt = "Sake"/>
                         <p className="Snake-text"> In sprawled out, windy slum world, starvation and food shortages are every day occurences. The poor inhabittants suffer as Dr Mole ruthlessly seeks to control the food supplies. In the scary backstreets, roam gangs of "dumped" mutant thugs, the result of Dr Mole's experiments on children and animals. Anyone can become the thugs' unsuspecting quarry, and be kidnapped for auction at the notorious and scary Mutant and Body Parts Black Market. </p>
                     </div>
                 </Popup>

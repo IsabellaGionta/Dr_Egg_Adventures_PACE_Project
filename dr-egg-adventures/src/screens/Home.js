@@ -5,7 +5,7 @@ import '../App.css';
 import Enter from '../images/Enter-Button.png';
 import DrEggLogo from '../images/Dr-Egg-Logo.png';
 
-import LandscapePopup from '../components/Landscape.js';
+import Popup from '../components/Popup';
 
 
 
@@ -31,11 +31,11 @@ export const Home = () => {
                {/* <img src="./images/Map.png" alt="map" />         */}
               </div>
 
-            <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
+            <Popup trigger={modalState2} setTrigger = {setModalState2}>
               <div className = "popup-background">
                 <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
               </div>
-            </LandscapePopup> 
+            </Popup> 
             </div> 
           )
 

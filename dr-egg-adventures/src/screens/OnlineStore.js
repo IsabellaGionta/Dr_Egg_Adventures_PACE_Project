@@ -1,5 +1,4 @@
 import React from 'react';
-import Back from '../images/btn-Back.png';
 import Snake from '../images/characters/Snake.png';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import ViviPic from "../images/characters/Vivi.png"
@@ -101,7 +100,7 @@ export const OnlineStore = () => {
               </div>
 
               <a href = "/Map">
-                <div className="StoreBack" src={Back} alt="Back"/>
+                <div className="StoreBack"/>
               </a>
 
               <label htmlFor = "chat">

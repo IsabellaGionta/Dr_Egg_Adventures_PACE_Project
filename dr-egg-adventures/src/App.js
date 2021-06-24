@@ -9,8 +9,6 @@ import Map from './screens/Map.js';
 import Game from './screens/Game.js';
 import Contact from './screens/Contact.js';
 import Characters from './screens/Characters.js';
-import FarmWorld from './screens/FarmWorld.js';
-import TechnoWorld from './screens/TechnoWorld.js';
 import Lab from './screens/Lab.js';
 import OnlineStore from './screens/OnlineStore.js';
 import Trailer from './screens/Trailer.js';
@@ -39,7 +37,6 @@ import RifRaf from './screens/characters/RifRafScreen.js';
 import Pigeon from './screens/characters/PigeonScreen.js';
 import EggDrone from './screens/characters/EggDroneScreen.js';
 import Snake from './screens/characters/SnakeScreen.js';
-import SnakeWorlds from './components/SnakePopup.js';
 import ProfMole from './screens/characters/ProfessorMoleScreen.js';
 import SeedcorpSingle from './screens/SeedcorpSingle';
 
@@ -91,7 +88,7 @@ function App() {
 					<SeedcorpSingle />
 				</Route>
 
-				<Route path='/laboratory'>
+				<Route path='/labWord'>
 					<LabWorldSingle />
 				</Route>
 

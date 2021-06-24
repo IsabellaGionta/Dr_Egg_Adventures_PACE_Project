@@ -85,14 +85,12 @@ export const Lab = () => {
             </div> 
 
             <img className = "wc-box" src = {wcbox} alt = "wc box"/> 
-            <div className = "back-container"> 
                 <img className = "Back-Button" 
                 src = {btnback}
                 onMouseOver = {e => e.currentTarget.src = btnbackglow}
                 onMouseOut={e => e.currentTarget.src = btnback}
                 alt = "home button" 
                 onClick = {homeNav}/>  
-            </div>
 
             <img className = "aboriginal-flag" 
             src = {flag} 

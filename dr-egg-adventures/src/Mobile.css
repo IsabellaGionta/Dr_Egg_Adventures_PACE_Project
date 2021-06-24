@@ -597,10 +597,6 @@
     left: 10%;
     width: 80%;
   }
-  .Back-Button:hover {
-    left: 84%;
-    top: 0%;
-  }
   /* Home Screen */
 
   .DrEggLogo {
@@ -650,12 +646,6 @@
     left: 22%;
     top: 12%;
     width: 60%;
-  }
-
-  .SnakeImg {
-    width: 40%;
-    top: 75%;
-    left: 30%;
   }
   /* Individual Character screens */
 
