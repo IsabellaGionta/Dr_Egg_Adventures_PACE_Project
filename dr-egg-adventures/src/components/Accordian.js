@@ -19,7 +19,7 @@ export const Accordian = (props) => {
     }
   
     return (
-        <div classname="accordian_section" >
+        <div className="accordian_section" >
             <Button className={`accordian ${setActive}`} onClick={toggleAccordian}> 
                 <p className="accordian_title"> {props.title} </p>
                 <Chevron className={`${setRotate}`} width={10} fill={'#777'} />
