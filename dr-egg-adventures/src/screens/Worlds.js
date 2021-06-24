@@ -20,26 +20,39 @@ const [modalState, setModalState] = useState(true);
         <a href="/map">
          <img className="Back-Button characters" src={Back} alt="Back"/>
         </a>
+        <div className = "worldContainer">
+          <div className="farmworld1" id = "FWorld">
             <a href="/farmworld">
-                <img className="farmworld1 world" src={farmworld} alt = "Corn-Farmlands"/>
+                <img className = "world" src={farmworld} alt = "Corn-Farmlands" />
             </a>
-
+          </div>
+          <div className="slumworld1" id = "SWorld">
             <a href="/slumworld">
-                    <img className="slumworld1 world" src={slumworld} alt = "Slum-Lanes"/>
+                    <img className="world" src={slumworld} alt = "Slum-Lanes"/>
             </a>
-            
+          </div>
+          <div className="seedcorp1" id = "SedWorld">
             <a href="/seedcorpWorld">
-                    <img className="seedcorp1 world" src={seedcorp} alt = "Seedcorp Lab"/>
-            </a>
-
+                    <img className="world" src={seedcorp} alt = "Seedcorp Lab"/>
+          </a>
+            </div>
+            <div className="egglab1" id = "LWorld">
             <a href="/labWord">
-                    <img className="egglab1 world" src={egglab} alt = "Dr Egg Lab"/>
+                    <img className="world" src={egglab} alt = "Dr Egg Lab" />
             </a>
+            </div>
 
-
+            <div className="technoworld1" id = "TechWorld">
             <a href="/technoworld">
-                    <img className="technoworld1 world" src={technoworld} alt = "Techno-Towers"/>
+                    <img className="world" src={technoworld} alt = "Techno-Towers" />
             </a>
+            </div>
+            <div className="egglab1" id = "LWorld2">
+            <a href="/labWord">
+                    <img className="world" src={egglab} alt = "Dr Egg Lab" />
+            </a>
+            </div>
+            </div>
 
                 <Popup trigger={modalState} setTrigger = {setModalState}>
                     <div className = "popup-background">
