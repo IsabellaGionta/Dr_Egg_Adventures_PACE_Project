@@ -1,5 +1,12 @@
 /*Phone Aspect Ratio*/
 @media all and (max-aspect-ratio: 10/16) {
+  .MLabel{
+    font-size: 2vh;
+  }
+
+  .Contact-Form{
+    padding:0;
+  }
 
   .Back-Button{
     max-width: 20%;

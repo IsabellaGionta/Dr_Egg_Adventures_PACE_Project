@@ -873,14 +873,6 @@ h1.Contact-Title {
   padding: 12px 20px;
 }
 
-.Contact-Form {
-  height: 70%;
-  position: absolute;
-  top: 21%;
-  left: 15%;
-  right: 14%;
-}
-
 .Contact-Info {
   font-family: museo sans;
   position: absolute;
@@ -927,6 +919,11 @@ input {
   font-weight: 400px;
   font-size: 3vh;
   word-wrap: break-word;
+}
+
+.Contact-Form{
+  position: initial;
+  padding: 2% 15px;
 }
 
 .Contact-Form input,

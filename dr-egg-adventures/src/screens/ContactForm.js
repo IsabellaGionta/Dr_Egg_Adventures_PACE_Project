@@ -27,20 +27,22 @@ const ErrorMsg = styled.span`
 
 const FixedWrapper = styled.div`
 	position: absolute;
-	top: 20%;
-	left: 0;
-	right: 0;
+	top: 12%;
+	left: 14%;
+	right: 13%;
+	bottom: 10%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 `;
 
 const ContactTitle = styled.h1`
 	font-family: Polaris;
 	text-transform: uppercase;
+	left: 14%;
+	right: 13%;
 	font-size: 5vh;
-	margin: 0 auto;
+	text-align:center;
 	color: #fff;
 `;
 
@@ -141,16 +143,13 @@ export const ContactForm = () => {
 						<Form
 							className='Contact-Form'
 							onSubmit={handleSubmit}
-							style={{
-								position: 'initial',
-								padding: '2% 15px',
-							}}>
+							>
 							{/* <h1 className="Contact-Title"> Dr Egg Adventures </h1> */}
 							<div className='Contact-FormGroup'>
 								<FormGroup>
 									<div className='Contact-Label'>
 										{' '}
-										<Label> Full Name </Label>{' '}
+										<Label className = "MLabel"> Full Name </Label>{' '}
 									</div>
 									<div className='input-wrapper'>
 										<Input
@@ -171,7 +170,7 @@ export const ContactForm = () => {
 								<FormGroup>
 									<div className='Contact-Label'>
 										{' '}
-										<Label>Email</Label>{' '}
+										<Label className = "MLabel">Email</Label>{' '}
 									</div>
 									<div className='input-wrapper'>
 										<Input
@@ -194,7 +193,7 @@ export const ContactForm = () => {
 							<div className='Contact-FormGroup'>
 								<FormGroup>
 									<div className='Contact-Label'>
-										<Label>Message</Label>
+										<Label className = "MLabel">Message</Label>
 									</div>
 									<div className='input-wrapper'>
 										<Input
