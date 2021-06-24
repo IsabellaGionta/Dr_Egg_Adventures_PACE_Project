@@ -97,6 +97,7 @@ export const OnlineStore = () => {
                   </div>
 
                 </div>
+
               </div>
 
               <a href = "/Map">
