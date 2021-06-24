@@ -7,7 +7,7 @@ function Landscape(props) {
     return (props.trigger) ? (
         <div className = "Landscape-popup">
             <div className = "Landscape-popup-inner">
-                <img className = "Landscape-close-btn" src = {close} onClick = {() => props.setTrigger(false)}/>
+                <img className = "Landscape-close-btn" src = {close} onClick = {() => props.setTrigger(false)} alt="Close"/>
                 {props.children}
             </div>
         </div>
