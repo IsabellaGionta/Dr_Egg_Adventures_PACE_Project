@@ -4,10 +4,13 @@
   .Back-Button{
     max-width: 20%;
   }
-  .Back-Button:hover {
-    max-width: 24%;
-    right: 0%;
-    top:1%
+
+  @supports not(-moz-appearance:none){
+    .Back-Button:hover {
+      max-width: 24%;
+      right: 0%;
+      top:1%
+    }
   }
 
   .StoreSnake {
@@ -173,7 +176,14 @@
     top: 1vh;
     bottom: 89vh;
   }
+
+  .game-text1 {
+    font-size: 3vh;
   }
+  .game-text2 {
+    font-size: 2vh;
+  }
+}
 
   /* Mobile screens  */
 /* Landscape Mode */
@@ -216,20 +226,23 @@
     left: 80%;
     top: 65%;
   }
-
+  @supports not(-moz-appearance:none){
   .CarlinHighlight:hover {
     left: 70%;
   }
-
   .PigeonHighlight:hover {
     top: 65%;
     left: 80%;
   }
-
   .EggDroneHighlight:hover {
     top: 65%;
     left: 70%;
   }
+}
+
+
+
+
 
   .Individual-Character-Styling-Inventors-Ardash {
     width: 18%;
@@ -350,16 +363,6 @@
   }
 
   /* Game Screen Mobile Landscape*/
-
-  .game-text2 {
-    font-size: 12px;
-    left: 30%;
-  }
-
-  .apple-button {
-    margin-top: 7%;
-    width: 70%;
-  }
 }
 
 /* Mobile View */
@@ -400,23 +403,6 @@
 
   /* Game Screen Mobile Portrait*/
 
-  .gamebtn {
-    width: 100%;
-  }
-
-  .apple-button {
-    width: 80%;
-    margin-top: 10%;
-  }
-
-  .game-text1 {
-    font-size: 20px;
-  }
-
-  .game-text2 {
-    left: 17%;
-  }
-
 
   /* Resource screen */
     h1.Resources-Title {
@@ -448,10 +434,6 @@
     position: absolute;
     top: 75%;
     left: 18%;
-  }
-
-  .Home-Enter-Button:hover {
-    content: url("./images/btn-Enter-Glow.png");
   }
 
   /* Main Character screen */
@@ -566,26 +548,24 @@
     font-size: 2vh;
   }
 
-  .PigeonHighlight:hover {
-    top: 84%;
-    left: 67%;
-  }
+  @supports not(-moz-appearance:none){
 
   .CarlinHighlight:hover {
     top: 85%;
     left: 50%;
   }
-
-  .Individual-Character-Name-Pet {
-    font-size: 2vh;
+  .PigeonHighlight:hover {
+    top: 84%;
+    left: 67%;
   }
-
   .EggDroneHighlight:hover {
     left: 50%;
     top: 70%;
   }
- 
-}
+  }
 
-  
+  .Individual-Character-Name-Pet {
+    font-size: 2vh;
+  }
+}
   

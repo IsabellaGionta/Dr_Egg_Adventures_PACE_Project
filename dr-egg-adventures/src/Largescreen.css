@@ -65,25 +65,12 @@
     position: relative;
   }
 
-  .ardash-face {
-    top: 70%;
-    width: 18%;
-  }
-
-  .vivi-face {
-    top: 73%;
-    width: 18%;
-  }
-
-  .game-text2 {
-    left: 25%;
-  }
-
   .modalBackground {
     left: 15%;
     width: 70%;
   }
 
+  @supports not(-moz-appearance:none){
   .Ardash:hover {
     width: 35%;
     left: 69%;
@@ -116,6 +103,22 @@
     top:16%;
     height: 70%;
   }
+  .EggDroneHighlight:hover {
+    left: 56%;
+    top: 69%;
+  }
+
+  .PigeonHighlight:hover {
+    left: 74%;
+    top: 75%;
+  }
+
+  .CarlinHighlight:hover {
+    left: 56%;
+    top: 83%;
+  }
+
+}
 
   .DrEggLogo {
     width: 60%;
@@ -263,15 +266,8 @@
     left: 56%;
   }
 
-  .CarlinHighlight:hover {
-    left: 56%;
-    top: 83%;
-  }
 
-  .EggDroneHighlight:hover {
-    left: 56%;
-    top: 69%;
-  }
+
 
   .Character-Pet-Popup {
     top: 30%;
@@ -283,10 +279,7 @@
     top: 75%;
   }
 
-  .PigeonHighlight:hover {
-    left: 74%;
-    top: 75%;
-  }
+
 
   .Powers {
     padding: 40px 0px;
@@ -345,16 +338,6 @@
     position: relative;
   }
 
-  .ardash-face {
-    top: 60%;
-    width: 18%;
-  }
-
-  .vivi-face {
-    top: 63%;
-    width: 18%;
-  }
-
   /* Lab Screen Styling */
 
   .button-container {
@@ -383,6 +366,9 @@
   .wc-box {
     top: 55%;
   }
+
+
+  @supports not(-moz-appearance:none){
 
     .Ardash:hover {
       width: 25%;
@@ -416,6 +402,22 @@
       width: 30%;
       left: 55%;
     }
+
+    .PigeonHighlight:hover {
+      left: 78%;
+      top: 70%;
+    }
+  
+    .EggDroneHighlight:hover {
+      left: 65%;
+      top: 60%;
+    }
+
+    .CarlinHighlight:hover {
+      left: 66%;
+      top: 78%;
+    }
+  }
     
     .Character-Bench {
       height: 32%;
@@ -533,20 +535,9 @@
       bottom: 5%;
     }
   
-    .PigeonHighlight:hover {
-      left: 78%;
-      top: 70%;
-    }
+
   
-    .EggDroneHighlight:hover {
-      left: 65%;
-      top: 60%;
-    }
-  
-    .CarlinHighlight:hover {
-      left: 66%;
-      top: 78%;
-    }
+
   
      /* Companion popups  */
   

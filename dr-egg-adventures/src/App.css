@@ -87,6 +87,12 @@ p {
 .Dropdown {
   width: 100%;
 }
+
+.close-btn{
+  width: 20%;
+  width: auto;
+  max-height: 100%;
+}
 /* Home Screen Styling */
 
 .Lab-Background-Container {
@@ -129,11 +135,9 @@ p {
   position: absolute;
   top: 50%;
   left: 35%;
+  cursor: pointer;
 }
 
-.Home-Enter-Button:hover {
-  content: url("./images/btn-Enter-Glow.png");
-}
 
 /* Individual Character Screen Styling */
 
@@ -573,13 +577,7 @@ h1.Resources-Title {
   max-height: auto;
 }
 
-.ProfMole:hover {
-  content: url("./images/characters/ProfMole-Highlight2.png");
-  width: 35%;
-  height: 46%;
 
-  left: 11%;
-}
 
 .good-characters {
   height: 100%;
@@ -597,13 +595,10 @@ h1.Resources-Title {
   max-width: 100%;
   max-height: 100%;
   height: 70%;
+  cursor: pointer;
 }
 
-.Cornelia:hover {
-  content: url("./images/characters/Cornelia-Highlight2.png");
-  width: 15%;
-  left: 42%;
-}
+
 
 .Ardash {
   position: absolute;
@@ -613,13 +608,10 @@ h1.Resources-Title {
   max-width: 100%;
   max-height: 100%;
   height: 70%;
+  cursor: pointer;
 }
 
-.Ardash:hover {
-  content: url("./images/characters/Ardash-Highlight-2.png");
-  width: 18%;
-  left: 52%;
-}
+
 
 .DrEgg {
   position: absolute;
@@ -628,13 +620,10 @@ h1.Resources-Title {
   width: 28%;
   max-width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
-.DrEgg:hover {
-  content: url("./images/characters/Dr-Egg-Highlight2.png");
-  width: 23%;
-  bottom: 5%;
-}
+
 
 .DrMoon {
   position: absolute;
@@ -643,13 +632,10 @@ h1.Resources-Title {
   width: 28%;
   max-width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
-.DrMoon:hover {
-  content: url("./images/characters/Dr-Moon-Highlight2.png");
-  width: 23%;
-  left: 48%;
-}
+
 
 .Vivi {
   position: absolute;
@@ -659,12 +645,10 @@ h1.Resources-Title {
   max-width: 100%;
   max-height: 100%;
   height: 70%;
+  cursor: pointer;
 }
 
-.Vivi:hover {
-  content: url("./images/characters/Vivi-Highlight2.png");
-  width: 18%;
-}
+
 
 .EggDrone {
   position: absolute;
@@ -675,37 +659,11 @@ h1.Resources-Title {
   max-height: auto;
 }
 
-.EggDroneHighlight:hover {
-  content: url("./images/characters/EggDrone1.png");
-  left: 75%;
-  top: 63%;
-  cursor: pointer;
-}
-
-.PigeonHighlight:hover {
-  content: url("./images/characters/Pigeon-Highlight.png");
-  left: 85%;
-  top: 76%;
-  cursor: pointer;
-}
-
-.CarlinHighlight:hover {
-  content: url("./images/characters/Carlin-Highlight.png");
-  left: 75%;
-  top: 78%;
-  cursor: pointer;
-}
-
 .SnakeImg {
   height: 70%;
   width: auto;
   max-width: 100%;
-}
-
-.SnakeImg:hover {
-  content: url("./images/characters/Snake-Highlight2.png");
-  height: 80%;
-  width: auto;
+  cursor: pointer;
 }
 
 .Back-Button {
@@ -716,14 +674,12 @@ h1.Resources-Title {
   width: auto;
   max-width: 10%;
   max-height: 100%;
+  cursor: pointer;
 }
 
-.Back-Button:hover {
-  content: url("./images/btn-Back-hover.png");
-  top: 0.5%;
-  right: 1%;
-  max-width: 12%;
-}
+
+
+
 
 .Chatbot-Snake {
   position: absolute;
@@ -1571,29 +1527,34 @@ input {
   justify-content: flex-start;
 }
 
-.gamebtn {
-  display: flex;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  justify-content: center;
-  padding: 10px;
-  padding-left: 17%;
-}
-
 .game-button {
-  max-width: 40%;
-  max-height: auto;
-  margin: 10px;
+  position: absolute;
+  left: 9%;
+  bottom: 30%;
+  width: 41%;
+  height: auto;
+  max-height: 20%;
 }
 
 .apple-button {
-  width: 70%;
-  max-width: 100%;
-  max-height: auto;
-  margin-top: 4%;
+  position: absolute;
+  right: 9%;
+  bottom: 30%;
+  width: 41%;
+  height: auto;
+  max-height: 20%;
 }
-
+.game-text1-cont{
+  position:absolute;
+  left: 0%;
+  right: 0%;
+  top:0%;
+  bottom: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .game-text1 {
   font-family: polaris;
   font-weight: bold;
@@ -1605,27 +1566,31 @@ input {
 .game-text2 {
   position: absolute;
   bottom: 0%;
-  left: 35%;
+  left:30%;
+  max-width: 40%;
   font-family: polaris;
   font-weight: bold;
   text-align: center;
-  font-size: 2vh;
+  font-size: 3vh;
+  max-height: 30%;
 }
 
 .ardash-face {
   position: absolute;
-  top: 60%;
-  right: 80%;
-  max-width: 100%;
-  width: 18%;
+  bottom: 0%;
+  left: 0%;
+  height: 30%;
+  width: auto;
+  max-width: 30%;
 }
 
 .vivi-face {
   position: absolute;
-  top: 63%;
-  left: 80%;
-  max-width: 100%;
-  width: 18%;
+  bottom: 0%;
+  right: 0%;
+  height: 30%;
+  width: auto;
+  max-width: 30%;
 }
 
 
@@ -2210,7 +2175,7 @@ input {
 }
 
 #chat:checked ~ .ChatBoxContainer {
-  z-index: 10;
+  z-index: 2000;
   left: 0;
   top: 0;
   height: 100vh;
@@ -3124,5 +3089,120 @@ input {
   .BtnContain {
     height: 71vw;
     width: 100vw;
+  }
+}
+
+@supports not(-moz-appearance:none){
+  .Back-Button:hover {
+    content: url("./images/btn-Back-hover.png");
+    top: 0.5%;
+    right: 1%;
+    max-width: 12%;
+  }
+
+  .Home-Enter-Button:hover {
+    content: url("./images/btn-Enter-Glow.png");
+  }
+  
+  .ProfMole:hover {
+    content: url("./images/characters/ProfMole-Highlight2.png");
+    width: 35%;
+    height: 46%;
+  
+    left: 11%;
+  }
+
+  .Cornelia:hover {
+    content: url("./images/characters/Cornelia-Highlight2.png");
+    width: 15%;
+    left: 42%;
+  }
+
+  .Ardash:hover {
+    content: url("./images/characters/Ardash-Highlight-2.png");
+    width: 18%;
+    left: 52%;
+  }
+
+  .DrEgg:hover {
+    content: url("./images/characters/Dr-Egg-Highlight2.png");
+    width: 23%;
+    bottom: 5%;
+  }
+  .DrMoon:hover {
+    content: url("./images/characters/Dr-Moon-Highlight2.png");
+    width: 23%;
+    left: 48%;
+  }
+  .Vivi:hover {
+    content: url("./images/characters/Vivi-Highlight2.png");
+    width: 18%;
+  }
+  .EggDroneHighlight:hover {
+    content: url("./images/characters/EggDrone1.png");
+    left: 75%;
+    top: 63%;
+    cursor: pointer;
+  }
+  .PigeonHighlight:hover {
+    content: url("./images/characters/Pigeon-Highlight.png");
+    left: 85%;
+    top: 76%;
+    cursor: pointer;
+  }
+  .CarlinHighlight:hover {
+    content: url("./images/characters/Carlin-Highlight.png");
+    left: 75%;
+    top: 78%;
+    cursor: pointer;
+  }
+  .SnakeImg:hover {
+    content: url("./images/characters/Snake-Highlight2.png");
+    height: 80%;
+    width: auto;
+  }
+}
+
+@supports (-moz-appearance:none){
+  .Back-Button:hover {
+    opacity: 80%;
+  }
+
+  .Home-Enter-Button:hover {
+    opacity: 80%;
+  }
+  
+  .ProfMole:hover {
+    opacity: 80%;
+  }
+
+  .Cornelia:hover {
+    opacity: 80%;
+  }
+
+  .Ardash:hover {
+    opacity: 80%;
+  }
+
+  .DrEgg:hover {
+    opacity: 80%;
+  }
+  .DrMoon:hover {
+    opacity: 80%;
+  }
+  .Vivi:hover {
+    opacity: 80%;
+  }
+  .EggDroneHighlight:hover {
+    opacity: 80%;
+  }
+  .PigeonHighlight:hover {
+    opacity: 80%;
+  }
+  .CarlinHighlight:hover {
+    opacity: 80%;
+  }
+  .SnakeImg:hover {
+    opacity: 80%;
   }
 }

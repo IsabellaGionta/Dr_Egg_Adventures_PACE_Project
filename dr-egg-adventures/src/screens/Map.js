@@ -46,7 +46,7 @@ class Map extends React.Component {
                 }
             >
                 <div className = "BtnContain">
-                    <a href="/Game">
+                    <a href="/game">
                         <div className = "GamesHeading"/>
                     </a>
                     <a href="/Contact">
