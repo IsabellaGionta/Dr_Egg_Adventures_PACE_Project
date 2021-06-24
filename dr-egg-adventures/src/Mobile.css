@@ -4,6 +4,14 @@
   .Back-Button{
     max-width: 20%;
   }
+  .Back-Button:hover {
+    max-width: 24%;
+  }
+  @supports (-moz-appearance:none){
+    .Back-Button:hover {
+      max-width: 20%;
+    }
+  }
 
   .Contact-Info{
     font-size: 2vh;
@@ -21,13 +29,6 @@
     top:20%;
   }
 
-  @supports not(-moz-appearance:none){
-    .Back-Button:hover {
-      max-width: 24%;
-      right: 0%;
-      top:1%
-    }
-  }
 
   .StoreSnake {
     height: 6vh;
@@ -199,6 +200,8 @@
   .game-text2 {
     font-size: 2vh;
   }
+
+
 }
 
   /* Mobile screens  */
@@ -241,19 +244,27 @@
     left: 80%;
     top: 65%;
   }
-  @supports not(-moz-appearance:none){
+
+
+  
+  
   .CarlinHighlight:hover {
-    left: 70%;
+    left: 69%;
+    width: 13%;
   }
   .PigeonHighlight:hover {
-    top: 65%;
-    left: 80%;
+    top: 64%;
+    left: 79%;
+    width: 17%;
   }
   .EggDroneHighlight:hover {
-    top: 65%;
+    bottom: 7%;
     left: 70%;
+    width: 12%;
   }
-}
+  @supports (-moz-appearance:none){
+
+  }
 
 
 
@@ -468,13 +479,13 @@
 
   .DrMoon {
     left: 52%;
-    top: 12%;
+    top:7%;
     width: 60%;
   }
 
   .DrEgg {
     left: 22%;
-    top: 12%;
+    bottom: 14%;
     width: 60%;
   }
   /* Individual Character screens */
@@ -557,22 +568,57 @@
     line-height: 40px;
     width: 70%;
     font-size: 2vh;
-  }
-
-  @supports not(-moz-appearance:none){
+  } 
 
   .CarlinHighlight:hover {
-    top: 85%;
-    left: 50%;
+    width: 27%;
+    left: 48%;
   }
   .PigeonHighlight:hover {
-    top: 84%;
-    left: 67%;
+    width: 29%;
+    left: 66%;
+    top:74%;
   }
   .EggDroneHighlight:hover {
-    left: 50%;
-    top: 70%;
+    left: 49%;
+    width: 26%;
+    bottom: 6%;
   }
+  
+  @supports (-moz-appearance:none){
+    .EggDroneHighlight:hover {
+      left: 50%;
+      width: 23%;
+      bottom: 5%;
+    }
+
+    .PigeonHighlight:hover {
+      width: 26%;
+      bottom: 3%;
+      left: 67%;
+    }
+    .Vivi:hover{
+      left: 15%;
+      width: 45%;
+    }
+    .Cornelia:hover{
+      left: 45%;
+      width: 45%;
+    }
+    .Ardash:hover{
+      left: 65%;
+      width: 45%;
+    }
+    .DrMoon:hover{
+      left:52%;
+      width: 60%;
+      top:7%;
+    }
+    .DrEgg:hover{
+      left: 22%;
+      width: 60%;
+      bottom: 14%;
+    }
   }
 
   .Individual-Character-Name-Pet {

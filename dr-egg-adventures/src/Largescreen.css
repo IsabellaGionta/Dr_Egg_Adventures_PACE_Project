@@ -70,54 +70,91 @@
     width: 70%;
   }
 
-  @supports not(-moz-appearance:none){
+
   .Ardash:hover {
     width: 35%;
     left: 69%;
     height: 60%;
-    top: 28%;
+    top:28%;
   }
 
   .Cornelia:hover {
-    width: 35%;
-    left: 47%;
-    top:25%;
+    width: 32%;
+    left: 49%;
+    height: 65%;
   }
 
   .Vivi:hover {
     width: 40%;
     left: 18%;
-    height: 65%;
-    top:25%
+    height:65%;
+    top:25%;
   }
 
   .DrEgg:hover {
-    width: 43%;
-    left: 30%;
-    top: 18%;
-    height: 70%;
+    width: 42%;
+    left: 29%;
+    height: 67%;
+    bottom: 21%;
   }
   .DrMoon:hover {
+    top:12%;
     width: 45%;
     left: 59%;
-    top:16%;
     height: 70%;
+  }
+  .ProfMole:hover{
+    width: 42%;
+    left: 3%;
+    bottom: 43%;
+    height: 45%;
   }
   .EggDroneHighlight:hover {
     left: 56%;
-    top: 69%;
   }
 
   .PigeonHighlight:hover {
     left: 74%;
-    top: 75%;
   }
 
   .CarlinHighlight:hover {
     left: 56%;
-    top: 83%;
   }
-
+  @supports (-moz-appearance:none){
+    .PigeonHighlight:hover {
+      left: 74%;
+      width: 25%;
+    }
+    .Ardash:hover {
+      bottom: 8%;
+      left: 57%;
+      width: 40%;
+      height: 70%;
+    }
+  
+    .Cornelia:hover {
+      width: 40%;
+      left: 38%;
+      bottom:4%;
+    }
+  
+    .Vivi:hover {
+      width: 40%;
+      left: 15%;
+      bottom:3%;
+    }
+  
+    .DrEgg:hover {
+      width:65%;
+      height: 80%;
+      left: 5%;
+    }
+    .DrMoon:hover {
+      width: 65%;
+      left: 35%;
+      top:15%;
+      height: 80%;
+    }
 }
 
   .DrEggLogo {
@@ -189,6 +226,16 @@
   }
   .ProfMole {
     left: 4%;
+  }
+
+  @supports (-moz-appearance:none){
+    .ProfMole:hover{
+      left: 4%;
+      width: 40%;
+      height: 40%;
+      bottom: 45%;
+    }
+    
   }
 
   h1.Character-Type {
@@ -316,7 +363,98 @@
 
   /* Landscape Mode */
   /* Tablet / Desktop screens */
-  @media screen and (max-width: 1367px) and (max-height: 1024px) and (orientation: landscape) {  /* Fanfiction */
+  @media screen and (max-width: 1367px) and (max-height: 1024px) and (orientation: landscape) {
+    
+    
+
+
+      .Ardash:hover {
+        width: 26%;
+        left: 62%;
+        height: 66%;
+      }
+    
+      .Cornelia:hover {
+        width: 22%;
+        left: 47%;
+      }
+    
+      .Vivi:hover {
+        width: 28%;
+        left: 27%;
+        height: 68%;
+        top:26%;
+      }
+    
+      .DrEgg:hover {
+        width: 30%;
+        left: 29%;
+        bottom:10%;
+        height: 90%;
+      }
+  
+      .ProfMole:hover {
+        width: 40%;
+        left: 5%;
+      }
+      .DrMoon:hover {
+        width: 30%;
+        left: 55%;
+        top:1%;
+        height: 87%;
+      }
+  
+      .PigeonHighlight:hover {
+        left: 78%;
+      }
+    
+      .EggDroneHighlight:hover {
+        left: 65%;
+      }
+  
+      .CarlinHighlight:hover {
+        left: 66%;
+      }
+    
+    
+      @supports (-moz-appearance:none){
+        .EggDroneHighlight:hover {
+          left:65%;
+          bottom: 5%;
+          opacity: 80%;
+        }
+        .PigeonHighlight:hover {
+          left: 78%;
+          width: 20%;
+          opacity: 80%;
+        }
+        .CarlinHighlight:hover {
+          left:65%;
+          opacity: 80%;
+          bottom: 5%;
+        }
+        .DrEgg:hover {
+          width: 40%;
+          left: 25%;
+        }
+        .DrMoon:hover {
+          width: 40%;
+          left: 50%;
+        }
+        .Ardash:hover {
+          width: 32%;
+          left: 60%;
+        }
+        .Cornelia:hover {
+          width: 30%;
+          left: 45%;
+        }
+
+      }
+    
+    
+    
+    /* Fanfiction */
   .page1 {
     margin-top: 20%;
   }
@@ -367,56 +505,7 @@
   }
 
 
-  @supports not(-moz-appearance:none){
 
-    .Ardash:hover {
-      width: 25%;
-      top: 25%;
-      left: 63%;
-    }
-  
-    .Cornelia:hover {
-      width: 22%;
-      left: 47%;
-    }
-  
-    .Vivi:hover {
-      width: 30%;
-      left: 25%;
-    }
-  
-    .DrEgg:hover {
-      top: 0%;
-      width: 30%;
-      left: 30%;
-    }
-
-    .ProfMole:hover {
-      width: 40%;
-      left: 5%;
-      top: 15%;
-    }
-    .DrMoon:hover {
-      top: 0%;
-      width: 30%;
-      left: 55%;
-    }
-
-    .PigeonHighlight:hover {
-      left: 78%;
-      top: 70%;
-    }
-  
-    .EggDroneHighlight:hover {
-      left: 65%;
-      top: 60%;
-    }
-
-    .CarlinHighlight:hover {
-      left: 66%;
-      top: 78%;
-    }
-  }
     
     .Character-Bench {
       height: 32%;
