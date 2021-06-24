@@ -711,7 +711,7 @@ h1.Resources-Title {
 .Back-Button {
   position: absolute;
   top: 2%;
-  left: 86%;
+  right: 2%;
   height: auto;
   width: auto;
   max-width: 10%;
@@ -721,7 +721,7 @@ h1.Resources-Title {
 .Back-Button:hover {
   content: url("./images/btn-Back-hover.png");
   top: 0.5%;
-  left: 85%;
+  right: 1%;
   max-width: 12%;
 }
 
@@ -1959,7 +1959,7 @@ input {
   top: 0vh;
   bottom: 89vh;
   right: 0vw;
-  width: 21vh;
+  width: 19vh;
   max-width: 100vw;
 }
 
@@ -1980,7 +1980,7 @@ input {
   bottom: 1vw;
   height: 8vh;
   width: 16vh;
-  max-width: 16vw;
+  max-width: 100vw;
   cursor: pointer;
 }
 
@@ -1990,7 +1990,7 @@ input {
   bottom: 1vw;
   height: 9vh;
   width: 17vh;
-  max-width: 17vw;
+  max-width: 100vw;
 }
 
 .BookCoverImg {

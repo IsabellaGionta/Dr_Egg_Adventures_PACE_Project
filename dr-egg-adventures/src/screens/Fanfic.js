@@ -18,10 +18,6 @@ export const Fanfic = () => {
 
     const history = useHistory();
 
-    const homeNav = () => {
-        history.push('/lab');
-    }
-
     const submitNav = () => {
         history.push('/contact-form');
     }
@@ -108,19 +104,19 @@ export const Fanfic = () => {
 
                 </div>
               </div>
-              <a href = "/Map">
+              <a href = "/Lab">
                 <div className="StoreBack" src={Back} alt="Back"/>
               </a>
 
               <Popup trigger={modalState} setTrigger = {setModalState}>
                     <div className = "popup-background">
-                        <img className = "SnakePopup" src={Snake} />
+                        <img className = "SnakePopup" src={Snake} alt = "Snake" />
                         <p className="Snake-text">I have heard you enjoyed the world of Dr Eggs and want to write fanfictionssss.
                         Read some of the stories or submit your own. 
                         </p>
                         <div className = "popup-btn-container">
-                            <img className = "popup-btn" src={submit} onClick = {submitNav} onMouseOver = {e => e.currentTarget.src = submitglow} onMouseOut={e => e.currentTarget.src = submit}/>
-                            <img className = "popup-btn" src={fanfic} onClick = {() => setModalState(false)} onMouseOver = {e => e.currentTarget.src = fanficglow} onMouseOut={e => e.currentTarget.src = fanfic}/>
+                            <img className = "popup-btn" src={submit} onClick = {submitNav} onMouseOver = {e => e.currentTarget.src = submitglow} onMouseOut={e => e.currentTarget.src = submit} alt = "Submit"/>
+                            <img className = "popup-btn" src={fanfic} onClick = {() => setModalState(false)} onMouseOver = {e => e.currentTarget.src = fanficglow} onMouseOut={e => e.currentTarget.src = fanfic} alt = "Fan Fiction"/>
                         </div>
                     </div>
             </Popup>

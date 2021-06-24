@@ -1,5 +1,24 @@
 /*Phone Aspect Ratio*/
 @media all and (max-aspect-ratio: 10/16) {
+
+  .Back-Button{
+    max-width: 20%;
+  }
+  .Back-Button:hover {
+    max-width: 24%;
+    right: 0%;
+    top:1%
+  }
+
+  .StoreSnake {
+    height: 6vh;
+    width: 12vh;
+  }
+
+  .StoreSnake:hover {
+    height: 7vh;
+    width: 13vh;
+  }
   /*Error Page*/
 
   .ErrorTxtCont {
@@ -149,7 +168,6 @@
   .StoreBack {
     top: 2vh;
     bottom: 90vh;
-
   }
   .StoreBack:hover {
     top: 1vh;

@@ -17,12 +17,6 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 export const CrazyFacts = () => {
 
-    const history = useHistory();
-
-    const homeNav = () => {
-        history.push('/lab');
-    }
-
     const [modalState, setModalState] = useState(true);
 
     return (
@@ -107,16 +101,16 @@ export const CrazyFacts = () => {
                 </div>
               </div>
               
-              <a href = "/Map">
+              <a href = "/Lab">
                 <div className="StoreBack" src={Back} alt="Back"/>
               </a>
               <Popup trigger={modalState} setTrigger = {setModalState}>
                     <div className = "popup-background">
-                        <img className = "ardash-popup" src={ardash} />
+                        <img className = "ardash-popup" src={ardash} alt = "Ardash"/>
                         <p className="Snake-text">'I've been researching some scientists from your world, and I thought I'd share what I found with you guys.' 
                         </p>
                         <div className = "popup-btn-container">
-                            <img className = "popup-btn-cont" src={Continue} onClick = {() => setModalState(false)} onMouseOver = {e => e.currentTarget.src = Continueglow} onMouseOut={e => e.currentTarget.src = Continue}/>
+                            <img className = "popup-btn-cont" src={Continue} onClick = {() => setModalState(false)} onMouseOver = {e => e.currentTarget.src = Continueglow} onMouseOut={e => e.currentTarget.src = Continue} alt = "Continue"/>
                         </div>
                     </div>
             </Popup>
