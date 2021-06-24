@@ -8,7 +8,6 @@ import {
 	ModalBody,
 	ModalHeader,
 } from 'reactstrap';
-import Snake from '../images/characters/Snake.png';
 import Back from '../images/btn-Back.png';
 import Blackboard from '../images/Blackboard.png';
 import { useHistory } from 'react-router-dom';
@@ -117,7 +116,7 @@ export const ContactForm = () => {
 						className='Blackboard'
 						src={Blackboard}
 						alt='Blackboard'></img>
-					<h1 className='Contact-Title'> Contact Form </h1>
+					<h1 className='Contact-Title' id = "form"> Contact Form </h1>
 					<Form className='Contact-Form' onSubmit={handleSubmit}>
 						{/* <h1 className="Contact-Title"> Dr Egg Adventures </h1> */}
 						<div className='Contact-FormGroup'>
@@ -198,7 +197,7 @@ export const ContactForm = () => {
 						</Button> */}
 						<ThemeButton
 							fontSize={5}
-							top={55}
+							bottom = {0}
 							disabled={
 								Object.keys(errors).length ? true : false
 							}>
@@ -212,13 +211,6 @@ export const ContactForm = () => {
 						onClick={BackEventHandler}
 						alt='Back'
 					/>
-					<a href='/chatbot'>
-						<img
-							className='Chatbot-Snake'
-							src={Snake}
-							alt='Snake'
-						/>
-					</a>
 				</div>
 			</div>
 			<LoadScreen visible={loading} />

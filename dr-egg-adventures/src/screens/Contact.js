@@ -45,7 +45,7 @@ export const Contact = () => {
 				</div>
 				<ThemeButton
 					fontSize={5}
-					top={65}
+					bottom={10}
 					onClick={() => history.push('/contact-form')}>
 					Form
 				</ThemeButton>

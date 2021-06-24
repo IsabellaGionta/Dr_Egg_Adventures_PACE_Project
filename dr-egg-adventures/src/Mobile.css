@@ -12,6 +12,15 @@
     text-indent: 8%;
   }
 
+  .Contact-Form {
+    top:30%;
+    height: 61%;
+  }
+
+  #form{
+    top:20%;
+  }
+
   @supports not(-moz-appearance:none){
     .Back-Button:hover {
       max-width: 24%;

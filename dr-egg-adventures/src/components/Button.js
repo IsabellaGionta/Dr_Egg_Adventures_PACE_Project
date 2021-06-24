@@ -6,6 +6,7 @@ const TButton = styled.button`
 	position: absolute;
 	left: 0;
 	right: 0;
+	bottom:0;
 	margin: 0 auto;
 	border: 5px solid #00bfa5;
 	border-radius: 25px;
@@ -27,16 +28,23 @@ const TButton = styled.button`
 			top: ${props.top}%;
 		`}
 
+		${props =>
+			props.bottom &&
+			css`
+				bottom: ${props.bottom}%;
+			`}
+
     &:disabled {
 		cursor: not-allowed;
 	}
 `;
 
-const ThemeButton = ({ children, fontSize, top, onClick, disabled }) => {
+const ThemeButton = ({ children, fontSize, top, bottom, onClick, disabled }) => {
 	return (
 		<TButton
 			fontSize={fontSize}
 			top={top}
+			bottom = {bottom}
 			onClick={onClick}
 			disabled={disabled}>
 			{children}
