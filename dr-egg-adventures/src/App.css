@@ -852,12 +852,13 @@ h1.Contact-Title {
   text-transform: uppercase;
   font-size: 5vh;
   position: absolute;
-  left: 0;
-  right: 0;
-  width: 400px;
+  left: 15%;
+  right: 14%;
   margin: 0 auto;
   top: 20%;
   color: #fff;
+  word-break: break-all;
+  text-align: center;
 }
 
 .Contact-MessageBox {
@@ -881,13 +882,13 @@ h1.Contact-Title {
   font-family: museo sans;
   position: absolute;
   top: 30%;
-  left: 0;
-  right: 0;
-  width: 800px;
+  left: 15%;
+  right: 14%;
   margin: 0 auto;
   color: white;
   line-height: 40px;
   font-size: 3vh;
+  word-break: break-all;
 }
 
 .indent {

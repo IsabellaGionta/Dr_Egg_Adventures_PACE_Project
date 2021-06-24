@@ -5,6 +5,13 @@
     max-width: 20%;
   }
 
+  .Contact-Info{
+    font-size: 2vh;
+  }
+  .indent{
+    text-indent: 8%;
+  }
+
   @supports not(-moz-appearance:none){
     .Back-Button:hover {
       max-width: 24%;
