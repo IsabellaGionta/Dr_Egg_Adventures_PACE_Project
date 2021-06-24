@@ -17,9 +17,7 @@ const [modalState, setModalState] = useState(true);
 
     return (
         <div  className="Background-Container"> 
-        <a href="/map">
-         <img className="Back-Button characters" src={Back} alt="Back"/>
-        </a>
+
         <div className = "worldContainer">
           <div className="farmworld1" id = "FWorld">
             <a href="/farmworld">
@@ -53,7 +51,9 @@ const [modalState, setModalState] = useState(true);
             </a>
             </div>
             </div>
-
+            <a href="/map">
+         <img className="Back-Button characters" src={Back} alt="Back"/>
+        </a>
                 <Popup trigger={modalState} setTrigger = {setModalState}>
                     <div className = "popup-background">
                         <img className = "SnakePopup" src={Snake} alt = "Sake"/>
