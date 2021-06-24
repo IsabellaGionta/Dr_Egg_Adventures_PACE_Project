@@ -1,7 +1,6 @@
 import {useState, React}from 'react'
 import fact1 from '../images/fact-img.png';
 import fact2 from '../images/fact-img2.png';
-import { useHistory } from "react-router-dom";
 import Popup from '../components/SnakePopup.js';
 import Continue from '../images/btn-continue.png';
 import ardash from '../images/ardash-thinking.png';

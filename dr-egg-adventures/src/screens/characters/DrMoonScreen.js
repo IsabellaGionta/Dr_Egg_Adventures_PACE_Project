@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import {React} from 'react'
 import DrMoon from '../../images/characters/Dr-Moon-Highlight2.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
@@ -39,7 +39,7 @@ export const DrMoonScreen = () => {
           </div>
 
 
-          <img className="Individual-Character-Styling-Inventors"src={DrMoon} />
+          <img className="Individual-Character-Styling-Inventors"src={DrMoon} alt = "Dr Moon"/>
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
         <h1 className="Character-Type"> THE SCIENTISTS: </h1>

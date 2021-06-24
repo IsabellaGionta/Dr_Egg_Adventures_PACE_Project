@@ -47,7 +47,7 @@ export const CorneliaScreen = () => {
           <Accordian title="  WORLD " content="Corn-Farmlands" />
        </div>
 
-        <img className="Individual-Character-Styling-Inventors-Cornelia "src={Cornelia} />
+        <img className="Individual-Character-Styling-Inventors-Cornelia "src={Cornelia} alt="Cornelia"/>
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
         
 
@@ -87,8 +87,8 @@ export const CorneliaScreen = () => {
 
         </div>
 
-        <img className="Character-Pet CarlinHighlight clicked"src={Carlin}  onClick = {() => setModalState(true)}/> 
-        <img className="Character-Pet-Pigeon PigeonHighlight clicked"src={Pigeon} onClick={() => setModalState1(true) } /> 
+        <img className="Character-Pet CarlinHighlight clicked"src={Carlin}  onClick = {() => setModalState(true)}alt="Mouse"/> 
+        <img className="Character-Pet-Pigeon PigeonHighlight clicked"src={Pigeon} onClick={() => setModalState1(true) } alt="Pigeon"/> 
 
         
 
@@ -97,7 +97,7 @@ export const CorneliaScreen = () => {
                 <div className = "popup-background">
                   <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
                   <h2 className="Individual-Character-Name-Pet"> PUFF CHEST: PIGEON AIR FORCE PILOT  </h2> 
-                  <img className="Character-Pet-Popup"src={PigeonFlipped} /> 
+                  <img className="Character-Pet-Popup"src={PigeonFlipped} alt="Pigeon"/> 
 
                   <div className="Companion-Description">
                     <p> 
@@ -116,7 +116,7 @@ export const CorneliaScreen = () => {
             <div className = "popup-background">
               <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
               <h2 className="Individual-Character-Name-Pet">  CARLIN: CORNELIA'S MOUSE  </h2> 
-              <img className="Character-Pet-Popup"src={Carlin} /> 
+              <img className="Character-Pet-Popup"src={Carlin} alt="Mouse"/> 
 
               <div className="Companion-Description">
                 <p> 

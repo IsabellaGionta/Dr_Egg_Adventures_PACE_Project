@@ -101,7 +101,7 @@ const FarmWorldSingle = () => {
 				<Flexbox reverse>
 					<InnerWrapper>
 						<BoardWrapper>
-							<img src={Bg} />
+							<img src={Bg} alt="Sign Board"/>
 
 							<ContentWrapper>
 								<UpperBoard>
@@ -150,7 +150,7 @@ const FarmWorldSingle = () => {
 						</BoardWrapper>
 					</InnerWrapper>
 					<Figure>
-						<img src={Cornelia} width='100%' />
+						<img src={Cornelia} width='100%' alt="Cornelia"/>
 					</Figure>
 				</Flexbox>
 			}></SingleWorld>

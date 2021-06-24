@@ -31,16 +31,16 @@ export const WeirdCreations = () => {
                 onClick = {homeNav}/>  
             <div className = "wc-blackboard-container">
                 <h1 className = "wc-heading"> Weird Creations</h1>
-                <img className = "submit-icon" src = {icon} onClick = {submitNav} onMouseOver = {e => e.currentTarget.src = iconglow} onMouseOut={e => e.currentTarget.src = icon}/>
+                <img className = "submit-icon" src = {icon} onClick = {submitNav} onMouseOver = {e => e.currentTarget.src = iconglow} onMouseOut={e => e.currentTarget.src = icon} alt = "Submission Link"/>
                 <hr className = "hr-line"></hr>
                 <div className = "chat-container">
                     <div className = "chat-view">
-                        <img className = "fish-icon" src = {fish} />
+                        <img className = "fish-icon" src = {fish} alt = "Fish"/>
                         <p className = "wc-text"><b>@dregguser1</b>hahaha this is a cool glowship. #rebel</p>
                     </div>
                     <hr className = "hr-line2"></hr>
                     <div className = "chat-view">
-                        <img className = "fish-icon" src = {fish} />
+                        <img className = "fish-icon" src = {fish} alt = "Fish"/>
                         <p className = "wc-text"><b>@dregguser2</b>hehehe glow fish and chips for dinner! #dinner #awesome</p>
                     </div>
                     <hr className = "hr-line2"></hr>

@@ -100,7 +100,7 @@ const TechnoWorldSingle = () => {
 				<Flexbox>
 					<InnerWrapper>
 						<BoardWrapper>
-							<img src={Bg} />
+							<img src={Bg} alt = "Sign Board"/>
 
 							<ContentWrapper>
 								<UpperBoard>
@@ -151,7 +151,7 @@ const TechnoWorldSingle = () => {
 						</BoardWrapper>
 					</InnerWrapper>
 					<Figure>
-						<img src={Ardash} width='100%' />
+						<img src={Ardash} width='100%' alt = "Ardash"/>
 					</Figure>
 				</Flexbox>
 			}></SingleWorld>

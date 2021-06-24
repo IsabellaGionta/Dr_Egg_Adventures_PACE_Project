@@ -1,4 +1,4 @@
-import { useState, React }  from 'react';
+import { React }  from 'react';
 
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
@@ -10,7 +10,6 @@ import Accordian from "../../components/Accordian"
 
 
 export const HybridHelpers = () => {
-  const [modalState2, setModalState2] = useState(true);
 
   
   let history = useHistory();

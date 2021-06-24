@@ -1,7 +1,5 @@
-import { useState, React }  from 'react';
+import { React }  from 'react';
 import ProductOverview from '../images/product-overview.PNG';
-import TeacherDownloadButton from '../images/TeacherDownloadButton.png';
-import StudentDownloadButton from '../images/StudentDownloadButton.png';
 import Back from '../images/btn-Back.png';
 import Snake from '../images/characters/Snake.png';
 import Blackboard from '../images/Blackboard.png';
@@ -26,10 +24,10 @@ export const Resources = () => {
 
     return (
         <div className="Resource-Background-Container">
-          <img className="Blackboard" src={Blackboard} />
+          <img className="Blackboard" src={Blackboard} alt = "Blackboard"/>
           <h1 className="Resources-Title"> PRODUCT OVERVIEW </h1>
           <div className="buttons">
-            <a href={pdf} target="_blank" download>
+            <a href={pdf} download>
               <img className="ProductOverview" src={ProductOverview} alt="Product Overview Button"/>
             </a>
             {/* <a href={pdf} target="_blank" download>

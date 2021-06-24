@@ -1,5 +1,4 @@
 import {useState, React} from 'react'
-import { Button } from 'react-bootstrap';
 import { useHistory } from "react-router-dom";
 import '../App.css';
 import Enter from '../images/Enter-Button.png';

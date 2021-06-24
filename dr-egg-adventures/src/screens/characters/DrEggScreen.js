@@ -1,11 +1,9 @@
 import { useState, React } from 'react'
 import DrEgg from '../../images/characters/Dr-Egg-Highlight2.png';
-import Snake from '../../images/characters/Snake.png';
 import Back from '../../images/btn-Back.png';
 import EggDrone from '../../images/characters/EggDrone.png';
 import EggDroneFlipped from '../../images/characters/EggDrone-Flipped.png';
 import Popup from '../../components/CharacterPopup.js';
-import LandscapePopup from '../../components/Landscape.js';
 
 
 import Accordian from "../../components/Accordian"
@@ -19,8 +17,6 @@ import { useHistory } from "react-router-dom";
 export const DrEggScreen = () => {
 
   const [modalState, setModalState] = useState(false);
-  const [modalState1, setModalState1] = useState(true);
-  const [modalState2, setModalState2] = useState(true);
 
 
   
@@ -47,7 +43,7 @@ export const DrEggScreen = () => {
        </div>
 
 
-          <img className="Individual-Character-Styling-Inventors"src={DrEgg} />
+          <img className="Individual-Character-Styling-Inventors"src={DrEgg} alt = "Dr Egg"/>
 
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
@@ -76,7 +72,7 @@ export const DrEggScreen = () => {
             </p>
 
         </div>
-        <img className="Character-Pet EggDroneHighlight"src={EggDrone} onClick={() => setModalState(true) } /> 
+        <img className="Character-Pet EggDroneHighlight"src={EggDrone} onClick={() => setModalState(true) } alt = "Egg Drone"/> 
 
 
         <Popup trigger={modalState} setTrigger = {setModalState}>
@@ -85,7 +81,7 @@ export const DrEggScreen = () => {
             <h1 className="Character-Type-Pet"> THE COMPANIONS: </h1>
 
         <h2 className="Individual-Character-Name-Pet"> FLYING EGG SPY:  </h2> 
-        <img className="Character-Pet-Popup"src={EggDroneFlipped}/> 
+        <img className="Character-Pet-Popup"src={EggDroneFlipped} alt = "Egg Drone"/> 
 
         <div className="Companion-Description">
           <p> 

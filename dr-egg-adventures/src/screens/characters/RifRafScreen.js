@@ -20,7 +20,7 @@ export const RifRafScreen = () => {
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-          <img className="Individual-Character-Styling"src={RifRaf} />
+          <img className="Individual-Character-Styling"src={RifRaf} alt = "RifRaf"/>
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 

@@ -1,4 +1,4 @@
-import { useState, React }  from 'react';
+import React  from 'react';
 
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';

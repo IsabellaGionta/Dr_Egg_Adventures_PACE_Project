@@ -21,7 +21,7 @@ export const CarlinScreen = () => {
           <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-          <img className="Individual-Character-Styling"src={Carlin} />
+          <img className="Individual-Character-Styling"src={Carlin} alt = "Carlin"/>
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 

@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import React from 'react'
 import ProfMole from '../../images/characters/ProfMole-Highlight2.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
@@ -40,7 +40,7 @@ export const ProfessorMoleScreen = () => {
           </div> 
 
 
-          <img className="Individual-Character-Styling-ProfMole"src={ProfMole} />
+          <img className="Individual-Character-Styling-ProfMole"src={ProfMole} alt="Professor Mole"/>
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
         <h1 className="Character-Type"> THE BADDIES: </h1>

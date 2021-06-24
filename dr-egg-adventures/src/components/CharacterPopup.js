@@ -7,7 +7,7 @@ function CharacterPopup(props) {
     return (props.trigger) ? (
         <div className = "popup">
             <div className = "popup-inner">
-                <img className = "close-btn" src = {close} onClick = {() => props.setTrigger(false)}/>
+                <img className = "close-btn" src = {close} onClick = {() => props.setTrigger(false)} alt = "Close"/>
                 {props.children}
             </div>
         </div>

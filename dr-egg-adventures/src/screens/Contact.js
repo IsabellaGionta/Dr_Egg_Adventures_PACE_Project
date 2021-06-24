@@ -1,24 +1,10 @@
-import React, { useState } from 'react';
-import {
-	Button,
-	Form,
-	FormGroup,
-	Label,
-	Input,
-	Modal,
-	ModalBody,
-	ModalHeader,
-	ModalFooter,
-} from 'reactstrap';
+import React from 'react';
 import Snake from '../images/characters/Snake.png';
 import Back from '../images/btn-Back.png';
 import Blackboard from '../images/Blackboard.png';
 import { useHistory } from 'react-router-dom';
-import axios from '../axios';
 import '../assets/css/modal.css';
 import '../assets/css/spinner.css';
-import LoadScreen from '../components/LoadScreen';
-import styled from 'styled-components';
 import ThemeButton from '../components/Button';
 import ClosePop from "../images/close-popup.png"
 

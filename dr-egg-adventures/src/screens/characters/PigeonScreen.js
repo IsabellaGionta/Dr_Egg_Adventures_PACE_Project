@@ -21,7 +21,7 @@ export const PigeonScreen = () => {
         <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-        <img className="Individual-Character-Styling-Pigeon characters"src={Pigeon} />
+        <img className="Individual-Character-Styling-Pigeon characters"src={Pigeon} alt="Pigeon"/>
 
         <img className="Back-Button" src={Back} onClick={BackEventHandler} alt="Back"/>
 

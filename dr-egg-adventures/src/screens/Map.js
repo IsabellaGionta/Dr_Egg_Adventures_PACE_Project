@@ -1,5 +1,4 @@
 import React  from 'react';
-import Snake from '../images/characters/Snake.png';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 let isDown = false;

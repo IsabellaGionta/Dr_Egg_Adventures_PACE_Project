@@ -105,7 +105,7 @@ const SlumWorldSingle = () => {
 				<Flexbox>
 					<InnerWrapper>
 						<BoardWrapper>
-							<img src={Bg} />
+							<img src={Bg} alt = "Sign Board"/>
 
 							<ContentWrapper>
 								<UpperBoard>
@@ -148,7 +148,7 @@ const SlumWorldSingle = () => {
 						</BoardWrapper>
 					</InnerWrapper>
 					<Figure>
-						<img src={Vivi} width='100%' />
+						<img src={Vivi} width='100%' alt = "Vivi"/>
 					</Figure>
 				</Flexbox>
 			}></SingleWorld>

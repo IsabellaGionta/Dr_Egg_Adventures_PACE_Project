@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import {React} from 'react'
 import Ardash from '../../images/characters/Ardash-Highlight-2.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
@@ -9,15 +9,7 @@ import Accordian from "../../components/Accordian"
 
 
 
-import { useHistory } from "react-router-dom";
 export const ArdashScreen = () => {
-
-    const CharacteristicsHandler = () => {
-      const currentStatus=this.state.display;
-      this.setState({
-        display: !currentStatus
-      })
-    }
 
     return (
       <div className="Characters-Background-Container">

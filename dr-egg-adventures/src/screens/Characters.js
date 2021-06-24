@@ -1,9 +1,6 @@
 import React from 'react';
-import {useState } from 'react';
-import getAll from '../services/characters.js';
 import { useHistory } from "react-router-dom";
 import '../App.css';
-import LabBench from '../images/labbench.png';
 import Ardash from '../images/characters/Ardash.png';
 import Cornelia from '../images/characters/Cornelia.png';
 import DrEgg from '../images/characters/DrEgg.png';
@@ -21,21 +18,10 @@ import BadLight from '../images/Bad-Light.png';
 
 const Characters = () => {
 
-  const [modalState2, setModalState2] = useState(true);
-
       let history = useHistory();
 
-      const CharcaterEventHandler = () => {
-        history.push('/each-character')
-        console.log("page has been redirected to individual 'Character' pages") 
-      }
       const ArdashEventHandler = () => {
         history.push('/character/Ardash')
-        console.log("page has been redirected to individual 'Character' pages") 
-      }
-
-      const CarlinEventHandler = () => {
-        history.push('/character/Carlin')
         console.log("page has been redirected to individual 'Character' pages") 
       }
 
@@ -59,21 +45,6 @@ const Characters = () => {
         console.log("page has been redirected to individual 'Character' pages") 
       }
 
-      const RifRafEventHandler = () => {
-        history.push('/character/RifRaf')
-        console.log("page has been redirected to individual 'Character' pages") 
-      }
-
-      const PigeonEventHandler = () => {
-        history.push('/character/Pigeon')
-        console.log("page has been redirected to individual 'Character' pages") 
-      }
-
-      const EggDroneEventHandler = () => {
-        history.push('/character/EggDrone')
-        console.log("page has been redirected to individual 'Character' pages") 
-      }
-
       const SnakeEventHandler = () => {
         history.push('/character/Snake')
         console.log("page has been redirected to individual 'Character' pages") 
@@ -94,8 +65,8 @@ const Characters = () => {
           <div className="Character-Background-Container"> 
             <div className="Character-Images">
             <figure className="good-characters">
-                <img className="good-light" src={GoodLight} />
-                <img className="bad-light" src={BadLight} />
+                <img className="good-light" src={GoodLight} alt = "Good Light"/>
+                <img className="bad-light" src={BadLight} alt = "Bad Light" />
 
 
                 <img className="DrEgg  all" src={DrEgg} onClick={DrEggEventHandler} alt="DrEgg"/>

@@ -106,7 +106,7 @@ const SeedcorpSingle = () => {
 				<Flexbox reverse>
 					<InnerWrapper>
 						<BoardWrapper>
-							<img src={Bg} />
+							<img src={Bg} alt = "Sign Board"/>
 							<ContentWrapper>
 								<UpperBoard>
 									<p>
@@ -147,7 +147,7 @@ const SeedcorpSingle = () => {
 						</BoardWrapper>
 					</InnerWrapper>
 					<Figure>
-						<img src={DrMole} width='100%' />
+						<img src={DrMole} width='100%' alt = "Dr Mole"/>
 					</Figure>
 				</Flexbox>
 			}></SingleWorld>

@@ -1,5 +1,4 @@
-import {React, useState} from 'react'
-import Snake from '../../images/characters/Snake.png';
+import React from 'react'
 import SnakeImg from '../../images/characters/Snake-Highlight2.png';
 import Back from '../../images/btn-Back.png';
 import Blackboard from '../../images/Blackboard.png';
@@ -38,7 +37,7 @@ export const SnakeScreen = () => {
        </div>
 
 
-        <img className="Individual-Character-Styling-Snake"src={SnakeImg} />
+        <img className="Individual-Character-Styling-Snake"src={SnakeImg} alt="Snake"/>
 
         <img className="Back-Button " src={Back} onClick={BackEventHandler} alt="Back"/>
         <h1 className="Character-Type"> THE NARRATOR: </h1>

@@ -1,4 +1,4 @@
-import { useState, React }  from 'react';
+import  React  from 'react';
 import Vivi from '../../images/characters/Vivi-Highlight2.png';
 
 import Back from '../../images/btn-Back.png';
@@ -36,7 +36,7 @@ export const ViviScreen = () => {
           </div> 
 
 
-        <img className="Individual-Character-Styling-Inventors-Vivi"src={Vivi} />
+        <img className="Individual-Character-Styling-Inventors-Vivi"src={Vivi} alt="Vivi"/>
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
 

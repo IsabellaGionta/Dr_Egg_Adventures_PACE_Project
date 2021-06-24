@@ -21,7 +21,7 @@ export const EggDroneScreen = () => {
         <img className="Blackboard" src={Blackboard} alt="Blackboard" />
 
 
-        <img className="Individual-Character-Styling-EggDrone"src={EggDrone} />
+        <img className="Individual-Character-Styling-EggDrone"src={EggDrone} alt = "Egg Drone"/>
 
         <img className="Back-Button characters" src={Back} onClick={BackEventHandler} alt="Back"/>
         <h2 className="Individual-Character-Name"> FLYING EGG SPY:  </h2> 

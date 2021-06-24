@@ -129,7 +129,7 @@ const LabWorldSingle = () => {
 				<Flexbox reverse>
 					<InnerWrapper>
 						<BoardWrapper>
-							<img src={Bg} />
+							<img src={Bg} alt = "Sign Board"/>
 							<ContentWrapper>
 								<UpperBoard>
 									<p>
@@ -174,10 +174,10 @@ const LabWorldSingle = () => {
 					</InnerWrapper>
 					<FigureWrapper>
 						<Figure>
-							<img src={DrEgg} width='100%' />
+							<img src={DrEgg} width='100%' alt = "Dr Egg"/>
 						</Figure>
 						<FigureRight>
-							<img src={DrMoon} width='100%' />
+							<img src={DrMoon} width='100%' alt = "Dr Moon"/>
 						</FigureRight>
 					</FigureWrapper>
 				</Flexbox>

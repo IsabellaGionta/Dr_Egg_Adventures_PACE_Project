@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-	Button,
 	Form,
 	FormGroup,
 	Label,
@@ -8,7 +7,6 @@ import {
 	Modal,
 	ModalBody,
 	ModalHeader,
-	ModalFooter,
 } from 'reactstrap';
 import Snake from '../images/characters/Snake.png';
 import Back from '../images/btn-Back.png';
@@ -230,7 +228,7 @@ export const ContactForm = () => {
 				className='contact-modal'>
 				<ModalHeader toggle={toggleModal}></ModalHeader>
 				<ModalBody className='body'>
-					<img src={CorneliaFace} width='200' height='auto' />
+					<img src={CorneliaFace} width='200' height='auto' alt = "Cornelia"/>
 					<h2>{response.status ? 'Oops!' : 'Thank you!'}</h2>
 					<p>
 						{response.status
