@@ -26,6 +26,25 @@ const ErrorMsg = styled.span`
 	margin-top: 5px;
 `;
 
+const FixedWrapper = styled.div`
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+`;
+
+const ContactTitle = styled.h1`
+	font-family: Polaris;
+	text-transform: uppercase;
+	font-size: 5vh;
+	margin: 0 auto;
+	color: #fff;
+`;
+
 export const ContactForm = () => {
 	let history = useHistory();
 
@@ -117,94 +136,105 @@ export const ContactForm = () => {
 						className='Blackboard'
 						src={Blackboard}
 						alt='Blackboard'></img>
-					<h1 className='Contact-Title'> Contact Form </h1>
-					<Form className='Contact-Form' onSubmit={handleSubmit}>
-						{/* <h1 className="Contact-Title"> Dr Egg Adventures </h1> */}
-						<div className='Contact-FormGroup'>
-							<FormGroup>
-								<div className='Contact-Label'>
-									{' '}
-									<Label> Full Name </Label>{' '}
-								</div>
-								<div className='input-wrapper'>
-									<Input
-										type='FullName'
-										required
-										value={form['name']}
-										onChange={e =>
-											handleFieldChange(e, 'name')
-										}
-									/>
-									{errors && errors.name && (
-										<ErrorMsg>{errors.name}</ErrorMsg>
-									)}
-								</div>
-							</FormGroup>
-						</div>
-						<div className='Contact-FormGroup'>
-							<FormGroup>
-								<div className='Contact-Label'>
-									{' '}
-									<Label>Email</Label>{' '}
-								</div>
-								<div className='input-wrapper'>
-									<Input
-										type='email'
-										name='email'
-										id='Email'
-										required
-										value={form['email']}
-										onChange={e =>
-											handleFieldChange(e, 'email')
-										}
-									/>
-									{errors && errors.email && (
-										<ErrorMsg>{errors.email}</ErrorMsg>
-									)}
-								</div>
-							</FormGroup>
-						</div>
 
-						<div className='Contact-FormGroup'>
-							<FormGroup>
-								<div className='Contact-Label'>
-									<Label>Message</Label>
-								</div>
-								<div className='input-wrapper'>
-									<Input
-										className='Contact-MessageBox'
-										type='textarea'
-										name='text'
-										id='message'
-										required
-										value={form['message']}
-										onChange={e =>
-											handleFieldChange(e, 'message')
-										}
-									/>
-									{errors && errors.message && (
-										<ErrorMsg>{errors.message}</ErrorMsg>
-									)}
-								</div>
-							</FormGroup>
-						</div>
+					<FixedWrapper>
+						<ContactTitle>Contact Form</ContactTitle>
+						<Form
+							className='Contact-Form'
+							onSubmit={handleSubmit}
+							style={{
+								position: 'initial',
+								padding: '2% 15px',
+							}}>
+							{/* <h1 className="Contact-Title"> Dr Egg Adventures </h1> */}
+							<div className='Contact-FormGroup'>
+								<FormGroup>
+									<div className='Contact-Label'>
+										{' '}
+										<Label> Full Name </Label>{' '}
+									</div>
+									<div className='input-wrapper'>
+										<Input
+											type='FullName'
+											required
+											value={form['name']}
+											onChange={e =>
+												handleFieldChange(e, 'name')
+											}
+										/>
+										{errors && errors.name && (
+											<ErrorMsg>{errors.name}</ErrorMsg>
+										)}
+									</div>
+								</FormGroup>
+							</div>
+							<div className='Contact-FormGroup'>
+								<FormGroup>
+									<div className='Contact-Label'>
+										{' '}
+										<Label>Email</Label>{' '}
+									</div>
+									<div className='input-wrapper'>
+										<Input
+											type='email'
+											name='email'
+											id='Email'
+											required
+											value={form['email']}
+											onChange={e =>
+												handleFieldChange(e, 'email')
+											}
+										/>
+										{errors && errors.email && (
+											<ErrorMsg>{errors.email}</ErrorMsg>
+										)}
+									</div>
+								</FormGroup>
+							</div>
 
-						{/* <Button
+							<div className='Contact-FormGroup'>
+								<FormGroup>
+									<div className='Contact-Label'>
+										<Label>Message</Label>
+									</div>
+									<div className='input-wrapper'>
+										<Input
+											className='Contact-MessageBox'
+											type='textarea'
+											name='text'
+											id='message'
+											required
+											value={form['message']}
+											onChange={e =>
+												handleFieldChange(e, 'message')
+											}
+										/>
+										{errors && errors.message && (
+											<ErrorMsg>
+												{errors.message}
+											</ErrorMsg>
+										)}
+									</div>
+								</FormGroup>
+							</div>
+
+							{/* <Button
 							className='Contact-Button'
 							disabled={
 								Object.keys(errors).length ? true : false
 							}>
 							<span className='text'> SUBMIT </span>
 						</Button> */}
-						<ThemeButton
-							fontSize={5}
-							top={55}
-							disabled={
-								Object.keys(errors).length ? true : false
-							}>
-							Submit
-						</ThemeButton>
-					</Form>
+							<ThemeButton
+								fontSize={5}
+								top={0}
+								disabled={
+									Object.keys(errors).length ? true : false
+								}>
+								Submit
+							</ThemeButton>
+						</Form>
+					</FixedWrapper>
 
 					<img
 						className='Back-Button characters'
