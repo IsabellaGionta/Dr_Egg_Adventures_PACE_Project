@@ -71,23 +71,23 @@ function App() {
 					<Worlds />
 				</Route>
 
-				<Route path='/farmWorld'>
+				<Route path='/corn-farmlands'>
 					<FarmWorldSingle />
 				</Route>
 
-				<Route path='/slumWorld'>
+				<Route path='/slum-lanes'>
 					<SlumWorldSingle />
 				</Route>
 
-				<Route path='/technoWorld'>
+				<Route path='/techno-towers'>
 					<TechnoWorldSingle />
 				</Route>
 
-				<Route path='/seedcorpWorld'>
+				<Route path='/seedcorp-lab'>
 					<SeedcorpSingle />
 				</Route>
 
-				<Route path='/labWord'>
+				<Route path='/egg-lab'>
 					<LabWorldSingle />
 				</Route>
 
