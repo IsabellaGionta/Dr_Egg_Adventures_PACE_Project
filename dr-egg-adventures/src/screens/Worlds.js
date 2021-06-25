@@ -20,36 +20,32 @@ const [modalState, setModalState] = useState(true);
 
         <div className = "worldContainer">
           <div className="farmworld1" id = "FWorld">
-            <a href="/farmworld">
+            <a href="/corn-farmlands">
                 <img className = "world" src={farmworld} alt = "Corn-Farmlands" />
             </a>
           </div>
           <div className="slumworld1" id = "SWorld">
-            <a href="/slumworld">
+            <a href="/slum-lanes">
                     <img className="world" src={slumworld} alt = "Slum-Lanes"/>
             </a>
           </div>
           <div className="seedcorp1" id = "SedWorld">
-            <a href="/seedcorpWorld">
+            <a href="/seedcorp-lab">
                     <img className="world" src={seedcorp} alt = "Seedcorp Lab"/>
           </a>
             </div>
             <div className="egglab1" id = "LWorld">
-            <a href="/labWord">
+            <a href="/egg-lab">
                     <img className="world" src={egglab} alt = "Dr Egg Lab" />
             </a>
             </div>
 
             <div className="technoworld1" id = "TechWorld">
-            <a href="/technoworld">
+            <a href="/techno-towers">
                     <img className="world" src={technoworld} alt = "Techno-Towers" />
             </a>
             </div>
-            <div className="egglab1" id = "LWorld2">
-            <a href="/labWord">
-                    <img className="world" src={egglab} alt = "Dr Egg Lab" />
-            </a>
-            </div>
+
             </div>
             <a href="/map">
          <img className="Back-Button characters" src={Back} alt="Back"/>
@@ -60,12 +56,6 @@ const [modalState, setModalState] = useState(true);
                         <p className="Snake-text"> In sprawled out, windy slum world, starvation and food shortages are every day occurences. The poor inhabittants suffer as Dr Mole ruthlessly seeks to control the food supplies. In the scary backstreets, roam gangs of "dumped" mutant thugs, the result of Dr Mole's experiments on children and animals. Anyone can become the thugs' unsuspecting quarry, and be kidnapped for auction at the notorious and scary Mutant and Body Parts Black Market. </p>
                     </div>
                 </Popup>
-
-                {/* <LandscapePopup trigger={modalState2} setTrigger = {setModalState2}>
-                    <div className = "popup-background">
-                        <p className="Landscape-text"> For a better viewing experience, turn device to Landscape view. </p>
-                    </div>
-                </LandscapePopup> */}
 
         <label htmlFor = "chat">
                   <div className="StoreSnake"/>  
