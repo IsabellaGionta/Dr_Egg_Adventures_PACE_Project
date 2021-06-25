@@ -45,7 +45,11 @@ const [modalState, setModalState] = useState(true);
                     <img className="world" src={technoworld} alt = "Techno-Towers" />
             </a>
             </div>
-
+            <div className="egglab1" id = "LWorld2">
+            <a href="/egg-lab">
+                    <img className="world" src={egglab} alt = "Dr Egg Lab" />
+            </a>
+            </div>
             </div>
             <a href="/map">
          <img className="Back-Button characters" src={Back} alt="Back"/>

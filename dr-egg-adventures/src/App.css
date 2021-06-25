@@ -1066,10 +1066,10 @@ input {
 }
 /*Lab*/
 #TechWorld:hover{
-  z-index: 5;
+  z-index: 7;
 }
 #TechWorld:hover~#LWorld2{
-  z-index: 4;
+  z-index: 6;
 }
 /* End Card Effect*/
 .world{
