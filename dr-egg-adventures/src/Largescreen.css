@@ -47,6 +47,7 @@
 
   .dregg {
     bottom: 10%;
+    max-width: 100%;
   }
 
   .wc-box {
@@ -72,36 +73,36 @@
 
 
   .Ardash:hover {
-    width: 35%;
-    left: 69%;
-    height: 60%;
-    top:28%;
+    width: 32%;
+    left: 60%;
+    height: 62%;
+    top:33%;
   }
 
   .Cornelia:hover {
-    width: 32%;
-    left: 49%;
+    width: 28%;
+    left: 42%;
     height: 65%;
   }
 
   .Vivi:hover {
-    width: 40%;
+    width: 37%;
     left: 18%;
     height:65%;
-    top:25%;
+    top:32%;
   }
 
   .DrEgg:hover {
     width: 42%;
-    left: 29%;
+    left: 23%;
     height: 67%;
-    bottom: 21%;
+    bottom: 19%;
   }
   .DrMoon:hover {
     top:12%;
-    width: 45%;
-    left: 59%;
-    height: 70%;
+    width: 42%;
+    left: 46%;
+    height: 67%;
   }
   .ProfMole:hover{
     width: 42%;
@@ -110,23 +111,38 @@
     height: 45%;
   }
   .EggDroneHighlight:hover {
-    left: 56%;
+    left: 55%;
+    width: 22%;
+    bottom: 7%;
   }
 
   .PigeonHighlight:hover {
-    left: 74%;
+    left: 73%;
+    width: 28%;
+    top:74%;
   }
 
   .CarlinHighlight:hover {
-    left: 56%;
+    left: 54%;
+    width: 23%;
   }
   @supports (-moz-appearance:none){
+    .CarlinHighlight:hover {
+      left: 56%;
+      width: 20%;
+    }
+    .EggDroneHighlight:hover {
+      left: 56%;
+      width: 20%;
+      bottom: 5%;
+    }
     .PigeonHighlight:hover {
       left: 74%;
       width: 25%;
+      top:75%;
     }
     .Ardash:hover {
-      bottom: 8%;
+      top: 28%;
       left: 57%;
       width: 40%;
       height: 70%;
@@ -136,24 +152,27 @@
       width: 40%;
       left: 38%;
       bottom:4%;
+      height: 70%;
     }
   
     .Vivi:hover {
       width: 40%;
       left: 15%;
-      bottom:3%;
+      top:30%;
+      height: 70%;
     }
   
     .DrEgg:hover {
-      width:65%;
-      height: 80%;
-      left: 5%;
+      width:55%;
+      height: 75%;
+      left: 18%;
+      bottom:16%;
     }
     .DrMoon:hover {
-      width: 65%;
-      left: 35%;
-      top:15%;
-      height: 80%;
+      width: 55%;
+      left: 40%;
+      top: 9%;
+      height: 75%;
     }
 }
 
@@ -186,9 +205,10 @@
     width: 40%;
   }
   .DrEgg {
-    width: 65%;
-    height: 80%;
-    left: 5%;
+    width: 55%;
+    height: 75%;
+    left: 18%;
+    bottom: 16%;
   }
   .Vivi {
     left: 15%;
@@ -199,10 +219,10 @@
     top: 28%;
   }
   .DrMoon {
-    top: 15%;
-    width: 65%;
-    height: 80%;
-    left: 35%;
+    bottom: 16%;
+    width: 55%;
+    height: 75%;
+    left: 40%;
   }
   .Cornelia {
     left: 38%;
@@ -405,15 +425,20 @@
       }
   
       .PigeonHighlight:hover {
-        left: 78%;
+        left: 77%;
+        width: 23%;
+        bottom:4%;
       }
     
       .EggDroneHighlight:hover {
         left: 65%;
+        bottom: 8%;
+        width: 16%;
       }
   
       .CarlinHighlight:hover {
-        left: 66%;
+        left: 64%;
+        width: 17%;
       }
     
     
@@ -436,18 +461,30 @@
         .DrEgg:hover {
           width: 40%;
           left: 25%;
+          height: 100%;
+          bottom: 7%;
         }
         .DrMoon:hover {
           width: 40%;
           left: 50%;
+          height: 100%;
+          top:-5%;
         }
         .Ardash:hover {
           width: 32%;
           left: 60%;
+          height: 70%;
+          bottom: 8%;
         }
         .Cornelia:hover {
           width: 30%;
           left: 45%;
+        }
+        .Vivi:hover {
+          width: 30%;
+          left: 25%;
+          top:24%;
+          height: 70%;
         }
 
       }

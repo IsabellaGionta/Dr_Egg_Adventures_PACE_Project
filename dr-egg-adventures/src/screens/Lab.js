@@ -63,7 +63,9 @@ export const Lab = () => {
 
     return (
         <div className = "Lab-Background-Container">
+          <div className= "dreggCont">
             <img className="dregg" src={DrEgg} alt = "dr egg"/>
+            </div>
             <div className = "button-container">
             <img className="lab-button-inv" src={inv} alt = "inventory button" onClick = {invNav} onMouseOver = {e => e.currentTarget.src = invglow} onMouseOut={e => e.currentTarget.src = inv}/>
                 <img className="lab-button-facts" src={facts} alt = "crazy facts button" onClick = {factsNav} onMouseOver = {e => e.currentTarget.src = factsglow} onMouseOut={e => e.currentTarget.src = facts}/>

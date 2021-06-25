@@ -534,6 +534,7 @@ h1.Resources-Title {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 5;
 }
 
 .Carlin {
@@ -1261,11 +1262,16 @@ input {
   max-height: auto;
 }
 
+.dreggCont{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .dregg {
   position: absolute;
   max-width: 50%;
-  max-height: auto;
-  right: 25%;
   bottom: 25%;
 }
 
@@ -3164,35 +3170,43 @@ input {
     content: url("./images/characters/ProfMole-Highlight2.png");
     width: 35%;
     height: 46%;
-  
     left: 11%;
+    z-index: 2;
   }
 
   .Cornelia:hover {
     content: url("./images/characters/Cornelia-Highlight2.png");
     width: 15%;
     left: 42%;
+    z-index: 2;
   }
 
   .Ardash:hover {
     content: url("./images/characters/Ardash-Highlight-2.png");
     width: 18%;
     left: 52%;
+    z-index: 2;
+    height: 66%;
   }
 
   .DrEgg:hover {
     content: url("./images/characters/Dr-Egg-Highlight2.png");
     width: 23%;
-    bottom: 5%;
+    bottom: 3%;
+    z-index: 2;
+    height: 98%;
   }
   .DrMoon:hover {
     content: url("./images/characters/Dr-Moon-Highlight2.png");
     width: 23%;
     left: 48%;
+    bottom: 2%;
+    z-index: 2;
   }
   .Vivi:hover {
     content: url("./images/characters/Vivi-Highlight2.png");
-    width: 18%;
+    width: 19%;
+    z-index: 2;
   }
   .EggDroneHighlight:hover {
     content: url("./images/characters/EggDrone1.png");
